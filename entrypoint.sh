@@ -10,7 +10,8 @@ fi
 GITHUB_TOKEN=$1
 CONFIG_PATH=$2
 IGNORE_PATH=$3
-EXTRA_ARGS=$4
+EXTENSIONS=$4
+EXTRA_ARGS=$5
 TARGET_BRANCH=${GITHUB_BASE_REF}
 CURRENT_BRANCH=${GITHUB_HEAD_REF}
 
@@ -34,7 +35,8 @@ FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
 if [[ ! -z ${FILES} ]]; then
   echo "Filtering files..."
-  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(js|jsx|ts|tsx)$")
+  EXPECTED_EXTENSIONS=$(echo $EXTENSIONS | sed 's/ //g' | sed 's/,/|/g')
+  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".($EXPECTED_EXTENSIONS)$")
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
