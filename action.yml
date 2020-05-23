@@ -14,6 +14,10 @@ inputs:
     description: Eslint ignore path
     required: false
     default: ''
+  extensions:
+    description: Comma separated list of extensions
+    required: false
+    default: 'ts,tsx,js,jsx'
   extra-args:
     description: Eslint extra arguments
     required: false
