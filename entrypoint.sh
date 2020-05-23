@@ -26,13 +26,18 @@ echo $(git branch)
 git remote set-url origin https://$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
 
 echo "Getting base branch..."
-git fetch --depth=1 origin +refs/heads/$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH
+git config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git config --local --add remote.origin.fetch "+refs/tags/*:refs/tags/*"
+# git fetch origin --tags
+
+git fetch --depth=1 origin $TARGET_BRANCH:$TARGET_BRANCH
 
 echo "Getting changed files..."
+
 echo "Getting head sha..."
-git merge-base origin/$TARGET_BRANCH HEAD 2> error.txt
-cat error.txt
-HEAD_SHA=$(git merge-base $TARGET_BRANCH HEAD)
+HEAD_SHA=$(git rev-parse $TARGET_BRANCH || true)
+echo ${HEAD_SHA}
+
 echo "Getting diffs..."
 CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $HEAD_SHA | grep -E ".(js|jsx|ts|tsx)$$")
 
