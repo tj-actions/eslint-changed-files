@@ -3,7 +3,7 @@ FROM alpine:3.7
 LABEL maintainer="Tonye Jack <jtonye@ymail.com>"
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh 
+    apk add --no-cache bash git openssh curl
     
 # Install nvm with node and npm
 ENV NODE_VERSION=9.8.0 \
