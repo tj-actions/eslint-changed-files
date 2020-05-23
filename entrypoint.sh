@@ -39,7 +39,7 @@ HEAD_SHA=$(git rev-parse $TARGET_BRANCH || true)
 echo ${HEAD_SHA}
 
 echo "Getting diffs..."
-CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $HEAD_SHA | grep -E ".(js|jsx|ts|tsx)$$")
+CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $HEAD_SHA | grep -E ".(js|jsx|ts|tsx)$")
 
 echo "## Running ESLint"
 if [[ ! -z $IGNORE_PATH ]]; then
