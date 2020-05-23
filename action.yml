@@ -27,5 +27,5 @@ runs:
     - ${{ inputs.ignore-path }}
     - ${{ inputs.extra-args }}
 branding: 
-  icon: circle
+  icon: check-square
   color: blue
