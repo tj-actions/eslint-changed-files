@@ -1,17 +1,26 @@
 #!/bin/sh
 
-set -e 
+set -e
 
-CONFIG_PATH=$INPUT_CONFIG-PATH
-IGNORE_PATH=$INPUT_IGNORE-PATH
+if [ -z $GITHUB_BASE_REF ]; then
+  echo "This should only run on pull_request.";
+  exit 0;
+fi
+
+GITHUB_TOKEN=$1
+CONFIG_PATH=$2
+IGNORE_PATH=$3
 TARGET_BRANCH=$GITHUB_BASE_REF
 
 
-echo ${INPUT_CONFIG-PATH}
-echo ${INPUT_IGNORE-PATH}
-echo ${GITHUB_BASE_REF}
-env
+echo "${GITHUB_TOKEN}"
+echo "${CONFIG_PATH}"
+echo "${IGNORE_PATH}"
+echo "${TARGET_BRANCH}"
+echo "${GITHUB_REPOSITORY}"
+echo "----------------------"
 
+git remote set-url origin https://$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
 git fetch --depth=1 origin +refs/heads/$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH
 
 CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $(git merge-base origin/$TARGET_BRANCH HEAD) | grep -E ".(js|jsx|ts|tsx)$$")
