@@ -17,6 +17,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.token }}
     - ${{ inputs.config-path }}
     - ${{ inputs.ignore-path }}
 branding: 
