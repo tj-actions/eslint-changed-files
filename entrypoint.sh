@@ -29,8 +29,10 @@ echo "Getting base branch..."
 git fetch --depth=1 origin +refs/heads/$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH
 
 echo "Getting changed files..."
-
-CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $(git merge-base origin/$TARGET_BRANCH HEAD) | grep -E ".(js|jsx|ts|tsx)$$")
+echo "Getting head sha..."
+HEAD_SHA=$(git merge-base origin/$TARGET_BRANCH HEAD)
+echo "Getting diffs..."
+CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $HEAD_SHA | grep -E ".(js|jsx|ts|tsx)$$")
 
 echo "## Running ESLint"
 if [[ ! -z $IGNORE_PATH ]]; then
