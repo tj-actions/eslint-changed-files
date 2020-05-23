@@ -2,25 +2,10 @@ FROM alpine:3.7
 
 LABEL maintainer="Tonye Jack <jtonye@ymail.com>"
 
+RUN apk add  --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/main/nodejs=10.14.2-r0
+
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh curl
-    
-# Install nvm with node and npm
-ENV NODE_VERSION=9.8.0 \
-    NVM_DIR=/root/.nvm \
-    NVM_VERSION=0.33.8
-
-RUN curl https://raw.githubusercontent.com/creationix/nvm/v$NVM_VERSION/install.sh | bash \
-    && . $NVM_DIR/nvm.sh \
-    && nvm install $NODE_VERSION \
-    && nvm alias default $NODE_VERSION \
-    && nvm use default
-
-# Set node path
-ENV NODE_PATH=$NVM_DIR/v$NODE_VERSION/lib/node_modules
-
-# Set the path.
-ENV PATH=$NVM_DIR:$NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
+    apk add --no-cache bash git openssh
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
