@@ -6,6 +6,8 @@ RUN apk add  --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.7/m
 
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh grep
+    
+RUN npm install -g npx
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
