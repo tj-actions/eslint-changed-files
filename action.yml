@@ -2,6 +2,9 @@ name: Run ESLint on changed files
 description: Run ESLint on JavaScript files
 author: jackton1
 inputs:
+  token:
+    description: 'GITHUB_TOKEN or a repo scoped PAT'
+    default: ${{ github.token }}
   config-path:
     description: Eslint configuration path
     required: false
