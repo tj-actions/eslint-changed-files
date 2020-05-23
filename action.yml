@@ -1,0 +1,21 @@
+name: Run ESLint
+description: Run ESLint on JavaScript files
+author: stefanoeb
+inputs:
+  config-path:
+    description: Eslint configuration path
+    required: false
+    default: '.eslintrc'
+  ignore-path:
+    description: Eslint ignore path
+    required: false
+    default: '.eslintignore'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.config-path }}
+    - ${{ inputs.ignore-path }}
+branding: 
+  icon: circle
+  color: purple
