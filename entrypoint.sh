@@ -29,6 +29,7 @@ echo "Getting base branch..."
 git fetch --depth=1 origin +refs/heads/$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH
 
 echo "Getting changed files..."
+ls -lR .git/refs/
 echo "Getting head sha..."
 git merge-base $TARGET_BRANCH HEAD
 HEAD_SHA=$(git merge-base $TARGET_BRANCH HEAD)
