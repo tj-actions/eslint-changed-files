@@ -5,12 +5,17 @@ inputs:
   token:
     description: 'GITHUB_TOKEN or a repo scoped PAT'
     default: ${{ github.token }}
+    required: true
   config-path:
     description: Eslint configuration path
     required: false
     default: '.eslintrc'
   ignore-path:
     description: Eslint ignore path
+    required: false
+    default: ''
+  extra-args:
+    description: Eslint extra arguments
     required: false
     default: ''
 runs:
@@ -20,6 +25,7 @@ runs:
     - ${{ inputs.token }}
     - ${{ inputs.config-path }}
     - ${{ inputs.ignore-path }}
+    - ${{ inputs.extra-args }}
 branding: 
   icon: circle
   color: blue

@@ -10,6 +10,7 @@ fi
 GITHUB_TOKEN=$1
 CONFIG_PATH=$2
 IGNORE_PATH=$3
+EXTRA_ARGS=$4
 TARGET_BRANCH=${GITHUB_BASE_REF}
 CURRENT_BRANCH=${GITHUB_HEAD_REF}
 
@@ -38,11 +39,11 @@ if [[ ! -z ${FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
   else
-    echo "Running ESLint..."
+    echo "Running ESLint on $CHANGED_FILES..."
     if [[ ! -z ${IGNORE_PATH} ]]; then
-      npx eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} --max-warnings=0 ${CHANGED_FILES}
+      npx eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} ${EXTRA_ARGS} ${CHANGED_FILES}
     else
-      npx eslint --config=${CONFIG_PATH} --max-warnings=0 ${CHANGED_FILES}
+      npx eslint --config=${CONFIG_PATH} ${EXTRA_ARGS} ${CHANGED_FILES}
     fi
   fi
 fi
