@@ -9,4 +9,5 @@ Github action to run eslint on changed files.
     base-branch: ${{ github.base_ref }}
     config-path: '/path/to/.eslintrc'
     ignore-path: '/path/to/.eslintignore'
+    github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
