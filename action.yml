@@ -1,4 +1,4 @@
-name: Run ESLint
+name: Run ESLint on changed files
 description: Run ESLint on JavaScript files
 author: stefanoeb
 inputs:
