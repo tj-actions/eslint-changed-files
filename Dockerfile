@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.11
 
 LABEL maintainer="Tonye Jack <jtonye@ymail.com>"
 
