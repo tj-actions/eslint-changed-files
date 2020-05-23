@@ -3,7 +3,7 @@
 set -e
 
 if [[ -z $GITHUB_BASE_REF ]]; then
-  echo "This should only run on pull_request.";
+  echo "Skipping: This should only run on pull_request.";
   exit 0;
 fi
 
@@ -35,17 +35,17 @@ git fetch --depth=1 origin ${TARGET_BRANCH}:${TARGET_BRANCH}
 echo "Getting changed files..."
 
 echo "Getting head sha..."
-HEAD_SHA=$(git rev-parse $TARGET_BRANCH || true)
+HEAD_SHA=$(git rev-parse ${TARGET_BRANCH} || true)
 echo ${HEAD_SHA}
 
 echo "Getting diffs..."
 FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
-if [[ ! -z $FILES ]]; then
+if [[ ! -z ${FILES} ]]; then
   echo "Filtering files..."
-  CHANGED_FILES=$(echo ${FILES} | grep -E ".(js|jsx|ts|tsx)$")
-  if [[ -z $CHANGED_FILES ]]; then 
-    echo "No files to lint"
+  CHANGED_FILES=$(echo ${FILES} | grep -E ".(js|jsx|ts|tsx)$" || true)
+  if [[ -z ${CHANGED_FILES} ]]; then
+    echo "Skipping: No files to lint"
     exit 0;
   else
     echo "Running ESLint..."
