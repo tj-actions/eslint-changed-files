@@ -40,12 +40,17 @@ echo ${HEAD_SHA}
 
 echo "Getting diffs..."
 FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
-echo "Filtering files..."
-CHANGED_FILES=$(echo ${FILES} | grep -E ".(js|jsx|ts|tsx)$")
 
-echo "Running ESLint..."
-if [[ ! -z ${IGNORE_PATH} ]]; then
-  eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} --max-warnings=0 $(CHANGED_FILES)
+if [[ -z $FILES ]]; then
+  echo "No files to lint"
 else
-  eslint --config=${CONFIG_PATH} --max-warnings=0 $(CHANGED_FILES)
+  echo "Filtering files... $FILES"
+  CHANGED_FILES=$(echo ${FILES} | grep -E ".(js|jsx|ts|tsx)$")
+  
+  echo "Running ESLint..."
+  if [[ ! -z ${IGNORE_PATH} ]]; then
+    eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} --max-warnings=0 $(CHANGED_FILES)
+  else
+    eslint --config=${CONFIG_PATH} --max-warnings=0 $(CHANGED_FILES)
+  fi
 fi
