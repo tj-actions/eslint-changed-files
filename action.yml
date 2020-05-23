@@ -12,7 +12,7 @@ inputs:
   ignore-path:
     description: Eslint ignore path
     required: false
-    default: '.eslintignore'
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
