@@ -40,9 +40,9 @@ if [[ ! -z ${FILES} ]]; then
   else
     echo "Running ESLint..."
     if [[ ! -z ${IGNORE_PATH} ]]; then
-      eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} --max-warnings=0 $(CHANGED_FILES)
+      npx eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} --max-warnings=0 ${CHANGED_FILES}
     else
-      eslint --config=${CONFIG_PATH} --max-warnings=0 $(CHANGED_FILES)
+      npx eslint --config=${CONFIG_PATH} --max-warnings=0 ${CHANGED_FILES}
     fi
   fi
 fi
