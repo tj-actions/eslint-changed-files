@@ -29,6 +29,7 @@ runs:
     - ${{ inputs.token }}
     - ${{ inputs.config-path }}
     - ${{ inputs.ignore-path }}
+    - ${{ inputs.extensions }}
     - ${{ inputs.extra-args }}
 branding: 
   icon: check-square
