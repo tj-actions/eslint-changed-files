@@ -2,6 +2,9 @@ name: Run ESLint on changed files
 description: Run ESLint on JavaScript files
 author: stefanoeb
 inputs:
+  base-branch:
+    description: Base branch
+    required: true
   config-path:
     description: Eslint configuration path
     required: false
@@ -16,7 +19,7 @@ runs:
   args:
     - ${{ inputs.config-path }}
     - ${{ inputs.ignore-path }}
-    - ${{ github.base_ref }}
+    - ${{ inputs.base-branch }}
 branding: 
   icon: circle
   color: purple
