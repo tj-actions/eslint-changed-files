@@ -6,8 +6,6 @@ Github action to run eslint on changed files.
 - name: Run ESLint on changed files
   uses: jackton1/eslint-changed-files@0.0.4
   with:
-    base-branch: ${{ github.base_ref }}
     config-path: '/path/to/.eslintrc'
     ignore-path: '/path/to/.eslintignore'
-    github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
