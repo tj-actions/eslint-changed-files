@@ -21,7 +21,7 @@ echo "${TARGET_BRANCH}"
 echo "${CURRENT_BRANCH}"
 echo "${GITHUB_REPOSITORY}"
 echo "----------------------"
-
+echo $(git branch)
 
 git remote set-url origin https://$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
 
