@@ -16,6 +16,7 @@ runs:
   args:
     - ${{ inputs.config-path }}
     - ${{ inputs.ignore-path }}
+    - ${{ github.base_ref }}
 branding: 
   icon: circle
   color: purple
