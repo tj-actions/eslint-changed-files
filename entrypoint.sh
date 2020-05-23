@@ -30,6 +30,7 @@ git fetch --depth=1 origin +refs/heads/$TARGET_BRANCH:refs/remotes/origin/$TARGE
 
 echo "Getting changed files..."
 echo "Getting head sha..."
+git merge-base origin/$TARGET_BRANCH HEAD
 HEAD_SHA=$(git merge-base origin/$TARGET_BRANCH HEAD)
 echo "Getting diffs..."
 CHANGED_FILES=$(git diff --diff-filter=ACM --name-only $HEAD_SHA | grep -E ".(js|jsx|ts|tsx)$$")
