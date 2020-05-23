@@ -33,7 +33,7 @@ FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
 if [[ ! -z ${FILES} ]]; then
   echo "Filtering files..."
-  CHANGED_FILES=$(grep -E ".(js|jsx|ts|tsx)$" <<< ${FILES} || true)
+  CHANGED_FILES=`echo ${FILES} | grep -E ".(js|jsx|ts|tsx)$"`
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
