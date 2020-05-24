@@ -37,8 +37,6 @@ if [[ ! -z ${FILES} ]]; then
 
   echo "Filtering files... ${EXPECTED_EXTENSIONS}"
   CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" || true)
-
-  echo "Linting ${CHANGED_FILES}..."
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
