@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
@@ -20,7 +20,6 @@ git remote set-url origin https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY
 echo "Getting base branch..."
 git config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 git config --local --add remote.origin.fetch "+refs/tags/*:refs/tags/*"
-# git fetch origin --tags
 
 git fetch --depth=1 origin ${TARGET_BRANCH}:${TARGET_BRANCH}
 
@@ -28,16 +27,17 @@ echo "Getting changed files..."
 
 echo "Getting head sha..."
 HEAD_SHA=$(git rev-parse ${TARGET_BRANCH} || true)
-echo ${HEAD_SHA}
 
 echo "Getting diffs..."
 FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
 if [[ ! -z ${FILES} ]]; then
-  echo "Formating extensions..."
-  EXPECTED_EXTENSIONS=".($(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/|/g')))$"
-  echo "Filtering files..."
-  CHANGED_FILES=$(eval `printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E "${EXPECTED_EXTENSIONS}"`)
+  echo "Formatting extensions..."
+  EXPECTED_EXTENSIONS="$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/|/g'))"
+
+  echo "Filtering files... "
+  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$")
+
   echo "Linting ${CHANGED_FILES}..."
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
