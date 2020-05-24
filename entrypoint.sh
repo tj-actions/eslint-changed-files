@@ -34,9 +34,10 @@ echo "Getting diffs..."
 FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
 if [[ ! -z ${FILES} ]]; then
+  echo "Formating extensions..."
+  EXPECTED_EXTENSIONS=$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/|/g'))
   echo "Filtering files..."
-  EXPECTED_EXTENSIONS=$(printf $(echo ${EXTENSIONS} | sed 's/ //g' | sed 's/,/|/g'))
-  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".($EXPECTED_EXTENSIONS)$")
+  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$")
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
