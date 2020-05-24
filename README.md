@@ -12,7 +12,7 @@ Github action to run eslint on changed files.
       - name: Install
         run: npm ci
       - name: Run ESLint on changed files
-        uses: jackton1/eslint-changed-files@0.1.2
+        uses: jackton1/eslint-changed-files@v2
         with:
           config-path: '/path/to/.eslintrc'
           ignore-path: '/path/to/.eslintignore'
