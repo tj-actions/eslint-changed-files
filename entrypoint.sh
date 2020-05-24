@@ -33,10 +33,10 @@ FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
 if [[ ! -z ${FILES} ]]; then
   echo "Formatting extensions..."
-  EXPECTED_EXTENSIONS="/$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/\\|/g'))/!d"
+  EXPECTED_EXTENSIONS="$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/\\|/g'))"
 
   echo "Filtering files... ${EXPECTED_EXTENSIONS}"
-  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | sed ${EXPECTED_EXTENSIONS})
+  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$")
 
   echo "Linting ${CHANGED_FILES}..."
   if [[ -z ${CHANGED_FILES} ]]; then
