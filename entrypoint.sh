@@ -36,7 +36,7 @@ if [[ ! -z ${FILES} ]]; then
   EXPECTED_EXTENSIONS="$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/|/g'))"
 
   echo "Filtering files... ${EXPECTED_EXTENSIONS}"
-  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$")
+  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" || true)
 
   echo "Linting ${CHANGED_FILES}..."
   if [[ -z ${CHANGED_FILES} ]]; then
