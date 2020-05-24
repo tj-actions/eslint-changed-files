@@ -5,6 +5,7 @@ inputs:
   token:
     description: 'GITHUB_TOKEN or a repo scoped PAT'
     required: true
+    default: ${{ github.token }}
   config-path:
     description: Eslint configuration path
     required: false
