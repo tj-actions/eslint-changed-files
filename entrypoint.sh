@@ -35,13 +35,16 @@ if [[ ! -z ${FILES} ]]; then
   echo "Formatting extensions..."
   EXPECTED_EXTENSIONS="$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/|/g'))"
 
-  echo "Filtering files... ${EXPECTED_EXTENSIONS}"
+  echo "Filtering files with "${EXPECTED_EXTENSIONS}"... "
   CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" || true)
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
   else
-    echo "Running ESLint on $CHANGED_FILES..."
+    echo "Running ESLint on..."
+    echo "--------------------"
+    echo "$CHANGED_FILES"
+    echo '--------------------"
     if [[ ! -z ${IGNORE_PATH} ]]; then
       npx eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} ${EXTRA_ARGS} ${CHANGED_FILES}
     else
