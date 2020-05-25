@@ -44,7 +44,7 @@ if [[ ! -z ${FILES} ]]; then
     echo "Running ESLint on..."
     echo "--------------------"
     echo "$CHANGED_FILES"
-    echo '--------------------"
+    echo "--------------------"
     if [[ ! -z ${IGNORE_PATH} ]]; then
       npx eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} ${EXTRA_ARGS} ${CHANGED_FILES}
     else
