@@ -23,10 +23,10 @@ Github action to run eslint on changed files.
 
 ## Inputs
 
-|   Name        |    type   |  required     |  default              |
-|:-------------:|:---------:|:-------------:|:---------------------:|
-| token         |  string   |    false      |  ${{ github.token }}  |
-| config-path   |  string   |    false      |  '.eslintrc'          |
-| ignore-path   |  string   |    false      |  ''                   |
-| extensions    |  string[] |    false      |  'ts,tsx,js,jsx'      |
-| extra-args    |  string   |    false      |  ''                   |
+|   Input        |    type     |  required     |  default              |
+|:-------------:|:-----------:|:-------------:|:---------------------:|
+| token         |  `string`   |    `false`    | `${{ github.token }}` |
+| config-path   |  `string`   |    `false`    |  `'.eslintrc'`        |
+| ignore-path   |  `string`   |    `false`    |  `''`                 |
+| extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |
+| extra-args    |  `string`   |    `false`    |  `''`                 |
