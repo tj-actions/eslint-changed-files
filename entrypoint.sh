@@ -12,6 +12,7 @@ CONFIG_PATH=$2
 IGNORE_PATH=$3
 EXTENSIONS=$4
 EXTRA_ARGS=$5
+EXCLUDE=$6
 TARGET_BRANCH=${GITHUB_BASE_REF}
 CURRENT_BRANCH=${GITHUB_HEAD_REF}
 
@@ -34,9 +35,11 @@ FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 if [[ ! -z ${FILES} ]]; then
   echo "Formatting extensions..."
   EXPECTED_EXTENSIONS="$(printf $(echo ${EXTENSIONS} | sed 's| ||g' | sed 's/,/|/g'))"
+  EXCLUDED_PATHS=${EXCLUDE// /|}
 
   echo "Filtering files with "${EXPECTED_EXTENSIONS}"... "
-  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" || true)
+  echo "Excluded: ${EXCLUDED_PATHS}..."
+  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" | grep -v -E "$EXCLUDED_PATHS" || true)
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;

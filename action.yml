@@ -22,6 +22,10 @@ inputs:
     description: Eslint extra arguments
     required: false
     default: ''
+  exclude-path:
+    description: String or list of files to exclude entirely
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -31,6 +35,7 @@ runs:
     - ${{ inputs.ignore-path }}
     - ${{ inputs.extensions }}
     - ${{ inputs.extra-args }}
+    - ${{ inputs.exclude-path }}
 branding: 
   icon: check-square
   color: blue
