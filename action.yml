@@ -38,4 +38,4 @@ runs:
     - ${{ inputs.exclude-path }}
 branding: 
   icon: check-square
-  color: blue
+  color: white
