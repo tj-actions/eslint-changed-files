@@ -14,12 +14,12 @@ Github action to run eslint on changed files in a pull request.
       - name: Run ESLint on changed files
         uses: tj-actions/eslint-changed-files@v4.1
         with:
-          config-path: '/path/to/.eslintrc'
-          ignore-path: '/path/to/.eslintignore'
-          extensions: 'ts,tsx,js,jsx'
-          extra-args: '--max-warnings=0'
-          exclude-path:  # or single string 'generated.tsx' 
-            - 'generated.tsx'
+          config-path: "/path/to/.eslintrc"
+          ignore-path: "/path/to/.eslintignore"
+          extensions: "ts,tsx,js,jsx"
+          extra-args: "--max-warnings=0"
+          exclude-path:  # or single string "generated.tsx" 
+            - "generated.tsx"
 ```
 
 
