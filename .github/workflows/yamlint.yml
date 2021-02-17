@@ -1,12 +1,16 @@
-name: Yaml Lint
+name: Test
 on:
   pull_request:
+    branches:
+      - master
   push:
+    branches:
+      - master
 
 jobs:
   yaml-lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: yaml-lint
-        uses: ibiqlik/action-yamllint@v3
+      - run: |
+          echo "Test..."
