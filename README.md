@@ -18,6 +18,8 @@ Github action to run eslint on changed files in a pull request.
           ignore-path: '/path/to/.eslintignore'
           extensions: 'ts,tsx,js,jsx'
           extra-args: '--max-warnings=0'
+          exclude-path:  # or single string 'generated.tsx' 
+            - 'generated.tsx'
 ```
 
 
@@ -30,3 +32,4 @@ Github action to run eslint on changed files in a pull request.
 | ignore-path   |  `string`   |    `false`    |  `''`                 |
 | extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |
 | extra-args    |  `string`   |    `false`    |  `''`                 |
+| exclude-path  |  `string|string[]`   |    `false`    |  `''`                 |
