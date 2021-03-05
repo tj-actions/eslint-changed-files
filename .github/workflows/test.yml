@@ -12,5 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          echo "Test..."
+      - name: Run eslint-changed-files
+        id: eslint-changed-files
+        uses: ./
