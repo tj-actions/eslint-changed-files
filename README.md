@@ -6,7 +6,7 @@ Github action to run eslint on changed files in a pull request.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: 9.8.0
       - name: Install
