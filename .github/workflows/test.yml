@@ -9,6 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Install dependencies
+        run: yarn
+        working-directory: test-app
       - name: Run ESLint on changed files
         uses: tj-actions/eslint-changed-files@v4
         with:
