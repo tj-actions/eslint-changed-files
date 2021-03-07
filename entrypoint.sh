@@ -36,7 +36,7 @@ if [[ ! -z ${FILES} ]]; then
   EXPECTED_EXTENSIONS="$(printf $(echo "${EXTENSIONS}" | sed 's| ||g' | sed 's/,/|/g'))"
   EXCLUDED_PATHS=${EXCLUDE// /|}
 
-  echo "Filtering files with "${EXPECTED_EXTENSIONS}... "
+  echo "Filtering files with \"${EXPECTED_EXTENSIONS}\"... "
   echo "Excluded: ${EXCLUDED_PATHS}..."
   # shellcheck disable=SC2046
   CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" | grep -v -E "$EXCLUDED_PATHS" || true)
