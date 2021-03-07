@@ -3,17 +3,13 @@ on:
   pull_request:
     branches:
       - master
-  push:
-    branches:
-      - master
 
 jobs:
-  yaml-lint:
+  eslint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Run ESLint on changed files
-        if: github.event_name == 'pull_request'
         uses: tj-actions/eslint-changed-files@v4
         with:
           config-path: "test-app/package.json"
