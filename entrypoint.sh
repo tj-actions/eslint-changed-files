@@ -10,10 +10,12 @@ fi
 GITHUB_TOKEN=$1
 CONFIG_PATH=$2
 IGNORE_PATH=$3
-EXTENSIONS=${${4// /}//,/|}
+EXTENSIONS=${4// /}
 EXTRA_ARGS=$5
 EXCLUDED=${6// /|}
 TARGET_BRANCH=${GITHUB_BASE_REF}
+
+EXTENSIONS=${EXTENSIONS//,/|}
 
 git remote set-url origin https://"${GITHUB_TOKEN}"@github.com/"${GITHUB_REPOSITORY}"
 
