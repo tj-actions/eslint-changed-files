@@ -35,11 +35,13 @@ echo "Filtering files with \"${EXTENSIONS}\"... "
 if [[ -n "${EXCLUDED}" ]]; then
   echo "Excluding files: ${EXCLUDED}..."
   echo "Getting diffs..."
-  FILES=${$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "$EXCLUDED" || true)// /\n}
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "$EXCLUDED" || true)
 else
   echo "Getting diffs..."
-  FILES=${$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)// /\n}
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 fi
+
+FILES=${FILES// /\n}
 
 if [[ ! -z ${FILES} ]]; then
   CHANGED_FILES=$(echo ${FILES} | grep -E ".(${EXTENSIONS})$" || true)
