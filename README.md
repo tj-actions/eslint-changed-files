@@ -11,7 +11,7 @@ Github action to run eslint on changed files in a pull request.
           node-version: 9.8.0
       - name: Install
         run: npm ci
-      - name: Run ESLint on changed files
+      - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v4
         with:
           config-path: "/path/to/.eslintrc"
