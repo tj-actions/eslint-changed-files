@@ -1,5 +1,5 @@
 # eslint-changed-files
-Github action to run eslint on changed files in a pull request.
+Github action to run eslint on changed files in a pull request with support for excluding generated files.
 
 ```yml
 ...:
