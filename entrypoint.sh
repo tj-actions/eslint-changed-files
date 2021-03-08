@@ -44,7 +44,7 @@ fi
 FILES=${FILES// /\n}
 
 if [[ ! -z ${FILES} ]]; then
-  CHANGED_FILES=$(echo ${FILES} | grep -E ".(${EXTENSIONS})$" || true)
+  CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
