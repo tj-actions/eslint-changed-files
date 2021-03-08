@@ -33,6 +33,7 @@ FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
 
 if [[ ! -z ${FILES} ]]; then
   echo "Formatting extensions..."
+  # shellcheck disable=SC2046
   EXPECTED_EXTENSIONS="$(printf $(echo "${EXTENSIONS}" | sed 's| ||g' | sed 's/,/|/g'))"
   EXCLUDED_PATHS=${EXCLUDE// /|}
 
@@ -40,6 +41,7 @@ if [[ ! -z ${FILES} ]]; then
   echo "Excluded: ${EXCLUDED_PATHS}..."
   # shellcheck disable=SC2046
   CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" | grep -v -E "$EXCLUDED_PATHS" || true)
+
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
