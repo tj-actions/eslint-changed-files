@@ -12,7 +12,7 @@ Github action to run eslint on changed files in a pull request with support for 
         with:
           node-version: 14
       - name: Install
-        run: npm ci
+        run: npm ci  # OR: yarn 
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v5
         with:
