@@ -38,7 +38,4 @@ jobs:
         with:
           config-path: "test-app/package.json"
           extensions: "ts,tsx"
-          exclude-path: |
-            test-app/src/App.tsx
-            test-app/src/index.tsx
           extra-args: "--max-warnings=0"
