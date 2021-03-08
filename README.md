@@ -27,11 +27,11 @@ Github action to run eslint on changed files in a pull request with support for 
 
 ## Inputs
 
-|   Input        |    type     |  required     |  default              |
-|:-------------:|:-----------:|:-------------:|:---------------------:|
-| token         |  `string`   |    `false`    | `${{ github.token }}` |
-| config-path   |  `string`   |    `false`    |  `'.eslintrc'`        |
-| ignore-path   |  `string`   |    `false`    |  `''`                 |
-| extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |
-| extra-args    |  `string`   |    `false`    |  `''`                 |
-| exclude-path  |  `string|string[]`   |    `false`    |  `''`                 |
+|   Input        |    type     |  required     |  default             |  description   |
+|:-------------:|:-----------:|:-------------:|:---------------------:|:--------------:|
+| token         |  `string`   |    `false`    | `${{ github.token }}` | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
+| config-path   |  `string`   |    `false`    |  `'.eslintrc'`        | [eslint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)  |
+| ignore-path   |  `string`   |    `false`    |  `''`                 | [eslint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)  |
+| extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
+| extra-args    |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
+| exclude-path  |  `string|string[]`   |    `false`    |  `''`                 | A single path or a List of files to exclude entirely which match the listed extensions.
