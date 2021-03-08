@@ -1,4 +1,4 @@
-[![Test](https://github.com/tj-actions/eslint-changed-files/actions/workflows/test.yml/badge.svg)](https://github.com/tj-actions/eslint-changed-files/actions/workflows/test.yml)
+[![Test](https://github.com/tj-actions/eslint-changed-files/actions/workflows/test.yml/badge.svg)](https://github.com/tj-actions/eslint-changed-files/actions/workflows/test.yml) [![Update release version.](https://github.com/tj-actions/eslint-changed-files/actions/workflows/sync-release-version.yml/badge.svg)](https://github.com/tj-actions/eslint-changed-files/actions/workflows/sync-release-version.yml)
 
 # eslint-changed-files
 Github action to run eslint on changed files in a pull request with support for excluding generated files.
