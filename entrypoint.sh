@@ -33,7 +33,12 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 echo "Filtering files with \"${EXTENSIONS}\"... "
 
 if [[ -n "${EXCLUDED}" ]]; then
-  echo "Excluding files: ${EXCLUDED}..."
+  echo ""
+  echo "Excluding files"
+  echo "---------------"
+  echo "${EXCLUDED}"
+  echo "---------------"
+  echo ""
   echo "Getting diffs..."
   FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "$EXCLUDED" || true)
 else
@@ -43,17 +48,19 @@ fi
 
 FILES=${FILES// /\n}
 
-if [[ ! -z ${FILES} ]]; then
+if [[ -n ${FILES} ]]; then
   CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
   else
+    echo ""
     echo "Running ESLint on..."
     echo "--------------------"
     echo "$CHANGED_FILES"
     echo "--------------------"
+    echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
       npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" "${EXTRA_ARGS}" "${CHANGED_FILES}"
     else
