@@ -10,7 +10,7 @@ Github action to run eslint on changed files in a pull request with support for 
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
-          node-version: 9.8.0
+          node-version: 14
       - name: Install
         run: npm ci
       - name: Run eslint on changed files
