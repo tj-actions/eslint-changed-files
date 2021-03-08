@@ -18,7 +18,7 @@ Github action to run eslint on changed files in a pull request.
           ignore-path: "/path/to/.eslintignore"
           extensions: "ts,tsx,js,jsx"
           extra-args: "--max-warnings=0"
-          exclude-path: | # or single string "generated.tsx" 
+          exclude-path: | # or a single string "generated.tsx" 
             generated.tsx
 ```
 
