@@ -30,7 +30,7 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
 echo "Filtering files with \"${EXTENSIONS}\"... "
 
-if [[ ! -z "${EXCLUDED}" ]]; then
+if [[ -n "${EXCLUDED}" ]]; then
   echo "Excluding files: ${EXCLUDED}..."
   echo "Getting diffs..."
   FILES=${$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "$EXCLUDED" || true)// /\n}
