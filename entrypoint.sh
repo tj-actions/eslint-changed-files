@@ -10,48 +10,59 @@ fi
 GITHUB_TOKEN=$1
 CONFIG_PATH=$2
 IGNORE_PATH=$3
-EXTENSIONS=$4
+EXTENSIONS=${4// /}
 EXTRA_ARGS=$5
-EXCLUDE=$6
+EXCLUDED=${6// /|}
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
-git remote set-url origin https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+EXTENSIONS=${EXTENSIONS//,/|}
+
+git remote set-url origin https://"${GITHUB_TOKEN}"@github.com/"${GITHUB_REPOSITORY}"
 
 echo "Getting base branch..."
 git config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
 git config --local --add remote.origin.fetch "+refs/tags/*:refs/tags/*"
 
-git fetch --depth=1 origin ${TARGET_BRANCH}:${TARGET_BRANCH}
+git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
 
 echo "Getting changed files..."
 
 echo "Getting head sha..."
-HEAD_SHA=$(git rev-parse ${TARGET_BRANCH} || true)
+HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
-echo "Getting diffs..."
-FILES=$(git diff --diff-filter=ACM --name-only ${HEAD_SHA} || true)
+echo "Filtering files with \"${EXTENSIONS}\"... "
 
-if [[ ! -z ${FILES} ]]; then
-  echo "Formatting extensions..."
-  EXPECTED_EXTENSIONS="$(printf $(echo "${EXTENSIONS}" | sed 's| ||g' | sed 's/,/|/g'))"
-  EXCLUDED_PATHS=${EXCLUDE// /|}
+if [[ -n "${EXCLUDED}" ]]; then
+  echo ""
+  echo "Excluding files"
+  echo "---------------"
+  echo "${EXCLUDED}"
+  echo "---------------"
+  echo ""
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "$EXCLUDED" || true)
+else
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
+fi
 
-  echo "Filtering files with "${EXPECTED_EXTENSIONS}... "
-  echo "Excluded: ${EXCLUDED_PATHS}..."
-  # shellcheck disable=SC2046
-  CHANGED_FILES=$(printf $(echo ${FILES} | sed 's| |\\n|g') | grep -E ".(${EXPECTED_EXTENSIONS})$" | grep -v -E "$EXCLUDED_PATHS" || true)
+FILES=${FILES// /\n}
+
+if [[ -n ${FILES} ]]; then
+  CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
+
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     exit 0;
   else
+    echo ""
     echo "Running ESLint on..."
     echo "--------------------"
     echo "$CHANGED_FILES"
     echo "--------------------"
+    echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
-      npx eslint --config=${CONFIG_PATH} --ignore-path ${IGNORE_PATH} ${EXTRA_ARGS} ${CHANGED_FILES}
+      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" "${EXTRA_ARGS}" "${CHANGED_FILES}"
     else
-      npx eslint --config=${CONFIG_PATH} ${EXTRA_ARGS} ${CHANGED_FILES}
+      npx eslint --config="${CONFIG_PATH}" "${EXTRA_ARGS}" "${CHANGED_FILES}"
     fi
   fi
 fi
