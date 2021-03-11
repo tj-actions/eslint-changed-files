@@ -1,5 +1,13 @@
 # Changelog
 
+## [v5.1](https://github.com/tj-actions/eslint-changed-files/tree/v5.1) (2021-03-11)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v5...v5.1)
+
+**Merged pull requests:**
+
+- Upgraded to v5 [\#17](https://github.com/tj-actions/eslint-changed-files/pull/17) ([jackton1](https://github.com/jackton1))
+
 ## [v5](https://github.com/tj-actions/eslint-changed-files/tree/v5) (2021-03-08)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v4...v5)
@@ -33,15 +41,15 @@
 
 ## [v2](https://github.com/tj-actions/eslint-changed-files/tree/v2) (2020-05-24)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v1...v2)
-
-## [v1](https://github.com/tj-actions/eslint-changed-files/tree/v1) (2020-05-24)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.15...v1)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.15...v2)
 
 ## [0.1.15](https://github.com/tj-actions/eslint-changed-files/tree/0.1.15) (2020-05-24)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.14...0.1.15)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v1...0.1.15)
+
+## [v1](https://github.com/tj-actions/eslint-changed-files/tree/v1) (2020-05-24)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.14...v1)
 
 ## [0.1.14](https://github.com/tj-actions/eslint-changed-files/tree/0.1.14) (2020-05-24)
 
