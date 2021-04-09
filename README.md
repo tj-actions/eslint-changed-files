@@ -34,4 +34,4 @@ Github action to run eslint on only files that have changed in a pull request wi
 | ignore-path   |  `string`   |    `false`    |  `''`                 | [eslint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)  |
 | extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
 | extra-args    |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
-| exclude-path  |  `string|string[]`   |    `false`    |  `''`                 | A single path or a List of files to exclude entirely which match the listed extensions.
+| exclude-path  |  `string or string[]`   |    `false`    |  `''`                 | A single path or a List of files to exclude entirely which match the listed extensions.
