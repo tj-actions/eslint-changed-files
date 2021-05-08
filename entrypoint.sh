@@ -17,7 +17,7 @@ TARGET_BRANCH=${GITHUB_BASE_REF}
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
-git remote set-url origin https://"${GITHUB_TOKEN}"@github.com/"${GITHUB_REPOSITORY}"
+git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 echo "Getting base branch..."
 git config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
