@@ -12,7 +12,7 @@ CONFIG_PATH=$2
 IGNORE_PATH=$3
 EXTENSIONS=${4// /}
 EXTRA_ARGS=$5
-EXCLUDED=$(echo $6 | sed "s/\\n/|/g")
+EXCLUDED=$(echo "$6" | sed "s/\\n/|/g")
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
 EXTENSIONS=${EXTENSIONS//,/|}
