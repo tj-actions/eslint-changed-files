@@ -39,7 +39,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "${EXCLUDED}"
   echo "---------------"
   echo ""
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | sed "/${EXCLUDED//\n/|}/d" || true)
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -Ev "${EXCLUDED//\n/|}" || true)
 else
   FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 fi
