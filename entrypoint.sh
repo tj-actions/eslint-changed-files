@@ -20,9 +20,6 @@ EXTENSIONS=${EXTENSIONS//,/|}
 git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 echo "Getting base branch..."
-git config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-git config --local --add remote.origin.fetch "+refs/tags/*:refs/tags/*"
-
 git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
 
 echo "Getting changed files..."
