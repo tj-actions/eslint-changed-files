@@ -14,7 +14,7 @@ EXTENSIONS=${4// /}
 EXTRA_ARGS=$5
 EXCLUDED=()
 
-IFS=" " read -r -a EXCLUDED <<< "$(echo ${6[*]})"
+IFS=" " read -r -a EXCLUDED <<< "$(sort <<<"${6[*]}")"
 
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
