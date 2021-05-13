@@ -39,7 +39,7 @@ jobs:
           config-path: "test-app/package.json"
           extensions: "ts,tsx"
           extra-args: "--max-warnings=0"
-          
+
       - name: Run ESLint on changed files with exclusion
         uses: ./
         with:
@@ -49,4 +49,3 @@ jobs:
           exclude-path: |
             App.tsx
             reportWebVitals.ts
-
