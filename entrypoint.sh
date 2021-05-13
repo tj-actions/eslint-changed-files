@@ -12,7 +12,10 @@ CONFIG_PATH=$2
 IGNORE_PATH=$3
 EXTENSIONS=${4// /}
 EXTRA_ARGS=$5
-EXCLUDED=${6//\\n/|}
+EXCLUDED=()
+
+IFS=" " read -r -a EXCLUDED <<< $(echo "${6[*]}")
+
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
 EXTENSIONS=${EXTENSIONS//,/|}
@@ -35,7 +38,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   echo "${EXCLUDED}"
   echo "---------------"
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "${EXCLUDED//\n/|}" || true)
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "${EXCLUDED// /|}" || true)
 else
   FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 fi
