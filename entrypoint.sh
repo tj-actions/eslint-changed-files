@@ -37,7 +37,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo ""
   echo "Excluding files"
   echo "---------------"
-  IFS=$'\n' echo "${EXCLUDED[*]}"
+  echo "${EXCLUDED// /\n}"
   echo "---------------"
   FILES=$(echo "$FILES" | sed -E "s/${EXCLUDED// /|}//g" || true)
 fi
