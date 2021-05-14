@@ -38,7 +38,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   echo "${EXCLUDED}"
   echo "---------------"
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | sed -E "s/${EXCLUDED// /|}//g" || true)
+  FILES=$(echo $FILES | sed -E "s/${EXCLUDED// /|}//g" || true)
 fi
 
 FILES=${FILES// /\n}
