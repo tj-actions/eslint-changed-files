@@ -27,7 +27,10 @@ echo "Getting changed files..."
 echo "Getting head sha..."
 HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
-echo "Filtering files with \"${EXTENSIONS}\"... "
+echo "Using head sha ${HEAD_SHA}..."
+
+echo "Retriving modified files..."
+FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 
 if [[ -n "${EXCLUDED}" ]]; then
   echo ""
@@ -35,14 +38,13 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   echo "${EXCLUDED}"
   echo "---------------"
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "${EXCLUDED// /|}" || true)
-else
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
+  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | sed -E "s/${EXCLUDED// /|}//g" || true)
 fi
 
 FILES=${FILES// /\n}
 
 if [[ -n ${FILES} ]]; then
+  echo "Filtering files with \"${EXTENSIONS}\"... "
   CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
