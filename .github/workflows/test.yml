@@ -48,4 +48,4 @@ jobs:
           extra_args: "--max-warnings=0"
           exclude_path: |
             App.tsx
-            reportWebVitals.ts
+            reportWebVitals.ts$
