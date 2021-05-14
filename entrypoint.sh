@@ -12,7 +12,7 @@ CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTENSIONS=${INPUT_EXTENSIONS// /}
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
-EXCLUDED=${INPUT_EXCLUDE_PATH// /|}
+EXCLUDED=$(echo "$INPUT_EXCLUDE_PATH" | xargs)
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
 EXTENSIONS=${EXTENSIONS//,/|}
@@ -20,9 +20,6 @@ EXTENSIONS=${EXTENSIONS//,/|}
 git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 echo "Getting base branch..."
-git config --local remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
-git config --local --add remote.origin.fetch "+refs/tags/*:refs/tags/*"
-
 git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
 
 echo "Getting changed files..."
@@ -30,7 +27,10 @@ echo "Getting changed files..."
 echo "Getting head sha..."
 HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
-echo "Filtering files with \"${EXTENSIONS}\"... "
+echo "Using head sha ${HEAD_SHA}..."
+
+echo "Retrieving modified files..."
+FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 
 if [[ -n "${EXCLUDED}" ]]; then
   echo ""
@@ -38,15 +38,13 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   echo "${EXCLUDED}"
   echo "---------------"
-  echo ""
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | grep -v "$EXCLUDED" || true)
-else
-  FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
+  FILES=$(echo "$FILES" | sed -E "s/${EXCLUDED// /|}//g" || true)
 fi
 
 FILES=${FILES// /\n}
 
 if [[ -n ${FILES} ]]; then
+  echo "Filtering files with \"${EXTENSIONS}\"... "
   CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
