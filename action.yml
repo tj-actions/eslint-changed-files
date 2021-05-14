@@ -29,13 +29,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.token }}
-    - ${{ inputs.config-path }}
-    - ${{ inputs.ignore-path }}
-    - ${{ inputs.extensions }}
-    - ${{ inputs.extra-args }}
-    - ${{ inputs.exclude-path }}
 branding: 
   icon: check-square
   color: white
