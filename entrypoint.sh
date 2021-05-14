@@ -2,7 +2,7 @@
 
 set -e
 
-echo "::group::eslint changed files"
+echo "::group::eslint-changed-files"
 
 if [[ -z $GITHUB_BASE_REF ]]; then
   echo "::warning::Skipping: This should only run on pull_request.";
