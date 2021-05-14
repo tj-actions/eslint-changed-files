@@ -2,10 +2,13 @@
 
 set -e
 
+echo "::group::eslint-changed-files"
+
 if [[ -z $GITHUB_BASE_REF ]]; then
-  echo "Skipping: This should only run on pull_request.";
+  echo "::warning::Skipping: This should only run on pull_request.";
   exit 0;
 fi
+
 
 GITHUB_TOKEN=$INPUT_TOKEN
 CONFIG_PATH=$INPUT_CONFIG_PATH
@@ -21,8 +24,6 @@ git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITOR
 
 echo "Getting base branch..."
 git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
-
-echo "Getting changed files..."
 
 echo "Getting head sha..."
 HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
@@ -54,7 +55,7 @@ if [[ -n ${FILES} ]]; then
     echo ""
     echo "Running ESLint on..."
     echo "--------------------"
-    echo "$CHANGED_FILES"
+    echo "${CHANGED_FILES// /\n}"
     echo "--------------------"
     echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
@@ -64,3 +65,5 @@ if [[ -n ${FILES} ]]; then
     fi
   fi
 fi
+
+echo "::endgroup::"
