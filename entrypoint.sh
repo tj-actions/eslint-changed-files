@@ -49,7 +49,7 @@ if [[ -n ${FILES} ]]; then
   CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
-    echo "::debug::Skipping: No files to lint"
+    echo "Skipping: No files to lint"
     exit 0;
   else
     echo ""
