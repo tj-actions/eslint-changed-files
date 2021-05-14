@@ -6,11 +6,11 @@ inputs:
     description: 'GITHUB_TOKEN or a repo scoped PAT'
     required: true
     default: ${{ github.token }}
-  config-path:
+  config_path:
     description: Eslint configuration path
     required: false
     default: '.eslintrc'
-  ignore-path:
+  ignore_path:
     description: Eslint ignore path
     required: false
     default: ''
@@ -18,24 +18,17 @@ inputs:
     description: Comma separated list of extensions
     required: false
     default: 'ts,tsx,js,jsx'
-  extra-args:
+  extra_args:
     description: Eslint extra arguments
     required: false
     default: ''
-  exclude-path:
+  exclude_path:
     description: String or list of files to exclude entirely
     required: false
     default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.token }}
-    - ${{ inputs.config-path }}
-    - ${{ inputs.ignore-path }}
-    - ${{ inputs.extensions }}
-    - ${{ inputs.extra-args }}
-    - ${{ inputs.exclude-path }}
 branding: 
   icon: check-square
   color: white
