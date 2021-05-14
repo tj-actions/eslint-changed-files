@@ -55,7 +55,7 @@ if [[ -n ${FILES} ]]; then
     echo ""
     echo "Running ESLint on..."
     echo "--------------------"
-    echo "$CHANGED_FILES"
+    echo "${CHANGED_FILES// /\n}"
     echo "--------------------"
     echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
