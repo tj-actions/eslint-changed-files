@@ -17,11 +17,11 @@ Github action to run eslint on only files that have changed in a pull request wi
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v5.2
         with:
-          config-path: "/path/to/.eslintrc"
-          ignore-path: "/path/to/.eslintignore"
+          config_path: "/path/to/.eslintrc"
+          ignore_path: "/path/to/.eslintignore"
           extensions: "ts,tsx,js,jsx"
-          extra-args: "--max-warnings=0"
-          exclude-path: | # or a single string "generated.tsx" 
+          extra_args: "--max-warnings=0"
+          exclude_path: | # or a single string "generated.tsx" 
             generated.tsx
 ```
 
@@ -31,8 +31,8 @@ Github action to run eslint on only files that have changed in a pull request wi
 |   Input        |    type     |  required     |  default             |  description   |
 |:-------------:|:-----------:|:-------------:|:---------------------:|:--------------:|
 | token         |  `string`   |    `false`    | `${{ github.token }}` | [GITHUB_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
-| config-path   |  `string`   |    `false`    |  `'.eslintrc'`        | [eslint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)  |
-| ignore-path   |  `string`   |    `false`    |  `''`                 | [eslint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)  |
+| config_path   |  `string`   |    `false`    |  `'.eslintrc'`        | [eslint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)  |
+| ignore_path   |  `string`   |    `false`    |  `''`                 | [eslint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)  |
 | extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
-| extra-args    |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
-| exclude-path  |  `string or string[]`   |    `false`    |  `''`                 | A single path or a List of files to exclude <br> which match the listed extensions.
+| extra_args    |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
+| exclude_path  |  `string or string[]`   |    `false`    |  `''`                 | A single path or a List of files to exclude <br> which match the listed extensions.
