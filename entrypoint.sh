@@ -12,7 +12,7 @@ CONFIG_PATH=$2
 IGNORE_PATH=$3
 EXTENSIONS=${4// /}
 EXTRA_ARGS=$5
-EXCLUDED=()
+EXCLUDED=$(echo "$6" | tr "\n" " " | xargs)
 
 IFS=" " read -r -a EXCLUDED <<< "$(echo "$6" | tr "\n" " ")"
 
