@@ -29,7 +29,7 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
 echo "Using head sha ${HEAD_SHA}..."
 
-echo "Retriving modified files..."
+echo "Retrieving modified files..."
 FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 
 if [[ -n "${EXCLUDED}" ]]; then
