@@ -36,3 +36,4 @@ Github action to run eslint on only files that have changed in a pull request wi
 | extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
 | extra_args    |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
 | exclude_path  |  `string or string[]`   |    `false`    |  `''`                 | A single path or a List of files to exclude <br> which match the listed extensions.
+
