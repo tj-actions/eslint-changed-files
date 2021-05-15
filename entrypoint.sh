@@ -15,8 +15,10 @@ CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTENSIONS=${INPUT_EXTENSIONS// /}
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
-EXCLUDED=$(echo "$INPUT_EXCLUDE_PATH" | xargs)
+EXCLUDED=()
 TARGET_BRANCH=${GITHUB_BASE_REF}
+
+IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
@@ -37,7 +39,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo ""
   echo "Excluding files"
   echo "---------------"
-  echo "${EXCLUDED}"
+  printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
   FILES=$(echo "$FILES" | sed -E "s/${EXCLUDED// /|}//g" || true)
 fi
@@ -50,20 +52,22 @@ if [[ -n ${FILES} ]]; then
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
+    echo "::endgroup::"
     exit 0;
   else
     echo ""
     echo "Running ESLint on..."
     echo "--------------------"
-    echo "${CHANGED_FILES// /\n}"
+    printf '%s\n' "${CHANGED_FILES[@]}"
     echo "--------------------"
     echo ""
+    echo "::endgroup::"
     if [[ ! -z ${IGNORE_PATH} ]]; then
-      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" "${EXTRA_ARGS}" "${CHANGED_FILES}"
+      # shellcheck disable=SC2086
+      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     else
-      npx eslint --config="${CONFIG_PATH}" "${EXTRA_ARGS}" "${CHANGED_FILES}"
+      # shellcheck disable=SC2086
+      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     fi
   fi
 fi
-
-echo "::endgroup::"
