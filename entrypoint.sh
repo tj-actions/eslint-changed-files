@@ -40,6 +40,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   for path in "${EXCLUDED[@]}"
   do
     echo "$path"
+    echo ""
   done
   echo "---------------"
   FILES=$(echo "$FILES" | sed -E "s/${EXCLUDED// /|}//g" || true)
@@ -61,6 +62,7 @@ if [[ -n ${FILES} ]]; then
     for path in "${CHANGED_FILES[@]}"
     do
       echo "$path"
+      echo ""
     done
     echo "--------------------"
     echo ""
