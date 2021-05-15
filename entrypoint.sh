@@ -61,9 +61,9 @@ if [[ -n ${FILES} ]]; then
     echo "--------------------"
     echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
-      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" "${EXTRA_ARGS}" $CHANGED_FILES
+      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     else
-      npx eslint --config="${CONFIG_PATH}" "${EXTRA_ARGS}" $CHANGED_FILES
+      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     fi
   fi
 fi
