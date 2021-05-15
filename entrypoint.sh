@@ -61,8 +61,10 @@ if [[ -n ${FILES} ]]; then
     echo "--------------------"
     echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
+      # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     else
+      # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     fi
   fi
