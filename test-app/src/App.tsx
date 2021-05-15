@@ -23,4 +23,6 @@ function App() {
   );
 }
 
+console.log("Test");
+
 export default App;
