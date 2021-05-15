@@ -52,6 +52,7 @@ if [[ -n ${FILES} ]]; then
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
+    echo "::endgroup::"
     exit 0;
   else
     echo ""
@@ -60,6 +61,7 @@ if [[ -n ${FILES} ]]; then
     printf '%s\n' "${CHANGED_FILES[@]}"
     echo "--------------------"
     echo ""
+    echo "::endgroup::"
     if [[ ! -z ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
@@ -69,5 +71,3 @@ if [[ -n ${FILES} ]]; then
     fi
   fi
 fi
-
-echo "::endgroup::"
