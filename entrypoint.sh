@@ -37,7 +37,10 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo ""
   echo "Excluding files"
   echo "---------------"
-  printf '%s\n' "${EXCLUDED[@]}"
+  for path in "${EXCLUDED[@]}"
+  do
+    echo "$path"
+  done
   echo "---------------"
   FILES=$(echo "$FILES" | sed -E "s/${EXCLUDED// /|}//g" || true)
 fi
@@ -55,7 +58,10 @@ if [[ -n ${FILES} ]]; then
     echo ""
     echo "Running ESLint on..."
     echo "--------------------"
-    printf '%s\n' "${CHANGED_FILES[@]}"
+    for path in "${CHANGED_FILES[@]}"
+    do
+      echo "$path"
+    done
     echo "--------------------"
     echo ""
     if [[ ! -z ${IGNORE_PATH} ]]; then
