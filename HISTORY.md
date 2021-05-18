@@ -1,5 +1,17 @@
 # Changelog
 
+## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-18)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.2...v6.3)
+
+**Merged pull requests:**
+
+- Upgraded to v6.1 [\#92](https://github.com/tj-actions/eslint-changed-files/pull/92) ([jackton1](https://github.com/jackton1))
+
+## [v6.2](https://github.com/tj-actions/eslint-changed-files/tree/v6.2) (2021-05-18)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.1...v6.2)
+
 ## [v6.1](https://github.com/tj-actions/eslint-changed-files/tree/v6.1) (2021-05-18)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.1)
