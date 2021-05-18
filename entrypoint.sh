@@ -74,4 +74,7 @@ if [[ -n ${FILES} ]]; then
       npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     fi
   fi
+else
+  echo "Skipping: No files to lint"
+  echo "::endgroup::"
 fi
