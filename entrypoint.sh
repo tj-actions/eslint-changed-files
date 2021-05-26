@@ -42,7 +42,7 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
-  for excluded_path in ${EXCLUDED[@]}
+  for excluded_path in "${EXCLUDED[@]}"
   do
     for changed_file in "${CHANGED_FILES[@]}"
     do
