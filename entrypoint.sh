@@ -16,6 +16,8 @@ IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTENSIONS=${INPUT_EXTENSIONS// /}
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
 EXCLUDED=()
+MODIFIED_FILES=()
+FILES=()
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
 IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
@@ -33,8 +35,7 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 echo "Using head sha ${HEAD_SHA}..."
 
 echo "Retrieving modified files..."
-MODIFIED_FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)
-FILES=()
+IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)"
 
 if [[ -n "${EXCLUDED}" ]]; then
   echo ""
