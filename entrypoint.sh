@@ -62,7 +62,7 @@ if [[ -n "${FILES[*]}" ]]; then
   printf '%s\n' "${FILES[@]}"
   echo "---------------"
   echo "Filtering files with \"${EXTENSIONS}\"... "
-  CHANGED_FILES=$(echo "${FILES[*]}" | grep -E ".(${EXTENSIONS})$" || true)
+  CHANGED_FILES=$(printf '%s\n' "${FILES[@]}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
