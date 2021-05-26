@@ -46,7 +46,8 @@ if [[ -n "${EXCLUDED}" ]]; then
   do
     for file in "${CHANGED_FILES[@]}"
     do
-      if [[ ! "${file}" =~ $path ]]; then
+      PATTERN="^($path*)"
+      if [[ ! "${file}" =~ $PATTERN ]]; then
         FILES+=("$file")
       fi
     done
