@@ -50,7 +50,7 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
     FILE+=$(echo "$changed_file" | grep -E "($EXCLUDED_REGEX)" || true)
   done
 else
-  FILES=$MODIFIED_FILES
+  FILES=${MODIFIED_FILES[*]}
 fi
 
 if [[ -n "${FILES[*]}" ]]; then
