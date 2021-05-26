@@ -47,7 +47,7 @@ if [[ -n "${EXCLUDED}" && -n "$MODIFIED_FILES" ]]; then
   
   for changed_file in "${MODIFIED_FILES[@]}"
   do
-    if [[ ! $changed_file ~= ^"(${EXCLUDED_REGEX})"$ ]]; then
+    if [[ ! $changed_file =~ ^"(${EXCLUDED_REGEX})"$ ]]; then
       echo "${EXCLUDED_REGEX} not in $changed_file"
       FILES+=("$changed_file")
     fi
