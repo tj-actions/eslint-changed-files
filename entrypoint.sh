@@ -51,6 +51,8 @@ if [[ -n "${EXCLUDED}" ]]; then
       fi
     done
   done
+else
+  FILES=$CHANGED_FILES
 fi
 
 FILES=${FILES// /\n}
