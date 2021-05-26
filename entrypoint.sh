@@ -52,7 +52,7 @@ if [[ -n "${EXCLUDED}" ]]; then
     done
   done
 else
-  FILES=$CHANGED_FILES
+  IFS=" " read -r -a FILES <<< "$(echo "$CHANGED_FILES" | xargs)"
 fi
 
 FILES=${FILES// /\n}
