@@ -47,8 +47,8 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
 
   for changed_file in "${MODIFIED_FILES[@]}"
   do
-    if echo "$changed_file" | grep -qiE "($EXCLUDED_REGEX)"; then
-      FILE+=("$changed_file")
+    if -n echo "$changed_file" | grep -qiE "($EXCLUDED_REGEX)"; then
+      FILES+=("$changed_file")
     fi
   done
 else
