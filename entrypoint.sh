@@ -47,18 +47,20 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
 
   for changed_file in "${MODIFIED_FILES[@]}"
   do
-    if [[ ! $changed_file =~ ^($EXCLUDED_REGEX)$ ]]; then
-      echo "${EXCLUDED_REGEX} not in $changed_file"
-      FILES+=("$changed_file")
-    fi
+    FILE+=$(echo "$changed_file" | grep -E "($EXCLUDED_REGEX)" || true)
   done
 else
-  IFS=" " read -r -a FILES <<< "$(echo "$MODIFIED_FILES" | xargs)"
+  FILES=$MODIFIED_FILES
 fi
 
-if [[ -n ${FILES} ]]; then
+if [[ -n "${FILES[*]}" ]]; then
+  echo ""
+  echo "Changed files"
+  echo "---------------"
+  printf '%s\n' "${FILES[@]}"
+  echo "---------------"
   echo "Filtering files with \"${EXTENSIONS}\"... "
-  CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
+  CHANGED_FILES=$(echo "${FILES[*]}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
