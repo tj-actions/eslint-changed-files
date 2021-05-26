@@ -47,7 +47,9 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
 
   for changed_file in "${MODIFIED_FILES[@]}"
   do
-    FILE+=$(echo "$changed_file" | grep -E "($EXCLUDED_REGEX)" || true)
+    if [[ ! "$(echo "$changed_file" | grep -iE "($EXCLUDED_REGEX)")" ]]; then
+      FILE+=("$changed_file")
+    fi
   done
 else
   IFS=" " read -r -a FILES <<< "$(echo "${MODIFIED_FILES[*]}" | xargs)"
