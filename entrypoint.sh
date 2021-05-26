@@ -33,7 +33,7 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 echo "Using head sha ${HEAD_SHA}..."
 
 echo "Retrieving modified files..."
-CHANGED_FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
+MODIFIED_FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
 FILES=()
 
 if [[ -n "${EXCLUDED}" ]]; then
@@ -44,9 +44,10 @@ if [[ -n "${EXCLUDED}" ]]; then
   do
     echo "- $excluded_path"
     
-    for changed_file in "${CHANGED_FILES[@]}"
+    for changed_file in "${MODIFIED_FILES[@]}"
     do
       if test "${changed_file#*$excluded_path}" == "$changed_file"; then
+        echo "$excluded_path not in $changed_file"
         FILES+=("$changed_file")
       fi
     done
