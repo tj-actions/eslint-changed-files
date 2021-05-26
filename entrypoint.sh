@@ -46,7 +46,7 @@ if [[ -n "${EXCLUDED}" ]]; then
     
     for changed_file in "${CHANGED_FILES[@]}"
     do
-      if [[ "$changed_file" != *"$excluded_path"* ]]; then
+      if test "${changed_file#*$excluded_path}" == "$changed_file"; then
         FILES+=("$changed_file")
       fi
     done
