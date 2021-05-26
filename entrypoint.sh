@@ -43,7 +43,7 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
   echo "---------------"
   printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
-  EXCLUDED_REGEX=$(IFS=| ; echo "${EXCLUDED[*]}")
+  EXCLUDED_REGEX=$(IFS="|"; echo "${EXCLUDED[*]}")
 
   for changed_file in "${MODIFIED_FILES[@]}"
   do
