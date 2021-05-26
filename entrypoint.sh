@@ -44,10 +44,10 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   for path in ${EXCLUDED[@]}
   do
-    for file in ${CHANGED_FILES[@]}
+    for file in "${CHANGED_FILES[@]}"
     do
-      if [[ ! "${path}" =~ "${file}" ]]; then
-        FILES+=($file)
+      if [[ ! "${path}" =~ $file ]]; then
+        FILES+=("$file")
       fi
     done
   done
