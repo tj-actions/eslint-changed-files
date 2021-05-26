@@ -41,10 +41,10 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
-  for path in ${EXCLUDED}
+  for path in ${EXCLUDED[@]}
   do
     echo "Skipping file: \"${path}\"..."
-    FILES=$(echo "$FILES" | grep -E "(${path})" || true)
+    FILES=$(echo "$FILES" | sed -E "s/$path//")
   done
 fi
 
