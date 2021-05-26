@@ -43,20 +43,18 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
   echo "---------------"
   printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
-  EXCLUDED_REGEX=$(printf "|%s" "${EXCLUDED[@]}")
-  
+  EXCLUDED_REGEX=${EXCLUDED// /|}
+
   for changed_file in "${MODIFIED_FILES[@]}"
   do
-    if [[ ! $changed_file =~ ^"(${EXCLUDED_REGEX})"$ ]]; then
+    if [[ ! $changed_file =~ ^"($EXCLUDED_REGEX)"$ ]]; then
       echo "${EXCLUDED_REGEX} not in $changed_file"
       FILES+=("$changed_file")
     fi
   done
 else
-  IFS=" " read -r -a FILES <<< "$(echo "$CHANGED_FILES" | xargs)"
+  IFS=" " read -r -a FILES <<< "$(echo "$MODIFIED_FILES" | xargs)"
 fi
-
-FILES=${FILES// /\n}
 
 if [[ -n ${FILES} ]]; then
   echo "Filtering files with \"${EXTENSIONS}\"... "
