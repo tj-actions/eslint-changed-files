@@ -37,7 +37,7 @@ echo "Using head sha ${HEAD_SHA}..."
 echo "Retrieving modified files..."
 IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)"
 
-if [[ -n "${EXCLUDED}" && -n "$MODIFIED_FILES" ]]; then
+if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
   echo ""
   echo "Excluding files"
   echo "---------------"
