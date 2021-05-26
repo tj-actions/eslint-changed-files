@@ -33,7 +33,8 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 echo "Using head sha ${HEAD_SHA}..."
 
 echo "Retrieving modified files..."
-FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
+CHANGED_FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
+FILES=()
 
 if [[ -n "${EXCLUDED}" ]]; then
   echo ""
@@ -43,8 +44,12 @@ if [[ -n "${EXCLUDED}" ]]; then
   echo "---------------"
   for path in ${EXCLUDED[@]}
   do
-    echo "Skipping file: \"${path}\"..."
-    FILES=$(echo "$FILES" | sed -E "s/$path//")
+    for file in "${CHANGED_FILES[@]}"
+    do
+      if [[ ! "${path}" =~ $file ]]; then
+        FILES+=("$file")
+      fi
+    done
   done
 fi
 
