@@ -37,24 +37,21 @@ echo "Using head sha ${HEAD_SHA}..."
 echo "Retrieving modified files..."
 IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)"
 
-if [[ -n "${EXCLUDED}" ]]; then
+if [[ -n "${EXCLUDED}" && -n "$MODIFIED_FILES" ]]; then
   echo ""
   echo "Excluding files"
   echo "---------------"
-  for excluded_path in "${EXCLUDED[@]}"
-  do
-    echo "- $excluded_path"
-    
-    for changed_file in "${MODIFIED_FILES[@]}"
-    do
-      if test "${changed_file#*$excluded_path}" == "$changed_file"; then
-        echo "$excluded_path not in $changed_file"
-        FILES+=("$changed_file")
-      fi
-    done
-  done
-  
+  printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
+  EXCLUDED_REGEX=$(printf "|%s" "${EXCLUDED[@]}")
+  
+  for changed_file in "${MODIFIED_FILES[@]}"
+  do
+    if [[ ! $changed_file ~= ^"(${EXCLUDED_REGEX})"$ ]]; then
+      echo "${EXCLUDED_REGEX} not in $changed_file"
+      FILES+=("$changed_file")
+    fi
+  done
 else
   IFS=" " read -r -a FILES <<< "$(echo "$CHANGED_FILES" | xargs)"
 fi
