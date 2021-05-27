@@ -62,6 +62,7 @@ if [[ -n "${FILES[*]}" ]]; then
   echo "---------------"
   printf '%s\n' "${FILES[@]}"
   echo "---------------"
+  echo ""
   echo "Filtering files with \"${EXTENSIONS}\"... "
   CHANGED_FILES=$(printf '%s\n' "${FILES[@]}" | grep -E ".(${EXTENSIONS})$" || true)
 
