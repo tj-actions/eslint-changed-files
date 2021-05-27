@@ -47,6 +47,7 @@ if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
 
   for changed_file in "${MODIFIED_FILES[@]}"
   do
+    # shellcheck disable=SC2143
     if [[ -z "$(echo "$changed_file" | grep -iE "(${EXCLUDED_REGEX})")" ]]; then
       FILES+=("$changed_file")
     fi
