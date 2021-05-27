@@ -1,11 +1,30 @@
 # Changelog
 
-## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-18)
+## [v6.4](https://github.com/tj-actions/eslint-changed-files/tree/v6.4) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.4)
+
+**Merged pull requests:**
+
+- Update pascalgn/automerge-action action to v0.14.2 [\#107](https://github.com/tj-actions/eslint-changed-files/pull/107) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency typescript to v4.3.2 [\#106](https://github.com/tj-actions/eslint-changed-files/pull/106) ([renovate[bot]](https://github.com/apps/renovate))
+- Fixed bug matching excluded files [\#105](https://github.com/tj-actions/eslint-changed-files/pull/105) ([jackton1](https://github.com/jackton1))
+
+## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-26)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.2...v6.3)
 
 **Merged pull requests:**
 
+- Update entrypoint.sh [\#104](https://github.com/tj-actions/eslint-changed-files/pull/104) ([jackton1](https://github.com/jackton1))
+- Update dependency @types/react to v17.0.8 [\#103](https://github.com/tj-actions/eslint-changed-files/pull/103) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v17.0.7 [\#102](https://github.com/tj-actions/eslint-changed-files/pull/102) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/node from 15.3.1 to 15.6.1 in /test-app [\#101](https://github.com/tj-actions/eslint-changed-files/pull/101) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump peter-evans/create-pull-request from 3.9.2 to 3.10.0 [\#99](https://github.com/tj-actions/eslint-changed-files/pull/99) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Lock file maintenance [\#97](https://github.com/tj-actions/eslint-changed-files/pull/97) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/node to v15.3.1 [\#96](https://github.com/tj-actions/eslint-changed-files/pull/96) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v17.0.6 [\#95](https://github.com/tj-actions/eslint-changed-files/pull/95) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v6.3 [\#94](https://github.com/tj-actions/eslint-changed-files/pull/94) ([jackton1](https://github.com/jackton1))
 - Upgraded to v6.1 [\#92](https://github.com/tj-actions/eslint-changed-files/pull/92) ([jackton1](https://github.com/jackton1))
 
 ## [v6.2](https://github.com/tj-actions/eslint-changed-files/tree/v6.2) (2021-05-18)
