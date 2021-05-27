@@ -33,13 +33,6 @@ jobs:
         run: yarn
         working-directory: test-app
 
-      - name: Run ESLint on changed files
-        uses: ./
-        with:
-          config_path: "test-app/package.json"
-          extensions: "ts,tsx"
-          extra_args: "--max-warnings=0"
-
       - name: Run ESLint on changed files with exclusion
         uses: ./
         with:
@@ -57,3 +50,10 @@ jobs:
           extensions: "ts,tsx"
           extra_args: "--max-warnings=0"
           exclude_path: App.tsx
+
+      - name: Run ESLint on changed files
+        uses: ./
+        with:
+          config_path: "test-app/package.json"
+          extensions: "ts,tsx"
+          extra_args: "--max-warnings=0"

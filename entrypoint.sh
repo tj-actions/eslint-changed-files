@@ -16,6 +16,8 @@ IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTENSIONS=${INPUT_EXTENSIONS// /}
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
 EXCLUDED=()
+MODIFIED_FILES=()
+FILES=()
 TARGET_BRANCH=${GITHUB_BASE_REF}
 
 IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
@@ -33,31 +35,36 @@ HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 echo "Using head sha ${HEAD_SHA}..."
 
 echo "Retrieving modified files..."
-CHANGED_FILES=$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" || true)
-FILES=()
+IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)"
 
-if [[ -n "${EXCLUDED}" ]]; then
+if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
   echo ""
   echo "Excluding files"
   echo "---------------"
   printf '%s\n' "${EXCLUDED[@]}"
   echo "---------------"
-  for path in ${EXCLUDED[@]}
+  EXCLUDED_REGEX=$(IFS="|"; echo "${EXCLUDED[*]}")
+
+  for changed_file in "${MODIFIED_FILES[@]}"
   do
-    for file in "${CHANGED_FILES[@]}"
-    do
-      if [[ ! "${path}" =~ $file ]]; then
-        FILES+=("$file")
-      fi
-    done
+    # shellcheck disable=SC2143
+    if [[ -z "$(echo "$changed_file" | grep -iE "(${EXCLUDED_REGEX})")" ]]; then
+      FILES+=("$changed_file")
+    fi
   done
+else
+  IFS=" " read -r -a FILES <<< "$(echo "${MODIFIED_FILES[*]}" | xargs)"
 fi
 
-FILES=${FILES// /\n}
-
-if [[ -n ${FILES} ]]; then
+if [[ -n "${FILES[*]}" ]]; then
+  echo ""
+  echo "Changed files"
+  echo "---------------"
+  printf '%s\n' "${FILES[@]}"
+  echo "---------------"
+  echo ""
   echo "Filtering files with \"${EXTENSIONS}\"... "
-  CHANGED_FILES=$(echo "${FILES}" | grep -E ".(${EXTENSIONS})$" || true)
+  CHANGED_FILES=$(printf '%s\n' "${FILES[@]}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
