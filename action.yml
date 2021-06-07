@@ -6,6 +6,10 @@ inputs:
     description: 'GITHUB_TOKEN or a repo scoped PAT'
     required: true
     default: ${{ github.token }}
+  ref:
+    description: 'The target branch of the pull request in a workflow run or the current branch to check for changes since the first commit.'
+    required: true
+    default: ${{ github.base_ref }}
   config_path:
     description: Eslint configuration path
     required: false
@@ -29,6 +33,6 @@ inputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
-branding: 
+branding:
   icon: check-square
   color: white

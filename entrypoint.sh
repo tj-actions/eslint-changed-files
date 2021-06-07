@@ -18,7 +18,7 @@ EXTRA_ARGS=$INPUT_EXTRA_ARGS
 EXCLUDED=()
 MODIFIED_FILES=()
 FILES=()
-TARGET_BRANCH=${GITHUB_BASE_REF}
+TARGET_BRANCH=$INPUT_REF
 
 IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
@@ -27,12 +27,22 @@ EXTENSIONS=${EXTENSIONS//,/|}
 git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 echo "Getting base branch..."
-git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
-
-echo "Getting head sha..."
-HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
+if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
+  git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
+  echo "Getting head sha..."
+  HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
+else
+  git pull --depth=1
+  HEAD_SHA=$(git rev-list "^$GITHUB_BASE_REF" "$TARGET_BRANCH" | tail -n 1 || true)
+fi
 
 echo "Using head sha ${HEAD_SHA}..."
+
+if [[ -z $HEAD_SHA ]]; then
+  echo "Error determining the HEAD SHA of: $TARGET_BRANCH"
+  exit 1
+fi
+
 
 echo "Retrieving modified files..."
 IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)"
@@ -78,7 +88,7 @@ if [[ -n "${FILES[*]}" ]]; then
     echo "--------------------"
     echo ""
     echo "::endgroup::"
-    if [[ ! -z ${IGNORE_PATH} ]]; then
+    if [[ -n ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
     else
