@@ -27,16 +27,16 @@ EXTENSIONS=${EXTENSIONS//,/|}
 git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 echo "Getting base branch..."
+echo "Getting head sha..."
 if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
   git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
-  echo "Getting head sha..."
   HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 else
   git pull --depth=1
   HEAD_SHA=$(git rev-list "^$GITHUB_BASE_REF" "$TARGET_BRANCH" | tail -n 1 || true)
 fi
 
-echo "Using head sha ${HEAD_SHA}..."
+echo "Using head sha ${HEAD_SHA} on ${TARGET_BRANCH}..."
 
 if [[ -z $HEAD_SHA ]]; then
   echo "Error determining the HEAD SHA of: $TARGET_BRANCH"
