@@ -32,7 +32,7 @@ if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
   git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 else
-  git pull
+  git fetch origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   HEAD_SHA=$(git rev-list "^$GITHUB_BASE_REF" "$TARGET_BRANCH" | tail -n 1 || true)
 fi
 
