@@ -32,8 +32,14 @@ if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
   git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 else
-  git fetch origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
-  HEAD_SHA=$(git rev-list "^$GITHUB_BASE_REF" "$TARGET_BRANCH" | tail -n 1 || true)
+  git fetch --depth=1 origin "$GITHUB_BASE_REF":"$GITHUB_BASE_REF"
+  HEAD_SHA=$(git log "$GITHUB_BASE_REF".."$TARGET_BRANCH" --oneline | tail -1 | cut -d' ' -f 1 2>&1) && exit_status=$? || exit_status=$?
+
+  if [[ $exit_status -ne 0 ]]; then
+    echo "::warning::Unable to determine the heed sha"
+    echo "::warning::You seem to be missing 'fetch-depth: 0'"
+    exit 1
+  fi
 fi
 
 echo "Using head sha ${HEAD_SHA} on ${TARGET_BRANCH}..."
