@@ -31,23 +31,23 @@ echo "Getting head sha..."
 if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
   git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
+
+  if [[ -z $HEAD_SHA ]]; then
+    echo "Error determining the HEAD SHA of: $TARGET_BRANCH"
+    exit 1
+  fi
 else
   git fetch --depth=1 origin "$GITHUB_BASE_REF":"$GITHUB_BASE_REF"
-  HEAD_SHA=$(git log "$GITHUB_BASE_REF".."$GITHUB_REF" --oneline | tail -1 | cut -d' ' -f 1 2>&1) && exit_status=$? || exit_status=$?
+  HEAD_SHA=$(git log "$GITHUB_BASE_REF".."$GITHUB_REF" --oneline | tail -1 | cut -d' ' -f 1 || true)
 
-  if [[ $exit_status -ne 0 ]]; then
-    echo "::warning::Unable to determine the heed sha"
+  if [[ -z $HEAD_SHA ]]; then
+    echo "::warning::Unable to determine the head sha"
     echo "::warning::You seem to be missing 'fetch-depth: 0'"
     exit 1
   fi
 fi
 
 echo "Using head sha ${HEAD_SHA} on ${TARGET_BRANCH}..."
-
-if [[ -z $HEAD_SHA ]]; then
-  echo "Error determining the HEAD SHA of: $TARGET_BRANCH"
-  exit 1
-fi
 
 
 echo "Retrieving modified files..."
