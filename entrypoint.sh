@@ -9,7 +9,6 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
-
 GITHUB_TOKEN=$INPUT_TOKEN
 CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
@@ -28,6 +27,7 @@ git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITOR
 
 echo "Getting base branch..."
 echo "Getting head sha..."
+
 if [[ $TARGET_BRANCH == "$GITHUB_BASE_REF" ]]; then
   git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
@@ -38,7 +38,9 @@ if [[ $TARGET_BRANCH == "$GITHUB_BASE_REF" ]]; then
   fi
 else
   git fetch --depth=1 origin "$GITHUB_BASE_REF":"$GITHUB_BASE_REF"
-  HEAD_SHA=$(git log "$GITHUB_BASE_REF" "$TARGET_BRANCH" --oneline | tail -1 | cut -d' ' -f 1 || true)
+
+  BASE_REF_HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
+  HEAD_SHA=$(git log "$BASE_REF_HEAD_SHA" HEAD --oneline | tail -1 | cut -d' ' -f 1 || true)
 
   if [[ -z $HEAD_SHA ]]; then
     echo "::warning::Unable to determine the head sha"
