@@ -28,7 +28,7 @@ git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITOR
 
 echo "Getting base branch..."
 echo "Getting head sha..."
-if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
+if [[ $TARGET_BRANCH == "$GITHUB_BASE_REF" ]]; then
   git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
 
@@ -38,7 +38,7 @@ if [[ $TARGET_BRANCH -eq $GITHUB_BASE_REF ]]; then
   fi
 else
   git fetch --depth=1 origin "$GITHUB_BASE_REF":"$GITHUB_BASE_REF"
-  HEAD_SHA=$(git log $GITHUB_BASE_REF..$GITHUB_REF --oneline | tail -1 | cut -d' ' -f 1 || true)
+  HEAD_SHA=$(git log "$GITHUB_BASE_REF".."$GITHUB_HEAD_REF" --oneline | tail -1 | cut -d' ' -f 1 || true)
 
   if [[ -z $HEAD_SHA ]]; then
     echo "::warning::Unable to determine the head sha"
