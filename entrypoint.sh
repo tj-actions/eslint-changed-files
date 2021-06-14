@@ -38,10 +38,8 @@ if [[ $TARGET_BRANCH == "$GITHUB_BASE_REF" ]]; then
   fi
 else
   git fetch --depth=1 origin "$GITHUB_BASE_REF":"$GITHUB_BASE_REF"
-
-  BASE_REF_HEAD_SHA=$(git rev-parse "${GITHUB_BASE_REF}" || true)
   
-  HEAD_SHA=$(git log "$BASE_REF_HEAD_SHA" HEAD --oneline | tail -1 | cut -d' ' -f 1 || true)
+  HEAD_SHA=$(git log "$GITHUB_BASE_REF" HEAD --oneline | tail -1 | cut -d' ' -f 1 || true)
 
   if [[ -z $HEAD_SHA ]]; then
     echo "::warning::Unable to determine the head sha"
