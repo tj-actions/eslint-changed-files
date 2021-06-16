@@ -45,7 +45,10 @@ jobs:
             App.tsx
             reportWebVitals.ts
       
-      - name: Run ESLint on changed files with exclusion single file
+      - run: |
+          echo "${{ toJSON(github.context.payload) }}"
+
+      - name: Run ESLint on changed files with  single file exclusion with head_ref
         uses: ./
         with:
           config_path: "test-app/package.json"
@@ -54,7 +57,7 @@ jobs:
           ref: ${{ github.head_ref }}
           exclude_path: App.tsx
 
-      - name: Run ESLint on changed files with exclusion single file
+      - name: Run ESLint on changed files with single file exclusion
         uses: ./
         with:
           config_path: "test-app/package.json"
