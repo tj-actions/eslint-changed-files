@@ -46,7 +46,7 @@ jobs:
             reportWebVitals.ts
       
       - run: |
-          echo "${{ toJSON(github.context) }}"
+          echo "${{ toJSON(github) }}"
 
       - name: Run ESLint on changed files with  single file exclusion with head_ref
         uses: ./
