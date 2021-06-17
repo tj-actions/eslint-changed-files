@@ -1,21 +1,62 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/eslint-changed-files/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.5...HEAD)
+
+**Implemented enhancements:**
+
+- \[BUG\] Changed files from Pull Request wrong [\#117](https://github.com/tj-actions/eslint-changed-files/issues/117)
+
+## [v6.5](https://github.com/tj-actions/eslint-changed-files/tree/v6.5) (2021-06-17)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.5)
+
+**Merged pull requests:**
+
+- Updated to include a message of the sha used [\#136](https://github.com/tj-actions/eslint-changed-files/pull/136) ([jackton1](https://github.com/jackton1))
+- Update dependency typescript to v4.3.3 [\#135](https://github.com/tj-actions/eslint-changed-files/pull/135) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump alpine from 3.13.5 to 3.14.0 [\#134](https://github.com/tj-actions/eslint-changed-files/pull/134) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Lock file maintenance [\#132](https://github.com/tj-actions/eslint-changed-files/pull/132) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @testing-library/jest-dom to v5.14.1 [\#131](https://github.com/tj-actions/eslint-changed-files/pull/131) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @testing-library/jest-dom to v5.14.0 [\#130](https://github.com/tj-actions/eslint-changed-files/pull/130) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#129](https://github.com/tj-actions/eslint-changed-files/pull/129) ([jackton1](https://github.com/jackton1))
+- Update dependency @types/react to v17.0.11 [\#128](https://github.com/tj-actions/eslint-changed-files/pull/128) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v17.0.10 [\#127](https://github.com/tj-actions/eslint-changed-files/pull/127) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/react-dom from 17.0.6 to 17.0.7 in /test-app [\#125](https://github.com/tj-actions/eslint-changed-files/pull/125) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump @types/node from 15.12.1 to 15.12.2 in /test-app [\#124](https://github.com/tj-actions/eslint-changed-files/pull/124) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump @types/node from 15.12.0 to 15.12.1 in /test-app [\#122](https://github.com/tj-actions/eslint-changed-files/pull/122) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Lock file maintenance [\#121](https://github.com/tj-actions/eslint-changed-files/pull/121) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/node from 15.9.0 to 15.12.0 in /test-app [\#120](https://github.com/tj-actions/eslint-changed-files/pull/120) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update dependency @testing-library/jest-dom to v5.13.0 [\#119](https://github.com/tj-actions/eslint-changed-files/pull/119) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/node from 15.6.1 to 15.9.0 in /test-app [\#118](https://github.com/tj-actions/eslint-changed-files/pull/118) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update dependency web-vitals to v2.0.1 [\#116](https://github.com/tj-actions/eslint-changed-files/pull/116) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react-dom to v17.0.6 [\#115](https://github.com/tj-actions/eslint-changed-files/pull/115) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v17.0.9 [\#114](https://github.com/tj-actions/eslint-changed-files/pull/114) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency web-vitals to v2 [\#113](https://github.com/tj-actions/eslint-changed-files/pull/113) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#112](https://github.com/tj-actions/eslint-changed-files/pull/112) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#111](https://github.com/tj-actions/eslint-changed-files/pull/111) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/sync-release-version action to v8.7 [\#110](https://github.com/tj-actions/eslint-changed-files/pull/110) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/cache action to v2.1.6 [\#109](https://github.com/tj-actions/eslint-changed-files/pull/109) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v6.4 [\#108](https://github.com/tj-actions/eslint-changed-files/pull/108) ([jackton1](https://github.com/jackton1))
+
 ## [v6.4](https://github.com/tj-actions/eslint-changed-files/tree/v6.4) (2021-05-27)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.4)
+
+## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.3)
+
+## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.2...v6)
 
 **Merged pull requests:**
 
 - Update pascalgn/automerge-action action to v0.14.2 [\#107](https://github.com/tj-actions/eslint-changed-files/pull/107) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency typescript to v4.3.2 [\#106](https://github.com/tj-actions/eslint-changed-files/pull/106) ([renovate[bot]](https://github.com/apps/renovate))
 - Fixed bug matching excluded files [\#105](https://github.com/tj-actions/eslint-changed-files/pull/105) ([jackton1](https://github.com/jackton1))
-
-## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-26)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.2...v6.3)
-
-**Merged pull requests:**
-
 - Update entrypoint.sh [\#104](https://github.com/tj-actions/eslint-changed-files/pull/104) ([jackton1](https://github.com/jackton1))
 - Update dependency @types/react to v17.0.8 [\#103](https://github.com/tj-actions/eslint-changed-files/pull/103) ([renovate[bot]](https://github.com/apps/renovate))
 - Update dependency @types/react to v17.0.7 [\#102](https://github.com/tj-actions/eslint-changed-files/pull/102) ([renovate[bot]](https://github.com/apps/renovate))
@@ -33,7 +74,7 @@
 
 ## [v6.1](https://github.com/tj-actions/eslint-changed-files/tree/v6.1) (2021-05-18)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.1)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v5.2...v6.1)
 
 **Merged pull requests:**
 
@@ -42,16 +83,9 @@
 - Lock file maintenance [\#89](https://github.com/tj-actions/eslint-changed-files/pull/89) ([renovate[bot]](https://github.com/apps/renovate))
 - Update cirrus-actions/rebase action to v1.5 [\#88](https://github.com/tj-actions/eslint-changed-files/pull/88) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v6 [\#87](https://github.com/tj-actions/eslint-changed-files/pull/87) ([jackton1](https://github.com/jackton1))
+- Update to list all excluded files on a new line [\#86](https://github.com/tj-actions/eslint-changed-files/pull/86) ([jackton1](https://github.com/jackton1))
 - Update dependency @types/node to v15.3.0 [\#85](https://github.com/tj-actions/eslint-changed-files/pull/85) ([renovate[bot]](https://github.com/apps/renovate))
 - Update README.md [\#84](https://github.com/tj-actions/eslint-changed-files/pull/84) ([jackton1](https://github.com/jackton1))
-
-## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-15)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v5.2...v6)
-
-**Merged pull requests:**
-
-- Update to list all excluded files on a new line [\#86](https://github.com/tj-actions/eslint-changed-files/pull/86) ([jackton1](https://github.com/jackton1))
 - Updated the output message. [\#83](https://github.com/tj-actions/eslint-changed-files/pull/83) ([jackton1](https://github.com/jackton1))
 - Update dependency @testing-library/react to v11.2.7 [\#82](https://github.com/tj-actions/eslint-changed-files/pull/82) ([renovate[bot]](https://github.com/apps/renovate))
 - Switch from positional arguments to INPUT\_\* [\#81](https://github.com/tj-actions/eslint-changed-files/pull/81) ([jackton1](https://github.com/jackton1))
