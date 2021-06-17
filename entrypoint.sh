@@ -26,16 +26,41 @@ EXTENSIONS=${EXTENSIONS//,/|}
 
 git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
-echo "Getting base branch..."
-git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
+echo "Getting HEAD info..."
 
-echo "Getting head sha..."
-HEAD_SHA=$(git rev-parse "${TARGET_BRANCH}" || true)
+if [[ -z $GITHUB_SHA ]]; then
+  CURR_SHA=$(git rev-parse HEAD 2>&1) && exit_status=$? || exit_status=$?
+else
+  CURR_SHA=$GITHUB_SHA
+fi
 
-echo "Using head sha ${HEAD_SHA}..."
+if [[ $exit_status -ne 0 ]]; then
+  echo "::warning::Unable to determine the current head sha"
+  exit 1
+fi
 
-echo "Retrieving modified files..."
-IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "${HEAD_SHA}" | xargs || true)"
+if [[ -z $GITHUB_BASE_REF ]]; then
+  PREV_SHA=$(git rev-parse HEAD^1 2>&1) && exit_status=$? || exit_status=$?
+  
+  if [[ $exit_status -ne 0 ]]; then
+    echo "::warning::Unable to determine the previous commit sha"
+    echo "::warning::You seem to be missing 'fetch-depth: 0' or 'fetch-depth: 2'. See https://github.com/tj-actions/changed-files#usage"
+    exit 1
+  fi
+else
+  TARGET_BRANCH=${GITHUB_BASE_REF}
+  git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
+  PREV_SHA=$(git rev-parse "${TARGET_BRANCH}" 2>&1) && exit_status=$? || exit_status=$?
+  
+  if [[ $exit_status -ne 0 ]]; then
+    echo "::warning::Unable to determine the base ref sha for ${TARGET_BRANCH}"
+    exit 1
+  fi
+fi
+
+echo "Retrieving changes between $PREV_SHA → $CURR_SHA"
+
+IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "$PREV_SHA" "$CURR_SHA" | xargs || true)"
 
 if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
   echo ""
