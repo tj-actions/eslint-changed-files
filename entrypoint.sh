@@ -58,7 +58,7 @@ else
   fi
 fi
 
-echo "Retrieving changes between $PREV_SHA ($TARGET_BRANCH) → $CURR_SHA ($GITHUB_HEAD_REF)"
+echo "Retrieving changes between $PREV_SHA ($TARGET_BRANCH) ← $CURR_SHA ($GITHUB_HEAD_REF)"
 
 IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "$PREV_SHA" "$CURR_SHA" | xargs || true)"
 
