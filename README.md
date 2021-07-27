@@ -4,6 +4,8 @@
 
 Github action to run eslint on only files that have changed in a pull request with support for excluding generated files.
 
+
+
 ```yml
 ...:
     runs-on: ubuntu-latest
