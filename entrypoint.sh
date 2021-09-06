@@ -111,7 +111,7 @@ if [[ -n "${FILES[*]}" ]]; then
         -name="eslint" \
         -reporter="github-pr-review" \
         -filter-mode="added" \
-        -fail-on-error="true" \
+        -fail-on-error="false" \
         -level="error" && exit_status=$? || exit_status=$?
     else
       # shellcheck disable=SC2086
@@ -119,7 +119,7 @@ if [[ -n "${FILES[*]}" ]]; then
         -name="eslint" \
         -reporter="github-pr-review" \
         -filter-mode="added" \
-        -fail-on-error="true" \
+        -fail-on-error="false" \
         -level="error" && exit_status=$? || exit_status=$?
     fi
     
