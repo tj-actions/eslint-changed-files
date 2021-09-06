@@ -112,7 +112,7 @@ if [[ -n "${FILES[*]}" ]]; then
         -reporter="github-pr-review" \
         -filter-mode="added" \
         -fail-on-error="true" \
-        -level="error"
+        -level="error" && exit_status=$? || exit_status=$?
     else
       # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
@@ -120,7 +120,12 @@ if [[ -n "${FILES[*]}" ]]; then
         -reporter="github-pr-review" \
         -filter-mode="added" \
         -fail-on-error="true" \
-        -level="error"
+        -level="error" && exit_status=$? || exit_status=$?
+    fi
+    
+    if [[ $exit_status -ne 0 ]]; then
+      echo "::warning::Error running eslint."
+      exit 1
     fi
   fi
 else
