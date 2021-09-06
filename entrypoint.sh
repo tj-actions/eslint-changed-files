@@ -108,19 +108,17 @@ if [[ -n "${FILES[*]}" ]]; then
     if [[ ! -z ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
-        -name="eslint" \
-        -reporter="github-pr-review" \
-        -filter-mode="added" \
-        -fail-on-error="false" \
-        -level="error" && exit_status=$? || exit_status=$?
+        -name=eslint \
+        -reporter=github-pr-review \
+        -filter-mode=nofilter \
+        -fail-on-error && exit_status=$? || exit_status=$?
     else
       # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
-        -name="eslint" \
-        -reporter="github-pr-review" \
-        -filter-mode="added" \
-        -fail-on-error="false" \
-        -level="error" && exit_status=$? || exit_status=$?
+        -name=eslint \
+        -reporter=github-pr-review \
+        -filter-mode=nofilter \
+        -fail-on-error && exit_status=$? || exit_status=$?
     fi
     
     if [[ $exit_status -ne 0 ]]; then
