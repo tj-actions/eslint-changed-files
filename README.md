@@ -7,6 +7,7 @@ Github action to run eslint on only files that have changed in a pull request wi
 ```yml
 ...:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
