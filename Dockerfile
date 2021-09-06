@@ -8,7 +8,9 @@ RUN apk add bash git wget openssh grep npm sed
 
 RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- "${REVIEWDOG_VERSION}"
 
+COPY formatter.js /formatter.js
 COPY entrypoint.sh /entrypoint.sh
+
 RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
