@@ -9,8 +9,10 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
-
+ESLINT_FORMATTER="/formatter.js"
 GITHUB_TOKEN=$INPUT_TOKEN
+# shellcheck disable=SC2034
+export REVIEWDOG_GITHUB_API_TOKEN=$GITHUB_TOKEN
 CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTENSIONS=${INPUT_EXTENSIONS// /}
@@ -105,10 +107,23 @@ if [[ -n "${FILES[*]}" ]]; then
     echo "::endgroup::"
     if [[ ! -z ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
-      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
+      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
+        -name=eslint \
+        -reporter=github-pr-review \
+        -filter-mode=nofilter \
+        -fail-on-error && exit_status=$? || exit_status=$?
     else
       # shellcheck disable=SC2086
-      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
+      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
+        -name=eslint \
+        -reporter=github-pr-review \
+        -filter-mode=nofilter \
+        -fail-on-error && exit_status=$? || exit_status=$?
+    fi
+    
+    if [[ $exit_status -ne 0 ]]; then
+      echo "::warning::Error running eslint."
+      exit 1
     fi
   fi
 else
