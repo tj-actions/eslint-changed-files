@@ -22,7 +22,7 @@ Github action to run eslint on only files that have changed in a pull request wi
       - name: Install
         run: npm ci  # OR: yarn 
       - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v7
+        uses: tj-actions/eslint-changed-files@v7.1
         with:
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
