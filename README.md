@@ -5,6 +5,7 @@
 Github action to run eslint on only files that have changed in a pull request with support for excluding generated files with error reporting.
 
 ## Example
+
 ![Screen Shot 2021-09-06 at 1 15 22 PM](https://user-images.githubusercontent.com/17484350/132248250-6998078b-de5d-453a-8225-f4a6e3793bbe.png)
 
 ## Usage
