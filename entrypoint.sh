@@ -26,7 +26,7 @@ IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
-git remote set-url origin "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+git remote add temp_eslint_changed_files "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}"
 
 echo "Getting HEAD info..."
 
@@ -130,3 +130,5 @@ else
   echo "Skipping: No files to lint"
   echo "::endgroup::"
 fi
+
+git remote remove temp_eslint_changed_files
