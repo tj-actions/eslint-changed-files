@@ -81,6 +81,18 @@ else
   IFS=" " read -r -a FILES <<< "$(echo "${MODIFIED_FILES[*]}" | xargs)"
 fi
 
+
+TEMP_PATH="$(mktemp -d)"
+PATH="${TEMP_PATH}:$PATH"
+REVIEWDOG_VERSION="v0.13.0"
+ESLINT_FORMATTER="${GITHUB_ACTION_PATH}/formatter.js"
+
+export REVIEWDOG_GITHUB_API_TOKEN="${GITHUB_TOKEN}"
+
+echo '🐶 Installing reviewdog ... https://github.com/reviewdog/reviewdog'
+curl -sfL https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- -b "${TEMP_PATH}" "${REVIEWDOG_VERSION}" 2>&1
+
+
 if [[ -n "${FILES[*]}" ]]; then
   echo ""
   echo "Changed files"
@@ -105,10 +117,20 @@ if [[ -n "${FILES[*]}" ]]; then
     echo "::endgroup::"
     if [[ ! -z ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
-      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
+      npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
+        -name="eslint" \
+        -reporter="github-pr-review" \
+        -filter-mode="added" \
+        -fail-on-error="true" \
+        -level="error"
     else
       # shellcheck disable=SC2086
-      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} $CHANGED_FILES
+      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
+        -name="eslint" \
+        -reporter="github-pr-review" \
+        -filter-mode="added" \
+        -fail-on-error="true" \
+        -level="error"
     fi
   fi
 else
