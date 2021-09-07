@@ -51,7 +51,7 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   fi
 else
   TARGET_BRANCH=${GITHUB_BASE_REF}
-  git fetch --depth=1 origin "${TARGET_BRANCH}":"${TARGET_BRANCH}"
+  git fetch --depth=1 temp_eslint_changed_files "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   PREV_SHA=$(git rev-parse "${TARGET_BRANCH}" 2>&1) && exit_status=$? || exit_status=$?
   
   if [[ $exit_status -ne 0 ]]; then
