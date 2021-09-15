@@ -32,6 +32,7 @@ Github action to run eslint on only files that have changed in a pull request wi
             generated.tsx
 ```
 
+
 ## Inputs
 
 |   Input        |    type     |  required     |  default             |  description   |
