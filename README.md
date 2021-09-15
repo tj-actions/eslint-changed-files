@@ -45,6 +45,7 @@ Github action to run eslint on only files that have changed in a pull request wi
 
 *   Free software: [MIT license](LICENSE)
 
+
 If you feel generous and want to show some extra appreciation:
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
