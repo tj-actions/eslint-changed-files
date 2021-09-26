@@ -29,7 +29,7 @@ EXTENSIONS=${EXTENSIONS//,/|}
 
 SERVER_URL=$(echo "$GITHUB_SERVER_URL" | awk -F/ '{print $3}')
 
-git remote add temp_eslint_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}"
+git remote add temp_eslint_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}" || true
 
 echo "Getting HEAD info..."
 
