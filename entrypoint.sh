@@ -26,7 +26,10 @@ IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
-git remote add temp_eslint_changed_files "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" || true
+
+SERVER_URL=$(echo "$GITHUB_SERVER_URL" | awk -F/ '{print $3}')
+
+git remote add temp_eslint_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}"
 
 echo "Getting HEAD info..."
 
@@ -38,7 +41,8 @@ fi
 
 if [[ $exit_status -ne 0 ]]; then
   echo "::warning::Unable to determine the current head sha"
-  exit 1
+  git remote remove temp_eslint_changed_files
+  exit 1;
 fi
 
 if [[ -z $GITHUB_BASE_REF ]]; then
@@ -47,7 +51,8 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   if [[ $exit_status -ne 0 ]]; then
     echo "::warning::Unable to determine the previous commit sha"
     echo "::warning::You seem to be missing 'fetch-depth: 0' or 'fetch-depth: 2'. See https://github.com/tj-actions/changed-files#usage"
-    exit 1
+    git remote remove temp_eslint_changed_files
+    exit 1;
   fi
 else
   TARGET_BRANCH=${GITHUB_BASE_REF}
@@ -56,7 +61,8 @@ else
   
   if [[ $exit_status -ne 0 ]]; then
     echo "::warning::Unable to determine the base ref sha for ${TARGET_BRANCH}"
-    exit 1
+    git remote remove temp_eslint_changed_files
+    exit 1;
   fi
 fi
 
@@ -96,6 +102,7 @@ if [[ -n "${FILES[*]}" ]]; then
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
     echo "::endgroup::"
+    git remote remove temp_eslint_changed_files
     exit 0;
   else
     echo ""
@@ -123,12 +130,13 @@ if [[ -n "${FILES[*]}" ]]; then
     
     if [[ $exit_status -ne 0 ]]; then
       echo "::warning::Error running eslint."
-      exit 1
+      git remote remove temp_eslint_changed_files
+      exit 1;
     fi
   fi
 else
   echo "Skipping: No files to lint"
   echo "::endgroup::"
+  git remote remove temp_eslint_changed_files
+  exit 0;
 fi
-
-git remote remove temp_eslint_changed_files
