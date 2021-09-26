@@ -26,7 +26,10 @@ IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
-git remote add temp_eslint_changed_files "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}" || true
+
+SERVER_URL=$(echo "$GITHUB_SERVER_URL" | awk -F/ '{print $3}')
+
+git remote add temp_eslint_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}"
 
 echo "Getting HEAD info..."
 
