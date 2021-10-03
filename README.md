@@ -59,3 +59,6 @@ If you feel generous and want to show some extra appreciation:
 # TODO
 
 *   \[ ] Add support for running action on [![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows\&logoColor=white)](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob\_idruns-on)
+
+# Credits
+- https://github.com/reviewdog/reviewdog
