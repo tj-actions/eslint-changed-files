@@ -44,7 +44,7 @@ Github action to run eslint on changed and modified files in a pull request with
 | ignore\_path   |  `string`   |    `false`    |  `''`                 | [eslint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)  |
 | extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
 | extra\_args    |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
-| exclude\_path  |  `string or string[]`   |    `false`    |  `''`                 | A single path or <br> a List of files to exclude <br> which match the <br> listed extensions. <br> *i.e optionally exclude certain changed files* <br> *that shouldn't be passed to eslint.*`
+| exclude\_path  |  `string or string[]`   |    `false`    |  `''`                 | A single path or <br> a List of files to exclude <br> which match the <br> listed extensions. <br> *i.e optionally exclude certain changed files* <br> *that shouldn't be passed to eslint.*\`
 
 *   Free software: [MIT license](LICENSE)
 
