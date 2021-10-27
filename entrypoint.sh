@@ -120,7 +120,6 @@ if [[ -n "${FILES[*]}" ]]; then
     printf '%s\n' "${CHANGED_FILES[@]}"
     echo "--------------------"
     echo ""
-    echo "::endgroup::"
     if [[ ! -z ${IGNORE_PATH} ]]; then
       echo "Using ignore path: $IGNORE_PATH"
       # shellcheck disable=SC2086
@@ -137,6 +136,7 @@ if [[ -n "${FILES[*]}" ]]; then
         -filter-mode=nofilter \
         -fail-on-error && exit_status=$? || exit_status=$?
     fi
+    echo "::endgroup::"
     
     if [[ $exit_status -ne 0 ]]; then
       echo "::warning::Error running eslint."
