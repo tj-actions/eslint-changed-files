@@ -113,6 +113,7 @@ if [[ -n "${FILES[*]}" ]]; then
     echo ""
     echo "::endgroup::"
     if [[ ! -z ${IGNORE_PATH} ]]; then
+      echo "Using ignore path: $IGNORE_PATH"
       # shellcheck disable=SC2086
       npx eslint --config="${CONFIG_PATH}" --ignore-path "${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
         -name=eslint \
