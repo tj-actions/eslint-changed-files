@@ -26,6 +26,10 @@ inputs:
     description: String or list of files to exclude entirely
     required: false
     default: ''
+  working-directory:
+    description: Working directory or project root
+    required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
