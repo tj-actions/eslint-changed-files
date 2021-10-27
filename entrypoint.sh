@@ -26,17 +26,26 @@ IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
-
 SERVER_URL=$(echo "$GITHUB_SERVER_URL" | awk -F/ '{print $3}')
 
-git remote add temp_eslint_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}"
+echo "Setting up 'temp_eslint_changed_files' remote..."
+
+git ls-remote --exit-code temp_eslint_changed_files 1>/dev/null 2>&1 && exit_status=$? || exit_status=$?
+
+if [[ $exit_status -ne 0 ]]; then
+  echo "No 'temp_eslint_changed_files' remote found"
+  echo "Creating 'temp_eslint_changed_files' remote..."
+  git remote add temp_eslint_changed_files "https://${INPUT_TOKEN}@${SERVER_URL}/${GITHUB_REPOSITORY}"
+else
+  echo "Found 'temp_eslint_changed_files' remote"
+fi
 
 echo "Getting HEAD info..."
 
 if [[ -z $GITHUB_SHA ]]; then
   CURR_SHA=$(git rev-parse HEAD 2>&1) && exit_status=$? || exit_status=$?
 else
-  CURR_SHA=$GITHUB_SHA
+  CURR_SHA=$GITHUB_SHA && exit_status=$? || exit_status=$?
 fi
 
 if [[ $exit_status -ne 0 ]]; then
