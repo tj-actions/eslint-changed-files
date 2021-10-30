@@ -39,9 +39,6 @@ jobs:
           config_path: "test-app/package.json"
           extensions: "ts,tsx"
           extra_args: "--max-warnings=0"
-          exclude_path: |
-            App.tsx
-            reportWebVitals.ts
 
       - name: Run ESLint on changed files with exclusion single file
         uses: ./
@@ -49,7 +46,7 @@ jobs:
           config_path: "test-app/package.json"
           extensions: "ts,tsx"
           extra_args: "--max-warnings=0"
-          exclude_path: App.tsx
+          ref: ${{ github.head_ref }}
 
       - name: Run ESLint on changed files
         uses: ./
@@ -57,7 +54,7 @@ jobs:
           config_path: "test-app/package.json"
           extensions: "ts,tsx"
           extra_args: "--max-warnings=0"
-          
+
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
         with:
