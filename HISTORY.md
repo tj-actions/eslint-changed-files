@@ -1,12 +1,25 @@
 # Changelog
 
-## [v7.4](https://github.com/tj-actions/eslint-changed-files/tree/v7.4) (2021-10-27)
+## [v8](https://github.com/tj-actions/eslint-changed-files/tree/v8) (2021-10-31)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v7.3...v7.4)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v7.4...v8)
 
 **Implemented enhancements:**
 
+- \[Feature\] Remove redundant `exclude_path` input [\#316](https://github.com/tj-actions/eslint-changed-files/issues/316)
+- \[Feature\] Support linting all files in the repository [\#296](https://github.com/tj-actions/eslint-changed-files/issues/296)
 - \[Feature\] Document need for `exclude_path` input [\#270](https://github.com/tj-actions/eslint-changed-files/issues/270)
+
+**Merged pull requests:**
+
+- Add support for running eslint on all files [\#321](https://github.com/tj-actions/eslint-changed-files/pull/321) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#320](https://github.com/tj-actions/eslint-changed-files/pull/320) ([jackton1](https://github.com/jackton1))
+- Removed unused exclude\_path input. [\#319](https://github.com/tj-actions/eslint-changed-files/pull/319) ([jackton1](https://github.com/jackton1))
+- Upgraded to v7.4 [\#317](https://github.com/tj-actions/eslint-changed-files/pull/317) ([jackton1](https://github.com/jackton1))
+
+## [v7.4](https://github.com/tj-actions/eslint-changed-files/tree/v7.4) (2021-10-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v7.3...v7.4)
 
 **Closed issues:**
 
@@ -230,7 +243,7 @@
 
 ## [v6.5](https://github.com/tj-actions/eslint-changed-files/tree/v6.5) (2021-06-17)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.5)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.5)
 
 **Merged pull requests:**
 
@@ -260,13 +273,13 @@
 - Update actions/cache action to v2.1.6 [\#109](https://github.com/tj-actions/eslint-changed-files/pull/109) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v6.4 [\#108](https://github.com/tj-actions/eslint-changed-files/pull/108) ([jackton1](https://github.com/jackton1))
 
-## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.3)
-
 ## [v6.4](https://github.com/tj-actions/eslint-changed-files/tree/v6.4) (2021-05-27)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.4)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.4)
+
+## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.3)
 
 ## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-27)
 
