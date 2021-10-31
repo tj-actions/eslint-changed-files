@@ -46,7 +46,6 @@ jobs:
           config_path: "test-app/package.json"
           extensions: "ts,tsx"
           extra_args: "--max-warnings=0"
-          ref: ${{ github.head_ref }}
 
       - name: Run ESLint on changed files
         uses: ./
