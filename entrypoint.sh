@@ -17,12 +17,8 @@ CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTENSIONS=${INPUT_EXTENSIONS// /}
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
-EXCLUDED=()
 MODIFIED_FILES=()
-FILES=()
 TARGET_BRANCH=${GITHUB_BASE_REF}
-
-IFS=" " read -r -a EXCLUDED <<< "$(echo "$INPUT_EXCLUDE_PATH" | xargs)"
 
 EXTENSIONS=${EXTENSIONS//,/|}
 
@@ -56,7 +52,7 @@ fi
 
 if [[ -z $GITHUB_BASE_REF ]]; then
   PREV_SHA=$(git rev-parse HEAD^1 2>&1) && exit_status=$? || exit_status=$?
-  
+
   if [[ $exit_status -ne 0 ]]; then
     echo "::warning::Unable to determine the previous commit sha"
     echo "::warning::You seem to be missing 'fetch-depth: 0' or 'fetch-depth: 2'. See https://github.com/tj-actions/changed-files#usage"
@@ -67,7 +63,7 @@ else
   TARGET_BRANCH=${GITHUB_BASE_REF}
   git fetch --depth=1 temp_eslint_changed_files "${TARGET_BRANCH}":"${TARGET_BRANCH}"
   PREV_SHA=$(git rev-parse "${TARGET_BRANCH}" 2>&1) && exit_status=$? || exit_status=$?
-  
+
   if [[ $exit_status -ne 0 ]]; then
     echo "::warning::Unable to determine the base ref sha for ${TARGET_BRANCH}"
     git remote remove temp_eslint_changed_files
@@ -79,34 +75,15 @@ echo "Retrieving changes between $PREV_SHA ($TARGET_BRANCH) → $CURR_SHA ($GITH
 
 IFS=" " read -r -a MODIFIED_FILES <<< "$(git diff --diff-filter=ACM --name-only "$PREV_SHA" "$CURR_SHA" | xargs || true)"
 
-if [[ -n "${EXCLUDED[*]}" && -n "${MODIFIED_FILES[*]}" ]]; then
-  echo ""
-  echo "Excluding files"
-  echo "---------------"
-  printf '%s\n' "${EXCLUDED[@]}"
-  echo "---------------"
-  EXCLUDED_REGEX=$(IFS="|"; echo "${EXCLUDED[*]}")
-
-  for changed_file in "${MODIFIED_FILES[@]}"
-  do
-    # shellcheck disable=SC2143
-    if [[ -z "$(echo "$changed_file" | grep -iE "(${EXCLUDED_REGEX})")" ]]; then
-      FILES+=("$changed_file")
-    fi
-  done
-else
-  IFS=" " read -r -a FILES <<< "$(echo "${MODIFIED_FILES[*]}" | xargs)"
-fi
-
-if [[ -n "${FILES[*]}" ]]; then
+if [[ -n "${MODIFIED_FILES[*]}" ]]; then
   echo ""
   echo "Changed files"
   echo "---------------"
-  printf '%s\n' "${FILES[@]}"
+  printf '%s\n' "${MODIFIED_FILES[@]}"
   echo "---------------"
   echo ""
   echo "Filtering files with \"${EXTENSIONS}\"... "
-  CHANGED_FILES=$(printf '%s\n' "${FILES[@]}" | grep -E ".(${EXTENSIONS})$" || true)
+  CHANGED_FILES=$(printf '%s\n' "${MODIFIED_FILES[@]}" | grep -E ".(${EXTENSIONS})$" || true)
 
   if [[ -z ${CHANGED_FILES} ]]; then
     echo "Skipping: No files to lint"
@@ -137,7 +114,7 @@ if [[ -n "${FILES[*]}" ]]; then
         -fail-on-error && exit_status=$? || exit_status=$?
     fi
     echo "::endgroup::"
-    
+
     if [[ $exit_status -ne 0 ]]; then
       echo "::warning::Error running eslint."
       git remote remove temp_eslint_changed_files
