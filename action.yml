@@ -6,6 +6,9 @@ inputs:
     description: 'GITHUB_TOKEN or a repo scoped PAT'
     required: true
     default: ${{ github.token }}
+  all-files:
+    description: 'Run eslint on all matching files'
+    required: false
   config_path:
     description: Eslint configuration path
     required: false
