@@ -33,6 +33,17 @@ Github action to run eslint on changed and modified files in a pull request with
           extra_args: "--max-warnings=0"
 ```
 
+If you feel generous and want to show some extra appreciation:
+
+Support this project with a :star:
+
+[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
+
+[buymeacoffee]: https://www.buymeacoffee.com/jackton1
+
+[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
+
+
 ## Inputs
 
 |   Input        |    type     |  required     |  default             |  description   |
@@ -45,14 +56,6 @@ Github action to run eslint on changed and modified files in a pull request with
 | all\_files    |  `string`   |    `false`    |  `'true'`             | Run eslint on all matching files                              |
 
 *   Free software: [MIT license](LICENSE)
-
-If you feel generous and want to show some extra appreciation:
-
-[![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
-
-[buymeacoffee]: https://www.buymeacoffee.com/jackton1
-
-[buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 
 # TODO
 
