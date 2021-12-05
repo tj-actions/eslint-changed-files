@@ -6,7 +6,12 @@ on:
 
 jobs:
   eslint:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.platform }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, ubuntu-18.04, windows-2022, windows-2016]
+
     steps:
       - uses: actions/checkout@v2.4.0
 
