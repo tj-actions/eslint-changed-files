@@ -137,9 +137,10 @@ else
 
       if [[ $exit_status -ne 0 ]]; then
         echo "::warning::Error running eslint."
-        git remote remove temp_eslint_changed_files
         exit 1;
       fi
+      
+      git remote remove temp_eslint_changed_files
     fi
   else
     echo "Skipping: No files to lint"
