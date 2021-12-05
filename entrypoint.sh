@@ -9,11 +9,11 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
-wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | sh -s -- "${REVIEWDOG_VERSION}"
+wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | PREFIX=. sh -s -- "${REVIEWDOG_VERSION}"
 
-wget -O /formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js 
+wget -O ./formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js 
 
-ESLINT_FORMATTER="/formatter.js"
+ESLINT_FORMATTER="./formatter.js"
 GITHUB_TOKEN=$INPUT_TOKEN
 # shellcheck disable=SC2034
 export REVIEWDOG_GITHUB_API_TOKEN=$GITHUB_TOKEN
@@ -31,14 +31,14 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ -n ${IGNORE_PATH} ]]; then
     echo "Using ignore path: $IGNORE_PATH"
     # shellcheck disable=SC2086
-    npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
+    npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | ./reviewdog -f=rdjson \
       -name=eslint \
       -reporter=github-pr-review \
       -filter-mode=nofilter \
       -fail-on-error && exit_status=$? || exit_status=$?
   else
     # shellcheck disable=SC2086
-    npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
+    npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | ./reviewdog -f=rdjson \
       -name=eslint \
       -reporter=github-pr-review \
       -filter-mode=nofilter \
@@ -124,14 +124,14 @@ else
       if [[ -n ${IGNORE_PATH} ]]; then
         echo "Using ignore path: $IGNORE_PATH"
         # shellcheck disable=SC2086
-        npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
+        npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | ./reviewdog -f=rdjson \
           -name=eslint \
           -reporter=github-pr-review \
           -filter-mode=nofilter \
           -fail-on-error && exit_status=$? || exit_status=$?
       else
         # shellcheck disable=SC2086
-        npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | reviewdog -f=rdjson \
+        npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" $CHANGED_FILES | ./reviewdog -f=rdjson \
           -name=eslint \
           -reporter=github-pr-review \
           -filter-mode=nofilter \
