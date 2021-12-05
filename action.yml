@@ -46,6 +46,8 @@ runs:
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
         INPUT_EXTENSIONS: ${{ inputs.extensions }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
+        # Custom variables
+        REVIEWDOG_VERSION: v0.13.0
 
 branding:
   icon: check-square
