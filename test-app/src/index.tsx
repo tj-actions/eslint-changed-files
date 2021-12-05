@@ -4,12 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-console.error("blaa")
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  <React.StrictMode>,
   document.getElementById('root')
 );
 
