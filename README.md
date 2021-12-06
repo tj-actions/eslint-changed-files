@@ -7,7 +7,6 @@
 
 # eslint-changed-files
 
-
 Github action to run eslint on changed and modified files in a pull request with support for excluding generated files with error reporting.
 
 ## Example
