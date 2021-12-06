@@ -28,6 +28,9 @@ inputs:
 runs:
   using: 'composite'
   steps:
+    - uses: reviewdog/action-setup@v1
+      with:
+        reviewdog_version: v0.13.0
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: eslint-changed-files

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -eu
 
 echo "::group::eslint-changed-files"
 
@@ -9,8 +9,11 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
-ESLINT_FORMATTER="/formatter.js"
+curl -sf -o ./formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js 
+
+ESLINT_FORMATTER="./formatter.js"
 GITHUB_TOKEN=$INPUT_TOKEN
+
 # shellcheck disable=SC2034
 export REVIEWDOG_GITHUB_API_TOKEN=$GITHUB_TOKEN
 CONFIG_PATH=$INPUT_CONFIG_PATH
