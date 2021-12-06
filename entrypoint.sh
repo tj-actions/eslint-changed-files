@@ -9,8 +9,6 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
-curl -sf https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh | PREFIX=. sh -s -- "${REVIEWDOG_VERSION}"
-
 curl -sf -o ./formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js 
 
 ESLINT_FORMATTER="./formatter.js"
