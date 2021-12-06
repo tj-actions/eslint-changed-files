@@ -13,6 +13,8 @@ curl -sf https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh
 
 curl -sf -o ./formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js 
 
+ls
+
 ESLINT_FORMATTER="./formatter.js"
 GITHUB_TOKEN=$INPUT_TOKEN
 # shellcheck disable=SC2034
