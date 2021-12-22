@@ -55,7 +55,7 @@ Support this project with a :star:
 | extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
 | extra\_args   |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
 | all\_files    |  `string`   |    `false`    |  `'true'`             | Run eslint on all matching files                              |
-| path    |  `string`   |    `false`    |             | Specify a relative path <br /> under $GITHUB_WORKSPACE to locate <br /> the repository                       |
+| path    |  `string`   |    `false`    |             | Specify a relative path <br /> under $GITHUB_WORKSPACE to locate <br /> the application                       |
 
 *   Free software: [MIT license](LICENSE)
 
