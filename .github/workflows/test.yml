@@ -54,14 +54,6 @@ jobs:
           extra_args: "--max-warnings=0"
           all_files: "true"
 
-      - name: Run ESLint from a sub directory
-        uses: ./
-        with:
-          config_path: "test-app/package.json"
-          extensions: "ts,tsx"
-          extra_args: "--max-warnings=0"
-          path: "test-app"
-
       - name: Run ESLint on changed files
         uses: ./
         with:
@@ -76,3 +68,16 @@ jobs:
           extensions: "ts,tsx"
           extra_args: "--max-warnings=0"
           ignore_path: "test-app/.eslintignore"
+      
+      - uses: actions/checkout@v2
+        with:
+          path: "dir1"
+      
+      - name: Run ESLint on changed files from a sub directory
+        uses: ./
+        with:
+          config_path: "test-app/package.json"
+          extensions: "ts,tsx"
+          extra_args: "--max-warnings=0"
+          path: "dir1"
+      
