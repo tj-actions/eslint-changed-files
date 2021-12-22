@@ -26,7 +26,7 @@ inputs:
     required: false
     default: ''
   path:
-    description: 'Specify a relative path under $GITHUB_WORKSPACE to locate the repository'
+    description: 'Specify a relative path under $GITHUB_WORKSPACE to locate the application'
     required: false
 
 runs:
