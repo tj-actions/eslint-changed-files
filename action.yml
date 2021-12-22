@@ -25,6 +25,10 @@ inputs:
     description: Eslint extra arguments
     required: false
     default: ''
+  path:
+    description: 'Specify a relative path under $GITHUB_WORKSPACE to locate the repository'
+    required: false
+
 runs:
   using: 'composite'
   steps:
@@ -49,6 +53,7 @@ runs:
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
         INPUT_EXTENSIONS: ${{ inputs.extensions }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
+        INPUT_PATH: ${{ inputs.path }}
 
 branding:
   icon: check-square

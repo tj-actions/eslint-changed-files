@@ -9,6 +9,17 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
+echo "Resolving repository path..."
+
+if [[ -n $INPUT_PATH ]]; then
+  REPO_DIR="$GITHUB_WORKSPACE/$INPUT_PATH"
+  if [[ ! -d "$REPO_DIR" ]]; then
+    echo "::warning::Invalid repository path"
+    exit 1
+  fi
+  cd "$REPO_DIR"
+fi
+
 curl -sf -o ./formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js 
 
 ESLINT_FORMATTER="./formatter.js"
