@@ -1,5 +1,26 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/eslint-changed-files/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v8.2...HEAD)
+
+**Implemented enhancements:**
+
+- \[Feature\] Add support for running eslint within a subdirectory  [\#367](https://github.com/tj-actions/eslint-changed-files/issues/367)
+
+## [v8.2](https://github.com/tj-actions/eslint-changed-files/tree/v8.2) (2021-12-21)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v8.1...v8.2)
+
+**Merged pull requests:**
+
+- Bump @types/node from 17.0.1 to 17.0.2 in /test-app [\#385](https://github.com/tj-actions/eslint-changed-files/pull/385) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Update dependency stylelint to v14.2.0 [\#384](https://github.com/tj-actions/eslint-changed-files/pull/384) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/node from 17.0.0 to 17.0.1 in /test-app [\#383](https://github.com/tj-actions/eslint-changed-files/pull/383) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Lock file maintenance [\#382](https://github.com/tj-actions/eslint-changed-files/pull/382) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump @types/node from 16.11.14 to 17.0.0 in /test-app [\#381](https://github.com/tj-actions/eslint-changed-files/pull/381) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Upgraded to v8.1 [\#380](https://github.com/tj-actions/eslint-changed-files/pull/380) ([jackton1](https://github.com/jackton1))
+
 ## [v8.1](https://github.com/tj-actions/eslint-changed-files/tree/v8.1) (2021-12-16)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v8...v8.1)
