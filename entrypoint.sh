@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -eu
 
 echo "::group::eslint-changed-files"
 
@@ -151,7 +151,7 @@ else
 
       if [[ $exit_status -ne 0 ]]; then
         echo "::warning::Error running eslint."
-        exit 0;
+        exit 1;
       fi
       
       git remote remove temp_eslint_changed_files
