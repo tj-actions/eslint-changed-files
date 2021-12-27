@@ -21,6 +21,7 @@ Github action to run eslint on changed and modified files in a pull request with
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v2
         with:
           node-version: 14
