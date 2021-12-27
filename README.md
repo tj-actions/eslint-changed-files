@@ -24,8 +24,10 @@ Github action to run eslint on changed and modified files in a pull request with
       - uses: actions/setup-node@v2
         with:
           node-version: 14
-      - name: Install
+
+      - name: Install dependencies
         run: npm ci  # OR: yarn 
+
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v8.2
         with:
