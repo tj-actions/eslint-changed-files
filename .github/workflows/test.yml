@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 14
           cache: yarn
-          cache-dependency-path: test-app/package-lock.json
+          cache-dependency-path: test-app/yarn.lock
 
       - name: Install dependencies
         run: yarn
