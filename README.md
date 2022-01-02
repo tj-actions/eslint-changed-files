@@ -17,7 +17,6 @@ Github action to run eslint on changed and modified files in a pull request with
 
 <img width="1128" alt="Screen Shot 2022-01-01 at 9 26 14 PM" src="https://user-images.githubusercontent.com/17484350/147864446-89ea3bd0-b193-4c1d-b3ad-a47fa9acebf1.png">
 
-
 ## Example
 
 ![Screen Shot 2021-09-06 at 1 15 22 PM](https://user-images.githubusercontent.com/17484350/132248250-6998078b-de5d-453a-8225-f4a6e3793bbe.png)
