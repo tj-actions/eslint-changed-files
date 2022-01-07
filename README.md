@@ -13,7 +13,8 @@
 
 # eslint-changed-files
 
-Github action to run eslint on changed and modified files in a pull request with support for excluding generated files and error reporting via GitHub checks.
+Run ESLint on either all files which performs slow in some cases or selectively run ESLint on only changed or modified files in a pull request with support for
+error reporting via GitHub checks.
 
 <img width="1128" alt="Screen Shot 2022-01-01 at 9 26 14 PM" src="https://user-images.githubusercontent.com/17484350/147864446-89ea3bd0-b193-4c1d-b3ad-a47fa9acebf1.png">
 
