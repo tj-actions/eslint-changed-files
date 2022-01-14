@@ -1,5 +1,24 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/eslint-changed-files/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v8.6...HEAD)
+
+**Fixed bugs:**
+
+- \[BUG\] Fails to load `.../formatter.js` when project `type: module` [\#415](https://github.com/tj-actions/eslint-changed-files/issues/415)
+
+## [v8.6](https://github.com/tj-actions/eslint-changed-files/tree/v8.6) (2022-01-14)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v8.5...v8.6)
+
+**Merged pull requests:**
+
+- Fixed error using module based packages [\#416](https://github.com/tj-actions/eslint-changed-files/pull/416) ([jackton1](https://github.com/jackton1))
+- Lock file maintenance [\#414](https://github.com/tj-actions/eslint-changed-files/pull/414) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#413](https://github.com/tj-actions/eslint-changed-files/pull/413) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v8.5 [\#412](https://github.com/tj-actions/eslint-changed-files/pull/412) ([jackton1](https://github.com/jackton1))
+
 ## [v8.5](https://github.com/tj-actions/eslint-changed-files/tree/v8.5) (2022-01-08)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v8.4...v8.5)
