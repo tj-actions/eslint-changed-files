@@ -9,9 +9,9 @@ if [[ -z $GITHUB_BASE_REF ]]; then
   exit 0;
 fi
 
-curl -sf -o ./formatter.js https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
+curl -sf -o ./formatter.cjs https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
 
-ESLINT_FORMATTER="./formatter.js"
+ESLINT_FORMATTER="./formatter.cjs"
 GITHUB_TOKEN=$INPUT_TOKEN
 
 # shellcheck disable=SC2034
