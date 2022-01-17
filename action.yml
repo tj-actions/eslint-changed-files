@@ -30,7 +30,7 @@ runs:
   steps:
     - uses: reviewdog/action-setup@v1
       with:
-        reviewdog_version: v0.13.0
+        reviewdog_version: v0.13.1
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: eslint-changed-files
