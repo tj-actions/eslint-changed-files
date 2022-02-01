@@ -16,7 +16,7 @@ jobs:
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.13
   
-  eslint:
+  eslint-changed-files:
     runs-on: ${{ matrix.platform }}
     strategy:
       fail-fast: false
