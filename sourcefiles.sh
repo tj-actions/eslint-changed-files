@@ -15,7 +15,8 @@ fi
 
 IFS=" " read -r -a FILES <<< "$(echo "${INPUT_FILES}" | awk -v d=" " '{s=(NR==1?s:s d)$0}END{print s}')"
 
-if [[ -n "${IGNORED_FILES[*]}" ]]; then
+# shellcheck disable=SC2199
+if [[ ${IGNORED_FILES[@]:0} -ne 0 ]]; then
   ALL_FILES=("${FILES[@]}" "${IGNORED_FILES[@]}")
 else
   ALL_FILES=("${FILES[@]}")
