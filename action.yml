@@ -17,18 +17,10 @@ inputs:
     description: Eslint ignore path
     required: false
     default: ''
-  file_extensions:
-    description: List of file extensions to watch for changes and run eslint
+  extensions:
+    description: Comma separated list of extensions
     required: false
-    default: |
-      *.ts
-      *.tsx
-      **/*.ts
-      **/*.tsx
-      *.js
-      *.jsx
-      **/*.js
-      **/*.jsx
+    default: 'ts,tsx,js,jsx'
   extra_args:
     description: Eslint extra arguments
     required: false
@@ -43,7 +35,10 @@ runs:
       uses: tj-actions/glob@v6.1
       id: eslint-glob
       with:
-        files: ${{ inputs.file_extensions }}
+        files: |
+          ${{ inputs.file_extensions }}
+          !**/node_modules
+          !node_modules
         excluded-files-from-source-file: ${{ inputs.ignore_path }}
     - name: Get changed files
       id: changed-files
