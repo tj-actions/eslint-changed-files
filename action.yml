@@ -41,12 +41,12 @@ runs:
       with:
         files: ${{ inputs.file_extensions }}
         excluded-files-from-source-file: ${{ inputs.ignore_path }}
-        separator: "\n"
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v14.4
       with:
         files: ${{ steps.eslint-glob.outputs.paths }}
+        files-separator: " "
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
