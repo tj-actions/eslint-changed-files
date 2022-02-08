@@ -17,10 +17,18 @@ inputs:
     description: Eslint ignore path
     required: false
     default: ''
-  extensions:
-    description: Comma separated list of extensions
+  file_extensions:
+    description: List of file extensions to watch for changes and run eslint
     required: false
-    default: 'ts,tsx,js,jsx'
+    default: |
+      *.ts
+      *.tsx
+      **/*.ts
+      **/*.tsx
+      *.js
+      *.jsx
+      **/*.js
+      **/*.jsx
   extra_args:
     description: Eslint extra arguments
     required: false
