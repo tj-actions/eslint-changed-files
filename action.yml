@@ -3,22 +3,22 @@ description: Run ESLint on all changed files
 author: jackton1
 inputs:
   token:
-    description: 'GITHUB_TOKEN or a repo scoped PAT'
+    description: '[GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)'
     required: true
     default: ${{ github.token }}
   all_files:
-    description: 'Run eslint on all matching files'
+    description: 'Run [ESlint](https://eslint.org/) on all matching files'
     required: false
   config_path:
-    description: Eslint configuration path
+    description: [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)
     required: false
     default: '.eslintrc'
   ignore_path:
-    description: Eslint ignore path
+    description: [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)
     required: false
     default: ''
   file_extensions:
-    description: List of file extensions to watch for changes and run eslint
+    description: List of file extensions to watch for changes and run [ESlint](https://eslint.org/) against
     required: false
     default: |
       *.ts
@@ -30,7 +30,7 @@ inputs:
       **/*.js
       **/*.jsx
   extra_args:
-    description: Eslint extra arguments
+    description: Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
     required: false
     default: ''
 runs:
