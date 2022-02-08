@@ -44,6 +44,9 @@ error reporting via GitHub checks.
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
           extra_args: "--max-warnings=0"
+          file_extensions: |
+            **/*.ts
+            **/*.tsx
 ```
 
 If you feel generous and want to show some extra appreciation:
