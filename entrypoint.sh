@@ -18,21 +18,16 @@ EXTRA_ARGS=$INPUT_EXTRA_ARGS
 
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ -n ${IGNORE_PATH} ]]; then
-    echo "Using ignore path: $IGNORE_PATH"
-    # shellcheck disable=SC2086
-    npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
-      -name=eslint \
-      -reporter=github-pr-review \
-      -filter-mode=nofilter \
-      -fail-on-error && exit_status=$? || exit_status=$?
-  else
-    # shellcheck disable=SC2086
-    npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
-      -name=eslint \
-      -reporter=github-pr-review \
-      -filter-mode=nofilter \
-      -fail-on-error && exit_status=$? || exit_status=$?
+    echo "::warning::Invalid input ignore_path was passed when all_files is set to true. (Set all_files to false to use ignore_path)"
   fi
+
+  # shellcheck disable=SC2086
+  npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
+    -name=eslint \
+    -reporter=github-pr-review \
+    -filter-mode=nofilter \
+    -fail-on-error && exit_status=$? || exit_status=$?
+
   echo "::endgroup::"
 
   if [[ $exit_status -ne 0 ]]; then
