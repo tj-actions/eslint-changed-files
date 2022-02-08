@@ -41,8 +41,6 @@ jobs:
         with:
           config_path: "test-app/package.json"
           file_extensions: |
-            *.ts
-            *.tsx
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
@@ -53,8 +51,6 @@ jobs:
         with:
           config_path: "test-app/package.json"
           file_extensions: |
-            *.ts
-            *.tsx
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
@@ -64,8 +60,6 @@ jobs:
         with:
           config_path: "test-app/package.json"
           file_extensions: |
-            *.ts
-            *.tsx
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
