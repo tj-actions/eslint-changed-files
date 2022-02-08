@@ -21,12 +21,8 @@ inputs:
     description: List of file extensions to watch for changes and run [ESlint](https://eslint.org/) against
     required: false
     default: |
-      *.ts
-      *.tsx
       **/*.ts
       **/*.tsx
-      *.js
-      *.jsx
       **/*.js
       **/*.jsx
   extra_args:
