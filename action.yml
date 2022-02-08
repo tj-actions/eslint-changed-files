@@ -50,6 +50,7 @@ runs:
       uses: tj-actions/changed-files@v14.3
       with:
         files: ${{ steps.eslint-sourcefiles.outputs.all_files }}
+        files-separator: " "
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: eslint-changed-files
