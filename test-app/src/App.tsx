@@ -18,7 +18,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React now
-        </a>
+        <a>
       </header>
     </div>
   );
