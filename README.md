@@ -43,7 +43,6 @@ error reporting via GitHub checks.
         with:
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
-          extensions: "ts,tsx,js,jsx"
           extra_args: "--max-warnings=0"
 ```
 
@@ -58,15 +57,6 @@ Support this project with a :star:
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png
 
 ## Inputs
-
-|   Input        |    type     |  required     |  default             |  description   |
-|:-------------:|:-----------:|:-------------:|:---------------------:|:--------------:|
-| token         |  `string`   |    `false`    | `${{ github.token }}` | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) <br /> or a repo scoped <br /> [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)              |
-| config\_path   |  `string`   |    `false`    |  `'.eslintrc'`        | [eslint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)  |
-| ignore\_path   |  `string`   |    `false`    |  `''`                 | [eslint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)  |
-| extensions    |  `string[]` |    `false`    |  `'ts,tsx,js,jsx'`    |  File extensions to run [eslint](https://eslint.org/) against |
-| extra\_args   |  `string`   |    `false`    |  `''`                 | Extra arguments passed to [eslint](https://eslint.org/docs/user-guide/command-line-interface) |
-| all\_files    |  `string`   |    `false`    |  `'true'`             | Run eslint on all matching files                              |
 
 *   Free software: [MIT license](LICENSE)
 

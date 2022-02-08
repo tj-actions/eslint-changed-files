@@ -3,26 +3,30 @@ description: Run ESLint on all changed files
 author: jackton1
 inputs:
   token:
-    description: 'GITHUB_TOKEN or a repo scoped PAT'
+    description: '[GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)'
     required: true
     default: ${{ github.token }}
   all_files:
-    description: 'Run eslint on all matching files'
+    description: 'Run [ESlint](https://eslint.org/) on all matching files'
     required: false
   config_path:
-    description: Eslint configuration path
+    description: '[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)'
     required: false
     default: '.eslintrc'
   ignore_path:
-    description: Eslint ignore path
+    description: '[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)'
     required: false
     default: ''
-  extensions:
-    description: Comma separated list of extensions
+  file_extensions:
+    description: List of file extensions to watch for changes and run [ESlint](https://eslint.org/) against
     required: false
-    default: 'ts,tsx,js,jsx'
+    default: |
+      **/*.ts
+      **/*.tsx
+      **/*.js
+      **/*.jsx
   extra_args:
-    description: Eslint extra arguments
+    description: Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
     required: false
     default: ''
 runs:
@@ -31,7 +35,24 @@ runs:
     - uses: reviewdog/action-setup@v1
       with:
         reviewdog_version: v0.13.1
-    - run: |
+    - name: Run glob excluding files in the ignore_path
+      uses: tj-actions/glob@v6.2
+      id: eslint-glob
+      with:
+        files: |
+          ${{ inputs.file_extensions }}
+          !**/node_modules
+          !node_modules
+        excluded-files-from-source-file: ${{ inputs.ignore_path }}
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v14.4
+      with:
+        files: ${{ steps.eslint-glob.outputs.paths }}
+        files-separator: " "
+    - name: Run eslint on changed files
+      run: |
+        # Run eslint on changed files
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: eslint-changed-files
       shell: bash
@@ -47,7 +68,7 @@ runs:
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
-        INPUT_EXTENSIONS: ${{ inputs.extensions }}
+        INPUT_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
 
 branding:

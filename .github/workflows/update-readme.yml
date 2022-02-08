@@ -13,6 +13,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Run auto-doc
+        uses: tj-actions/auto-doc@v1.2.13
+
       - name: Run test
         uses: tj-actions/remark@v2.3
 
