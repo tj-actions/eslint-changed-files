@@ -34,6 +34,11 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
       -fail-on-error && exit_status=$? || exit_status=$?
   fi
   echo "::endgroup::"
+
+  if [[ $exit_status -ne 0 ]]; then
+    echo "::warning::Error running eslint."
+    exit 1;
+  fi
 else
   if [[ -n "${INPUT_CHANGED_FILES[*]}" ]]; then
       if [[ -n ${IGNORE_PATH} ]]; then
