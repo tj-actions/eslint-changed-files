@@ -21,10 +21,14 @@ inputs:
     description: List of file extensions to watch for changes and run eslint
     required: false
     default: |
-      '*.tsx?'
-      '**/*.tsx?'
-      '*.jsx?'
-      '**/*.jsx?'
+      *.ts
+      *.tsx
+      **/*.ts
+      **/*.tsx
+      *.js
+      *.jsx
+      **/*.js
+      **/*.jsx
   extra_args:
     description: Eslint extra arguments
     required: false
