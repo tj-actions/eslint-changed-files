@@ -58,6 +58,19 @@ Support this project with a :star:
 
 ## Inputs
 
+<!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
+
+|      INPUT      |  TYPE  | REQUIRED |                  DEFAULT                   |                                                                                                                                                    DESCRIPTION                                                                                                                                                     |
+|-----------------|--------|----------|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| all\_files       | string | false    |                                            | Run [ESlint](https://eslint.org/) on all matching<br>files                                                                                                                                                                                                                                                         |
+| config\_path     | string | false    | `".eslintrc"`                              | [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)                                                                                                                                                                                                                |
+| extra\_args      | string | false    |                                            | Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)<br>                                                                                                                                                                                                                  |
+| file\_extensions | string | false    | `"**/*.ts\n**/*.tsx\n**/*.js\n**/*.jsx\n"` | List of file extensions to<br>watch for changes and run<br>[ESlint](https://eslint.org/) against                                                                                                                                                                                                                   |
+| ignore\_path     | string | false    |                                            | [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)                                                                                                                                                                                                          |
+| token           | string | true     | `"${{ github.token }}"`                    | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped<br>[Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
+
+<!-- AUTO-DOC-INPUT:END -->
+
 *   Free software: [MIT license](LICENSE)
 
 # Credits
