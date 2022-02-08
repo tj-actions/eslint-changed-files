@@ -15,6 +15,10 @@ fi
 
 IFS=" " read -r -a FILES <<< "$(echo "${INPUT_FILES}" | awk -v d=" " '{s=(NR==1?s:s d)$0}END{print s}')"
 
-ALL_FILES=("${FILES[@]}" "${IGNORED_FILES[@]}")
+if [[ -n "${IGNORED_FILES[*]}" ]]; then
+  ALL_FILES=("${FILES[@]}" "${IGNORED_FILES[@]}")
+else
+  ALL_FILES=("${FILES[@]}")
+fi
 
 echo "::set-output name=all_files::${ALL_FILES[*]}"
