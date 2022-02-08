@@ -17,10 +17,14 @@ inputs:
     description: Eslint ignore path
     required: false
     default: ''
-  extensions:
-    description: Comma separated list of extensions
+  files:
+    description: List of files to watch for changes and run eslint
     required: false
-    default: 'ts,tsx,js,jsx'
+    default: |
+      *.tsx?
+      **/*.tsx?
+      *.jsx?
+      **/*.jsx?
   extra_args:
     description: Eslint extra arguments
     required: false
@@ -31,6 +35,29 @@ runs:
     - uses: reviewdog/action-setup@v1
       with:
         reviewdog_version: v0.13.1
+    - name: Process ignored files
+      id: eslint-ignore-files
+      run: |
+        IGNORED_FILES=()
+        if [[ -n $INPUT_IGNORE_PATH ]]; then
+          for file in $INPUT_IGNORE_PATH
+          do
+            while read -r fileName; do
+              IGNORED_FILES+=("!$fileName")
+            done <"$file"
+          done
+        fi
+        echo "::set-output name=ignored_files::$IGNORED_FILES"
+      shell: bash
+      env:
+        # INPUT_<VARIABLE_NAME> is not available in Composite run steps
+        # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
+        INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
+    - name: Get changed files
+      id: changed-files
+      uses: tj-actions/changed-files@v14.3
+      with:
+        files: format('{0}\n{1}', inputs.files, join(steps.eslint-ignore-files.outputs.ignored_files, '\n'))
     - run: |
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: eslint-changed-files
@@ -47,7 +74,7 @@ runs:
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
-        INPUT_EXTENSIONS: ${{ inputs.extensions }}
+        INPUT_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
 
 branding:
