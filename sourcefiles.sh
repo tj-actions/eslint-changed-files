@@ -13,7 +13,7 @@ if [[ -n $INPUT_IGNORE_PATH ]]; then
   done
 fi
 
-IFS=$'\n' read -r -d '' -a FILES <<< "$INPUT_FILES"
+IFS=$'\n' read -ra FILES <<< "$INPUT_FILES"
 
 ALL_FILES=("${FILES[@]}" "${IGNORED_FILES[@]}")
 
