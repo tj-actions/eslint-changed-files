@@ -46,6 +46,15 @@ jobs:
           extra_args: "--max-warnings=0"
           ignore_path: "test-app/.eslintignore"
 
+      - name: Run ESLint on changed files
+        uses: ./
+        with:
+          config_path: "test-app/package.json"
+          file_extensions: |
+            **/*.ts
+            **/*.tsx
+          extra_args: "--max-warnings=0"
+
       - name: Run ESLint on all files
         uses: ./
         with:
@@ -55,12 +64,3 @@ jobs:
             **/*.tsx
           extra_args: "--max-warnings=0"
           all_files: "true"
-
-      - name: Run ESLint on changed files
-        uses: ./
-        with:
-          config_path: "test-app/package.json"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
