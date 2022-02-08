@@ -18,6 +18,16 @@ error reporting via GitHub checks.
 
 <img width="1128" alt="Screen Shot 2022-01-01 at 9 26 14 PM" src="https://user-images.githubusercontent.com/17484350/147864446-89ea3bd0-b193-4c1d-b3ad-a47fa9acebf1.png">
 
+
+## Features
+* Easy to debug
+* Fast execution
+* Glob pattern extension filtering
+* Excludes ignored files from change detection to prevent errors.
+* Github checks error reporting.
+* Github annotations with a possible resolution that can be applied to the Pull Request.
+
+
 ## Example
 
 ![Screen Shot 2021-09-06 at 1 15 22 PM](https://user-images.githubusercontent.com/17484350/132248250-6998078b-de5d-453a-8225-f4a6e3793bbe.png)
