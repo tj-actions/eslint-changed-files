@@ -13,7 +13,7 @@ if [[ -n $INPUT_IGNORE_PATH ]]; then
   done
 fi
 
-IFS=$'\n' read -ra FILES <<< "$INPUT_FILES"
+IFS=" " read -r -a FILES <<< "$(echo "${INPUT_FILES}" | awk -v d=" " '{s=(NR==1?s:s d)$0}END{print s}')"
 
 ALL_FILES=("${FILES[@]}" "${IGNORED_FILES[@]}")
 
