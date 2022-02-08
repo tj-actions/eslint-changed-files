@@ -38,6 +38,7 @@ runs:
     - name: Get source files
       id: eslint-sourcefiles
       run: |
+        # Get source files
         bash $GITHUB_ACTION_PATH/sourcefiles.sh
       shell: bash
       env:
@@ -50,8 +51,9 @@ runs:
       uses: tj-actions/changed-files@v14.3
       with:
         files: ${{ steps.eslint-sourcefiles.outputs.all_files }}
-        files-separator: " "
-    - run: |
+    - name: Run eslint on changed files
+      run: |
+        # Run eslint on changed files
         bash $GITHUB_ACTION_PATH/entrypoint.sh
       id: eslint-changed-files
       shell: bash
