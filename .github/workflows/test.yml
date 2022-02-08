@@ -41,8 +41,8 @@ jobs:
         with:
           config_path: "test-app/package.json"
           file_extensions: |
-            *.tsx?
-            **/*.tsx?
+            '*.tsx?'
+            '**/*.tsx?'
           extra_args: "--max-warnings=0"
           all_files: "true"
 
@@ -51,8 +51,8 @@ jobs:
         with:
           config_path: "test-app/package.json"
           file_extensions: |
-            *.tsx?
-            **/*.tsx?
+            '*.tsx?'
+            '**/*.tsx?'
           extra_args: "--max-warnings=0"
 
       - name: Run ESLint on changed files with .eslintignore
@@ -60,7 +60,7 @@ jobs:
         with:
           config_path: "test-app/package.json"
           file_extensions: |
-            *.tsx?
-            **/*.tsx?
+            '*.tsx?'
+            '**/*.tsx?'
           extra_args: "--max-warnings=0"
           ignore_path: "test-app/.eslintignore"
