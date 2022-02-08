@@ -10,11 +10,11 @@ inputs:
     description: 'Run [ESlint](https://eslint.org/) on all matching files'
     required: false
   config_path:
-    description: [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)
+    description: '[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)'
     required: false
     default: '.eslintrc'
   ignore_path:
-    description: [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)
+    description: '[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)'
     required: false
     default: ''
   file_extensions:
