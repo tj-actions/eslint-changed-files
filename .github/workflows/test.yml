@@ -40,7 +40,7 @@ jobs:
         uses: ./
         with:
           config_path: "test-app/package.json"
-          files: |
+          file_extensions: |
             *.tsx?
             **/*.tsx?
           extra_args: "--max-warnings=0"
@@ -50,7 +50,7 @@ jobs:
         uses: ./
         with:
           config_path: "test-app/package.json"
-          files: |
+          file_extensions: |
             *.tsx?
             **/*.tsx?
           extra_args: "--max-warnings=0"
@@ -59,7 +59,7 @@ jobs:
         uses: ./
         with:
           config_path: "test-app/package.json"
-          files: |
+          file_extensions: |
             *.tsx?
             **/*.tsx?
           extra_args: "--max-warnings=0"
