@@ -43,7 +43,6 @@ error reporting via GitHub checks.
         with:
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
-          extensions: "ts,tsx,js,jsx"
           extra_args: "--max-warnings=0"
 ```
 
