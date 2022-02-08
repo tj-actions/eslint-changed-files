@@ -17,8 +17,8 @@ inputs:
     description: Eslint ignore path
     required: false
     default: ''
-  files:
-    description: List of files to watch for changes and run eslint
+  file_extensions:
+    description: List of file extensions to watch for changes and run eslint
     required: false
     default: |
       *.tsx?
@@ -35,23 +35,18 @@ runs:
     - uses: reviewdog/action-setup@v1
       with:
         reviewdog_version: v0.13.1
-    - name: Get source files
-      id: eslint-sourcefiles
-      run: |
-        # Get source files
-        bash $GITHUB_ACTION_PATH/sourcefiles.sh
-      shell: bash
-      env:
-        # INPUT_<VARIABLE_NAME> is not available in Composite run steps
-        # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
-        INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
-        INPUT_FILES: ${{ inputs.files }}
+    - name: Run glob excluding files in the ignore_path
+      uses: tj-actions/glob@v6.1
+      id: eslint-glob
+      with:
+        files: ${{ inputs.file_extensions }}
+        excluded-files-from-source-file: ${{ inputs.ignore_path }}
+        separator: "\n"
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v14.4
       with:
-        files: ${{ steps.eslint-sourcefiles.outputs.all_files }}
-        files-separator: " "
+        files: ${{ steps.eslint-glob.outputs.paths }}
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
