@@ -88,6 +88,7 @@ Support this project with a :star:
 # Credits
 
 *   https://github.com/reviewdog/reviewdog
+*   https://github.com/tj-actions/glob
 
 ## Contributors ✨
 
