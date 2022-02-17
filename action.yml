@@ -49,7 +49,7 @@ runs:
       uses: tj-actions/changed-files@v15.1
       with:
         files: ${{ steps.eslint-glob.outputs.paths }}
-        files-separator: " "
+        files_separator: " "
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
