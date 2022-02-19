@@ -54,7 +54,7 @@ jobs:
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          all_files: "true"
+          all_files: true
           ignore_path: "test-app/.eslintignore"
 
       - name: Run ESLint on changed files
