@@ -42,8 +42,6 @@ runs:
       with:
         files: |
           ${{ inputs.file_extensions }}
-          !**/node_modules
-          !node_modules
         excluded-files-from-source-file: ${{ inputs.ignore_path }}
     - name: Get changed files
       id: changed-files
