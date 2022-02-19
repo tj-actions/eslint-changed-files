@@ -9,6 +9,7 @@ inputs:
   all_files:
     description: 'Run [ESlint](https://eslint.org/) on all matching files'
     required: false
+    default: false
   config_path:
     description: '[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)'
     required: false
