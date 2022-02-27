@@ -45,7 +45,7 @@ runs:
         excluded-files-from-source-file: ${{ inputs.ignore_path }}
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v17.1
+      uses: tj-actions/changed-files@v17.2
       with:
         files: ${{ steps.eslint-glob.outputs.paths }}
         files_separator: " "
