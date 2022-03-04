@@ -16,7 +16,8 @@
 Run ESLint on either all files which performs slow in most cases or selectively run ESLint on only changed files in a pull request with support for
 error reporting via GitHub checks.
 
-<img width="1128" alt="Screen Shot 2022-01-01 at 9 26 14 PM" src="https://user-images.githubusercontent.com/17484350/147864446-89ea3bd0-b193-4c1d-b3ad-a47fa9acebf1.png">
+![Screen Shot 2022-03-04 at 5 01 35 AM](https://user-images.githubusercontent.com/17484350/156742457-ff0c2da5-aca8-4260-9a3c-76ff3a273bd6.png)
+
 
 ## Features
 
