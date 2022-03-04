@@ -31,11 +31,11 @@ inputs:
     required: false
     default: ''
   reporter:
-    description: [revierdog reporter](https://github.com/reviewdog/reviewdog#reporters).
+    description: reviewdog [reporter](https://github.com/reviewdog/reviewdog#reporters).
     required: false
     default: 'github-pr-review'
   filter_mode:
-    description: [revierdog filtering mode](https://github.com/reviewdog/reviewdog#filter-mode).
+    description: reviewdog [filtering mode](https://github.com/reviewdog/reviewdog#filter-mode).
     required: false
     default: 'added'
   skip_annotations:
