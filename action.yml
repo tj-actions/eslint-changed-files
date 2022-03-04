@@ -31,17 +31,15 @@ inputs:
     required: false
     default: ''
   reporter:
-    description: |
-      Reporter of reviewdog command [github-check, github-pr-review].
-      github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
+    description: reviewdog [reporter](https://github.com/reviewdog/reviewdog#reporters).
     required: false
     default: 'github-pr-review'
   filter_mode:
-    description: Filtering mode for the reviewdog command [added, diff_context, file, nofilter].
+    description: reviewdog [filtering mode](https://github.com/reviewdog/reviewdog#filter-mode).
     required: false
     default: 'added'
   skip_annotations:
-    description: Skip applying reviewdog check annotations.
+    description: Skip running reviewdog i.e don't add any annotations.
     required: false
     default: 'false'
 
