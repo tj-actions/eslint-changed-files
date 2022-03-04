@@ -21,15 +21,15 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
     # shellcheck disable=SC2086
     npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
-      -reporter=github-pr-review \
-      -filter-mode=nofilter \
+      -reporter=$INPUT_REPORTER \
+      -filter-mode=$INPUT_FILTER_MODE \
       -fail-on-error && exit_status=$? || exit_status=$?
   else
     # shellcheck disable=SC2086
     npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
-      -reporter=github-pr-review \
-      -filter-mode=nofilter \
+      -reporter=$INPUT_REPORTER \
+      -filter-mode=$INPUT_FILTER_MODE \
       -fail-on-error && exit_status=$? || exit_status=$?
   fi
 
@@ -47,15 +47,15 @@ else
         # shellcheck disable=SC2086
         npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" "${INPUT_CHANGED_FILES[@]}" | reviewdog -f=rdjson \
           -name=eslint \
-          -reporter=github-pr-review \
-          -filter-mode=nofilter \
+          -reporter=$INPUT_REPORTER \
+          -filter-mode=$INPUT_FILTER_MODE \
           -fail-on-error && exit_status=$? || exit_status=$?
       else
         # shellcheck disable=SC2086
         npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" "${INPUT_CHANGED_FILES[@]}" | reviewdog -f=rdjson \
           -name=eslint \
-          -reporter=github-pr-review \
-          -filter-mode=nofilter \
+          -reporter=$INPUT_REPORTER \
+          -filter-mode=$INPUT_FILTER_MODE \
           -fail-on-error && exit_status=$? || exit_status=$?
       fi
       echo "::endgroup::"

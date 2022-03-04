@@ -30,6 +30,17 @@ inputs:
     description: Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
     required: false
     default: ''
+  reporter:
+    description: |
+      Reporter of reviewdog command [github-check, github-pr-review].
+      github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
+    required: false
+    default: 'github-pr-review'
+  filter_mode:
+    description: |
+      Filtering mode for the reviewdog command [added, diff_context, file, nofilter].
+    required: false
+    default: 'added'
 runs:
   using: 'composite'
   steps:
@@ -69,6 +80,8 @@ runs:
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
         INPUT_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
+        INPUT_FILTER_MODE: ${{ inputs.filter_mode }}
+        INPUT_REPORTER: ${{ inputs.reporter }}
 
 branding:
   icon: check-square
