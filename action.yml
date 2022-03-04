@@ -31,17 +31,15 @@ inputs:
     required: false
     default: ''
   reporter:
-    description: |
-      Reporter of reviewdog command [github-check, github-pr-review].
-      github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
+    description: [revierdog reporter](https://github.com/reviewdog/reviewdog#reporters).
     required: false
     default: 'github-pr-review'
   filter_mode:
-    description: Filtering mode for the reviewdog command [added, diff_context, file, nofilter].
+    description: [revierdog filtering mode](https://github.com/reviewdog/reviewdog#filter-mode).
     required: false
     default: 'added'
   skip_annotations:
-    description: Skip applying reviewdog check annotations.
+    description: Skip running reviewdog i.e don't add any annotations.
     required: false
     default: 'false'
 
@@ -49,6 +47,7 @@ runs:
   using: 'composite'
   steps:
     - uses: reviewdog/action-setup@v1
+      if: inputs.skip_annotations != "true" 
       with:
         reviewdog_version: v0.13.1
     - name: Run glob excluding files in the ignore_path
