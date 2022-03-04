@@ -4,7 +4,9 @@ set -eu
 
 echo "::group::eslint-changed-files"
 
-curl -sf -o ./formatter.cjs https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
+if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+  curl -sf -o ./formatter.cjs https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
+fi
 
 ESLINT_FORMATTER="./formatter.cjs"
 GITHUB_TOKEN=$INPUT_TOKEN
@@ -17,7 +19,15 @@ EXTRA_ARGS=$INPUT_EXTRA_ARGS
 
 
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
-  if [[ -n ${IGNORE_PATH} ]]; then
+  if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
+    if [[ -n ${IGNORE_PATH} ]]; then
+      # shellcheck disable=SC2086
+      npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
+    else
+      # shellcheck disable=SC2086
+      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
+    fi
+  elif [[ -n ${IGNORE_PATH} ]]; then
     # shellcheck disable=SC2086
     npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
@@ -41,9 +51,15 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   fi
 else
   if [[ -n "${INPUT_CHANGED_FILES[*]}" ]]; then
-      if [[ -n ${IGNORE_PATH} ]]; then
-        echo "Using ignore path: $IGNORE_PATH"
-
+      if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
+        if [[ -n ${IGNORE_PATH} ]]; then
+          # shellcheck disable=SC2086
+          npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} "${INPUT_CHANGED_FILES[@]}" && exit_status=$? || exit_status=$?
+        else
+          # shellcheck disable=SC2086
+          npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} "${INPUT_CHANGED_FILES[@]}" && exit_status=$? || exit_status=$?
+        fi
+      elif [[ -n ${IGNORE_PATH} ]]; then
         # shellcheck disable=SC2086
         npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" "${INPUT_CHANGED_FILES[@]}" | reviewdog -f=rdjson \
           -name=eslint \
