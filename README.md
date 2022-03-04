@@ -18,7 +18,6 @@ error reporting via GitHub checks.
 
 ![Screen Shot 2022-03-04 at 5 01 35 AM](https://user-images.githubusercontent.com/17484350/156742457-ff0c2da5-aca8-4260-9a3c-76ff3a273bd6.png)
 
-
 ## Features
 
 *   Easy to debug
@@ -79,7 +78,9 @@ Support this project with a :star:
 | config\_path     | string | false    | `".eslintrc"`                              | [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)                                                                                                                                                                                                                |
 | extra\_args      | string | false    |                                            | Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)<br>                                                                                                                                                                                                                  |
 | file\_extensions | string | false    | `"**/*.ts\n**/*.tsx\n**/*.js\n**/*.jsx\n"` | List of file extensions to<br>watch for changes and run<br>[ESlint](https://eslint.org/) against                                                                                                                                                                                                                   |
+| filter\_mode     | string | false    | `"added"`                                  | Filtering mode for the reviewdog<br>command \[added, diff\_context, file, nofilter].<br>                                                                                                                                                                                                                             |
 | ignore\_path     | string | false    |                                            | [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)                                                                                                                                                                                                          |
+| reporter        | string | false    | `"github-pr-review"`                       | Reporter of reviewdog command \[github-check,<br>github-pr-review]. github-pr-review can use Markdown<br>and add a link to<br>rule page in reviewdog reports.<br>                                                                                                                                                   |
 | token           | string | true     | `"${{ github.token }}"`                    | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped<br>[Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
 
 <!-- AUTO-DOC-INPUT:END -->
