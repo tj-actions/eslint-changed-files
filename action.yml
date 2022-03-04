@@ -47,7 +47,7 @@ runs:
   using: 'composite'
   steps:
     - uses: reviewdog/action-setup@v1
-      if: inputs.skip_annotations != "true" 
+      if: ${{ inputs.skip_annotations != "true" }}
       with:
         reviewdog_version: v0.13.1
     - name: Run glob excluding files in the ignore_path
