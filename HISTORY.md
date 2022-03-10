@@ -1,5 +1,22 @@
 # Changelog
 
+## [v9.2](https://github.com/tj-actions/eslint-changed-files/tree/v9.2) (2022-03-10)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v9.1...v9.2)
+
+**Fixed bugs:**
+
+- \[BUG\] No files matching the pattern [\#496](https://github.com/tj-actions/eslint-changed-files/issues/496)
+
+**Merged pull requests:**
+
+- fix: bug with running eslint [\#497](https://github.com/tj-actions/eslint-changed-files/pull/497) ([jackton1](https://github.com/jackton1))
+- Update dependency @testing-library/react to v12.1.4 [\#495](https://github.com/tj-actions/eslint-changed-files/pull/495) ([renovate[bot]](https://github.com/apps/renovate))
+- Update codacy/codacy-analysis-cli-action action to v4.0.2 [\#494](https://github.com/tj-actions/eslint-changed-files/pull/494) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/changed-files action to v17.3 [\#493](https://github.com/tj-actions/eslint-changed-files/pull/493) ([renovate[bot]](https://github.com/apps/renovate))
+- Lock file maintenance [\#492](https://github.com/tj-actions/eslint-changed-files/pull/492) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v9.1 [\#491](https://github.com/tj-actions/eslint-changed-files/pull/491) ([jackton1](https://github.com/jackton1))
+
 ## [v9.1](https://github.com/tj-actions/eslint-changed-files/tree/v9.1) (2022-03-04)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v9...v9.1)
@@ -509,15 +526,15 @@
 
 ## [v6.4](https://github.com/tj-actions/eslint-changed-files/tree/v6.4) (2021-05-27)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.4)
-
-## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-27)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.4)
 
 ## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.2...v6.3)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.3)
+
+## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.2...v6)
 
 **Merged pull requests:**
 
@@ -665,15 +682,15 @@
 
 ## [v2](https://github.com/tj-actions/eslint-changed-files/tree/v2) (2020-05-24)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v1...v2)
-
-## [v1](https://github.com/tj-actions/eslint-changed-files/tree/v1) (2020-05-24)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.15...v1)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.15...v2)
 
 ## [0.1.15](https://github.com/tj-actions/eslint-changed-files/tree/0.1.15) (2020-05-24)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.14...0.1.15)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v1...0.1.15)
+
+## [v1](https://github.com/tj-actions/eslint-changed-files/tree/v1) (2020-05-24)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.14...v1)
 
 ## [0.1.14](https://github.com/tj-actions/eslint-changed-files/tree/0.1.14) (2020-05-24)
 
