@@ -50,7 +50,7 @@ runs:
       with:
         reviewdog_version: v0.13.1
     - name: Run glob excluding files in the ignore_path
-      uses: tj-actions/glob@v7.5
+      uses: tj-actions/glob@v7.6
       id: eslint-glob
       with:
         files: |
