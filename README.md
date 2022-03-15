@@ -34,6 +34,7 @@ error reporting via GitHub checks.
 ## Usage
 
 ```yml
+
 ...:
     runs-on: ubuntu-latest
 
