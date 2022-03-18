@@ -1,5 +1,27 @@
 # Changelog
 
+## [v10](https://github.com/tj-actions/eslint-changed-files/tree/v10) (2022-03-18)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v9.2...v10)
+
+**Merged pull requests:**
+
+- chore: remove unused code [\#512](https://github.com/tj-actions/eslint-changed-files/pull/512) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): lock file maintenance [\#511](https://github.com/tj-actions/eslint-changed-files/pull/511) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#510](https://github.com/tj-actions/eslint-changed-files/pull/510) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.9 [\#509](https://github.com/tj-actions/eslint-changed-files/pull/509) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint to v14.6.0 [\#508](https://github.com/tj-actions/eslint-changed-files/pull/508) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#507](https://github.com/tj-actions/eslint-changed-files/pull/507) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.8 [\#506](https://github.com/tj-actions/eslint-changed-files/pull/506) ([renovate[bot]](https://github.com/apps/renovate))
+- Bump tj-actions/changed-files from 17.3 to 18 [\#505](https://github.com/tj-actions/eslint-changed-files/pull/505) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update tj-actions/glob action to v7.6 [\#504](https://github.com/tj-actions/eslint-changed-files/pull/504) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/github-changelog-generator action to v1.13 [\#503](https://github.com/tj-actions/eslint-changed-files/pull/503) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#502](https://github.com/tj-actions/eslint-changed-files/pull/502) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/glob action to v7.5 [\#501](https://github.com/tj-actions/eslint-changed-files/pull/501) ([renovate[bot]](https://github.com/apps/renovate))
+- Update tj-actions/verify-changed-files action to v9 [\#500](https://github.com/tj-actions/eslint-changed-files/pull/500) ([renovate[bot]](https://github.com/apps/renovate))
+- Update dependency @types/react to v17.0.40 [\#499](https://github.com/tj-actions/eslint-changed-files/pull/499) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v9.2 [\#498](https://github.com/tj-actions/eslint-changed-files/pull/498) ([jackton1](https://github.com/jackton1))
+
 ## [v9.2](https://github.com/tj-actions/eslint-changed-files/tree/v9.2) (2022-03-10)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v9.1...v9.2)
