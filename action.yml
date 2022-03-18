@@ -49,19 +49,12 @@ runs:
     - uses: reviewdog/action-setup@v1
       with:
         reviewdog_version: v0.13.1
-    - name: Run glob excluding files in the ignore_path
-      uses: tj-actions/glob@v7.9
-      id: eslint-glob
-      with:
-        files: |
-          ${{ inputs.file_extensions }}
-        excluded-files-from-source-file: ${{ inputs.ignore_path }}
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v18
       with:
-        files: ${{ steps.eslint-glob.outputs.paths }}
-        files_separator: " "
+        files: ${{ inputs.file_extensions }}
+        files_ignore_from_source_file: ${{ inputs.ignore_path }}
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
