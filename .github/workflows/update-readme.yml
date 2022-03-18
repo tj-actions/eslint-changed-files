@@ -17,7 +17,7 @@ jobs:
         uses: tj-actions/auto-doc@v1.2.13
 
       - name: Run test
-        uses: tj-actions/remark@v2.3
+        uses: tj-actions/remark@v3
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v9
