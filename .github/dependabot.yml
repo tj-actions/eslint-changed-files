@@ -1,15 +1,5 @@
 version: 2
 updates:
-- package-ecosystem: docker
-  directory: "/"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-  ignore:
-  - dependency-name: alpine
-    versions:
-    - 3.13.4
-    - 3.13.5
 - package-ecosystem: github-actions
   directory: "/"
   schedule:
