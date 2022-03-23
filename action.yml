@@ -10,7 +10,7 @@ inputs:
     description: 'Run [ESlint](https://eslint.org/) on all matching files'
     required: false
     default: false
-  workspace: 'List of explicit [workspace](https://docs.npmjs.com/cli/v7/commands/npm-exec#workspace) to run [ESlint](https://eslint.org/) from'
+  workspace: 'List of explicit [workspace](https://docs.npmjs.com/cli/v7/commands/npm-exec#workspace) to run [ESlint](https://eslint.org/)'
     required: false
     default: '.'
   workspaces: 'Enable running [ESlint](https://eslint.org/) in the context of all the configured [workspaces](https://docs.npmjs.com/cli/v7/commands/npm-exec#workspaces).'
