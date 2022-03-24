@@ -17,6 +17,15 @@ CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
 
+if [[ "$INPUT_WORKSPACES" == "true" ]]; then
+  EXTRA_ARGS+=" -ws"
+fi
+
+if [[ -n "$INPUT_WORKSPACE" ]]; then
+  EXTRA_ARGS+=" $(printf "$INPUT_WORKSPACE" | awk '{print "-w "$0}' | tr "\n" " ")"
+fi
+
+echo "Extra arguments: $EXTRA_ARGS"
 
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then

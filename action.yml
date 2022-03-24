@@ -49,7 +49,7 @@ inputs:
   skip_annotations:
     description: Skip running reviewdog i.e don't add any annotations.
     required: false
-    default: 'false'
+    default: false
 
 runs:
   using: 'composite'
@@ -83,6 +83,8 @@ runs:
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
         INPUT_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
+        INPUT_WORKSPACE: ${{ inputs.workspace }}
+        INPUT_WORKSPACES: ${{ inputs.workspaces }}
         INPUT_FILTER_MODE: ${{ inputs.filter_mode }}
         INPUT_REPORTER: ${{ inputs.reporter }}
         INPUT_SKIP_ANNOTATIONS: ${{ inputs.skip_annotations }}
