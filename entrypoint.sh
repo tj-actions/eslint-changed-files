@@ -23,7 +23,7 @@ if [[ "$INPUT_WORKSPACES" == "true" ]]; then
 fi
 
 if [[ -n "$INPUT_WORKSPACE" ]]; then
-  NPX_ARGS+=" $(printf "$INPUT_WORKSPACE" | awk '{print "-w "$0}' | tr "\n" " ")"
+  NPX_ARGS+=" $(echo "$INPUT_WORKSPACE" | awk '{print "-w "$0}' | tr "\n" " ")"
 fi
 
 echo "npx arguments: $NPX_ARGS"
