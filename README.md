@@ -23,9 +23,9 @@ error reporting via GitHub checks.
 *   Easy to debug
 *   Fast execution
 *   [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) extension filtering
-*   Excludes ignored files from change detection to prevent errors.
-*   Github checks error reporting.
-*   Github annotations with a possible resolution that can be applied to the Pull Request.
+*   Excludes ignored files from change detection.
+*   Inline Annotations of ESLint Warnings & Errors
+*   Inline annotations with possible resolutions that can be applied to the Pull Request.
 
 ## Example
 
