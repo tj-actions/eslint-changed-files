@@ -24,7 +24,7 @@ error reporting via GitHub checks.
 *   Fast execution
 *   [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) extension filtering
 *   Excludes ignored files from change detection.
-*   Inline Annotations of ESLint Warnings & Errors
+*   Inline annotations of ESLint Warnings & Errors
 *   Inline annotations with possible resolutions that can be applied to the Pull Request.
 
 ## Example
