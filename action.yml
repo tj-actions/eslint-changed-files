@@ -30,16 +30,30 @@ inputs:
     description: Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
     required: false
     default: ''
+  skip_annotations:
+    description: Skip running reviewdog i.e don't add any annotations.
+    required: false
+    default: 'false'
+  level:
+    description: 'Report level for reviewdog [info,warning,error]'
+    required: false
+    default: 'error'
   reporter:
-    description: reviewdog [reporter](https://github.com/reviewdog/reviewdog#reporters).
+    description: |
+      [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command [github-check,github-pr-review].
+      github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
     required: false
     default: 'github-pr-review'
   filter_mode:
-    description: reviewdog [filtering mode](https://github.com/reviewdog/reviewdog#filter-mode).
+    description: |
+      [Filtering mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command [added,diff_context,file,nofilter].
+      Default is added.
     required: false
     default: 'added'
-  skip_annotations:
-    description: Skip running reviewdog i.e don't add any annotations.
+  fail_on_error:
+    description: |
+      Exit code for reviewdog when errors are found [true,false]
+      Default is `false`.
     required: false
     default: 'false'
 
