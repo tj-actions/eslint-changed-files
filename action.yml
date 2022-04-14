@@ -84,6 +84,7 @@ runs:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_TOKEN: ${{ inputs.token }}
+        INPUT_LEVEL: ${{ inputs.level }}
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
