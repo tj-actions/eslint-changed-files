@@ -31,16 +31,18 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
     # shellcheck disable=SC2086
     npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
-      -reporter=$INPUT_REPORTER \
-      -filter-mode=$INPUT_FILTER_MODE \
-      -fail-on-error && exit_status=$? || exit_status=$?
+      -reporter="${INPUT_REPORTER}" \
+      -filter-mode="${INPUT_FILTER_MODE}" \
+      -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+      -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
   else
     # shellcheck disable=SC2086
     npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
-      -reporter=$INPUT_REPORTER \
-      -filter-mode=$INPUT_FILTER_MODE \
-      -fail-on-error && exit_status=$? || exit_status=$?
+      -reporter="${INPUT_REPORTER}" \
+      -filter-mode="${INPUT_FILTER_MODE}" \
+      -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+      -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
   fi
 
   echo "::endgroup::"
@@ -63,16 +65,18 @@ else
         # shellcheck disable=SC2086
         npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
           -name=eslint \
-          -reporter=$INPUT_REPORTER \
-          -filter-mode=$INPUT_FILTER_MODE \
-          -fail-on-error && exit_status=$? || exit_status=$?
+          -reporter="${INPUT_REPORTER}" \
+          -filter-mode="${INPUT_FILTER_MODE}" \
+          -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+          -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
       else
         # shellcheck disable=SC2086
         npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
           -name=eslint \
-          -reporter=$INPUT_REPORTER \
-          -filter-mode=$INPUT_FILTER_MODE \
-          -fail-on-error && exit_status=$? || exit_status=$?
+          -reporter="${INPUT_REPORTER}" \
+          -filter-mode="${INPUT_FILTER_MODE}" \
+          -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+          -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
       fi
       echo "::endgroup::"
 
