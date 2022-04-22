@@ -1,5 +1,62 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/eslint-changed-files/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v10.2...HEAD)
+
+**Implemented enhancements:**
+
+- \[Feature\] Add the ability to skip annotation comments on unchanged sections [\#431](https://github.com/tj-actions/eslint-changed-files/issues/431)
+
+## [v10.2](https://github.com/tj-actions/eslint-changed-files/tree/v10.2) (2022-04-22)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v10.1...v10.2)
+
+**Merged pull requests:**
+
+- fix\(deps\): update dependency @types/react-dom to v18.0.2 [\#573](https://github.com/tj-actions/eslint-changed-files/pull/573) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.6 [\#572](https://github.com/tj-actions/eslint-changed-files/pull/572) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update reviewdog/action-shellcheck action to v1.15 [\#571](https://github.com/tj-actions/eslint-changed-files/pull/571) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.0.2 [\#570](https://github.com/tj-actions/eslint-changed-files/pull/570) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 17.0.24 to 17.0.25 in /test-app [\#569](https://github.com/tj-actions/eslint-changed-files/pull/569) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): lock file maintenance [\#568](https://github.com/tj-actions/eslint-changed-files/pull/568) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint to v14.7.1 [\#567](https://github.com/tj-actions/eslint-changed-files/pull/567) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/user-event to v14.1.1 [\#566](https://github.com/tj-actions/eslint-changed-files/pull/566) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update cirrus-actions/rebase action to v1.6 [\#565](https://github.com/tj-actions/eslint-changed-files/pull/565) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/react to v13.1.1 [\#564](https://github.com/tj-actions/eslint-changed-files/pull/564) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/react to v13.1.0 [\#563](https://github.com/tj-actions/eslint-changed-files/pull/563) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint to v14.7.0 [\#562](https://github.com/tj-actions/eslint-changed-files/pull/562) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react-dom to v18.0.1 [\#561](https://github.com/tj-actions/eslint-changed-files/pull/561) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v3.0.1 [\#560](https://github.com/tj-actions/eslint-changed-files/pull/560) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 17.0.23 to 17.0.24 in /test-app [\#559](https://github.com/tj-actions/eslint-changed-files/pull/559) ([dependabot[bot]](https://github.com/apps/dependabot))
+- feat: Add support for configuring reviewdog’s exit code on errors [\#558](https://github.com/tj-actions/eslint-changed-files/pull/558) ([jackton1](https://github.com/jackton1))
+- fix\(deps\): update dependency @types/react to v18.0.5 [\#557](https://github.com/tj-actions/eslint-changed-files/pull/557) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.4 [\#556](https://github.com/tj-actions/eslint-changed-files/pull/556) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency react-scripts to v5.0.1 [\#555](https://github.com/tj-actions/eslint-changed-files/pull/555) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.3 [\#554](https://github.com/tj-actions/eslint-changed-files/pull/554) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.2 [\#553](https://github.com/tj-actions/eslint-changed-files/pull/553) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/react to v13.0.1 [\#552](https://github.com/tj-actions/eslint-changed-files/pull/552) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/setup-node action to v3.1.1 [\#551](https://github.com/tj-actions/eslint-changed-files/pull/551) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/user-event to v14.1.0 [\#550](https://github.com/tj-actions/eslint-changed-files/pull/550) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#549](https://github.com/tj-actions/eslint-changed-files/pull/549) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.1 [\#548](https://github.com/tj-actions/eslint-changed-files/pull/548) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.0.2 [\#547](https://github.com/tj-actions/eslint-changed-files/pull/547) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react-dom to v18 [\#546](https://github.com/tj-actions/eslint-changed-files/pull/546) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18 [\#545](https://github.com/tj-actions/eslint-changed-files/pull/545) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react-dom to v17.0.15 [\#544](https://github.com/tj-actions/eslint-changed-files/pull/544) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v17.0.44 [\#543](https://github.com/tj-actions/eslint-changed-files/pull/543) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/jest-dom to v5.16.4 [\#542](https://github.com/tj-actions/eslint-changed-files/pull/542) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#541](https://github.com/tj-actions/eslint-changed-files/pull/541) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/setup-node action to v3.1.0 [\#540](https://github.com/tj-actions/eslint-changed-files/pull/540) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/user-event to v14.0.4 [\#539](https://github.com/tj-actions/eslint-changed-files/pull/539) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/user-event to v14.0.3 [\#538](https://github.com/tj-actions/eslint-changed-files/pull/538) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @testing-library/user-event from 14.0.1 to 14.0.2 in /test-app [\#537](https://github.com/tj-actions/eslint-changed-files/pull/537) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix\(deps\): update dependency @testing-library/user-event to v14.0.1 [\#536](https://github.com/tj-actions/eslint-changed-files/pull/536) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.0.1 [\#535](https://github.com/tj-actions/eslint-changed-files/pull/535) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @testing-library/react to v13 [\#534](https://github.com/tj-actions/eslint-changed-files/pull/534) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v10.1 [\#533](https://github.com/tj-actions/eslint-changed-files/pull/533) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): lock file maintenance [\#532](https://github.com/tj-actions/eslint-changed-files/pull/532) ([renovate[bot]](https://github.com/apps/renovate))
+
 ## [v10.1](https://github.com/tj-actions/eslint-changed-files/tree/v10.1) (2022-03-30)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v10...v10.1)
@@ -67,10 +124,6 @@
 ## [v9.1](https://github.com/tj-actions/eslint-changed-files/tree/v9.1) (2022-03-04)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v9...v9.1)
-
-**Implemented enhancements:**
-
-- \[Feature\] Add the ability to skip annotation comments on unchanged sections [\#431](https://github.com/tj-actions/eslint-changed-files/issues/431)
 
 **Fixed bugs:**
 
@@ -541,7 +594,7 @@
 
 ## [v6.5](https://github.com/tj-actions/eslint-changed-files/tree/v6.5) (2021-06-17)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.5)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.5)
 
 **Merged pull requests:**
 
@@ -571,13 +624,13 @@
 - Update actions/cache action to v2.1.6 [\#109](https://github.com/tj-actions/eslint-changed-files/pull/109) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v6.4 [\#108](https://github.com/tj-actions/eslint-changed-files/pull/108) ([jackton1](https://github.com/jackton1))
 
-## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.3)
-
 ## [v6.4](https://github.com/tj-actions/eslint-changed-files/tree/v6.4) (2021-05-27)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.4)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.4)
+
+## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.3)
 
 ## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-27)
 
