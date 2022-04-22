@@ -47,13 +47,11 @@ inputs:
   filter_mode:
     description: |
       [Filtering mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command [added,diff_context,file,nofilter].
-      Default is added.
     required: false
     default: 'added'
   fail_on_error:
     description: |
-      Exit code for reviewdog when errors are found [true,false]
-      Default is `false`.
+      Exit code for reviewdog when errors are found [true,false].
     required: false
     default: 'false'
 
