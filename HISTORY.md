@@ -1,12 +1,32 @@
 # Changelog
 
-## [Unreleased](https://github.com/tj-actions/eslint-changed-files/tree/HEAD)
+## [v11](https://github.com/tj-actions/eslint-changed-files/tree/v11) (2022-04-30)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v10.2...HEAD)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v10.2...v11)
 
 **Implemented enhancements:**
 
 - \[Feature\] Add the ability to skip annotation comments on unchanged sections [\#431](https://github.com/tj-actions/eslint-changed-files/issues/431)
+
+**Merged pull requests:**
+
+- chore: upgrade reviewdog [\#592](https://github.com/tj-actions/eslint-changed-files/pull/592) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): bump @types/node from 17.0.29 to 17.0.30 in /test-app [\#591](https://github.com/tj-actions/eslint-changed-files/pull/591) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps-dev\): bump stylelint from 14.8.0 to 14.8.1 in /test-app [\#590](https://github.com/tj-actions/eslint-changed-files/pull/590) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix\(deps\): update dependency @types/react-dom to v18.0.3 [\#588](https://github.com/tj-actions/eslint-changed-files/pull/588) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency typescript to v4.6.4 [\#587](https://github.com/tj-actions/eslint-changed-files/pull/587) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/changed-files action to v19 [\#586](https://github.com/tj-actions/eslint-changed-files/pull/586) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 17.0.27 to 17.0.29 in /test-app [\#585](https://github.com/tj-actions/eslint-changed-files/pull/585) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix\(deps\): update react monorepo to v18.1.0 [\#584](https://github.com/tj-actions/eslint-changed-files/pull/584) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.8 [\#583](https://github.com/tj-actions/eslint-changed-files/pull/583) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 17.0.25 to 17.0.27 in /test-app [\#581](https://github.com/tj-actions/eslint-changed-files/pull/581) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps-dev\): bump stylelint from 14.7.1 to 14.8.0 in /test-app [\#580](https://github.com/tj-actions/eslint-changed-files/pull/580) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): lock file maintenance [\#579](https://github.com/tj-actions/eslint-changed-files/pull/579) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react to v18.0.7 [\#578](https://github.com/tj-actions/eslint-changed-files/pull/578) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update github/codeql-action action to v2 [\#577](https://github.com/tj-actions/eslint-changed-files/pull/577) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#576](https://github.com/tj-actions/eslint-changed-files/pull/576) ([jackton1](https://github.com/jackton1))
+- Upgraded to v10.2 [\#575](https://github.com/tj-actions/eslint-changed-files/pull/575) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#574](https://github.com/tj-actions/eslint-changed-files/pull/574) ([jackton1](https://github.com/jackton1))
 
 ## [v10.2](https://github.com/tj-actions/eslint-changed-files/tree/v10.2) (2022-04-22)
 
