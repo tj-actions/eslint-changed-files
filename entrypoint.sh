@@ -4,6 +4,8 @@ set -eu
 
 echo "::group::eslint-changed-files"
 
+npx eslint --version
+
 if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
   curl -sf -o ./formatter.cjs https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
 fi
