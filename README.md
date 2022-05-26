@@ -92,36 +92,32 @@ Support this project with a :star:
 *   Free software: [MIT license](LICENSE)
 
 # Migration Guide
+
 With the switch from using grep's Extended regex to match files to the natively supported workflow glob pattern matching snytax introduced in [v9](https://github.com/tj-actions/eslint-changed-files/releases/v9) you'll need to modify patterns used to match files.
 
 ### BEFORE
-```
-      - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v8.5
-        with:
-          config_path: "/path/to/.eslintrc"
-          ignore_path: "/path/to/.eslintignore"
-          extensions: "ts,tsx,js,jsx"
-          extra_args: "--max-warnings=0"
-```
 
+          - name: Run eslint on changed files
+            uses: tj-actions/eslint-changed-files@v8.5
+            with:
+              config_path: "/path/to/.eslintrc"
+              ignore_path: "/path/to/.eslintignore"
+              extensions: "ts,tsx,js,jsx"
+              extra_args: "--max-warnings=0"
 
 ### AFTER
 
-```
-      - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v11
-        with:
-          config_path: "/path/to/.eslintrc"
-          ignore_path: "/path/to/.eslintignore"
-          extra_args: "--max-warnings=0"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-            **/*.js
-            **/*.jsx
-```
-
+          - name: Run eslint on changed files
+            uses: tj-actions/eslint-changed-files@v11
+            with:
+              config_path: "/path/to/.eslintrc"
+              ignore_path: "/path/to/.eslintignore"
+              extra_args: "--max-warnings=0"
+              file_extensions: |
+                **/*.ts
+                **/*.tsx
+                **/*.js
+                **/*.jsx
 
 # Credits
 
