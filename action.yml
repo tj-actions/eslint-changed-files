@@ -54,6 +54,9 @@ inputs:
       Exit code for reviewdog when errors are found [true,false].
     required: false
     default: 'false'
+  path:
+   description: 'Relative path under GITHUB_WORKSPACE to the repository'
+   required: false
 
 runs:
   using: 'composite'
