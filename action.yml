@@ -68,6 +68,7 @@ runs:
       id: changed-files
       uses: tj-actions/changed-files@v21
       with:
+        path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
         files_ignore_from_source_file: ${{ inputs.ignore_path }}
     - name: Run eslint on changed files
@@ -85,6 +86,7 @@ runs:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_TOKEN: ${{ inputs.token }}
+        INPUT_PATH: ${{ inputs.path }}
         INPUT_LEVEL: ${{ inputs.level }}
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
