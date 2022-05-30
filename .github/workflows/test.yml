@@ -45,12 +45,12 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: "test-app/package.json"
+          config_path: "package.json"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: "test-app/.eslintignore"
+          ignore_path: ".eslintignore"
 
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
