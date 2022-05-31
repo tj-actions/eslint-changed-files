@@ -57,6 +57,7 @@ inputs:
   path:
    description: 'Relative path under GITHUB_WORKSPACE to the repository'
    required: false
+   default: '.'
 
 runs:
   using: 'composite'
