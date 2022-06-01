@@ -51,9 +51,6 @@ jobs:
             **/*.tsx
           extra_args: "--max-warnings=0"
           ignore_path: ".eslintignore"
-      
-      - run: |
-          find /tmp -type f -name "*.txt" -exec cat {} \;
 
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
