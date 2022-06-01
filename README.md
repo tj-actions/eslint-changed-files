@@ -96,6 +96,7 @@ Support this project with a :star:
 With the switch from using grep's Extended regex to match files to the natively supported workflow glob pattern matching snytax introduced in [v9](https://github.com/tj-actions/eslint-changed-files/releases/v9) you'll need to modify patterns used to match files.
 
 ### BEFORE
+```yml
 
           - name: Run eslint on changed files
             uses: tj-actions/eslint-changed-files@v8.5
@@ -104,9 +105,11 @@ With the switch from using grep's Extended regex to match files to the natively 
               ignore_path: "/path/to/.eslintignore"
               extensions: "ts,tsx,js,jsx"
               extra_args: "--max-warnings=0"
+```
 
 ### AFTER
 
+```yml
           - name: Run eslint on changed files
             uses: tj-actions/eslint-changed-files@v11
             with:
@@ -118,6 +121,7 @@ With the switch from using grep's Extended regex to match files to the natively 
                 **/*.tsx
                 **/*.js
                 **/*.jsx
+```
 
 # Credits
 
