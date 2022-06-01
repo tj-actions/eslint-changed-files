@@ -96,6 +96,7 @@ Support this project with a :star:
 With the switch from using grep's Extended regex to match files to the natively supported workflow glob pattern matching snytax introduced in [v9](https://github.com/tj-actions/eslint-changed-files/releases/v9) you'll need to modify patterns used to match files.
 
 ### BEFORE
+
 ```yml
 ...
           - name: Run eslint on changed files
