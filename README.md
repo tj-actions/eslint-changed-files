@@ -97,7 +97,7 @@ With the switch from using grep's Extended regex to match files to the natively 
 
 ### BEFORE
 ```yml
-
+...
           - name: Run eslint on changed files
             uses: tj-actions/eslint-changed-files@v8.5
             with:
@@ -110,6 +110,7 @@ With the switch from using grep's Extended regex to match files to the natively 
 ### AFTER
 
 ```yml
+...
           - name: Run eslint on changed files
             uses: tj-actions/eslint-changed-files@v11
             with:
