@@ -53,7 +53,11 @@ inputs:
     description: |
       Exit code for reviewdog when errors are found [true,false].
     required: false
-    default: 'false'
+    default: 'true'
+  path:
+   description: 'Relative path under GITHUB_WORKSPACE to the repository'
+   required: false
+   default: '.'
 
 runs:
   using: 'composite'
@@ -63,10 +67,12 @@ runs:
         reviewdog_version: v0.14.1
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v22
+      uses: tj-actions/changed-files@v22.2
       with:
+        path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
         files_ignore_from_source_file: ${{ inputs.ignore_path }}
+        diff_relative: true
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
@@ -82,6 +88,7 @@ runs:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_TOKEN: ${{ inputs.token }}
+        INPUT_PATH: ${{ inputs.path }}
         INPUT_LEVEL: ${{ inputs.level }}
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
