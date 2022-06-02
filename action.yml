@@ -65,16 +65,14 @@ runs:
     - uses: reviewdog/action-setup@v1
       with:
         reviewdog_version: v0.14.1
-    - run: |
-        git config diff.relative true
-      shell: bash
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v22.1
+      uses: tj-actions/changed-files@v22.2
       with:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
         files_ignore_from_source_file: ${{ inputs.ignore_path }}
+        diff_relative: true
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
