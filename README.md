@@ -26,7 +26,7 @@ error reporting via GitHub checks.
 *   Excludes ignored files from change detection.
 *   Inline annotations of ESLint Warnings & Errors.
 *   Inline annotations with possible resolutions that can be applied to the Pull Request.
-*   Monorepos support.
+*   Monorepo support.
 
 ## Example
 
@@ -84,7 +84,7 @@ Support this project with a :star:
 | filter\_mode      | string | false    | `"added"`                                  | [Filtering mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog<br>command \[added,diff\_context,file,nofilter].                                                                                                                                                                              |
 | ignore\_path      | string | false    |                                            | [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)                                                                                                                                                                                                          |
 | level            | string | false    | `"error"`                                  | Report level for reviewdog \[info,warning,error]<br>                                                                                                                                                                                                                                                                |
-| path             | string | false    | `"."`                                      | Relative path under GITHUB\_WORKSPACE to<br>the repository                                                                                                                                                                                                                                                          |
+| path             | string | false    | `"."`                                      | Path to a subproject.                                                                                                                                                                                                                                                     |
 | reporter         | string | false    | `"github-pr-review"`                       | [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command \[github-check,github-pr-review].<br>github-pr-review can use Markdown and<br>add a link to rule<br>page in reviewdog reports.                                                                                                    |
 | skip\_annotations | string | false    | `"false"`                                  | Skip running reviewdog i.e don't<br>add any annotations.                                                                                                                                                                                                                                                           |
 | token            | string | true     | `"${{ github.token }}"`                    | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped<br>[Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) |
