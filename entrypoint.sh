@@ -23,23 +23,26 @@ ESLINT_FORMATTER="./formatter.cjs"
 
 # shellcheck disable=SC2034
 export REVIEWDOG_GITHUB_API_TOKEN=$INPUT_TOKEN
-CONFIG_PATH=$INPUT_CONFIG_PATH
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
+CONFIG_ARG="--config=${INPUT_CONFIG_PATH}"
 
+if [[ "$INPUT_IGNORE_CONFIG_PATH" == "true" ]]; then
+  CONFIG_ARG=""
+fi
 
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
     if [[ -n ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
-      npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
+      npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
     else
       # shellcheck disable=SC2086
-      npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
+      npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
     fi
   elif [[ -n ${IGNORE_PATH} ]]; then
     # shellcheck disable=SC2086
-    npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
+    npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
       -reporter="${INPUT_REPORTER}" \
       -filter-mode="${INPUT_FILTER_MODE}" \
@@ -47,7 +50,7 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
       -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
   else
     # shellcheck disable=SC2086
-    npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
+    npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
       -name=eslint \
       -reporter="${INPUT_REPORTER}" \
       -filter-mode="${INPUT_FILTER_MODE}" \
@@ -66,14 +69,14 @@ else
       if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
         if [[ -n ${IGNORE_PATH} ]]; then
           # shellcheck disable=SC2086
-          npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
+          npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
         else
           # shellcheck disable=SC2086
-          npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
+          npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
         fi
       elif [[ -n ${IGNORE_PATH} ]]; then
         # shellcheck disable=SC2086
-        npx eslint --config="${CONFIG_PATH}" --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
+        npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
           -name=eslint \
           -reporter="${INPUT_REPORTER}" \
           -filter-mode="${INPUT_FILTER_MODE}" \
@@ -81,7 +84,7 @@ else
           -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
       else
         # shellcheck disable=SC2086
-        npx eslint --config="${CONFIG_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
+        npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
           -name=eslint \
           -reporter="${INPUT_REPORTER}" \
           -filter-mode="${INPUT_FILTER_MODE}" \
