@@ -14,6 +14,10 @@ inputs:
     description: '[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/)'
     required: false
     default: '.eslintrc'
+  ignore_config_path:
+    description: 'Run [ESlint](https://eslint.org/) without --config flag, helpful when you have nested folders with .eslintrc files'
+    required: false,
+    default: false
   ignore_path:
     description: '[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)'
     required: false
