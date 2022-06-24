@@ -91,3 +91,13 @@ jobs:
             **/*.tsx
           extra_args: "--max-warnings=0"
           all_files: true
+
+      - name: Run ESLint without --config flag
+        uses: ./
+        with:
+          ignore_config_path: true
+          file_extensions: |
+            **/*.ts
+            **/*.tsx
+          extra_args: "--max-warnings=0"
+          all_files: true
