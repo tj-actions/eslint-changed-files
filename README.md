@@ -50,7 +50,7 @@ error reporting via GitHub checks.
         run: npm ci  # OR: yarn 
 
       - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v12
+        uses: tj-actions/eslint-changed-files@v12.1
         with:
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
@@ -116,7 +116,7 @@ With the switch from using grep's Extended regex to match files to the natively 
 ```yml
 ...
           - name: Run eslint on changed files
-            uses: tj-actions/eslint-changed-files@v12
+            uses: tj-actions/eslint-changed-files@v12.1
             with:
               config_path: "/path/to/.eslintrc"
               ignore_path: "/path/to/.eslintignore"
