@@ -13,6 +13,17 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "sava-vidakovic",
+      "name": "Sava Vidakovic",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10528914?v=4",
+      "profile": "https://github.com/sava-vidakovic",
+      "contributions": [
+        "code",
+        "test",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
