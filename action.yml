@@ -15,7 +15,7 @@ inputs:
     required: false
     default: '.eslintrc'
   ignore_config_path:
-    description: 'Run [ESlint](https://eslint.org/) without --config flag, helpful when you have nested folders with .eslintrc files'
+    description: 'Run [ESlint](https://eslint.org/) without --config flag, helpful when you have mono repository with multiple sub projects eash with a different .eslintrc file'
     required: false
     default: false
   ignore_path:
