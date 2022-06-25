@@ -95,7 +95,6 @@ jobs:
       - name: Run ESLint without --config flag
         uses: ./
         with:
-          ignore_config_path: true
           file_extensions: |
             **/*.ts
             **/*.tsx
