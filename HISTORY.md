@@ -1,5 +1,16 @@
 # Changelog
 
+## [v13](https://github.com/tj-actions/eslint-changed-files/tree/v13) (2022-06-25)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v12.1...v13)
+
+**Merged pull requests:**
+
+- Updated README.md [\#686](https://github.com/tj-actions/eslint-changed-files/pull/686) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#685](https://github.com/tj-actions/eslint-changed-files/pull/685) ([jackton1](https://github.com/jackton1))
+- Updated README.md [\#684](https://github.com/tj-actions/eslint-changed-files/pull/684) ([jackton1](https://github.com/jackton1))
+- Upgraded to v12.1 [\#683](https://github.com/tj-actions/eslint-changed-files/pull/683) ([jackton1](https://github.com/jackton1))
+
 ## [v12.1](https://github.com/tj-actions/eslint-changed-files/tree/v12.1) (2022-06-24)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v12...v12.1)
@@ -715,7 +726,7 @@
 
 ## [v6.5](https://github.com/tj-actions/eslint-changed-files/tree/v6.5) (2021-06-17)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.5)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.5)
 
 **Merged pull requests:**
 
@@ -745,13 +756,13 @@
 - Update actions/cache action to v2.1.6 [\#109](https://github.com/tj-actions/eslint-changed-files/pull/109) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v6.4 [\#108](https://github.com/tj-actions/eslint-changed-files/pull/108) ([jackton1](https://github.com/jackton1))
 
-## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.4...v6.3)
-
 ## [v6.4](https://github.com/tj-actions/eslint-changed-files/tree/v6.4) (2021-05-27)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.4)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6.3...v6.4)
+
+## [v6.3](https://github.com/tj-actions/eslint-changed-files/tree/v6.3) (2021-05-27)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v6...v6.3)
 
 ## [v6](https://github.com/tj-actions/eslint-changed-files/tree/v6) (2021-05-27)
 
