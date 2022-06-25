@@ -1,11 +1,20 @@
 # Changelog
 
+## [Unreleased](https://github.com/tj-actions/eslint-changed-files/tree/HEAD)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v13...HEAD)
+
+**Merged pull requests:**
+
+- Upgraded to v13 [\#688](https://github.com/tj-actions/eslint-changed-files/pull/688) ([jackton1](https://github.com/jackton1))
+
 ## [v13](https://github.com/tj-actions/eslint-changed-files/tree/v13) (2022-06-25)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v12.1...v13)
 
 **Merged pull requests:**
 
+- Updated README.md [\#687](https://github.com/tj-actions/eslint-changed-files/pull/687) ([jackton1](https://github.com/jackton1))
 - Updated README.md [\#686](https://github.com/tj-actions/eslint-changed-files/pull/686) ([jackton1](https://github.com/jackton1))
 - Updated README.md [\#685](https://github.com/tj-actions/eslint-changed-files/pull/685) ([jackton1](https://github.com/jackton1))
 - Updated README.md [\#684](https://github.com/tj-actions/eslint-changed-files/pull/684) ([jackton1](https://github.com/jackton1))
