@@ -13,7 +13,7 @@ inputs:
   config_path:
     description: '[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories.'
     required: false
-    default: '.eslintrc'
+    default: ''
   ignore_path:
     description: '[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)'
     required: false
