@@ -93,7 +93,6 @@ runs:
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
         INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
-        INPUT_IGNORE_CONFIG_PATH: ${{ inputs.ignore_config_path }}
         INPUT_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
         INPUT_FILTER_MODE: ${{ inputs.filter_mode }}
