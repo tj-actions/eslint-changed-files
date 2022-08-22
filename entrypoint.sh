@@ -99,7 +99,6 @@ else
       fi
   else
       echo "Skipping: No files to lint"
-      exit 0;
   fi
 fi
 
