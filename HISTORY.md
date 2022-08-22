@@ -1,5 +1,30 @@
 # Changelog
 
+## [v13.2](https://github.com/tj-actions/eslint-changed-files/tree/v13.2) (2022-08-22)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v13.1...v13.2)
+
+**Merged pull requests:**
+
+- feat: cleanup formatter.cjs [\#753](https://github.com/tj-actions/eslint-changed-files/pull/753) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): bump @types/node from 18.7.6 to 18.7.9 in /test-app [\#752](https://github.com/tj-actions/eslint-changed-files/pull/752) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): lock file maintenance [\#751](https://github.com/tj-actions/eslint-changed-files/pull/751) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#750](https://github.com/tj-actions/eslint-changed-files/pull/750) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/changed-files action to v28 [\#749](https://github.com/tj-actions/eslint-changed-files/pull/749) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint-config-standard to v28 [\#748](https://github.com/tj-actions/eslint-changed-files/pull/748) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint to v14.11.0 [\#747](https://github.com/tj-actions/eslint-changed-files/pull/747) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.4.1 [\#746](https://github.com/tj-actions/eslint-changed-files/pull/746) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.1 [\#745](https://github.com/tj-actions/eslint-changed-files/pull/745) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#744](https://github.com/tj-actions/eslint-changed-files/pull/744) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): lock file maintenance [\#743](https://github.com/tj-actions/eslint-changed-files/pull/743) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/changed-files action to v27 [\#742](https://github.com/tj-actions/eslint-changed-files/pull/742) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.0 [\#741](https://github.com/tj-actions/eslint-changed-files/pull/741) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 18.7.4 to 18.7.6 in /test-app [\#740](https://github.com/tj-actions/eslint-changed-files/pull/740) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix\(deps\): update dependency @types/jest to v28.1.7 [\#739](https://github.com/tj-actions/eslint-changed-files/pull/739) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 18.7.2 to 18.7.4 in /test-app [\#738](https://github.com/tj-actions/eslint-changed-files/pull/738) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update tj-actions/changed-files action to v26 [\#737](https://github.com/tj-actions/eslint-changed-files/pull/737) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v13.1 [\#736](https://github.com/tj-actions/eslint-changed-files/pull/736) ([jackton1](https://github.com/jackton1))
+
 ## [v13.1](https://github.com/tj-actions/eslint-changed-files/tree/v13.1) (2022-08-15)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v13...v13.1)
