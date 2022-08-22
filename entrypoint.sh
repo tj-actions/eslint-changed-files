@@ -9,7 +9,8 @@ if [[ -n $INPUT_PATH ]]; then
 
   echo "Resolving repository path: $REPO_DIR"
   if [[ ! -d "$REPO_DIR" ]]; then
-    echo "::warning::Invalid repository path: $REPO_DIR"
+    echo "::error::Invalid repository path: $REPO_DIR"
+    echo "::endgroup::"
     exit 1
   fi
   cd "$REPO_DIR"
@@ -58,10 +59,9 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
       -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
   fi
 
-  echo "::endgroup::"
-
   if [[ $exit_status -ne 0 ]]; then
-    echo "::warning::Error running eslint."
+    echo "::error::Error running eslint."
+    echo "::endgroup::"
     exit 1;
   fi
 else
@@ -91,15 +91,20 @@ else
           -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
           -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
       fi
-      echo "::endgroup::"
 
       if [[ $exit_status -ne 0 ]]; then
-        echo "::warning::Error running eslint."
+        echo "::error::Error running eslint."
+        echo "::endgroup::"
         exit 1;
       fi
   else
       echo "Skipping: No files to lint"
-      echo "::endgroup::"
       exit 0;
   fi
 fi
+
+if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+  rm -f ./formatter.cjs
+fi
+
+echo "::endgroup::"
