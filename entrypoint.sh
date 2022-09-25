@@ -32,6 +32,7 @@ if [[ -n "$INPUT_CONFIG_PATH" ]]; then
   CONFIG_ARG="--config=${INPUT_CONFIG_PATH}"
 fi
 
+echo "Running ESlint on changed files..."
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
     if [[ -n ${IGNORE_PATH} ]]; then
