@@ -1,12 +1,40 @@
 # Changelog
 
+## [v17.0.1](https://github.com/tj-actions/eslint-changed-files/tree/v17.0.1) (2022-10-25)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v17...v17.0.1)
+
+## [v17](https://github.com/tj-actions/eslint-changed-files/tree/v17) (2022-10-25)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v17.0.0...v17)
+
+**Merged pull requests:**
+
+- chore: update debug message [\#856](https://github.com/tj-actions/eslint-changed-files/pull/856) ([jackton1](https://github.com/jackton1))
+- fix\(deps\): update dependency @types/node to v18.11.5 [\#855](https://github.com/tj-actions/eslint-changed-files/pull/855) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/react-dom to v18.0.7 [\#854](https://github.com/tj-actions/eslint-changed-files/pull/854) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/react from 18.0.21 to 18.0.22 in /test-app [\#852](https://github.com/tj-actions/eslint-changed-files/pull/852) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump @types/node from 18.11.3 to 18.11.4 in /test-app [\#851](https://github.com/tj-actions/eslint-changed-files/pull/851) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): lock file maintenance [\#850](https://github.com/tj-actions/eslint-changed-files/pull/850) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/changed-files action to v33 [\#849](https://github.com/tj-actions/eslint-changed-files/pull/849) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#848](https://github.com/tj-actions/eslint-changed-files/pull/848) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 18.11.2 to 18.11.3 in /test-app [\#847](https://github.com/tj-actions/eslint-changed-files/pull/847) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump @types/node from 18.11.0 to 18.11.2 in /test-app [\#846](https://github.com/tj-actions/eslint-changed-files/pull/846) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix\(deps\): update dependency web-vitals to v3.0.4 [\#845](https://github.com/tj-actions/eslint-changed-files/pull/845) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/jest to v29.2.0 [\#844](https://github.com/tj-actions/eslint-changed-files/pull/844) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.2.0 [\#843](https://github.com/tj-actions/eslint-changed-files/pull/843) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update pascalgn/automerge-action action to v0.15.5 [\#842](https://github.com/tj-actions/eslint-changed-files/pull/842) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): bump @types/node from 18.8.5 to 18.11.0 in /test-app [\#841](https://github.com/tj-actions/eslint-changed-files/pull/841) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update peter-evans/create-pull-request action to v4.1.4 [\#840](https://github.com/tj-actions/eslint-changed-files/pull/840) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#839](https://github.com/tj-actions/eslint-changed-files/pull/839) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/verify-changed-files action to v12 [\#838](https://github.com/tj-actions/eslint-changed-files/pull/838) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint-config-standard to v29 [\#837](https://github.com/tj-actions/eslint-changed-files/pull/837) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency stylelint to v14.14.0 [\#836](https://github.com/tj-actions/eslint-changed-files/pull/836) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v17.0.0 [\#835](https://github.com/tj-actions/eslint-changed-files/pull/835) ([jackton1](https://github.com/jackton1))
+
 ## [v17.0.0](https://github.com/tj-actions/eslint-changed-files/tree/v17.0.0) (2022-10-13)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v17...v17.0.0)
-
-## [v17](https://github.com/tj-actions/eslint-changed-files/tree/v17) (2022-10-13)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v16.0.1...v17)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v16...v17.0.0)
 
 **Merged pull requests:**
 
@@ -21,13 +49,13 @@
 - chore\(deps\): update tj-actions/changed-files action to v32 [\#825](https://github.com/tj-actions/eslint-changed-files/pull/825) ([renovate[bot]](https://github.com/apps/renovate))
 - Upgraded to v16.0.1 [\#824](https://github.com/tj-actions/eslint-changed-files/pull/824) ([jackton1](https://github.com/jackton1))
 
-## [v16.0.1](https://github.com/tj-actions/eslint-changed-files/tree/v16.0.1) (2022-10-04)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v16...v16.0.1)
-
 ## [v16](https://github.com/tj-actions/eslint-changed-files/tree/v16) (2022-10-04)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v16.0.0...v16)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v16.0.1...v16)
+
+## [v16.0.1](https://github.com/tj-actions/eslint-changed-files/tree/v16.0.1) (2022-10-04)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v16.0.0...v16.0.1)
 
 **Merged pull requests:**
 
@@ -1132,15 +1160,15 @@
 
 ## [v2](https://github.com/tj-actions/eslint-changed-files/tree/v2) (2020-05-24)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v1...v2)
-
-## [v1](https://github.com/tj-actions/eslint-changed-files/tree/v1) (2020-05-24)
-
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.15...v1)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.15...v2)
 
 ## [0.1.15](https://github.com/tj-actions/eslint-changed-files/tree/0.1.15) (2020-05-24)
 
-[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.14...0.1.15)
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v1...0.1.15)
+
+## [v1](https://github.com/tj-actions/eslint-changed-files/tree/v1) (2020-05-24)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/0.1.14...v1)
 
 ## [0.1.14](https://github.com/tj-actions/eslint-changed-files/tree/0.1.14) (2020-05-24)
 
