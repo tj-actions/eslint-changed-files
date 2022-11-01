@@ -46,7 +46,7 @@ inputs:
     default: 'github-pr-review'
   filter_mode:
     description: |
-      [Filtering mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command [added,diff_context,file,nofilter].
+      [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command [added,diff_context,file,nofilter].
     required: false
     default: 'added'
   fail_on_error:
