@@ -16,13 +16,14 @@ if [[ -n $INPUT_PATH ]]; then
   cd "$REPO_DIR"
 fi
 
+TEMP_DIR=$(mktemp -d)
+RD_JSON_FILE="$TEMP_DIR/rd.json"
+ESLINT_FORMATTER="$TEMP_DIR/formatter.cjs"
+
 if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
-  TEMP_DIR=$(mktemp -d)
-  RD_JSON_FILE="$TEMP_DIR/rd.json"
-  curl -sf -o ./formatter.cjs https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
+  curl -sf -o "$ESLINT_FORMATTER" https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
 fi
 
-ESLINT_FORMATTER="./formatter.cjs"
 
 # shellcheck disable=SC2034
 export REVIEWDOG_GITHUB_API_TOKEN=$INPUT_TOKEN
