@@ -62,8 +62,8 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
         -filter-mode="nofilter" \
         -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
         -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
-      rm -rf "$TEMP_DIR"
     fi
+    rm -rf "$TEMP_DIR"
     echo "::endgroup::"
     exit 1;
   fi
@@ -95,8 +95,8 @@ else
             -filter-mode="nofilter" \
             -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
             -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
-          rm -rf "$TEMP_DIR"
         fi
+        rm -rf "$TEMP_DIR"
         echo "::endgroup::"
         exit 1;
       fi
