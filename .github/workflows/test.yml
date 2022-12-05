@@ -45,7 +45,7 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: "package.json"
+          config_path: ".eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
@@ -55,7 +55,7 @@ jobs:
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
         with:
-          config_path: "test-app/package.json"
+          config_path: "test-app/.eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
@@ -65,7 +65,7 @@ jobs:
       - name: Run ESLint on all files with .eslintignore
         uses: ./
         with:
-          config_path: "test-app/package.json"
+          config_path: "test-app/.eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
@@ -76,7 +76,7 @@ jobs:
       - name: Run ESLint on changed files
         uses: ./
         with:
-          config_path: "test-app/package.json"
+          config_path: "test-app/.eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
@@ -85,7 +85,7 @@ jobs:
       - name: Run ESLint on all files
         uses: ./
         with:
-          config_path: "test-app/package.json"
+          config_path: "test-app/.eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
