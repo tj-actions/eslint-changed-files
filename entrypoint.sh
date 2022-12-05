@@ -56,7 +56,12 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   if [[ $exit_status -ne 0 ]]; then
     echo "::error::Error running eslint."
     if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
-      cat "$RD_JSON_FILE"
+      reviewdog -f=rdjson \
+        -name=eslint \
+        -reporter="${INPUT_REPORTER}" \
+        -filter-mode="${INPUT_FILTER_MODE}" \
+        -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+        -level="${INPUT_LEVEL}" < "$RD_JSON_FILE"
       rm -f ./formatter.cjs
       rm -rf "$TEMP_DIR"
     fi
@@ -85,7 +90,12 @@ else
       if [[ $exit_status -ne 0 ]]; then
         echo "::error::Error running eslint."
         if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
-          cat "$RD_JSON_FILE"
+          reviewdog -f=rdjson \
+            -name=eslint \
+            -reporter="${INPUT_REPORTER}" \
+            -filter-mode="${INPUT_FILTER_MODE}" \
+            -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+            -level="${INPUT_LEVEL}" < "$RD_JSON_FILE"
           rm -f ./formatter.cjs
           rm -rf "$TEMP_DIR"
         fi
