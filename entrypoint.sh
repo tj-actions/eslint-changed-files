@@ -59,7 +59,7 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
       reviewdog -f=rdjson \
         -name=eslint \
         -reporter="${INPUT_REPORTER}" \
-        -filter-mode="${INPUT_FILTER_MODE}" \
+        -filter-mode="nofilter" \
         -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
         -level="${INPUT_LEVEL}" < "$RD_JSON_FILE"
       rm -f ./formatter.cjs
@@ -93,7 +93,7 @@ else
           reviewdog -f=rdjson \
             -name=eslint \
             -reporter="${INPUT_REPORTER}" \
-            -filter-mode="${INPUT_FILTER_MODE}" \
+            -filter-mode="nofilter" \
             -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
             -level="${INPUT_LEVEL}" < "$RD_JSON_FILE"
           rm -f ./formatter.cjs
