@@ -104,7 +104,7 @@ else
   fi
 fi
 
-if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
   rm -f ./formatter.cjs
 fi
 
