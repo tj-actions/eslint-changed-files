@@ -54,6 +54,11 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
 
   if [[ $exit_status -ne 0 ]]; then
     echo "::error::Error running eslint."
+    if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+      cat "$RD_JSON_FILE"
+      rm -f ./formatter.cjs
+      rm -rf "$TEMP_DIR"
+    fi
     echo "::endgroup::"
     exit 1;
   fi
@@ -78,6 +83,11 @@ else
 
       if [[ $exit_status -ne 0 ]]; then
         echo "::error::Error running eslint."
+        if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+          cat "$RD_JSON_FILE"
+          rm -f ./formatter.cjs
+          rm -rf "$TEMP_DIR"
+        fi
         echo "::endgroup::"
         exit 1;
       fi
