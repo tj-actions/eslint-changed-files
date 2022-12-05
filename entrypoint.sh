@@ -92,7 +92,7 @@ if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
     -reporter="${INPUT_REPORTER}" \
     -filter-mode="${INPUT_FILTER_MODE}" \
     -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-    -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
+    -level="${INPUT_LEVEL}" < "$(cat "$RD_JSON_FILE")"
 
   rm -f ./formatter.cjs
   rm -rf "$TEMP_DIR"
