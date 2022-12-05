@@ -17,6 +17,8 @@ if [[ -n $INPUT_PATH ]]; then
 fi
 
 if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+  TEMP_DIR=$(mktemp -d)
+  RD_JSON_FILE="$TEMP_DIR/rd.json"
   curl -sf -o ./formatter.cjs https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
 fi
 
@@ -44,20 +46,10 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
     fi
   elif [[ -n ${IGNORE_PATH} ]]; then
     # shellcheck disable=SC2086
-    npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
-      -name=eslint \
-      -reporter="${INPUT_REPORTER}" \
-      -filter-mode="${INPUT_FILTER_MODE}" \
-      -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-      -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
+    npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
   else
     # shellcheck disable=SC2086
-    npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . | reviewdog -f=rdjson \
-      -name=eslint \
-      -reporter="${INPUT_REPORTER}" \
-      -filter-mode="${INPUT_FILTER_MODE}" \
-      -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-      -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
+    npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
   fi
 
   if [[ $exit_status -ne 0 ]]; then
@@ -78,20 +70,10 @@ else
         fi
       elif [[ -n ${IGNORE_PATH} ]]; then
         # shellcheck disable=SC2086
-        npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
-          -name=eslint \
-          -reporter="${INPUT_REPORTER}" \
-          -filter-mode="${INPUT_FILTER_MODE}" \
-          -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-          -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
+        npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
       else
         # shellcheck disable=SC2086
-        npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} | reviewdog -f=rdjson \
-          -name=eslint \
-          -reporter="${INPUT_REPORTER}" \
-          -filter-mode="${INPUT_FILTER_MODE}" \
-          -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-          -level="${INPUT_LEVEL}" && exit_status=$? || exit_status=$?
+        npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
       fi
 
       if [[ $exit_status -ne 0 ]]; then
@@ -104,8 +86,16 @@ else
   fi
 fi
 
-if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
+if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+  reviewdog -f=rdjson \
+    -name=eslint \
+    -reporter="${INPUT_REPORTER}" \
+    -filter-mode="${INPUT_FILTER_MODE}" \
+    -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+    -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
+
   rm -f ./formatter.cjs
+  rm -rf "$TEMP_DIR"
 fi
 
 echo "::endgroup::"
