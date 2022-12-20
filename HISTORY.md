@@ -1,5 +1,29 @@
 # Changelog
 
+## [v18](https://github.com/tj-actions/eslint-changed-files/tree/v18) (2022-12-20)
+
+[Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v17.1.1...v18)
+
+**Merged pull requests:**
+
+- chore\(deps-dev\): bump eslint from 8.29.0 to 8.30.0 in /test-app [\#938](https://github.com/tj-actions/eslint-changed-files/pull/938) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump tj-actions/changed-files from 34 to 35 [\#937](https://github.com/tj-actions/eslint-changed-files/pull/937) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update tj-actions/changed-files action to v35 [\#936](https://github.com/tj-actions/eslint-changed-files/pull/936) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#935](https://github.com/tj-actions/eslint-changed-files/pull/935) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/node to v18.11.17 [\#934](https://github.com/tj-actions/eslint-changed-files/pull/934) ([renovate[bot]](https://github.com/apps/renovate))
+- Updated README.md [\#932](https://github.com/tj-actions/eslint-changed-files/pull/932) ([jackton1](https://github.com/jackton1))
+- chore\(deps\): update tj-actions/verify-changed-files action to v13 [\#931](https://github.com/tj-actions/eslint-changed-files/pull/931) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update tj-actions/auto-doc action to v1.6.0 [\#930](https://github.com/tj-actions/eslint-changed-files/pull/930) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): lock file maintenance [\#929](https://github.com/tj-actions/eslint-changed-files/pull/929) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update dependency eslint-config-standard-with-typescript to v24 [\#928](https://github.com/tj-actions/eslint-changed-files/pull/928) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/node to v18.11.15 [\#927](https://github.com/tj-actions/eslint-changed-files/pull/927) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps-dev\): bump @typescript-eslint/eslint-plugin from 5.46.0 to 5.46.1 in /test-app [\#926](https://github.com/tj-actions/eslint-changed-files/pull/926) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): bump cirrus-actions/rebase from 1.7 to 1.8 [\#925](https://github.com/tj-actions/eslint-changed-files/pull/925) ([dependabot[bot]](https://github.com/apps/dependabot))
+- chore\(deps\): update cirrus-actions/rebase action to v1.8 - abandoned [\#924](https://github.com/tj-actions/eslint-changed-files/pull/924) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update reviewdog/action-shellcheck action to v1.16 [\#923](https://github.com/tj-actions/eslint-changed-files/pull/923) ([renovate[bot]](https://github.com/apps/renovate))
+- fix\(deps\): update dependency @types/node to v18.11.14 [\#922](https://github.com/tj-actions/eslint-changed-files/pull/922) ([renovate[bot]](https://github.com/apps/renovate))
+- Upgraded to v17.1.1 [\#921](https://github.com/tj-actions/eslint-changed-files/pull/921) ([jackton1](https://github.com/jackton1))
+
 ## [v17.1.1](https://github.com/tj-actions/eslint-changed-files/tree/v17.1.1) (2022-12-12)
 
 [Full Changelog](https://github.com/tj-actions/eslint-changed-files/compare/v17...v17.1.1)
