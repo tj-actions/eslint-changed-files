@@ -67,7 +67,7 @@ runs:
         reviewdog_version: v0.14.1
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v34
+      uses: tj-actions/changed-files@v35
       with:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
