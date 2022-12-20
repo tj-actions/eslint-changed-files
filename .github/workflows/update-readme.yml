@@ -36,6 +36,7 @@ jobs:
         with:
           base: "main"
           title: "Updated README.md"
+          lables: "merge when passing"
           branch: "chore/update-readme"
           commit-message: "Updated README.md"
           body: "Updated README.md"
