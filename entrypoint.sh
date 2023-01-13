@@ -52,17 +52,18 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
     # shellcheck disable=SC2086
     npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
   fi
+  
+  if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+    reviewdog -f=rdjson \
+      -name=eslint \
+      -reporter="${INPUT_REPORTER}" \
+      -filter-mode="nofilter" \
+      -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+      -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
+  fi
 
   if [[ $exit_status -ne 0 ]]; then
     echo "::error::Error running eslint."
-    if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
-      reviewdog -f=rdjson \
-        -name=eslint \
-        -reporter="${INPUT_REPORTER}" \
-        -filter-mode="nofilter" \
-        -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-        -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
-    fi
     rm -rf "$TEMP_DIR"
     echo "::endgroup::"
     exit 1;
@@ -85,17 +86,18 @@ else
         # shellcheck disable=SC2086
         npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
       fi
+      
+      if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
+        reviewdog -f=rdjson \
+          -name=eslint \
+          -reporter="${INPUT_REPORTER}" \
+          -filter-mode="nofilter" \
+          -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
+          -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
+      fi
 
       if [[ $exit_status -ne 0 ]]; then
         echo "::error::Error running eslint."
-        if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
-          reviewdog -f=rdjson \
-            -name=eslint \
-            -reporter="${INPUT_REPORTER}" \
-            -filter-mode="nofilter" \
-            -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-            -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
-        fi
         rm -rf "$TEMP_DIR"
         echo "::endgroup::"
         exit 1;
@@ -103,15 +105,6 @@ else
   else
       echo "Skipping: No files to lint"
   fi
-fi
-
-if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
-  reviewdog -f=rdjson \
-    -name=eslint \
-    -reporter="${INPUT_REPORTER}" \
-    -filter-mode="${INPUT_FILTER_MODE}" \
-    -fail-on-error="${INPUT_FAIL_ON_ERROR}" \
-    -level="${INPUT_LEVEL}" < "$RD_JSON_FILE" || true
 fi
 
 rm -rf "$TEMP_DIR"

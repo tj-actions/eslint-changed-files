@@ -22,10 +22,7 @@ inputs:
     description: List of file extensions to watch for changes and run [ESlint](https://eslint.org/) against
     required: false
     default: |
-      **/*.ts
-      **/*.tsx
-      **/*.js
-      **/*.jsx
+      **/*.{ts,tsx,js,jsx}
   extra_args:
     description: Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
     required: false
