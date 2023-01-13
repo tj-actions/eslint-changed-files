@@ -50,7 +50,7 @@ error reporting via GitHub checks.
         run: npm ci  # OR: yarn 
 
       - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v14
+        uses: tj-actions/eslint-changed-files@v18
         with:
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
