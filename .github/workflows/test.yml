@@ -42,10 +42,12 @@ jobs:
 
       - name: Run Lint
         run: yarn lint
+        working-directory: test-app
 
-      - name: Fix Lint
+      - name: Fix Lint Errors
         if: failure()
         run: yarn lint:fix
+        working-directory: test-app
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v13
