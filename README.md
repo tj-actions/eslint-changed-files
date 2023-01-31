@@ -22,6 +22,7 @@ error reporting via GitHub checks.
 
 *   Easy to debug
 *   Fast execution
+*   Fix ESlint errors
 *   [Glob pattern](https://docs.github.com/en/actions/learn-github-actions/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet) extension filtering
 *   Excludes ignored files from change detection.
 *   Inline annotations of ESLint Warnings & Errors.
