@@ -79,7 +79,6 @@ jobs:
       fail-fast: false
       matrix:
         platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, windows-2022]
-        fetch-depth: [0, 1]
 
     steps:
       - uses: actions/checkout@v3
