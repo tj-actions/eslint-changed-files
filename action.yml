@@ -64,7 +64,7 @@ runs:
         reviewdog_version: v0.14.1
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@84ed30e2f4daf616144de7e0c1db59d5b33025e3  # renovate: tag=v35.6.4
+      uses: tj-actions/changed-files@bd376fbcfae914347656e4c70801e2a3fafed05b  # renovate: tag=v35.7.0
       with:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
