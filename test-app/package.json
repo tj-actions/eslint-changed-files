@@ -19,8 +19,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "lint": "npx stylelint '**/*.css' && npx eslint src",
-    "lint:fix": "npx stylelint --fix '**/*.css' && npx eslint --fix src",
+    "stylelint": "npx stylelint '**/*.css'",
+    "stylelint:fix": "npx stylelint --fix '**/*.css'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
