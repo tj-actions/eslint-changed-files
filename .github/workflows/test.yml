@@ -54,6 +54,7 @@ jobs:
             **/*.tsx
           extra_args: "--max-warnings=0"
           ignore_path: ".eslintignore"
+          skip_annotations: true
 
       - name: Fix Lint Errors
         if: failure()
