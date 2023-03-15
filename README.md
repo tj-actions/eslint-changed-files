@@ -60,6 +60,8 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
             **/*.tsx
 ```
 
+For more working examples view the [test.yml](https://github.com/tj-actions/eslint-changed-files/blob/main/.github/workflows/test.yml)
+
 If you feel generous and want to show some extra appreciation:
 
 Support this project with a :star:
