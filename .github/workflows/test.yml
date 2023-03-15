@@ -62,6 +62,7 @@ jobs:
         working-directory: test-app
 
       - name: Fix ESLint errors for a nested project with changed files and .eslintignore
+        if: failure()
         uses: ./
         with:
           path: "test-app"
@@ -73,7 +74,7 @@ jobs:
           ignore_path: ".eslintignore"
 
       - name: Verify Changed files
-        if: always()
+        if: failure()
         uses: tj-actions/verify-changed-files@v13
         id: verify-changed-files
         with:
@@ -81,7 +82,7 @@ jobs:
             **/*.{ts,tsx}
 
       - name: Commit outstanding changes
-        if: always() && steps.verify-changed-files.outputs.files_changed == 'true'
+        if: failure() && steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
@@ -89,7 +90,7 @@ jobs:
           git commit -m "lint fixes."
 
       - name: Push changes
-        if: always() && steps.verify-changed-files.outputs.files_changed == 'true'
+        if: failure() && steps.verify-changed-files.outputs.files_changed == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.PAT_TOKEN }}
