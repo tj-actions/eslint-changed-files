@@ -59,7 +59,7 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - uses: reviewdog/action-setup@8f2ec89e6b467ca9175527d2a1641bbd0c05783b # renovate: tag=v1.0.3
+    - uses: reviewdog/action-setup@8dc47785c4a3a899d16d7371637b070e600cd65f # renovate: tag=v1.0.4
       with:
         reviewdog_version: v0.14.1
     - name: Get changed files
