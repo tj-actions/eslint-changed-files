@@ -7,7 +7,7 @@ inputs:
     required: true
     default: ${{ github.token }}
   all_files:
-    description: 'Run [ESlint](https://eslint.org/) on all matching files'
+    description: 'Run [ESlint](https://eslint.org/) on all matching files.'
     required: false
     default: false
   config_path:
