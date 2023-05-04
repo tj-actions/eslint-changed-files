@@ -32,23 +32,23 @@ inputs:
     required: false
     default: 'false'
   level:
-    description: 'Report level for reviewdog [info,warning,error]'
+    description: 'Report level for reviewdog (info,warning,error)'
     required: false
     default: 'error'
   reporter:
     description: |
-      [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command [github-check,github-pr-review].
+      [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review).
       github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
     required: false
     default: 'github-pr-review'
   filter_mode:
     description: |
-      [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command [added,diff_context,file,nofilter].
+      [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command (added, diff_context, file, nofilter).
     required: false
     default: 'added'
   fail_on_error:
     description: |
-      Exit code for reviewdog when errors are found [true,false].
+      Exit code for reviewdog when errors are found.
     required: false
     default: 'true'
   path:
