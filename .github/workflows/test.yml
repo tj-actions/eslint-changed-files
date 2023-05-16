@@ -32,7 +32,7 @@ jobs:
 
       - uses: actions/setup-node@v3.6.0
         with:
-          node-version: 14
+          node-version: 16
           cache: yarn
           cache-dependency-path: test-app/yarn.lock
 
@@ -113,7 +113,7 @@ jobs:
 
       - uses: actions/setup-node@v3.6.0
         with:
-          node-version: 14
+          node-version: 16
           cache: yarn
           cache-dependency-path: test-app/yarn.lock
 
