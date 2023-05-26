@@ -1,5 +1,24 @@
 # Changelog
 
+# [19.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v18.3.2...v19.0.0) - (2023-05-26)
+
+## <!-- 30 -->📝 Other
+
+- PR [#1180](https://github.com/tj-actions/eslint-changed-files/pull/1180): to v18.3.2 ([dadf6b0](https://github.com/tj-actions/eslint-changed-files/commit/dadf6b0243adb7502a53ca14e0260ff83c2be70a))  - (repo-ranger[bot])
+- Merge branch 'main' into upgrade-to-v18.3.2 ([66900c3](https://github.com/tj-actions/eslint-changed-files/commit/66900c3f57c33e9f49e6fdb27eed5ad6049d7ead))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Update App.tsx ([#1184](https://github.com/tj-actions/eslint-changed-files/issues/1184)) ([ff7ef55](https://github.com/tj-actions/eslint-changed-files/commit/ff7ef55105504caae0ac003e73fb0b5297e6805f))  - (Tonye Jack)
+- **deps:** Update tj-actions/changed-files action to v36 ([522c689](https://github.com/tj-actions/eslint-changed-files/commit/522c689a353edc4f7b134a9b58faf86a87bef295))  - (renovate[bot])
+- **deps:** Bump @types/react from 18.2.6 to 18.2.7 in /test-app ([#1182](https://github.com/tj-actions/eslint-changed-files/issues/1182)) ([218bc56](https://github.com/tj-actions/eslint-changed-files/commit/218bc56fbbe5460100665c0bb3c8e37cb6a3a7ca))  - (dependabot[bot])
+- **deps:** Lock file maintenance ([8b0d328](https://github.com/tj-actions/eslint-changed-files/commit/8b0d328db46abd9e16404975d9805c80bc68ea28))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v18.3.1 -> v18.3.2
+ ([02f131d](https://github.com/tj-actions/eslint-changed-files/commit/02f131d5475e3fcfd6af561611576bc1ec7e7281))  - (jackton1)
+
 # [18.3.2](https://github.com/tj-actions/eslint-changed-files/compare/v18.3.1...v18.3.2) - (2023-05-22)
 
 ## <!-- 1 -->🐛 Bug Fixes
