@@ -1,5 +1,42 @@
 # Changelog
 
+# [19.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.0...v19.0.1) - (2023-05-30)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency web-vitals to v3.3.2 ([4cd1d4b](https://github.com/tj-actions/eslint-changed-files/commit/4cd1d4b5539997c1477fe6e9ed5aec93add7aa5e))  - (renovate[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([7de4575](https://github.com/tj-actions/eslint-changed-files/commit/7de45757166b6afc588a012b00dafa721932cc49))  - (jackton1)
+- Update README.md ([a17d4c9](https://github.com/tj-actions/eslint-changed-files/commit/a17d4c9bdae33f6f95b7f0407cf67c0d97612545))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#1195](https://github.com/tj-actions/eslint-changed-files/pull/1195): update tj-actions/changed-files action to v36.0.9 ([d9e35ae](https://github.com/tj-actions/eslint-changed-files/commit/d9e35ae6541c97f3a3d2434484fcf3f24c3e4c7c))  - (repo-ranger[bot])
+- PR [#1190](https://github.com/tj-actions/eslint-changed-files/pull/1190): README.md ([e37805e](https://github.com/tj-actions/eslint-changed-files/commit/e37805ea38a7b8d82bb75ad6d2519e1858b4d6a1))  - (repo-ranger[bot])
+- PR [#1186](https://github.com/tj-actions/eslint-changed-files/pull/1186): lock file maintenance ([249c278](https://github.com/tj-actions/eslint-changed-files/commit/249c278dc8cef403972336a934834be094bdc564))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/changed-files action to v36.0.10 ([4fd6e14](https://github.com/tj-actions/eslint-changed-files/commit/4fd6e147e9cf0d5904c9f9cff85735e1a2a31e1f))  - (renovate[bot])
+- **deps:** Bump @types/node from 20.2.4 to 20.2.5 in /test-app ([ed56ee8](https://github.com/tj-actions/eslint-changed-files/commit/ed56ee8098ff03f6f9d13d5d5fb965a0c7b337f3))  - (dependabot[bot])
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin in /test-app ([aaee844](https://github.com/tj-actions/eslint-changed-files/commit/aaee84457909574ff1bb0923528ef8ad70301661))  - (dependabot[bot])
+- **deps:** Update tj-actions/changed-files action to v36.0.9 ([cf2f720](https://github.com/tj-actions/eslint-changed-files/commit/cf2f72067d9ca973bfb27844664bf990a5d9d342))  - (renovate[bot])
+- **deps:** Lock file maintenance ([31f474e](https://github.com/tj-actions/eslint-changed-files/commit/31f474e6dcb94971dedf904b3335597a43115fa4))  - (renovate[bot])
+- **deps:** Update tj-actions/changed-files action to v36.0.8 ([396caaa](https://github.com/tj-actions/eslint-changed-files/commit/396caaa7799b24f71d36cbe085c293cd033f3421))  - (renovate[bot])
+- **deps:** Lock file maintenance ([f07a631](https://github.com/tj-actions/eslint-changed-files/commit/f07a6310b0948fc6c5da6d67ec9b30f1da55ebdb))  - (renovate[bot])
+- **deps:** Bump tj-actions/changed-files from 36.0.4 to 36.0.6 ([42a5d84](https://github.com/tj-actions/eslint-changed-files/commit/42a5d848e884d720c8e5e24d50af2cb977574d7b))  - (dependabot[bot])
+- **deps:** Bump @types/node from 20.2.3 to 20.2.4 in /test-app ([8c97356](https://github.com/tj-actions/eslint-changed-files/commit/8c973569d894a8455fa79262c2cc2a5de8e828d2))  - (dependabot[bot])
+- **deps:** Lock file maintenance ([d949512](https://github.com/tj-actions/eslint-changed-files/commit/d9495121bd211f2052c879f3706cd5bfdffe61cc))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v19 ([#1185](https://github.com/tj-actions/eslint-changed-files/issues/1185))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([be974c2](https://github.com/tj-actions/eslint-changed-files/commit/be974c2c7247f5333b860cd3135ac81caaf5a348))  - (tj-actions[bot])
+
 # [19.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v18.3.2...v19.0.0) - (2023-05-26)
 
 ## <!-- 30 -->📝 Other
