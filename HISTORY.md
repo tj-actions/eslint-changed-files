@@ -1,5 +1,30 @@
 # Changelog
 
+# [19.0.2](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.1...v19.0.2) - (2023-06-01)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency typescript to v5.1.3 ([2d1b1d0](https://github.com/tj-actions/eslint-changed-files/commit/2d1b1d0a17df9a1aa44fd2a4c4e9b1dd38c29b39))  - (renovate[bot])
+- **deps:** Update dependency @types/jest to v29.5.2 ([f9e28bd](https://github.com/tj-actions/eslint-changed-files/commit/f9e28bd09e9a4f085cc0ce395f40b6d8f4598b96))  - (renovate[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1203](https://github.com/tj-actions/eslint-changed-files/pull/1203): update tj-actions/changed-files action to v36.0.11 ([b094b08](https://github.com/tj-actions/eslint-changed-files/commit/b094b089bee872a7f64b603e1d828cd680934b5c))  - (repo-ranger[bot])
+- PR [#1200](https://github.com/tj-actions/eslint-changed-files/pull/1200): to v19.0.1 ([3ef9d3d](https://github.com/tj-actions/eslint-changed-files/commit/3ef9d3d922ed2487f08ab5d6dee5dba68b6753bd))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- Switch to major version ([#1204](https://github.com/tj-actions/eslint-changed-files/issues/1204)) ([0c898c2](https://github.com/tj-actions/eslint-changed-files/commit/0c898c29d3e28d40a1bab7ef161754f36e9a4896))  - (Tonye Jack)
+- **deps:** Update tj-actions/changed-files action to v36.0.14 ([b5869c5](https://github.com/tj-actions/eslint-changed-files/commit/b5869c5486cd055ad62b50bd2171f11beb80d6d9))  - (renovate[bot])
+- **deps:** Update tj-actions/changed-files action to v36.0.13 ([02c713e](https://github.com/tj-actions/eslint-changed-files/commit/02c713e1a5aac2fed3c8a87b487b07273d0b0888))  - (renovate[bot])
+- **deps:** Update tj-actions/changed-files action to v36.0.11 ([53732b8](https://github.com/tj-actions/eslint-changed-files/commit/53732b879e97b36745566e996a71734e4b705349))  - (renovate[bot])
+- **deps:** Lock file maintenance ([78e9b48](https://github.com/tj-actions/eslint-changed-files/commit/78e9b48bd8a96ee66fafd52f331d6395aad33132))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v19.0.0 -> v19.0.1
+ ([6f72056](https://github.com/tj-actions/eslint-changed-files/commit/6f72056bae6d96f3b8ddf3dd39a91e6ecd43d65f))  - (jackton1)
+
 # [19.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.0...v19.0.1) - (2023-05-30)
 
 ## <!-- 1 -->🐛 Bug Fixes
