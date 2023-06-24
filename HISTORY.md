@@ -1,5 +1,29 @@
 # Changelog
 
+# [20.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.3...v20.0.0) - (2023-06-23)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/react to v18.2.14 ([32ac56d](https://github.com/tj-actions/eslint-changed-files/commit/32ac56d221eae94a652d42e831b5511c2fea2520))  - (renovate[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1241](https://github.com/tj-actions/eslint-changed-files/pull/1241): update tj-actions/changed-files action to v37 ([2cc45b2](https://github.com/tj-actions/eslint-changed-files/commit/2cc45b24272b44e3de9391ea71d428757f32de7c))  - (repo-ranger[bot])
+- PR [#1240](https://github.com/tj-actions/eslint-changed-files/pull/1240): update dependency @types/react to v18.2.14 ([21c299c](https://github.com/tj-actions/eslint-changed-files/commit/21c299cf8385488b896a46d418293e8c86ee6491))  - (repo-ranger[bot])
+- PR [#1239](https://github.com/tj-actions/eslint-changed-files/pull/1239): update dependency stylelint to v15.9.0 ([e16826f](https://github.com/tj-actions/eslint-changed-files/commit/e16826ff41a91b636df6e856ac2f10978fe0eb67))  - (repo-ranger[bot])
+- PR [#1237](https://github.com/tj-actions/eslint-changed-files/pull/1237): to v19.0.3 ([c03b733](https://github.com/tj-actions/eslint-changed-files/commit/c03b7337264aede6adc7ef21d9c8b2cdb765460f))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update tj-actions/changed-files action to v37 ([5a26ddb](https://github.com/tj-actions/eslint-changed-files/commit/5a26ddb37682e9ff7746474f0d3d9b98b2699f95))  - (renovate[bot])
+- **deps:** Update dependency stylelint to v15.9.0 ([c34aace](https://github.com/tj-actions/eslint-changed-files/commit/c34aaceac4d6d8a5dc95de8f97caad58c861b4cf))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v16 ([ec84953](https://github.com/tj-actions/eslint-changed-files/commit/ec8495329bdf4ceb6b0e10a2d1f11b7069800606))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v19.0.2 -> v19.0.3
+ ([b91f87a](https://github.com/tj-actions/eslint-changed-files/commit/b91f87a96f440bcd744af81efb1d9a48a4443e51))  - (jackton1)
+
 # [19.0.3](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.2...v19.0.3) - (2023-06-19)
 
 ## <!-- 1 -->🐛 Bug Fixes
