@@ -1,4 +1,4 @@
-const path = require('path')
+import path = require('path')
 
 module.exports = {
   env: {
