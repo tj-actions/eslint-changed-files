@@ -4205,10 +4205,10 @@ eslint-config-react-app@^7.0.1:
     eslint-plugin-react-hooks "^4.3.0"
     eslint-plugin-testing-library "^5.0.1"
 
-eslint-config-standard-with-typescript@^36.0.0:
-  version "36.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-standard-with-typescript/-/eslint-config-standard-with-typescript-36.0.0.tgz#d96332482f4988c68768c76286e6776779370ea1"
-  integrity sha512-8ZSEskfrDAkUF2lTQLMT0CBzgRNlx1uIM7l2I7L683dKAXUdHuEL2x+GxuGAsdsoWbx7W7Zv0xF67VCEZXIk0Q==
+eslint-config-standard-with-typescript@^35.0.0:
+  version "35.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-standard-with-typescript/-/eslint-config-standard-with-typescript-35.0.0.tgz#8566ac60f91870eab5a50f34e42dcb0776d7e234"
+  integrity sha512-Xa7DY9GgduZyp0qmXxBF0/dB+Vm4/DgWu1lGpNLJV2d46aCaUxTKDEnkzjUWX/1O9S0a+Dhnw7A4oI0JpYzwtw==
   dependencies:
     "@typescript-eslint/parser" "^5.50.0"
     eslint-config-standard "17.0.0"
