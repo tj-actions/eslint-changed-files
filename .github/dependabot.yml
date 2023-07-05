@@ -5,8 +5,12 @@ updates:
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  labels:
+      - "merge when passing"
 - package-ecosystem: npm
   directory: "/test-app"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
+  labels:
+      - "merge when passing"
