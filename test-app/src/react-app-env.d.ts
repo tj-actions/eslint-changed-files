@@ -1,1 +1,1 @@
-/// <reference types="react-scripts" />
+import react_scripts = require('react-scripts');
