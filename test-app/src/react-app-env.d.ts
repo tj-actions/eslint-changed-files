@@ -1,1 +1,3 @@
-import react_scripts = require('react-scripts')
+import scripts from 'react-scripts'
+
+export default scripts
