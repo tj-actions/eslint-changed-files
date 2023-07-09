@@ -1,1 +1,3 @@
-/// <reference types="react-scripts" />
+import scripts from 'react-scripts'
+
+export default scripts
