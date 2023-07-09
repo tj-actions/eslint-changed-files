@@ -8,13 +8,14 @@ module.exports = {
   "overrides": [
     {
       extends: ['plugin:react/recommended', 'standard-with-typescript'],
+      files: ["*.ts", "*.tsx"],
+      parserOptions: {
+        ecmaVersion: 'latest',
+        sourceType: 'module',
+        project: path.join(__dirname, 'tsconfig.json')
+      }
     }
   ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: path.join(__dirname, 'tsconfig.json')
-  },
   plugins: [
     'react'
   ],
