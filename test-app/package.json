@@ -45,7 +45,7 @@
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.1",
-    "stylelint": "15.10.1",
+    "stylelint": "15.10.2",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-standard": "34.0.0"
   }
