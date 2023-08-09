@@ -1,5 +1,42 @@
 # Changelog
 
+# [20.0.3](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.2...v20.0.3) - (2023-08-08)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/node to v20.4.9 ([8f0e7a9](https://github.com/tj-actions/eslint-changed-files/commit/8f0e7a9f591a267caa854280e040b8f05b466900))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.19 ([df45831](https://github.com/tj-actions/eslint-changed-files/commit/df458318e295a2d7e95f31d69f25cb3a7e7d9576))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.4.8 ([06f68ea](https://github.com/tj-actions/eslint-changed-files/commit/06f68ea7a8a9cebb6aba6a81e61b8c1a7795d361))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.4.7 ([83459d3](https://github.com/tj-actions/eslint-changed-files/commit/83459d313050f2adaf40975186767b0e389082ed))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.4.6 ([0243232](https://github.com/tj-actions/eslint-changed-files/commit/0243232e3552551203deeae6f987628ef74d2d30))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.18 ([6e730bc](https://github.com/tj-actions/eslint-changed-files/commit/6e730bcfedbe737a1873a36430f853c4a1c6d337))  - (renovate[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1320](https://github.com/tj-actions/eslint-changed-files/pull/1320): update dependency @types/node to v20.4.9 ([46bf5be](https://github.com/tj-actions/eslint-changed-files/commit/46bf5bef51eb23a7d5faeddde5e7c3d3f793a499))  - (repo-ranger[bot])
+- PR [#1319](https://github.com/tj-actions/eslint-changed-files/pull/1319): update dependency @types/react to v18.2.19 ([24e90f4](https://github.com/tj-actions/eslint-changed-files/commit/24e90f4fb43865c6b5d909d6d2198bf7696ab8d5))  - (repo-ranger[bot])
+- PR [#1318](https://github.com/tj-actions/eslint-changed-files/pull/1318): lock file maintenance ([d0fdad4](https://github.com/tj-actions/eslint-changed-files/commit/d0fdad48ce9e62613602ce71d9d0a460d2aa1cd0))  - (repo-ranger[bot])
+- PR [#1317](https://github.com/tj-actions/eslint-changed-files/pull/1317): update dependency eslint-config-prettier to v9 ([a8244d9](https://github.com/tj-actions/eslint-changed-files/commit/a8244d9df10d7caaca88f9c2afee242dc6505965))  - (repo-ranger[bot])
+- PR [#1316](https://github.com/tj-actions/eslint-changed-files/pull/1316): update dependency @types/node to v20.4.8 ([9e5f4bb](https://github.com/tj-actions/eslint-changed-files/commit/9e5f4bb041d00e1c740dd5b2e65cccb9503bbef5))  - (repo-ranger[bot])
+- PR [#1315](https://github.com/tj-actions/eslint-changed-files/pull/1315): update dependency @types/node to v20.4.7 ([4b75de4](https://github.com/tj-actions/eslint-changed-files/commit/4b75de4a3c1e3159f680b808895ebc0418cde2cf))  - (repo-ranger[bot])
+- PR [#1314](https://github.com/tj-actions/eslint-changed-files/pull/1314): update dependency eslint-config-prettier to v8.10.0 ([bae6e01](https://github.com/tj-actions/eslint-changed-files/commit/bae6e0187d2a2d190bd24c904cd781f7a5619f4d))  - (repo-ranger[bot])
+- PR [#1313](https://github.com/tj-actions/eslint-changed-files/pull/1313): update dependency @types/node to v20.4.6 ([58a10be](https://github.com/tj-actions/eslint-changed-files/commit/58a10becdc787001b8338c87ae58ef92390063b5))  - (repo-ranger[bot])
+- PR [#1312](https://github.com/tj-actions/eslint-changed-files/pull/1312): update dependency @types/react to v18.2.18 ([a505514](https://github.com/tj-actions/eslint-changed-files/commit/a505514322fec9d1e86342a66e66c29280a97cc8))  - (repo-ranger[bot])
+- PR [#1311](https://github.com/tj-actions/eslint-changed-files/pull/1311): lock file maintenance ([5ecd072](https://github.com/tj-actions/eslint-changed-files/commit/5ecd072dbeecda0172decc82495b2dc1c22e43ba))  - (repo-ranger[bot])
+- PR [#1310](https://github.com/tj-actions/eslint-changed-files/pull/1310): to v20.0.2 ([110dd1d](https://github.com/tj-actions/eslint-changed-files/commit/110dd1ddfbc702d816ac5f5fe459c74b89c78589))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Lock file maintenance ([19cb348](https://github.com/tj-actions/eslint-changed-files/commit/19cb348ded023867bf6154f56d729814033e4b94))  - (renovate[bot])
+- **deps:** Update dependency eslint-config-prettier to v9 ([139f532](https://github.com/tj-actions/eslint-changed-files/commit/139f53283eaf3a97ead54420adf5d62a9a61bc53))  - (renovate[bot])
+- **deps:** Update dependency eslint-config-prettier to v8.10.0 ([a8d7beb](https://github.com/tj-actions/eslint-changed-files/commit/a8d7beb144e556e96c4017f266390ecde6ee4fc8))  - (renovate[bot])
+- **deps:** Lock file maintenance ([11ecf14](https://github.com/tj-actions/eslint-changed-files/commit/11ecf146f923f336c99800a0711db5c7fcfea764))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v20.0.1 -> v20.0.2
+ ([c984ad7](https://github.com/tj-actions/eslint-changed-files/commit/c984ad71a823d716fa7a503b0a31c41728222784))  - (jackton1)
+
 # [20.0.2](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.1...v20.0.2) - (2023-07-30)
 
 ## <!-- 1 -->🐛 Bug Fixes
