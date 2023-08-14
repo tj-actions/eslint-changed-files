@@ -1,5 +1,36 @@
 # Changelog
 
+# [20.0.4](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.3...v20.0.4) - (2023-08-14)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/node to v20.5.0 ([df8b0ed](https://github.com/tj-actions/eslint-changed-files/commit/df8b0ed64f5f367bc5852d38df502a2902a1dbc5))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/jest-dom to v6 ([9a3d1a6](https://github.com/tj-actions/eslint-changed-files/commit/9a3d1a6dbdf41926dd249186a77ab6234d019578))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.4.10 ([578245b](https://github.com/tj-actions/eslint-changed-files/commit/578245bfbc7c0cfda4e51cb44eb923169ca811dc))  - (renovate[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1329](https://github.com/tj-actions/eslint-changed-files/pull/1329): lock file maintenance ([9b0d503](https://github.com/tj-actions/eslint-changed-files/commit/9b0d503697e834731853baa92d05c9397681c781))  - (repo-ranger[bot])
+- PR [#1328](https://github.com/tj-actions/eslint-changed-files/pull/1328): update dependency @types/node to v20.5.0 ([e71238a](https://github.com/tj-actions/eslint-changed-files/commit/e71238afc70d07aae0b88ab37e1a6246bb6576ae))  - (repo-ranger[bot])
+- PR [#1327](https://github.com/tj-actions/eslint-changed-files/pull/1327): update dependency @testing-library/jest-dom to v6 ([6122bb6](https://github.com/tj-actions/eslint-changed-files/commit/6122bb6fade0e77b2651e3d0a3f7ed3fcd50dfae))  - (repo-ranger[bot])
+- PR [#1326](https://github.com/tj-actions/eslint-changed-files/pull/1326): update dependency @types/node to v20.4.10 ([435e6ca](https://github.com/tj-actions/eslint-changed-files/commit/435e6ca0493c6d30931a6d9c9faa87169b29c7c1))  - (repo-ranger[bot])
+- PR [#1325](https://github.com/tj-actions/eslint-changed-files/pull/1325): update dependency eslint to v8.47.0 ([3556fa5](https://github.com/tj-actions/eslint-changed-files/commit/3556fa58937da434a4ab2693f9dd03f48e69e29c))  - (repo-ranger[bot])
+- PR [#1324](https://github.com/tj-actions/eslint-changed-files/pull/1324): bump @types/react from 18.2.19 to 18.2.20 in /test-app ([5f02716](https://github.com/tj-actions/eslint-changed-files/commit/5f02716aaa9f08f2d47bddb233623624c7cae7d0))  - (repo-ranger[bot])
+- PR [#1322](https://github.com/tj-actions/eslint-changed-files/pull/1322): lock file maintenance ([f5d68e6](https://github.com/tj-actions/eslint-changed-files/commit/f5d68e65f102dbe2362a6e891f10830485716a2c))  - (repo-ranger[bot])
+- PR [#1321](https://github.com/tj-actions/eslint-changed-files/pull/1321): to v20.0.3 ([bac7406](https://github.com/tj-actions/eslint-changed-files/commit/bac7406e366c55544296870a878813ba08983fa7))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Lock file maintenance ([3586209](https://github.com/tj-actions/eslint-changed-files/commit/3586209bd1b0c1b3076f0290d238646f4452c9df))  - (renovate[bot])
+- **deps:** Update dependency eslint to v8.47.0 ([e92553d](https://github.com/tj-actions/eslint-changed-files/commit/e92553d49b1cd9562c9eb408ca475c6f3628f8be))  - (renovate[bot])
+- **deps:** Bump @types/react from 18.2.19 to 18.2.20 in /test-app ([03fe93d](https://github.com/tj-actions/eslint-changed-files/commit/03fe93dadaed318e8b4238147c01ed23ad288976))  - (dependabot[bot])
+- **deps:** Lock file maintenance ([cbe03e7](https://github.com/tj-actions/eslint-changed-files/commit/cbe03e799741ade0e4ff85e88682de22c223f88c))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v20.0.2 -> v20.0.3
+ ([97bf632](https://github.com/tj-actions/eslint-changed-files/commit/97bf632108295e19bd6702194043ad427cef8d1e))  - (jackton1)
+
 # [20.0.3](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.2...v20.0.3) - (2023-08-08)
 
 ## <!-- 1 -->🐛 Bug Fixes
