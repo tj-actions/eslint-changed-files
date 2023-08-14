@@ -30,7 +30,7 @@ jobs:
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
 
-      - uses: actions/setup-node@v3.7.0
+      - uses: actions/setup-node@v3.8.0
         with:
           node-version: 16
           cache: yarn
@@ -111,7 +111,7 @@ jobs:
         with:
           fetch-depth: ${{ matrix.fetch-depth }}
 
-      - uses: actions/setup-node@v3.7.0
+      - uses: actions/setup-node@v3.8.0
         with:
           node-version: 16
           cache: yarn
