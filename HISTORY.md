@@ -1,5 +1,32 @@
 # Changelog
 
+# [20.0.5](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.4...v20.0.5) - (2023-08-18)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/node to v20.5.1 ([b7ac0ed](https://github.com/tj-actions/eslint-changed-files/commit/b7ac0ed1d5a4b989897857987f75db8287ad50ab))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/jest-dom to v6.0.1 ([8c0309b](https://github.com/tj-actions/eslint-changed-files/commit/8c0309b279f2b72646eb25fc416617a42137f7d5))  - (renovate[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1333](https://github.com/tj-actions/eslint-changed-files/pull/1333): update actions/setup-node action to v3.8.1 ([e9adf57](https://github.com/tj-actions/eslint-changed-files/commit/e9adf574fe5833b441ac4170485ab279f1cd2d47))  - (repo-ranger[bot])
+- PR [#1332](https://github.com/tj-actions/eslint-changed-files/pull/1332): update dependency eslint-plugin-react to v7.33.2 ([87c1093](https://github.com/tj-actions/eslint-changed-files/commit/87c1093e785cc3fff77418cc4a52340740d3023c))  - (repo-ranger[bot])
+- PR [#1331](https://github.com/tj-actions/eslint-changed-files/pull/1331): update actions/setup-node action to v3.8.0 ([815b4e1](https://github.com/tj-actions/eslint-changed-files/commit/815b4e16856b95a18429ca7ae555ab6984f9fe81))  - (repo-ranger[bot])
+- PR [#1330](https://github.com/tj-actions/eslint-changed-files/pull/1330): to v20.0.4 ([4f535a6](https://github.com/tj-actions/eslint-changed-files/commit/4f535a6a5410ed826a97d817d3a9e3f74a49976e))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update dependency eslint-plugin-import to v2.28.1 ([14b1ecd](https://github.com/tj-actions/eslint-changed-files/commit/14b1ecd16d06d034bc36d637d9b24c5acbe43227))  - (renovate[bot])
+- **deps:** Update dependency stylelint to v15.10.3 ([99f1d39](https://github.com/tj-actions/eslint-changed-files/commit/99f1d391fdea6920f49ac17b8a69d364eb34b50a))  - (renovate[bot])
+- **deps:** Update actions/setup-node action to v3.8.1 ([17c7b13](https://github.com/tj-actions/eslint-changed-files/commit/17c7b13cd933ec4009b8e9c7d2bc112a575cd2dd))  - (renovate[bot])
+- **deps:** Update dependency eslint-plugin-react to v7.33.2 ([c37343c](https://github.com/tj-actions/eslint-changed-files/commit/c37343c5d14672cbec72d4c1807f6b29d8470b59))  - (renovate[bot])
+- **deps:** Update actions/setup-node action to v3.8.0 ([b828550](https://github.com/tj-actions/eslint-changed-files/commit/b8285506be5a9fd38b4873f19815c88501ca6406))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v20.0.3 -> v20.0.4
+ ([b151d67](https://github.com/tj-actions/eslint-changed-files/commit/b151d6737c1d3b6ecae6294c3687d70dd4610745))  - (jackton1)
+
 # [20.0.4](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.3...v20.0.4) - (2023-08-14)
 
 ## <!-- 1 -->🐛 Bug Fixes
