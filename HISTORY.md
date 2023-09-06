@@ -1,5 +1,44 @@
 # Changelog
 
+# [21.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v20.1.0...v21.0.0) - (2023-09-06)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/node to v20.5.9 ([d5462f8](https://github.com/tj-actions/eslint-changed-files/commit/d5462f8de5fefac3acf34a3df0ef3fc9bfb7e246))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.5.8 ([343c210](https://github.com/tj-actions/eslint-changed-files/commit/343c210762ae47292f0a5b17c7fd84e0abeba167))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.5.7 ([233a5ec](https://github.com/tj-actions/eslint-changed-files/commit/233a5ec7c5c74eef4b7b5e05b2cc3be3b5271de2))  - (renovate[bot])
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/ISSUE_TEMPLATE/feature_request.yaml ([732adaf](https://github.com/tj-actions/eslint-changed-files/commit/732adafe002e8e532acfb82173b143b196778e2e))  - (Tonye Jack)
+- Deleted .github/ISSUE_TEMPLATE/bug_report.yaml ([705ab35](https://github.com/tj-actions/eslint-changed-files/commit/705ab35869cb936548bca658ad5858e925e35729))  - (Tonye Jack)
+- Deleted .github/FUNDING.yml ([9f9ea24](https://github.com/tj-actions/eslint-changed-files/commit/9f9ea24ea53f96de51245dce0353a2feeace4819))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#1371](https://github.com/tj-actions/eslint-changed-files/pull/1371): upgrade node to v20 ([0b88b01](https://github.com/tj-actions/eslint-changed-files/commit/0b88b0187e674b14b316285719d36cb87a5533db))  - (repo-ranger[bot])
+- PR [#1370](https://github.com/tj-actions/eslint-changed-files/pull/1370): update tj-actions/changed-files action to v39 ([4740290](https://github.com/tj-actions/eslint-changed-files/commit/474029096f34f793ca8153527a9c6b07092c28d9))  - (repo-ranger[bot])
+- PR [#1369](https://github.com/tj-actions/eslint-changed-files/pull/1369): update actions/checkout action to v4 ([57611a4](https://github.com/tj-actions/eslint-changed-files/commit/57611a4608ab6f92bd80bff78008adb67c0b0f17))  - (repo-ranger[bot])
+- PR [#1361](https://github.com/tj-actions/eslint-changed-files/pull/1361): update tj-actions/release-tagger action to v4 ([3d50c82](https://github.com/tj-actions/eslint-changed-files/commit/3d50c82ce0ce5708b3f9e4c827678f1b1ea1976f))  - (repo-ranger[bot])
+- PR [#1360](https://github.com/tj-actions/eslint-changed-files/pull/1360): to v20.1.0 ([3f86ab2](https://github.com/tj-actions/eslint-changed-files/commit/3f86ab263c86d32ef3b050bf203404a3fbea7af6))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Lock file maintenance ([007a85e](https://github.com/tj-actions/eslint-changed-files/commit/007a85e088a9d994575dbee444e461dee999ed96))  - (renovate[bot])
+- **deps:** Update dependency eslint-config-standard-with-typescript to v39 ([#1362](https://github.com/tj-actions/eslint-changed-files/issues/1362)) ([ccae952](https://github.com/tj-actions/eslint-changed-files/commit/ccae952d3af621ad8db4f90d9511a5b395bd7077))  - (renovate[bot])
+- Upgrade node to v20 ([2bb4c6d](https://github.com/tj-actions/eslint-changed-files/commit/2bb4c6d309578084b07638b5669a9c02e10acd3b))  - (Tonye Jack)
+- **deps:** Update tj-actions/changed-files action to v39 ([35b193d](https://github.com/tj-actions/eslint-changed-files/commit/35b193d1fb5c0cdb87e79a34a4d4f1a3e4fdd3e6))  - (renovate[bot])
+- **deps:** Update actions/checkout action to v4 ([b8ca7fc](https://github.com/tj-actions/eslint-changed-files/commit/b8ca7fc601a1f01f835f3fc4835e2e188655cdbc))  - (renovate[bot])
+- **deps:** Lock file maintenance ([6689a9a](https://github.com/tj-actions/eslint-changed-files/commit/6689a9ac848179135c56d53d5ce9e09d05120500))  - (renovate[bot])
+- **deps:** Lock file maintenance ([0ef53b7](https://github.com/tj-actions/eslint-changed-files/commit/0ef53b7477451a1e758aea8d066c103a1c5a5e9d))  - (renovate[bot])
+- **deps:** Lock file maintenance ([e10731b](https://github.com/tj-actions/eslint-changed-files/commit/e10731b9cd3403c41fbeaa1783a49ba245503529))  - (renovate[bot])
+- **deps:** Update tj-actions/release-tagger action to v4 ([ced65b4](https://github.com/tj-actions/eslint-changed-files/commit/ced65b4be40c8ae1f65044def793c061b98d7b59))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v20.0.5 -> v20.1.0
+ ([e5692e8](https://github.com/tj-actions/eslint-changed-files/commit/e5692e8f3014e69225dec6bb67a63942e20c7b58))  - (jackton1)
+
 # [20.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.5...v20.1.0) - (2023-08-25)
 
 ## <!-- 1 -->🐛 Bug Fixes
