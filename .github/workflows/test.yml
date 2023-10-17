@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Checkout to branch
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.19
@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Checkout to branch
-        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         with:
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
@@ -107,7 +107,7 @@ jobs:
         fetch-depth: [0, 1]
 
     steps:
-      - uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4
+      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         with:
           fetch-depth: ${{ matrix.fetch-depth }}
 
