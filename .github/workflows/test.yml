@@ -69,7 +69,7 @@ jobs:
             **/*.ts
             **/*.tsx
           extra_args: "--fix"
-          ignore_path: "test-app.eslintignore"
+          ignore_path: "test-app/.eslintignore"
           skip_annotations: true
 
       - name: Verify Changed files
