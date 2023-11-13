@@ -96,6 +96,7 @@ jobs:
         with:
           github_token: ${{ secrets.PAT_TOKEN }}
           branch: ${{ github.head_ref }}
+          force: true
 
   
   eslint-changed-files:
