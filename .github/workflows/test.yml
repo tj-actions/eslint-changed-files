@@ -48,12 +48,13 @@ jobs:
       - name: Run ESLint for a nested project with changed files and .eslintignore
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          path: "test-app"
+          config_path: ".eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: "test-app/.eslintignore"
+          ignore_path: ".eslintignore"
 
       - name: Fix Lint Errors
         if: failure()
@@ -64,12 +65,13 @@ jobs:
         if: failure()
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          path: "test-app"
+          config_path: ".eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--fix"
-          ignore_path: "test-app/.eslintignore"
+          ignore_path: ".eslintignore"
           skip_annotations: true
 
       - name: Verify Changed files
