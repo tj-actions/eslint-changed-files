@@ -1,8 +1,5 @@
 name: Test
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -27,6 +24,7 @@ jobs:
       - name: Checkout to branch
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
 
@@ -96,7 +94,6 @@ jobs:
         with:
           github_token: ${{ secrets.PAT_TOKEN }}
           branch: ${{ github.head_ref }}
-          force: true
 
   
   eslint-changed-files:
