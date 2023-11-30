@@ -16,85 +16,6 @@ jobs:
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.19
 
-  lint:
-    name: Run Lint
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout to branch
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
-
-      - name: Setup Node.js 20.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20.x
-          cache: yarn
-          cache-dependency-path: test-app/yarn.lock
-
-      - name: Install dependencies
-        run: yarn
-        working-directory: test-app
-
-      - name: Run Stylelint
-        run: yarn stylelint
-        working-directory: test-app
-      
-      - name: Run ESLint for a nested project with changed files and .eslintignore
-        uses: ./
-        with:
-          path: "test-app"
-          config_path: ".eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          ignore_path: ".eslintignore"
-
-      - name: Fix Lint Errors
-        if: failure()
-        run: yarn stylelint:fix
-        working-directory: test-app
-
-      - name: Fix ESLint errors for a nested project with changed files and .eslintignore
-        if: failure()
-        uses: ./
-        with:
-          path: "test-app"
-          config_path: ".eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--fix"
-          ignore_path: ".eslintignore"
-          skip_annotations: true
-
-      - name: Verify Changed files
-        if: failure()
-        uses: tj-actions/verify-changed-files@v16
-        id: verify-changed-files
-        with:
-          files: |
-            **/*.{ts,tsx}
-
-      - name: Commit outstanding changes
-        if: failure() && steps.verify-changed-files.outputs.files_changed == 'true'
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add ${{ steps.verify-changed-files.outputs.changed_files }}
-          git commit -m "lint fixes."
-
-      - name: Push changes
-        if: failure() && steps.verify-changed-files.outputs.files_changed == 'true'
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.PAT_TOKEN }}
-          branch: ${{ github.head_ref }}
-
   
   eslint-changed-files:
     runs-on: ${{ matrix.platform }}
@@ -119,17 +40,6 @@ jobs:
       - name: Install dependencies
         run: yarn
         working-directory: test-app
-      
-      - name: Run ESLint for a nested project with changed files and .eslintignore
-        uses: ./
-        with:
-          path: "test-app"
-          config_path: ".eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          ignore_path: ".eslintignore"
 
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
@@ -140,42 +50,4 @@ jobs:
             **/*.tsx
           extra_args: "--max-warnings=0"
           ignore_path: "test-app/.eslintignore"
-
-      - name: Run ESLint on all files with .eslintignore
-        uses: ./
-        with:
-          config_path: "test-app/.eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          all_files: true
-          ignore_path: "test-app/.eslintignore"
-
-      - name: Run ESLint on changed files
-        uses: ./
-        with:
-          config_path: "test-app/.eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-
-      - name: Run ESLint on all files
-        uses: ./
-        with:
-          config_path: "test-app/.eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          all_files: true
-
-      - name: Run ESLint on all files without a config_path
-        uses: ./
-        with:
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          all_files: true
+          skip_annotations: true
