@@ -44,10 +44,11 @@ jobs:
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          path: "test-app"
+          config_path: ".eslintrc.js"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: "test-app/.eslintignore"
+          ignore_path: ".eslintignore"
           skip_annotations: true
