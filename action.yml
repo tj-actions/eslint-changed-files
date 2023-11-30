@@ -61,7 +61,7 @@ runs:
   using: 'composite'
   steps:
     - uses: reviewdog/action-setup@v1
-      if: inputs.skip_annotations != true
+      if: inputs.skip_annotations == false
       with:
         reviewdog_version: v0.14.2
     - name: Get changed files
