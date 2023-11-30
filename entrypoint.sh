@@ -22,11 +22,10 @@ ESLINT_FORMATTER="$TEMP_DIR/formatter.cjs"
 
 if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
   curl -sf -o "$ESLINT_FORMATTER" https://raw.githubusercontent.com/reviewdog/action-eslint/master/eslint-formatter-rdjson/index.js
+  # shellcheck disable=SC2034
+  export REVIEWDOG_GITHUB_API_TOKEN=$INPUT_TOKEN
 fi
 
-
-# shellcheck disable=SC2034
-export REVIEWDOG_GITHUB_API_TOKEN=$INPUT_TOKEN
 IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
 CONFIG_ARG=""
@@ -38,6 +37,7 @@ fi
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   echo "Running ESlint on all files..."
   if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
+    echo "Skipping annotations..."
     if [[ -n ${IGNORE_PATH} ]]; then
       # shellcheck disable=SC2086
       npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
@@ -72,6 +72,7 @@ else
   if [[ -n "${INPUT_CHANGED_FILES[*]}" ]]; then
       echo "Running ESlint on changed files..."
       if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
+        echo "Skipping annotations..."
         if [[ -n ${IGNORE_PATH} ]]; then
           # shellcheck disable=SC2086
           npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
