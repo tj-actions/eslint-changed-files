@@ -28,7 +28,8 @@ inputs:
     required: false
     default: ''
   skip_annotations:
-    description: Skip running reviewdog i.e don't add any annotations.
+    description: |
+      Skip running reviewdog i.e don't add any annotations.
     required: false
     default: 'false'
   level:
