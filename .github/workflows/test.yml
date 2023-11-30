@@ -38,7 +38,7 @@ jobs:
           cache-dependency-path: test-app/yarn.lock
 
       - name: Install dependencies
-        run: yarn
+        run: yarn install --frozen-lockfile
         working-directory: test-app
 
       - name: Run ESLint on changed files with .eslintignore
