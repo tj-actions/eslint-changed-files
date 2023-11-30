@@ -31,7 +31,7 @@ inputs:
     description: |
       Skip running reviewdog i.e don't add any annotations.
     required: false
-    default: 'false'
+    default: false
   level:
     description: 'Report level for reviewdog (info,warning,error)'
     required: false
