@@ -76,20 +76,74 @@ Support this project with a :star:
 
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
-|                                      INPUT                                       |  TYPE  | REQUIRED |           DEFAULT            |                                                                                                                                                     DESCRIPTION                                                                                                                                                      |
-|----------------------------------------------------------------------------------|--------|----------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           <a name="input_all_files"></a>[all\_files](#input_all_files)            | string |  false   |          `"false"`           |                                                                                                                             Run [ESlint](https://eslint.org) on all matching <br>files.                                                                                                                              |
-|        <a name="input_config_path"></a>[config\_path](#input_config_path)         | string |  false   |                              |                                                                             [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this <br>input for Mono repositories.                                                                               |
-|          <a name="input_extra_args"></a>[extra\_args](#input_extra_args)          | string |  false   |                              |                                                                                                            Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)                                                                                                             |
-|     <a name="input_fail_on_error"></a>[fail\_on\_error](#input_fail_on_error)      | string |  false   |           `"true"`           |                                                                                                                                 Exit code for reviewdog when <br>errors are found.                                                                                                                                   |
-|  <a name="input_file_extensions"></a>[file\_extensions](#input_file_extensions)   | string |  false   | `"**/*.{ts,tsx,js,jsx}"`<br> |                                                                                                         List of file extensions to <br>watch for changes and run <br>[ESlint](https://eslint.org/) against                                                                                                           |
-|        <a name="input_filter_mode"></a>[filter\_mode](#input_filter_mode)         | string |  false   |          `"added"`           |                                                                                       [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command <br>(added, diff\_context, file, nofilter).                                                                                         |
-|        <a name="input_ignore_path"></a>[ignore\_path](#input_ignore_path)         | string |  false   |                              |                                                                                                      [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)                                                                                                       |
-|                 <a name="input_level"></a>[level](#input_level)                  | string |  false   |          `"error"`           |                                                                                                                                   Report level for reviewdog (info,warning,error)                                                                                                                                    |
-|                   <a name="input_path"></a>[path](#input_path)                   | string |  false   |            `"."`             |                                                                                                                             Relative path under GITHUB\_WORKSPACE to <br>the repository                                                                                                                               |
-|             <a name="input_reporter"></a>[reporter](#input_reporter)             | string |  false   |     `"github-pr-review"`     |                                                 [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review). <br>github-pr-review can use Markdown and <br>add a link to rule <br>page in reviewdog reports.                                                  |
-| <a name="input_skip_annotations"></a>[skip\_annotations](#input_skip_annotations) | string |  false   |          `"false"`           |                                                                                                                              Skip running reviewdog i.e don't <br>add any annotations.                                                                                                                               |
-|                 <a name="input_token"></a>[token](#input_token)                  | string |   true   |   `"${{ github.token }}"`    | [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped <br>[Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)  |
+```yaml
+- uses: tj-actions/eslint-changed-files@v21
+  id: eslint-changed-files
+  with:
+    # Run [ESlint](https://eslint.org) on all matching files.
+    # Type: boolean
+    # Default: "false"
+    all_files: ''
+
+    # [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories. 
+    # Type: string
+    config_path: ''
+
+    # Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
+    # Type: string
+    extra_args: ''
+
+    # Exit code for reviewdog when errors are found.
+
+    # Type: boolean
+    # Default: "true"
+    fail_on_error: ''
+
+    # List of file extensions to watch for changes and 
+    # run [ESlint](https://eslint.org/) against 
+    # Type: string
+    # Default: **/*.{ts,tsx,js,jsx}
+    #          
+    file_extensions: ''
+
+    # [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command (added, diff_context, file, nofilter). 
+    # Type: string
+    # Default: "added"
+    filter_mode: ''
+
+    # [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)
+    # Type: string
+    ignore_path: ''
+
+    # Report level for reviewdog (info,warning,error)
+    # Type: string
+    # Default: "error"
+    level: ''
+
+    # Relative path under GITHUB_WORKSPACE to the repository
+    # Type: string
+    # Default: "."
+    path: ''
+
+    # [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review). github-pr-review can use Markdown 
+    # and add a link to rule page in reviewdog 
+    # reports. 
+    # Type: string
+    # Default: "github-pr-review"
+    reporter: ''
+
+    # Skip running reviewdog i.e don't add any annotations.
+
+    # Type: boolean
+    # Default: "false"
+    skip_annotations: ''
+
+    # [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+    # Type: string
+    # Default: "${{ github.token }}"
+    token: ''
+
+```
 
 <!-- AUTO-DOC-INPUT:END -->
 
