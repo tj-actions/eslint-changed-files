@@ -91,13 +91,12 @@ Support this project with a :star:
     extra_args: ''
 
     # Exit code for reviewdog when errors are found.
-
     # Type: boolean
     # Default: "true"
     fail_on_error: ''
 
     # List of file extensions to watch for changes and 
-    # run [ESlint](https://eslint.org/) against 
+    # run [ESlint](https://eslint.org/) against. 
     # Type: string
     # Default: **/*.{ts,tsx,js,jsx}
     #          
@@ -130,12 +129,11 @@ Support this project with a :star:
     reporter: ''
 
     # Skip running reviewdog i.e don't add any annotations.
-
     # Type: boolean
     # Default: "false"
     skip_annotations: ''
 
-    # [GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+    # [GITHUB TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
     # Type: string
     # Default: "${{ github.token }}"
     token: ''
