@@ -40,11 +40,11 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 20.x
 
       - name: Install dependencies
         run: npm ci  # OR: yarn 
@@ -55,9 +55,6 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
           extra_args: "--max-warnings=0"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
 ```
 
 For more working examples view the [test.yml](https://github.com/tj-actions/eslint-changed-files/blob/main/.github/workflows/test.yml)
