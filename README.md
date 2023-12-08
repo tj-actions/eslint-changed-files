@@ -44,7 +44,7 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 20.x
 
       - name: Install dependencies
         run: npm ci  # OR: yarn 
