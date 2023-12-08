@@ -3,57 +3,57 @@ description: Run ESLint on all changed files
 author: jackton1
 inputs:
   token:
-    description: '[GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)'
+    description: "[GITHUB\_TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)"
     required: true
     default: ${{ github.token }}
   all_files:
-    description: 'Run [ESlint](https://eslint.org) on all matching files.'
+    description: "Run [ESlint](https://eslint.org) on all matching files."
     required: false
     default: false
   config_path:
-    description: '[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories.'
+    description: "[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories."
     required: false
     default: ''
   ignore_path:
-    description: '[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)'
+    description: "[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)"
     required: false
     default: ''
   file_extensions:
-    description: List of file extensions to watch for changes and run [ESlint](https://eslint.org/) against
+    description: "List of file extensions to watch for changes and run [ESlint](https://eslint.org/) against."
     required: false
     default: |
       **/*.{ts,tsx,js,jsx}
   extra_args:
-    description: Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
+    description: "Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)"
     required: false
     default: ''
   skip_annotations:
-    description: |
-      Skip running reviewdog i.e don't add any annotations.
+    description: "Skip running reviewdog i.e don't add any annotations."
     required: false
     default: false
   level:
-    description: 'Report level for reviewdog (info,warning,error)'
+    description: "Report level for reviewdog (info,warning,error)"
     required: false
     default: 'error'
   reporter:
     description: |
-      [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review).
+      [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command
+      (github-check, github-pr-review).
       github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
     required: false
     default: 'github-pr-review'
   filter_mode:
     description: |
-      [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command (added, diff_context, file, nofilter).
+      [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command
+      (added, diff_context, file, nofilter).
     required: false
     default: 'added'
   fail_on_error:
-    description: |
-      Exit code for reviewdog when errors are found.
+    description: "Exit code for reviewdog when errors are found."
     required: false
     default: 'true'
   path:
-   description: 'Relative path under GITHUB_WORKSPACE to the repository'
+   description: "Relative path under GITHUB_WORKSPACE to the repository"
    required: false
    default: '.'
 
