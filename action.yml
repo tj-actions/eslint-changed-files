@@ -56,6 +56,10 @@ inputs:
    description: "Relative path under GITHUB_WORKSPACE to the repository"
    required: false
    default: '.'
+  use_flat_config:
+   description: "Enable this to prevent eslint default search for the config."
+   required: false
+   default: true
 
 runs:
   using: 'composite'
@@ -98,6 +102,7 @@ runs:
         INPUT_FAIL_ON_ERROR: ${{ inputs.fail_on_error }}
         INPUT_REPORTER: ${{ inputs.reporter }}
         INPUT_SKIP_ANNOTATIONS: ${{ inputs.skip_annotations }}
+        ESLINT_USE_FLAT_CONFIG: ${{ inputs.use_flat_config }}
 
 branding:
   icon: check-square
