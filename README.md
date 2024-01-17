@@ -18,6 +18,7 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
 ![Screen Shot 2022-03-04 at 5 01 35 AM](https://user-images.githubusercontent.com/17484350/156742457-ff0c2da5-aca8-4260-9a3c-76ff3a273bd6.png)
 
 ## Features
+
 *   Easy to debug
 *   Fast execution
 *   Fix ESlint errors
