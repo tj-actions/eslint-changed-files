@@ -1,5 +1,24 @@
 # Changelog
 
+# [22.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v22.0.0...v22.0.1) - (2024-01-17)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/node to v20.11.5 ([d97b62f](https://github.com/tj-actions/eslint-changed-files/commit/d97b62f16c54aff6142550ed5198d38d8b1687ce))  - (renovate[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Update action.yml ([0d166ee](https://github.com/tj-actions/eslint-changed-files/commit/0d166ee58d03e26ee9f3b27b4521602f973006ad))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#1579](https://github.com/tj-actions/eslint-changed-files/pull/1579): to v22 ([3d47e7e](https://github.com/tj-actions/eslint-changed-files/commit/3d47e7e1eff3ffbfd68e81aff953400bc29fff18))  - (repo-ranger[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v21.0.1 -> v22
+ ([ac64d26](https://github.com/tj-actions/eslint-changed-files/commit/ac64d26d4b928338503393524ad5dfcf94161511))  - (jackton1)
+
 # [22.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v21.0.1...v22.0.0) - (2024-01-16)
 
 ## <!-- 1 -->🐛 Bug Fixes
