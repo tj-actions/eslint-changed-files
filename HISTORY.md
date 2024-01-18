@@ -1,5 +1,32 @@
 # Changelog
 
+# [23.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v22.0.1...v23.0.0) - (2024-01-18)
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([df814ac](https://github.com/tj-actions/eslint-changed-files/commit/df814ac542c0fd17f79cfdb9ce87943f72d27a09))  - (jackton1)
+- Update README.md ([#1581](https://github.com/tj-actions/eslint-changed-files/issues/1581))
+
+ ([7ff01bd](https://github.com/tj-actions/eslint-changed-files/commit/7ff01bd143c08846917d732ac70ecdf94e357729))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#1584](https://github.com/tj-actions/eslint-changed-files/pull/1584): update tj-actions/changed-files action to v42 ([5f03138](https://github.com/tj-actions/eslint-changed-files/commit/5f0313854e66c10c5b414b12d0d1b5e908b2fa41))  - (repo-ranger[bot])
+- PR [#1583](https://github.com/tj-actions/eslint-changed-files/pull/1583): README.md ([65b46c0](https://github.com/tj-actions/eslint-changed-files/commit/65b46c02ec4d2b5fa4c7e9ffa98ac9c3a5946aba))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Lock file maintenance ([#1585](https://github.com/tj-actions/eslint-changed-files/issues/1585)) ([bd2148c](https://github.com/tj-actions/eslint-changed-files/commit/bd2148c3e2e0c9a9d143410b6f7a0a5caf6e9bc9))  - (renovate[bot])
+- **deps:** Update tj-actions/changed-files action to v42 ([739c70f](https://github.com/tj-actions/eslint-changed-files/commit/739c70f41423de81c3278e3d8b83aca6d6f4e443))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v22.0.0 -> v22.0.1 ([#1582](https://github.com/tj-actions/eslint-changed-files/issues/1582))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com>
+Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github.com> ([46fc6ee](https://github.com/tj-actions/eslint-changed-files/commit/46fc6eecbee662d2780d3faa1d3b7312a390abe1))  - (tj-actions[bot])
+
 # [22.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v22.0.0...v22.0.1) - (2024-01-17)
 
 ## <!-- 1 -->🐛 Bug Fixes
