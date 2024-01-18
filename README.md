@@ -50,7 +50,7 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
         run: npm ci  # OR: yarn 
 
       - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v22
+        uses: tj-actions/eslint-changed-files@v23
         with:
           config_path: "/path/to/.eslintrc"
           ignore_path: "/path/to/.eslintignore"
@@ -74,7 +74,7 @@ Support this project with a :star:
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
 ```yaml
-- uses: tj-actions/eslint-changed-files@v22
+- uses: tj-actions/eslint-changed-files@v23
   id: eslint-changed-files
   with:
     # Run [ESlint](https://eslint.org) on all matching files.
