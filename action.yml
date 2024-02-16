@@ -56,6 +56,10 @@ inputs:
    description: "Relative path under GITHUB_WORKSPACE to the repository"
    required: false
    default: '.'
+  skip_initial_fetch:
+    desciption: "Skip fetching more histories when the repo is shallow, this is passed to [Changed Files](https://github.com/codesculpture/changed-files)" 
+    required: false
+    default: false
 
 runs:
   using: 'composite'
@@ -72,6 +76,7 @@ runs:
         files: ${{ inputs.file_extensions }}
         files_ignore_from_source_file: ${{ inputs.ignore_path }}
         diff_relative: true
+        skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
