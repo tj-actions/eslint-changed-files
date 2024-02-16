@@ -138,6 +138,11 @@ Support this project with a :star:
     # Default: "${{ github.token }}"
     token: ''
 
+    # Skip fetching more histories when repo is shallow, this is passed to the [Changed Files Action](https://github.com/tj-actions/changed-files)
+    # Type: boolean
+    # Default: false
+    skip_initial_fetch: ''
+
 ```
 
 <!-- AUTO-DOC-INPUT:END -->

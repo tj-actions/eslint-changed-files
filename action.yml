@@ -57,7 +57,7 @@ inputs:
    required: false
    default: '.'
   skip_initial_fetch:
-    description: "Skip fetching more histories when the repo is shallow, this is passed to [Changed Files](https://github.com/codesculpture/changed-files)" 
+    description: "Skip fetching more histories when the repo is shallow, this is passed to [Changed Files](https://github.com/tj-actions/changed-files)" 
     required: false
     default: false
 
