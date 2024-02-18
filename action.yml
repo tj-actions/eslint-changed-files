@@ -56,6 +56,12 @@ inputs:
    description: "Relative path under GITHUB_WORKSPACE to the repository"
    required: false
    default: '.'
+  skip_initial_fetch:
+    description: |
+      Skip initially fetching additional history to improve performance for shallow repositories.
+      NOTE: This could lead to errors with missing history. It's intended to be used when you've fetched all necessary history to perform the diff.
+    required: false
+    default: false
 
 runs:
   using: 'composite'
@@ -72,6 +78,7 @@ runs:
         files: ${{ inputs.file_extensions }}
         files_ignore_from_source_file: ${{ inputs.ignore_path }}
         diff_relative: true
+        skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
