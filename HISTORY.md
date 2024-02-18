@@ -1,5 +1,82 @@
 # Changelog
 
+# [23.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.0.0...v23.1.0) - (2024-02-18)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/react to v18.2.56 ([6266e2b](https://github.com/tj-actions/eslint-changed-files/commit/6266e2bae9c18213c9fc381f672f3992f83caee3))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.19 ([38eab6c](https://github.com/tj-actions/eslint-changed-files/commit/38eab6cfd1bc4431df74d4cbca20dbe607d493d6))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.18 ([5719db6](https://github.com/tj-actions/eslint-changed-files/commit/5719db62a2bffa66ca34cddcf5f7ad4c50692a32))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.17 ([02b3175](https://github.com/tj-actions/eslint-changed-files/commit/02b3175647b6ec1ee82c366547795693365e33b5))  - (renovate[bot])
+- **deps:** Update dependency @types/react-dom to v18.2.19 ([16256ab](https://github.com/tj-actions/eslint-changed-files/commit/16256ab0a25bd4c28bda3ce16b891b09855be6cc))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.55 ([8a5c0a4](https://github.com/tj-actions/eslint-changed-files/commit/8a5c0a48ce9bc2c3ae6b0bb663552323d25d8f0e))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.54 ([81aba1e](https://github.com/tj-actions/eslint-changed-files/commit/81aba1efab0b631d1fcc74104d02eeac1b6091e9))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/jest-dom to v6.4.2 ([f9f676d](https://github.com/tj-actions/eslint-changed-files/commit/f9f676d16cd30920923369337df83e2e7d1aeb86))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.53 ([289505d](https://github.com/tj-actions/eslint-changed-files/commit/289505dfc621ec3cc81c89bcbbd13e3b796f0e26))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.52 ([1367572](https://github.com/tj-actions/eslint-changed-files/commit/136757241e66cc901b54bf34253fee42d1039e32))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/react to v14.2.1 ([0ffdffd](https://github.com/tj-actions/eslint-changed-files/commit/0ffdffd9fd76186578644d28958ff784e2c3a116))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.16 ([f31a7ca](https://github.com/tj-actions/eslint-changed-files/commit/f31a7ca4c5f095cf27daa2ff2ec2d29f1d918bdd))  - (renovate[bot])
+- **deps:** Update dependency @types/jest to v29.5.12 ([e752554](https://github.com/tj-actions/eslint-changed-files/commit/e7525547b4ee44c54a782c2343a27782cbd1c29f))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.51 ([c70c7d6](https://github.com/tj-actions/eslint-changed-files/commit/c70c7d63e89767b1bd6ed031a413251d5a7a655b))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.15 ([16f452c](https://github.com/tj-actions/eslint-changed-files/commit/16f452c3b949ef296baa4d4cd0da6e342a0e115f))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.14 ([1e6d138](https://github.com/tj-actions/eslint-changed-files/commit/1e6d1385fdbd3c18608e0a193a62949b8f5a4edd))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/jest-dom to v6.4.1 ([6df7453](https://github.com/tj-actions/eslint-changed-files/commit/6df7453c95a4e04d6284e4c25f04441385b80e6d))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.13 ([6939e92](https://github.com/tj-actions/eslint-changed-files/commit/6939e92a2f4e8c3546ba05002be9839d1fd05368))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/react to v14.2.0 ([2a0c0cb](https://github.com/tj-actions/eslint-changed-files/commit/2a0c0cbddd6a9b4e23946b93e0e55735d1bcc0a5))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.11 ([8a90171](https://github.com/tj-actions/eslint-changed-files/commit/8a90171819bef3208c744906095eceae78e141ac))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/jest-dom to v6.4.0 ([8170e2a](https://github.com/tj-actions/eslint-changed-files/commit/8170e2a4fa3c30cc53d911a7202c0fda512e76f5))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.10 ([2c3fd31](https://github.com/tj-actions/eslint-changed-files/commit/2c3fd311357b765681f13016184c72dbad7ca035))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.9 ([924d283](https://github.com/tj-actions/eslint-changed-files/commit/924d283441c69d02bfd4577fecb5dfc2d27bf03f))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.8 ([907691c](https://github.com/tj-actions/eslint-changed-files/commit/907691c6c547fba972f7ca89f8e9a5d7ab926773))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.7 ([f92b0e3](https://github.com/tj-actions/eslint-changed-files/commit/f92b0e30d1f4fdc40933421a2adb145181e1aa98))  - (renovate[bot])
+- **deps:** Update dependency web-vitals to v3.5.2 ([0649ca0](https://github.com/tj-actions/eslint-changed-files/commit/0649ca074bd55b520193763143bc6bccbf3f524c))  - (renovate[bot])
+- **deps:** Update dependency @testing-library/jest-dom to v6.3.0 ([25e44f3](https://github.com/tj-actions/eslint-changed-files/commit/25e44f35f94be2008d0af76327a2b10010330770))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.6 ([4418341](https://github.com/tj-actions/eslint-changed-files/commit/44183416a0950de8c32e6b87315d02e2e21a2030))  - (renovate[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([c61f07d](https://github.com/tj-actions/eslint-changed-files/commit/c61f07d4ec12df1f5998427c08a0efe119445f95))  - (jackton1)
+
+## <!-- 3 -->📚 Documentation
+
+- Add codesculpture as a contributor for code ([#1635](https://github.com/tj-actions/eslint-changed-files/issues/1635)) ([f01224b](https://github.com/tj-actions/eslint-changed-files/commit/f01224b76e04eabefdf9a7f28b21877981bb79af))  - (allcontributors[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1636](https://github.com/tj-actions/eslint-changed-files/pull/1636): README.md ([4421ff4](https://github.com/tj-actions/eslint-changed-files/commit/4421ff4bff249b96ad416accc4d78513513d4ac8))  - (repo-ranger[bot])
+- **inputs:** Accept `skip_initial_fetch` and pass to Changed-Files Action ([#1633](https://github.com/tj-actions/eslint-changed-files/issues/1633)) ([be85f7c](https://github.com/tj-actions/eslint-changed-files/commit/be85f7c0e85646032d660a5da86ac2d281d732be))  - (Aravind)
+- PR [#1629](https://github.com/tj-actions/eslint-changed-files/pull/1629): update dependency @typescript-eslint/eslint-plugin to v7 ([3928c90](https://github.com/tj-actions/eslint-changed-files/commit/3928c903b09fdb2db4e77eb0d0aff9dcc1eff9a6))  - (repo-ranger[bot])
+- PR [#1606](https://github.com/tj-actions/eslint-changed-files/pull/1606): update peter-evans/create-pull-request action to v6 ([73ed382](https://github.com/tj-actions/eslint-changed-files/commit/73ed38270841e9f9c39ef97e06afce2023e2a697))  - (repo-ranger[bot])
+- PR [#1601](https://github.com/tj-actions/eslint-changed-files/pull/1601): @typescript-eslint/eslint-plugin from 6.19.1 to 6.20.0 in /test-app ([a5bc295](https://github.com/tj-actions/eslint-changed-files/commit/a5bc2950c9b563b521de427a1b9bf3dceb41a17e))  - (repo-ranger[bot])
+- PR [#1594](https://github.com/tj-actions/eslint-changed-files/pull/1594): update dependency @testing-library/jest-dom to v6.3.0 ([89d9ffb](https://github.com/tj-actions/eslint-changed-files/commit/89d9ffb3d57198789fd2664f5fe669a2b7c7254a))  - (repo-ranger[bot])
+- PR [#1592](https://github.com/tj-actions/eslint-changed-files/pull/1592): bump @testing-library/jest-dom from 6.2.0 to 6.2.1 in /test-app ([d7c605f](https://github.com/tj-actions/eslint-changed-files/commit/d7c605f3a99031e1876a7c4673f2932b72a0416d))  - (repo-ranger[bot])
+- Merge branch 'main' into dependabot/npm_and_yarn/test-app/testing-library/jest-dom-6.2.1 ([2f2bc03](https://github.com/tj-actions/eslint-changed-files/commit/2f2bc03b5253365b02efc550a28aafad1dbb01b5))  - (repo-ranger[bot])
+- PR [#1591](https://github.com/tj-actions/eslint-changed-files/pull/1591): bump @typescript-eslint/eslint-plugin from 6.19.0 to 6.19.1 in /test-app ([9c869e2](https://github.com/tj-actions/eslint-changed-files/commit/9c869e22ed4dcc4bf4c1a5bc4ae604a618ac0012))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update dependency @typescript-eslint/eslint-plugin to v7 ([a63bccc](https://github.com/tj-actions/eslint-changed-files/commit/a63bcccc42a6fc4b227f095f8b6c631cf9768089))  - (renovate[bot])
+- **deps:** Lock file maintenance ([33095b4](https://github.com/tj-actions/eslint-changed-files/commit/33095b4924c0995b47cca4309228c796afe948fa))  - (renovate[bot])
+- **deps:** Update codacy/codacy-analysis-cli-action action to v4.4.0 ([4e3b021](https://github.com/tj-actions/eslint-changed-files/commit/4e3b0213f03a93113713d105014a21665ff78b85))  - (renovate[bot])
+- **deps:** Update dependency @typescript-eslint/eslint-plugin to v6.21.0 ([c5d3590](https://github.com/tj-actions/eslint-changed-files/commit/c5d359042f282ddff8e17bcb417e62ac514928d0))  - (renovate[bot])
+- **deps:** Lock file maintenance ([86e5dec](https://github.com/tj-actions/eslint-changed-files/commit/86e5dec977b182d54f01c624963d7a6ea0fb4048))  - (renovate[bot])
+- **deps:** Update tj-actions/verify-changed-files action to v18 ([#1617](https://github.com/tj-actions/eslint-changed-files/issues/1617)) ([88a4862](https://github.com/tj-actions/eslint-changed-files/commit/88a486202c5e1eeccbc46702dd7fdf45b68c986d))  - (renovate[bot])
+- **deps:** Update dependency stylelint to v16.2.1 ([497442a](https://github.com/tj-actions/eslint-changed-files/commit/497442aba635b8b794495d2e87fc640483f7be0b))  - (renovate[bot])
+- **deps:** Update peter-evans/create-pull-request action to v6 ([f5687fb](https://github.com/tj-actions/eslint-changed-files/commit/f5687fb22b0d685c5d0c2e8dd2d7c27271a041ea))  - (renovate[bot])
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin in /test-app ([0765d2f](https://github.com/tj-actions/eslint-changed-files/commit/0765d2ff26c0ab1ff91d10bf16b1f4e31618ddd2))  - (dependabot[bot])
+- **deps:** Bump @testing-library/jest-dom in /test-app ([7a5c07d](https://github.com/tj-actions/eslint-changed-files/commit/7a5c07dcb3e08399cb2e373874992311eb6df991))  - (dependabot[bot])
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin in /test-app ([3e30207](https://github.com/tj-actions/eslint-changed-files/commit/3e3020700000bd36bd201878a820922e5d01677b))  - (dependabot[bot])
+- **deps:** Lock file maintenance ([8138040](https://github.com/tj-actions/eslint-changed-files/commit/81380404f2cb6048a2e6fcbc641c439b51093cb4))  - (renovate[bot])
+- **deps:** Update dependency eslint-config-standard-with-typescript to v43.0.1 ([edf5a3d](https://github.com/tj-actions/eslint-changed-files/commit/edf5a3d8010185c3e72a54b2c4b3cb586b8926af))  - (renovate[bot])
+- **deps:** Update dependency stylelint to v16.2.0 ([2355afc](https://github.com/tj-actions/eslint-changed-files/commit/2355afc014e859b7ccc4e4cbf88d89549ca56261))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v23 ([#1586](https://github.com/tj-actions/eslint-changed-files/issues/1586))
+
+Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([f5d9974](https://github.com/tj-actions/eslint-changed-files/commit/f5d9974316246db0a2e7f8dc54b5874020f5a74e))  - (tj-actions[bot])
+
 # [23.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v22.0.1...v23.0.0) - (2024-01-18)
 
 ## <!-- 26 -->🔄 Update
