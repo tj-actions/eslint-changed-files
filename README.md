@@ -6,9 +6,7 @@
 [![Test](https://github.com/tj-actions/eslint-changed-files/actions/workflows/test.yml/badge.svg)](https://github.com/tj-actions/eslint-changed-files/actions/workflows/test.yml) [![Update release version.](https://github.com/tj-actions/eslint-changed-files/workflows/Update%20release%20version./badge.svg)](https://github.com/tj-actions/eslint-changed-files/actions?query=workflow%3A%22Update+release+version.%22)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
-
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 # eslint-changed-files
@@ -168,23 +166,19 @@ Support this project with a :star:
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-
 <!-- prettier-ignore-start -->
-
 <!-- markdownlint-disable -->
-
 <table>
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://dev.clintonblackburn.com"><img src="https://avatars.githubusercontent.com/u/910510?v=4?s=100" width="100px;" alt="Clinton Blackburn"/><br /><sub><b>Clinton Blackburn</b></sub></a><br /><a href="https://github.com/tj-actions/eslint-changed-files/commits?author=clintonb" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/sava-vidakovic"><img src="https://avatars.githubusercontent.com/u/10528914?v=4?s=100" width="100px;" alt="Sava Vidakovic"/><br /><sub><b>Sava Vidakovic</b></sub></a><br /><a href="https://github.com/tj-actions/eslint-changed-files/commits?author=sava-vidakovic" title="Code">💻</a> <a href="https://github.com/tj-actions/eslint-changed-files/commits?author=sava-vidakovic" title="Tests">⚠️</a> <a href="https://github.com/tj-actions/eslint-changed-files/commits?author=sava-vidakovic" title="Documentation">📖</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/codesculpture"><img src="https://avatars.githubusercontent.com/u/63452117?v=4?s=100" width="100px;" alt="Aravind"/><br /><sub><b>Aravind</b></sub></a><br /><a href="https://github.com/tj-actions/eslint-changed-files/commits?author=codesculpture" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/codesculpture"><img src="https://avatars.githubusercontent.com/u/63452117?v=4?s=100" width="100px;" alt="Aravind"/><br /><sub><b>Aravind</b></sub></a><br /><a href="https://github.com/tj-actions/eslint-changed-files/commits?author=codesculpture" title="Code">💻</a> <a href="https://github.com/tj-actions/eslint-changed-files/commits?author=codesculpture" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
 
 <!-- markdownlint-restore -->
-
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
