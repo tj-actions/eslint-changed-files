@@ -144,6 +144,12 @@ Support this project with a :star:
     # Default: "${{ github.token }}"
     token: ''
 
+    # Force the use of Github's REST API even when 
+    # a local copy of the repository exists 
+    # Type: boolean
+    # Default: "false"
+    use_rest_api: ''
+
 ```
 
 <!-- AUTO-DOC-INPUT:END -->
