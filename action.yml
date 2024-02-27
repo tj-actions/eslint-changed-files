@@ -62,6 +62,11 @@ inputs:
       NOTE: This could lead to errors with missing history. It's intended to be used when you've fetched all necessary history to perform the diff.
     required: false
     default: false
+  use_rest_api:
+    description: |
+      Force the use of Github's REST API even when a local copy of the repository exists
+    required: false
+    default: false
 
 runs:
   using: 'composite'
@@ -79,6 +84,7 @@ runs:
         files_ignore_from_source_file: ${{ inputs.ignore_path }}
         diff_relative: true
         skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
+        use_rest_api: ${{ inputs.use_rest_api }}
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
