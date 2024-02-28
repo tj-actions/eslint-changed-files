@@ -1,5 +1,51 @@
 # Changelog
 
+# [23.2.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.1.0...v23.2.0) - (2024-02-28)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/node to v20.11.21 ([d31d670](https://github.com/tj-actions/eslint-changed-files/commit/d31d6702be06c47c24171413f11429246a828543))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.60 ([ed0831e](https://github.com/tj-actions/eslint-changed-files/commit/ed0831e9fb46a4352e3156b47997084747545629))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.59 ([e85038e](https://github.com/tj-actions/eslint-changed-files/commit/e85038e6132fd7ecec7b6ce16ed3dff090c77819))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.58 ([7e28546](https://github.com/tj-actions/eslint-changed-files/commit/7e285461a5a8a5ddf1a198099dc088819c6223ae))  - (renovate[bot])
+- **deps:** Update dependency @types/node to v20.11.20 ([8b0e200](https://github.com/tj-actions/eslint-changed-files/commit/8b0e20011348433719cccd581ecfbeb0878af744))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.57 ([7645a3e](https://github.com/tj-actions/eslint-changed-files/commit/7645a3e30049d982946eb75de7bc624dd7dffb0a))  - (renovate[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md
+ ([c27806e](https://github.com/tj-actions/eslint-changed-files/commit/c27806e963709bbde2aea26fa667dad65513c037))  - (repo-ranger[bot])
+- Updated README.md
+ ([082a4fe](https://github.com/tj-actions/eslint-changed-files/commit/082a4fe47dd808cda74703fb6ee37c99a152d2e4))  - (jackton1)
+
+## <!-- 3 -->📚 Documentation
+
+- Add codesculpture as a contributor for doc ([#1651](https://github.com/tj-actions/eslint-changed-files/issues/1651)) ([1c6955c](https://github.com/tj-actions/eslint-changed-files/commit/1c6955cd606def01b43ec2328753b5b7785ab990))  - (allcontributors[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1653](https://github.com/tj-actions/eslint-changed-files/pull/1653): README.md ([5fdce04](https://github.com/tj-actions/eslint-changed-files/commit/5fdce048b02ade10537a80300a29d1f2b1d25f2e))  - (repo-ranger[bot])
+- PR [#1652](https://github.com/tj-actions/eslint-changed-files/pull/1652): README.md ([3a14c26](https://github.com/tj-actions/eslint-changed-files/commit/3a14c266aef85ac7061099e5f06dbaa5251f5350))  - (repo-ranger[bot])
+- Merge branch 'main' into chore/update-readme ([aedddf0](https://github.com/tj-actions/eslint-changed-files/commit/aedddf0833724185dfabee73a1a50a7012641399))  - (repo-ranger[bot])
+- Exposing and Passing `use_rest_api` to changed-files actions ([#1650](https://github.com/tj-actions/eslint-changed-files/issues/1650))
+
+ ([0802186](https://github.com/tj-actions/eslint-changed-files/commit/0802186d034640c068d3813e21a040ba6bc171d5))  - (Aravind)
+- PR [#1637](https://github.com/tj-actions/eslint-changed-files/pull/1637): to v23.1.0 ([664a150](https://github.com/tj-actions/eslint-changed-files/commit/664a1508860f6ae7e483cd751449ead66d1ab556))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update peter-evans/create-pull-request action to v6.0.1 ([11c64da](https://github.com/tj-actions/eslint-changed-files/commit/11c64dae2a4c1566b4a42a2e31389396b8f1f4b4))  - (renovate[bot])
+- **deps:** Update dependency @typescript-eslint/eslint-plugin to v7.1.0 ([b946155](https://github.com/tj-actions/eslint-changed-files/commit/b94615599b439f7c76188d8badad762e9300e050))  - (renovate[bot])
+- **deps:** Lock file maintenance ([76246ce](https://github.com/tj-actions/eslint-changed-files/commit/76246ce9750d6a11b80804ddf39e26bcb2b88c1f))  - (renovate[bot])
+- **deps:** Update dependency eslint to v8.57.0 ([0b3f8dd](https://github.com/tj-actions/eslint-changed-files/commit/0b3f8dde85e272afb94e45d6dd273cce623fe484))  - (renovate[bot])
+- **deps:** Update dependency @typescript-eslint/eslint-plugin to v7.0.2 ([49f8374](https://github.com/tj-actions/eslint-changed-files/commit/49f83744285627c3cbda8c08d72744882a22630f))  - (renovate[bot])
+- **deps:** Lock file maintenance ([3e07816](https://github.com/tj-actions/eslint-changed-files/commit/3e078167c879af382186de065aa22e2b7312a769))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v23.0.0 -> v23.1.0
+ ([7d21299](https://github.com/tj-actions/eslint-changed-files/commit/7d21299dfe8f8f06ce52226711ade57506bbad1d))  - (jackton1)
+
 # [23.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.0.0...v23.1.0) - (2024-02-18)
 
 ## <!-- 1 -->🐛 Bug Fixes
