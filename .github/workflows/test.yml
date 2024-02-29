@@ -74,7 +74,7 @@ jobs:
 
       - name: Verify Changed files
         if: failure()
-        uses: tj-actions/verify-changed-files@v18
+        uses: tj-actions/verify-changed-files@v19
         id: verify-changed-files
         with:
           files: |
