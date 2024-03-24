@@ -46,7 +46,7 @@
     "eslint-plugin-n": "^16.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.1",
-    "stylelint": "16.2.1",
+    "stylelint": "16.3.0",
     "stylelint-config-standard": "36.0.0"
   }
 }
