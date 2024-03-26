@@ -100,6 +100,7 @@ runs:
         # INPUT_<VARIABLE_NAME> is not available in Composite run steps
         # https://github.community/t/input-variable-name-is-not-available-in-composite-run-steps/127611
         INPUT_TOKEN: ${{ inputs.token }}
+        REVIEWDOG_GITHUB_API_TOKEN: ${{ inputs.token }}
         INPUT_PATH: ${{ inputs.path }}
         INPUT_LEVEL: ${{ inputs.level }}
         INPUT_ALL_FILES: ${{ inputs.all_files }}
