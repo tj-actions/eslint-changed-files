@@ -1,5 +1,34 @@
 # Changelog
 
+# [24.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.2.1...v24.0.0) - (2024-03-28)
+
+## <!-- 1 -->🐛 Bug Fixes
+
+- **deps:** Update dependency @types/react-dom to v18.2.23 ([fc3a74e](https://github.com/tj-actions/eslint-changed-files/commit/fc3a74ee772de342a2bc297fb734fd95c0ccc664))  - (renovate[bot])
+- **deps:** Update dependency @types/react to v18.2.73 ([ef7c78b](https://github.com/tj-actions/eslint-changed-files/commit/ef7c78bb18ad2f89db5835913f7c70b35c3e1145))  - (renovate[bot])
+
+## <!-- 30 -->📝 Other
+
+- PR [#1733](https://github.com/tj-actions/eslint-changed-files/pull/1733): update actions/checkout digest to b4ffde6 ([58fb159](https://github.com/tj-actions/eslint-changed-files/commit/58fb159042ba35968d3c515f674d74a1cb074064))  - (repo-ranger[bot])
+- PR [#1731](https://github.com/tj-actions/eslint-changed-files/pull/1731): bump actions/checkout from 4.1.1 to 4.1.2 ([6c0768c](https://github.com/tj-actions/eslint-changed-files/commit/6c0768cded2689bfaab81ea1366aff55349e343b))  - (repo-ranger[bot])
+- PR [#1730](https://github.com/tj-actions/eslint-changed-files/pull/1730): update actions/checkout digest to b4ffde6 ([33b30b3](https://github.com/tj-actions/eslint-changed-files/commit/33b30b39cccf9b9a910420d3805eef24579d508b))  - (repo-ranger[bot])
+- PR [#1728](https://github.com/tj-actions/eslint-changed-files/pull/1728): bump actions/checkout from 4.1.1 to 4.1.2 ([8c8d609](https://github.com/tj-actions/eslint-changed-files/commit/8c8d609f9915042d0bb129bd29da7f9f1586e4ea))  - (repo-ranger[bot])
+- PR [#1727](https://github.com/tj-actions/eslint-changed-files/pull/1727): update tj-actions/changed-files action to v44 ([6f0ab56](https://github.com/tj-actions/eslint-changed-files/commit/6f0ab56c9a53573fd8ae859771b78799140f564a))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps:** Update actions/checkout digest to b4ffde6 ([1ab870e](https://github.com/tj-actions/eslint-changed-files/commit/1ab870e79d0536674274dd5c8a8f7ddff9126067))  - (renovate[bot])
+- **deps:** Bump actions/checkout from 4.1.1 to 4.1.2 ([7916d02](https://github.com/tj-actions/eslint-changed-files/commit/7916d023dda7723ae288c1dbeea33a88b7886c16))  - (dependabot[bot])
+- **deps:** Update actions/checkout digest to b4ffde6 ([daef8a1](https://github.com/tj-actions/eslint-changed-files/commit/daef8a12c6c9eefb25fe7da9c57b923f87c87eee))  - (renovate[bot])
+- **deps:** Bump actions/checkout from 4.1.1 to 4.1.2 ([789cafb](https://github.com/tj-actions/eslint-changed-files/commit/789cafb7df88df49575385fac9841a65962063d6))  - (dependabot[bot])
+- **deps:** Update tj-actions/changed-files action to v44 ([c537b1c](https://github.com/tj-actions/eslint-changed-files/commit/c537b1c3f0a2af3aee90376b434d478f562bf11a))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v23.2.1 ([#1726](https://github.com/tj-actions/eslint-changed-files/issues/1726))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([6cfe3b7](https://github.com/tj-actions/eslint-changed-files/commit/6cfe3b76b3b33087291deaa542b4d15a501f815b))  - (tj-actions[bot])
+
 # [23.2.1](https://github.com/tj-actions/eslint-changed-files/compare/v23.2.0...v23.2.1) - (2024-03-26)
 
 ## <!-- 1 -->🐛 Bug Fixes
