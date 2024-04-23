@@ -26,7 +26,6 @@ if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
   export REVIEWDOG_GITHUB_API_TOKEN=$INPUT_TOKEN
 fi
 
-IGNORE_PATH=$INPUT_IGNORE_PATH
 EXTRA_ARGS=$INPUT_EXTRA_ARGS
 CONFIG_ARG=""
 
@@ -35,19 +34,11 @@ if [[ -n "$INPUT_CONFIG_PATH" ]]; then
 fi
 
 if [[ "$INPUT_ALL_FILES" == "true" ]]; then
-  echo "Running ESlint on all files..."
+  echo "Running ESLint on all files..."
   if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
     echo "Skipping annotations..."
-    if [[ -n ${IGNORE_PATH} ]]; then
-      # shellcheck disable=SC2086
-      npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
-    else
-      # shellcheck disable=SC2086
-      npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
-    fi
-  elif [[ -n ${IGNORE_PATH} ]]; then
     # shellcheck disable=SC2086
-    npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
+    npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} && exit_status=$? || exit_status=$?
   else
     # shellcheck disable=SC2086
     npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" . > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
@@ -70,19 +61,11 @@ if [[ "$INPUT_ALL_FILES" == "true" ]]; then
   fi
 else
   if [[ -n "${INPUT_CHANGED_FILES[*]}" ]]; then
-      echo "Running ESlint on changed files..."
+      echo "Running ESLint on changed files..."
       if [[ "$INPUT_SKIP_ANNOTATIONS" == "true" ]]; then
         echo "Skipping annotations..."
-        if [[ -n ${IGNORE_PATH} ]]; then
-          # shellcheck disable=SC2086
-          npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
-        else
-          # shellcheck disable=SC2086
-          npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
-        fi
-      elif [[ -n ${IGNORE_PATH} ]]; then
         # shellcheck disable=SC2086
-        npx eslint ${CONFIG_ARG} --ignore-path="${IGNORE_PATH}" ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?
+        npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} ${INPUT_CHANGED_FILES} && exit_status=$? || exit_status=$?
       else
         # shellcheck disable=SC2086
         npx eslint ${CONFIG_ARG} ${EXTRA_ARGS} -f="${ESLINT_FORMATTER}" ${INPUT_CHANGED_FILES} > "$RD_JSON_FILE" && exit_status=$? || exit_status=$?

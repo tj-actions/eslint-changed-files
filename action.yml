@@ -9,13 +9,9 @@ inputs:
   all_files:
     description: "Run [ESlint](https://eslint.org) on all matching files."
     required: false
-    default: false
+    default: 'false'
   config_path:
     description: "[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories."
-    required: false
-    default: ''
-  ignore_path:
-    description: "[ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)"
     required: false
     default: ''
   file_extensions:
@@ -30,7 +26,7 @@ inputs:
   skip_annotations:
     description: "Skip running reviewdog i.e don't add any annotations."
     required: false
-    default: false
+    default: 'false'
   level:
     description: "Report level for reviewdog (info,warning,error)"
     required: false
@@ -81,7 +77,6 @@ runs:
       with:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
-        files_ignore_from_source_file: ${{ inputs.ignore_path }}
         diff_relative: true
         skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
         use_rest_api: ${{ inputs.use_rest_api }}
@@ -105,7 +100,6 @@ runs:
         INPUT_LEVEL: ${{ inputs.level }}
         INPUT_ALL_FILES: ${{ inputs.all_files }}
         INPUT_CONFIG_PATH: ${{ inputs.config_path }}
-        INPUT_IGNORE_PATH: ${{ inputs.ignore_path }}
         INPUT_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         INPUT_EXTRA_ARGS: ${{ inputs.extra_args }}
         INPUT_FILTER_MODE: ${{ inputs.filter_mode }}
