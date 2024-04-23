@@ -121,6 +121,7 @@ jobs:
       - name: Run ESLint on changed files
         uses: ./
         with:
+          path: "test-app"
           config_path: "test-app/eslint.config.mjs"
           file_extensions: |
             **/*.ts
@@ -130,6 +131,7 @@ jobs:
       - name: Run ESLint on all files
         uses: ./
         with:
+          path: "test-app"
           config_path: "test-app/eslint.config.mjs"
           file_extensions: |
             **/*.ts
