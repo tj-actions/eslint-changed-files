@@ -47,12 +47,11 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: ".eslintrc.js"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: ".eslintignore"
 
       - name: Fix Lint Errors
         if: failure()
@@ -64,12 +63,11 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: ".eslintrc.js"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--fix"
-          ignore_path: ".eslintignore"
           skip_annotations: true
 
       - name: Verify Changed files
@@ -124,38 +122,35 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: ".eslintrc.js"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: ".eslintignore"
 
       - name: Run ESLint on changed files with .eslintignore
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          config_path: "test-app/eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: "test-app/.eslintignore"
 
       - name: Run ESLint on all files with .eslintignore
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          config_path: "test-app/eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
           all_files: true
-          ignore_path: "test-app/.eslintignore"
 
       - name: Run ESLint on changed files
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          config_path: "test-app/eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
@@ -164,7 +159,7 @@ jobs:
       - name: Run ESLint on all files
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          config_path: "test-app/eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
