@@ -140,18 +140,9 @@ jobs:
       - name: Run ESLint on all files without a config_path on all files
         uses: ./
         with:
+          path: "test-app"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
           all_files: true
-
-      - name: Run ESLint for a nested project with changed files
-        uses: ./
-        with:
-          path: "test-app"
-          config_path: "eslint.config.mjs"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
