@@ -22,7 +22,7 @@ export default [
   ...compat.extends("standard-with-typescript").map(
     config => ({
       ...config,
-      files: ["**/*.tsx"],
+      files: ["**/*.tsx", "**/*.ts"],
       rules: {
         ...config.rules,
         "@typescript-eslint/semi": ["error", "always"],
