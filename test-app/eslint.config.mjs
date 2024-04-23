@@ -7,14 +7,12 @@ import styleLintConfig from "stylelint-config-recommended";
 import prettierConfig from 'eslint-config-prettier';
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended';
 
-// mimic CommonJS variables -- not needed if using CommonJS
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const compat = new FlatCompat({
   baseDirectory: __dirname,
   recommendedConfig: pluginJs.configs.recommended
 });
-
 
 export default [
   {
