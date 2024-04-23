@@ -96,6 +96,8 @@ jobs:
   
   eslint-changed-files:
     runs-on: ${{ matrix.platform }}
+    needs:
+      - lint
     strategy:
       fail-fast: false
       matrix:
