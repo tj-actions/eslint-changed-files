@@ -17,8 +17,7 @@
     "stylelint": "stylelint src/**/*.css",
     "format": "prettier --write src",
     "lint:fix": "eslint src --fix",
-    "stylelint:fix": "stylelint src/**/*.css --fix",
-    "format:fix": "prettier --write src"
+    "stylelint:fix": "stylelint src/**/*.css --fix"
   },
   "eslintConfig": {
     "extends": [
