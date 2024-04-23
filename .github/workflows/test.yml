@@ -122,7 +122,7 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: "test-app/eslint.config.mjs"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
@@ -132,7 +132,7 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: "test-app/eslint.config.mjs"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
