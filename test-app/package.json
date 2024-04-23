@@ -13,7 +13,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "stylelint": "stylelint src/**/*.css",
+    "format": "prettier --write src",
+    "lint:fix": "eslint src --fix",
+    "stylelint:fix": "stylelint src/**/*.css --fix",
+    "format:fix": "prettier --write src"
   },
   "eslintConfig": {
     "extends": [
@@ -50,7 +55,6 @@
     "globals": "^15.0.0",
     "prettier": "^3.2.5",
     "stylelint": "^16.3.1",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^36.0.0",
     "typescript": "<5.4.0",
     "typescript-eslint": "^7.7.1",
