@@ -19,6 +19,9 @@ export default [
     languageOptions: { globals: globals.browser },
     settings: { react: { version: "detect" } },
   },
+  {
+    ignores: ["src/reportWebVitals.ts"]
+  },
   ...compat.extends("standard-with-typescript").map((config) => ({
     ...config,
     files: ["**/*.tsx", "**/*.ts"],
