@@ -11,7 +11,11 @@ inputs:
     required: false
     default: 'false'
   config_path:
-    description: "[ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories."
+    description: "[ESLint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories."
+    required: false
+    default: ''
+  ignore_patterns:
+    description: "[ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/user-guide/configuring/) ignores key. Optionally ignore files in the ignores key from being passed to ESLint"
     required: false
     default: ''
   file_extensions:
@@ -78,6 +82,7 @@ runs:
       with:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
+        excluded-files: ${{ inputs.ignore_patterns }}
         diff_relative: true
         skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
         use_rest_api: ${{ inputs.use_rest_api }}
