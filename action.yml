@@ -15,7 +15,7 @@ inputs:
     required: false
     default: ''
   ignore_patterns:
-    description: "[ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/user-guide/configuring/) ignores key. Optionally ignore files in the ignores key from being passed to ESLint"
+    description: "[ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally ignore files in the ignores key from being passed to ESLint"
     required: false
     default: ''
   file_extensions:
