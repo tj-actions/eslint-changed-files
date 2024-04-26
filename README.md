@@ -82,7 +82,7 @@ Support this project with a :star:
     # Default: "false"
     all_files: ''
 
-    # [ESlint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories. 
+    # [ESLint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories. 
     # Type: string
     config_path: ''
 
@@ -107,9 +107,11 @@ Support this project with a :star:
     # Default: "added"
     filter_mode: ''
 
-    # [ESlint](https://eslint.org/) [ignore file](https://eslint.org/docs/user-guide/configuring/ignoring-code)
+    # [ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally ignore files in the 
+    # `ignores` key from being passed to ESLint not required 
+    # when `all_files` is set to `true`. 
     # Type: string
-    ignore_path: ''
+    ignore_patterns: ''
 
     # Report level for reviewdog (info,warning,error)
     # Type: string
