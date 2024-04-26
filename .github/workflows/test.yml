@@ -47,12 +47,12 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: ".eslintrc.js"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
-          ignore_path: ".eslintignore"
+          ignore_patterns: "src/reportWebVitals.ts"
 
       - name: Fix Lint Errors
         if: failure()
@@ -64,13 +64,13 @@ jobs:
         uses: ./
         with:
           path: "test-app"
-          config_path: ".eslintrc.js"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--fix"
-          ignore_path: ".eslintignore"
           skip_annotations: true
+          ignore_patterns: "src/reportWebVitals.ts"
 
       - name: Verify Changed files
         if: failure()
@@ -98,6 +98,8 @@ jobs:
   
   eslint-changed-files:
     runs-on: ${{ matrix.platform }}
+    needs:
+      - lint
     strategy:
       fail-fast: false
       matrix:
@@ -119,61 +121,33 @@ jobs:
       - name: Install dependencies
         run: yarn
         working-directory: test-app
-      
-      - name: Run ESLint for a nested project with changed files and .eslintignore
-        uses: ./
-        with:
-          path: "test-app"
-          config_path: ".eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          ignore_path: ".eslintignore"
-
-      - name: Run ESLint on changed files with .eslintignore
-        uses: ./
-        with:
-          config_path: "test-app/.eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          ignore_path: "test-app/.eslintignore"
-
-      - name: Run ESLint on all files with .eslintignore
-        uses: ./
-        with:
-          config_path: "test-app/.eslintrc.js"
-          file_extensions: |
-            **/*.ts
-            **/*.tsx
-          extra_args: "--max-warnings=0"
-          all_files: true
-          ignore_path: "test-app/.eslintignore"
 
       - name: Run ESLint on changed files
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          path: "test-app"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
+          ignore_patterns: "src/reportWebVitals.ts"
 
       - name: Run ESLint on all files
         uses: ./
         with:
-          config_path: "test-app/.eslintrc.js"
+          path: "test-app"
+          config_path: "eslint.config.mjs"
           file_extensions: |
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
           all_files: true
 
-      - name: Run ESLint on all files without a config_path
+      - name: Run ESLint on all files without a config_path on all files
         uses: ./
         with:
+          path: "test-app"
           file_extensions: |
             **/*.ts
             **/*.tsx
