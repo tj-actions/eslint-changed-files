@@ -77,12 +77,14 @@ Support this project with a :star:
 - uses: tj-actions/eslint-changed-files@v24
   id: eslint-changed-files
   with:
-    # Run [ESlint](https://eslint.org) on all matching files.
+    # Run [ESlint](https://eslint.org) on all matching 
+    # files. 
     # Type: boolean
     # Default: "false"
     all_files: ''
 
-    # [ESLint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this input for Mono repositories. 
+    # [ESLint](https://eslint.org/) [configuration file](https://eslint.org/docs/user-guide/configuring/). Optionally omit this 
+    # input for Mono repositories. 
     # Type: string
     config_path: ''
 
@@ -90,26 +92,31 @@ Support this project with a :star:
     # Type: string
     extra_args: ''
 
-    # Exit code for reviewdog when errors are found.
+    # Exit code for reviewdog when 
+    # errors are found. 
     # Type: boolean
     # Default: "true"
     fail_on_error: ''
 
-    # List of file extensions to watch for changes and 
-    # run [ESlint](https://eslint.org/) against. 
+    # List of file extensions to 
+    # watch for changes and run 
+    # [ESlint](https://eslint.org/) against. 
     # Type: string
     # Default: **/*.{ts,tsx,js,jsx}
     #          
     file_extensions: ''
 
-    # [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command (added, diff_context, file, nofilter). 
+    # [Filter mode](https://github.com/reviewdog/reviewdog#filter-mode) for the reviewdog command 
+    # (added, diff_context, file, nofilter). 
     # Type: string
     # Default: "added"
     filter_mode: ''
 
-    # [ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally ignore files in the 
-    # `ignores` key from being passed to ESLint not required 
-    # when `all_files` is set to `true`. 
+    # [ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally 
+    # ignore files in the `ignores` 
+    # key from being passed to 
+    # ESLint not required when `all_files` 
+    # is set to `true`. 
     # Type: string
     ignore_patterns: ''
 
@@ -118,38 +125,46 @@ Support this project with a :star:
     # Default: "error"
     level: ''
 
-    # Relative path under GITHUB_WORKSPACE to the repository
+    # Relative path under GITHUB_WORKSPACE to 
+    # the repository 
     # Type: string
     # Default: "."
     path: ''
 
-    # [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review). github-pr-review can use Markdown 
-    # and add a link to rule page in reviewdog 
-    # reports. 
+    # [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review). 
+    # github-pr-review can use Markdown and 
+    # add a link to rule 
+    # page in reviewdog reports. 
     # Type: string
     # Default: "github-pr-review"
     reporter: ''
 
-    # Skip running reviewdog i.e don't add any annotations.
+    # Skip running reviewdog i.e don't 
+    # add any annotations. 
     # Type: boolean
     # Default: "false"
     skip_annotations: ''
 
-    # Skip initially fetching additional history to improve performance for 
-    # shallow repositories. NOTE: This could lead to errors with 
-    # missing history. It's intended to be used when you've 
-    # fetched all necessary history to perform the diff. 
+    # Skip initially fetching additional history 
+    # to improve performance for shallow 
+    # repositories. NOTE: This could lead 
+    # to errors with missing history. 
+    # It's intended to be used 
+    # when you've fetched all necessary 
+    # history to perform the diff. 
     # Type: boolean
     # Default: "false"
     skip_initial_fetch: ''
 
-    # [GITHUB TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token)
+    # [GITHUB TOKEN](https://docs.github.com/en/free-pro-team@latest/actions/reference/authentication-in-a-workflow#using-the-github_token-in-a-workflow) or a repo scoped [Personal Access Token](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token) 
     # Type: string
     # Default: "${{ github.token }}"
     token: ''
 
-    # Force the use of Github's REST API even when 
-    # a local copy of the repository exists 
+    # Force the use of Github's 
+    # REST API even when a 
+    # local copy of the repository 
+    # exists 
     # Type: boolean
     # Default: "false"
     use_rest_api: ''
