@@ -52,6 +52,7 @@ jobs:
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
+          ignore_patterns: "src/reportWebVitals.ts"
 
       - name: Fix Lint Errors
         if: failure()
@@ -69,6 +70,7 @@ jobs:
             **/*.tsx
           extra_args: "--fix"
           skip_annotations: true
+          ignore_patterns: "src/reportWebVitals.ts"
 
       - name: Verify Changed files
         if: failure()
@@ -129,6 +131,7 @@ jobs:
             **/*.ts
             **/*.tsx
           extra_args: "--max-warnings=0"
+          ignore_patterns: "src/reportWebVitals.ts"
 
       - name: Run ESLint on all files
         uses: ./
