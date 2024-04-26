@@ -82,7 +82,7 @@ runs:
       with:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
-        excluded-files: ${{ inputs.ignore_patterns }}
+        files_ignore: ${{ inputs.ignore_patterns }}
         diff_relative: true
         skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
         use_rest_api: ${{ inputs.use_rest_api }}
