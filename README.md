@@ -47,7 +47,7 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
           node-version: 20.x
 
       - name: Install dependencies
-        run: npm ci  # OR: yarn 
+        run: npm ci  # OR: yarn install --frozen-lockfile
 
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v24
