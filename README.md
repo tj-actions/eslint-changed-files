@@ -52,8 +52,7 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
       - name: Run eslint on changed files
         uses: tj-actions/eslint-changed-files@v24
         with:
-          config_path: "/path/to/.eslintrc"
-          ignore_path: "/path/to/.eslintignore"
+          config_path: "/path/to/eslint.config.mjs"
           extra_args: "--max-warnings=0"
 ```
 
