@@ -87,6 +87,14 @@ Support this project with a :star:
     # Type: string
     config_path: ''
 
+    # Escaped changed file paths passed 
+    # to ESLint. NOTE: This defaults 
+    # to `true` to prevent command 
+    # injection. 
+    # Type: boolean
+    # Default: "true"
+    escape_paths: ''
+
     # Extra arguments passed to [ESlint](https://eslint.org/docs/user-guide/command-line-interface)
     # Type: string
     extra_args: ''
@@ -112,10 +120,11 @@ Support this project with a :star:
     filter_mode: ''
 
     # [ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally 
-    # ignore files in the `ignores` 
+    # ignoring files in the `ignores` 
     # key from being passed to 
-    # ESLint not required when `all_files` 
-    # is set to `true`. 
+    # ESLint, this input would be 
+    # ignored when `all_files` is set 
+    # to `true`. 
     # Type: string
     ignore_patterns: ''
 
@@ -132,8 +141,8 @@ Support this project with a :star:
 
     # [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command (github-check, github-pr-review). 
     # github-pr-review can use Markdown and 
-    # add a link to rule 
-    # page in reviewdog reports. 
+    # add a link to the 
+    # rule page in reviewdog reports. 
     # Type: string
     # Default: "github-pr-review"
     reporter: ''
