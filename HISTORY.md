@@ -1,5 +1,46 @@
 # Changelog
 
+# [25.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v25.0.0...v25.1.0) - (2024-04-29)
+
+## <!-- 0 -->🚀 Features
+
+- Add support for changing the default escaping of filenames ([2d5090a](https://github.com/tj-actions/eslint-changed-files/commit/2d5090a315893e3b536b83b37aea735b981f824c))  - (Tonye Jack)
+
+## <!-- 16 -->➕ Add
+
+- Create page.tsx ([56d27bd](https://github.com/tj-actions/eslint-changed-files/commit/56d27bd01d8a715212ee29e83b3b47c2bc5f7de5))  - (Tonye Jack)
+
+## <!-- 25 -->🎨 Format
+
+- Lint fixes.
+ ([42941cd](https://github.com/tj-actions/eslint-changed-files/commit/42941cd24eace345d0183c47a168eb1150527b46))  - (github-actions[bot])
+
+## <!-- 26 -->🔄 Update
+
+- Updated README.md ([#1806](https://github.com/tj-actions/eslint-changed-files/issues/1806))
+
+Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github.com> ([ee86d2a](https://github.com/tj-actions/eslint-changed-files/commit/ee86d2a0164d471c2eee3dfe6652c80c1b1867e8))  - (tj-actions[bot])
+- Update test.yml ([945ef13](https://github.com/tj-actions/eslint-changed-files/commit/945ef136e0ee779efacb5443fc095427e3813334))  - (Tonye Jack)
+- Update page.tsx ([d53777e](https://github.com/tj-actions/eslint-changed-files/commit/d53777ec3294a1549ac480520c26a1d94162f1ed))  - (Tonye Jack)
+
+## <!-- 30 -->📝 Other
+
+- PR [#1805](https://github.com/tj-actions/eslint-changed-files/pull/1805): add support for changing the default escaping of filenames ([3ab5b47](https://github.com/tj-actions/eslint-changed-files/commit/3ab5b47e26d8bbf972c1503a336bda461fc9ee0c))  - (repo-ranger[bot])
+- PR [#1803](https://github.com/tj-actions/eslint-changed-files/pull/1803): bump @typescript-eslint/eslint-plugin from 7.7.1 to 7.8.0 in /test-app ([42e2fc5](https://github.com/tj-actions/eslint-changed-files/commit/42e2fc50ade7a0aed24926246f9fa9054aceb6b6))  - (repo-ranger[bot])
+
+## <!-- 7 -->⚙️ Miscellaneous Tasks
+
+- **deps-dev:** Bump @typescript-eslint/eslint-plugin in /test-app ([1d59f29](https://github.com/tj-actions/eslint-changed-files/commit/1d59f296012c27007f260ef7c0272f3860cb69c7))  - (dependabot[bot])
+- **deps:** Update dependency typescript-eslint to v7.8.0 ([d186f2d](https://github.com/tj-actions/eslint-changed-files/commit/d186f2df32d3a28070c6432122a4a7dbc8dd4361))  - (renovate[bot])
+- **deps:** Lock file maintenance ([8324863](https://github.com/tj-actions/eslint-changed-files/commit/832486327240ea1d7d7ac0b65d27db3b848d2408))  - (renovate[bot])
+- **deps:** Update dependency globals to v15.1.0 ([f3ac6a9](https://github.com/tj-actions/eslint-changed-files/commit/f3ac6a9ffdfe35a9ba43453b2ebb6345f7ef0c75))  - (renovate[bot])
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded to v25 ([#1798](https://github.com/tj-actions/eslint-changed-files/issues/1798))
+
+Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([e34a642](https://github.com/tj-actions/eslint-changed-files/commit/e34a64293c4f176887f53d98a2890845d4eb080d))  - (tj-actions[bot])
+
 # [25.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v24.0.0...v25.0.0) - (2024-04-27)
 
 ## <!-- 0 -->🚀 Features
