@@ -53,6 +53,7 @@ jobs:
             **/*.tsx
           extra_args: "--max-warnings=0"
           ignore_patterns: "src/reportWebVitals.ts"
+          escape_paths: false
 
       - name: Fix Lint Errors
         if: failure()
@@ -68,6 +69,7 @@ jobs:
           file_extensions: |
             **/*.ts
             **/*.tsx
+          escape_paths: false
           extra_args: "--fix"
           skip_annotations: true
           ignore_patterns: "src/reportWebVitals.ts"
@@ -130,6 +132,7 @@ jobs:
           file_extensions: |
             **/*.ts
             **/*.tsx
+          escape_paths: false
           extra_args: "--max-warnings=0"
           ignore_patterns: "src/reportWebVitals.ts"
 

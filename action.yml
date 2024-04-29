@@ -15,7 +15,7 @@ inputs:
     required: false
     default: ''
   ignore_patterns:
-    description: "[ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally ignore files in the `ignores` key from being passed to ESLint not required when `all_files` is set to `true`."
+    description: "[ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally ignoring files in the `ignores` key from being passed to ESLint, this input would be ignored when `all_files` is set to `true`."
     required: false
     default: ''
   file_extensions:
@@ -39,7 +39,7 @@ inputs:
     description: |
       [Reporter](https://github.com/reviewdog/reviewdog#reporters) of reviewdog command
       (github-check, github-pr-review).
-      github-pr-review can use Markdown and add a link to rule page in reviewdog reports.
+      github-pr-review can use Markdown and add a link to the rule page in reviewdog reports.
     required: false
     default: 'github-pr-review'
   filter_mode:
@@ -67,6 +67,10 @@ inputs:
       Force the use of Github's REST API even when a local copy of the repository exists
     required: false
     default: false
+  escape_paths:
+    description: "Escaped changed file paths passed to ESLint. NOTE: This defaults to `true` to prevent command injection."
+    required: false
+    default: "true"
 
 runs:
   using: 'composite'
@@ -86,6 +90,7 @@ runs:
         diff_relative: true
         skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
         use_rest_api: ${{ inputs.use_rest_api }}
+        safe_output: ${{ inputs.escape_paths }}
     - name: Run eslint on changed files
       run: |
         # Run eslint on changed files
