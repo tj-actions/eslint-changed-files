@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout to branch
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
 
       - name: shellcheck
         uses: reviewdog/action-shellcheck@v1.20
@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Checkout to branch
-        uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
@@ -109,7 +109,7 @@ jobs:
         fetch-depth: [0, 1]
 
     steps:
-      - uses: actions/checkout@a5ac7e51b41094c92402da3b24376905380afc29 # v4
+      - uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4
         with:
           fetch-depth: ${{ matrix.fetch-depth }}
 
