@@ -77,8 +77,6 @@ runs:
   steps:
     - uses: reviewdog/action-setup@v1
       if: inputs.skip_annotations == 'false'
-      with:
-        reviewdog_version: v0.17.5
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v44
