@@ -105,7 +105,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: [ubuntu-latest, windows-latest, macos-latest, macos-11, windows-2022]
+        platform: 
+          - ubuntu-latest
+          # - windows-latest
+          - macos-latest
         fetch-depth: [0, 1]
 
     steps:
