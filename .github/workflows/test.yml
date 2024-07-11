@@ -107,7 +107,7 @@ jobs:
       matrix:
         platform: 
           - ubuntu-latest
-          # - windows-latest
+          - windows-latest
           - macos-latest
         fetch-depth: [0, 1]
 
