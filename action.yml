@@ -116,7 +116,7 @@ runs:
         INPUT_FILTER_MODE: ${{ inputs.filter_mode }}
         INPUT_FAIL_ON_ERROR: ${{ inputs.fail_on_error }}
         INPUT_REPORTER: ${{ inputs.reporter }}
-        INPUT_SKIP_ANNOTATIONS: ${{ inputs.skip_annotations }}
+        INPUT_SKIP_ANNOTATIONS: ${{ inputs.token && inputs.skip_annotations || 'true' }}
 
 branding:
   icon: check-square
