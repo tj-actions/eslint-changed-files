@@ -26,7 +26,7 @@ if [[ "$INPUT_SKIP_ANNOTATIONS" != "true" ]]; then
   export REVIEWDOG_GITHUB_API_TOKEN=$INPUT_TOKEN
 fi
 
-EXTRA_ARGS=$INPUT_EXTRA_ARGS
+EXTRA_ARGS="--no-warn-ignored $INPUT_EXTRA_ARGS"
 CONFIG_ARG=""
 
 if [[ -n "$INPUT_CONFIG_PATH" ]]; then
