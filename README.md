@@ -176,6 +176,14 @@ Support this project with a :star:
     # Default: "false"
     use_rest_api: ''
 
+    # This option suppresses warning for 
+    # both File ignored by default 
+    # and File ignored because of 
+    # a matching ignore patterns. 
+    # Type: boolean
+    # Default: "false"
+    warn_ignored: ''
+
 ```
 
 <!-- AUTO-DOC-INPUT:END -->
