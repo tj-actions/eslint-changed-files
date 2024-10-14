@@ -71,6 +71,12 @@ inputs:
     description: "Escaped changed file paths passed to ESLint. NOTE: This defaults to `true` to prevent command injection."
     required: false
     default: true
+  ignore_path:
+    description: |
+      When using [ESlint](https://eslint.org/) `v8.x` use this option to pass the .eslintignore file
+      to silence ignore files warning [ignore file](https://eslint.org/docs/latest/use/configure/ignore-deprecated#using-an-alternate-file)
+    required: false
+    default: ''
 
 runs:
   using: 'composite'
@@ -87,6 +93,7 @@ runs:
         path: ${{ inputs.path }}
         files: ${{ inputs.file_extensions }}
         files_ignore: ${{ inputs.ignore_patterns }}
+        files_ignore_from_source_file: ${{ inputs.ignore_path }}
         diff_relative: true
         skip_initial_fetch: ${{ inputs.skip_initial_fetch }}
         use_rest_api: ${{ inputs.use_rest_api }}
