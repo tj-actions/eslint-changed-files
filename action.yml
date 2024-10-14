@@ -71,10 +71,6 @@ inputs:
     description: "Escaped changed file paths passed to ESLint. NOTE: This defaults to `true` to prevent command injection."
     required: false
     default: true
-  warn_ignored:
-    description: "This option suppresses warning for both File ignored by default and File ignored because of a matching ignore patterns."
-    required: false
-    default: false
 
 runs:
   using: 'composite'
@@ -121,7 +117,6 @@ runs:
         INPUT_FAIL_ON_ERROR: ${{ inputs.fail_on_error }}
         INPUT_REPORTER: ${{ inputs.reporter }}
         INPUT_SKIP_ANNOTATIONS: ${{ inputs.token && inputs.skip_annotations || 'true' }}
-        INPUT_WARN_IGNORED: ${{ inputs.warn_ignored }}
 
 branding:
   icon: check-square
