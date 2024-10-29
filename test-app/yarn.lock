@@ -2145,10 +2145,10 @@
   dependencies:
     undici-types "~6.19.8"
 
-"@types/node@22.8.2":
-  version "22.8.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.8.2.tgz#8e82bb8201c0caf751dcdc61b0a262d2002d438b"
-  integrity sha512-NzaRNFV+FZkvK/KLCsNdTvID0SThyrs5SHB6tsD/lajr22FGC73N2QeDPM2wHtVde8mgcXuSsHQkH5cX1pbPLw==
+"@types/node@22.8.3":
+  version "22.8.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-22.8.3.tgz#ebc5dc6fdd37c4a0f992a7b4ca510c733617eaa7"
+  integrity sha512-ZlijaZM38In/raEdZoNKKfIVJEA+4NTsvhGQTgQt4y2/Zgokyz4NUvOch108O3Q1q5lJ170h1hShfPfRPW7BwA==
   dependencies:
     undici-types "~6.19.8"
 
