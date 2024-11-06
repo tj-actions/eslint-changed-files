@@ -118,6 +118,13 @@ Support this project with a :star:
     # Default: "added"
     filter_mode: ''
 
+    # When using [ESlint](https://eslint.org/) `v8.x` use 
+    # this option to pass the 
+    # .eslintignore file to silence ignore 
+    # files warning [ignore file](https://eslint.org/docs/latest/use/configure/ignore-deprecated#using-an-alternate-file) 
+    # Type: string
+    ignore_path: ''
+
     # [ESLint](https://eslint.org/docs/latest/use/configure/ignore) [configuration file](https://eslint.org/docs/latest/use/configure/ignore#ignoring-files) ignores key. Optionally 
     # ignoring files in the `ignores` 
     # key from being passed to 
