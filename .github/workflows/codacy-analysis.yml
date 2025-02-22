@@ -25,6 +25,7 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
       cancel-in-progress: true
     name: Codacy Security Scan
+    timeout-minutes: 120
     runs-on: ubuntu-latest
     steps:
       # Checkout the repository to the GitHub Actions runner
