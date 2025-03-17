@@ -87,7 +87,7 @@ runs:
         reviewdog_version: v0.20.0
     - name: Get changed files
       id: changed-files
-      uses: tj-actions/changed-files@v45
+      uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32 # v46
       if: inputs.all_files == 'false'
       with:
         path: ${{ inputs.path }}
