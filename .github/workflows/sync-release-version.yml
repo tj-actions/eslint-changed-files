@@ -1,4 +1,9 @@
-name: Update release version.
+name: Update release version
+
+permissions:
+   contents: write
+   pull-requests: write
+
 on:
   release:
     types: [published]
@@ -28,8 +33,9 @@ jobs:
         with:
           base: "main"
           labels: "merge when passing"
+          sign-commits: true
           title: "Upgraded to ${{ steps.sync-release-version.outputs.new_version }}"
           branch: "upgrade-to-${{ steps.sync-release-version.outputs.new_version }}"
           commit-message: "Upgraded from ${{ steps.sync-release-version.outputs.old_version }} -> ${{ steps.sync-release-version.outputs.new_version }}"
           body: "View [CHANGES](https://github.com/${{ github.repository }}/compare/${{ steps.sync-release-version.outputs.old_version }}...${{ steps.sync-release-version.outputs.new_version }})"
-          token: ${{ secrets.PAT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
