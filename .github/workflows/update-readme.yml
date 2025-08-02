@@ -1,5 +1,9 @@
 name: Format README.md
 
+permissions:
+  contents: write
+  pull-requests: write
+
 on:
   push:
     branches:
@@ -46,4 +50,5 @@ jobs:
           branch: "chore/update-readme"
           commit-message: "Updated README.md"
           body: "Updated README.md"
-          token: ${{ secrets.PAT_TOKEN }}
+          sign-commits: true
+          token: ${{ secrets.GITHUB_TOKEN }}
