@@ -72,7 +72,7 @@ Support this project with a :star:
 <!-- AUTO-DOC-INPUT:START - Do not remove or modify this section -->
 
 ```yaml
-- uses: tj-actions/eslint-changed-files@v25
+- uses: tj-actions/eslint-changed-files@536c35c8184b8bbd361d3703aa63439e0895c340 # v25
   id: eslint-changed-files
   with:
     # Run [ESlint](https://eslint.org) on all matching 
