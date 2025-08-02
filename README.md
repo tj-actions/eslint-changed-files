@@ -49,7 +49,7 @@ Run ESLint on either all files or selectively run ESLint on only changed files i
         run: npm ci  # OR: yarn install --frozen-lockfile
 
       - name: Run eslint on changed files
-        uses: tj-actions/eslint-changed-files@v25
+        uses: tj-actions/eslint-changed-files@536c35c8184b8bbd361d3703aa63439e0895c340 # v25
         with:
           config_path: "/path/to/eslint.config.mjs"
           extra_args: "--max-warnings=0"
