@@ -1,5 +1,25 @@
 # Changelog
 
+# [25.3.2](https://github.com/tj-actions/eslint-changed-files/compare/v25.3.1...v25.3.2) - (2025-08-02)
+
+## <!-- 17 -->➖ Remove
+
+- Deleted .github/workflows/rebase.yml ([7e96caa](https://github.com/tj-actions/eslint-changed-files/commit/7e96caa493fb5d9b2a6610280f91d94fa1b527b5))  - (Tonye Jack)
+
+## <!-- 29 -->👷 CI/CD
+
+- **deps-dev:** Bump @types/node from 22.10.5 to 22.13.11 in /test-app ([#2313](https://github.com/tj-actions/eslint-changed-files/issues/2313)) ([fbd1cc3](https://github.com/tj-actions/eslint-changed-files/commit/fbd1cc3d6cbc38bbf3e223590830cb487eff51d2))  - (dependabot[bot])
+
+## <!-- 30 -->📝 Other
+
+- Pin github actions to commit sha ([#2317](https://github.com/tj-actions/eslint-changed-files/issues/2317)) ([536c35c](https://github.com/tj-actions/eslint-changed-files/commit/536c35c8184b8bbd361d3703aa63439e0895c340))  - (Tonye Jack)
+
+## <!-- 9 -->⬆️ Upgrades
+
+- Upgraded from v25.3.0 -> v25.3.1 ([#2314](https://github.com/tj-actions/eslint-changed-files/issues/2314))
+
+Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> ([a7b4123](https://github.com/tj-actions/eslint-changed-files/commit/a7b412361f157fac58c281fe17b4a0b6d9d68959))  - (github-actions[bot])
+
 # [25.3.1](https://github.com/tj-actions/eslint-changed-files/compare/v25.3.0...v25.3.1) - (2025-03-22)
 
 ## <!-- 17 -->➖ Remove
@@ -477,8 +497,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([313eb2c]
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v25.0.0 -> v25.1.0
- ([8e569b8](https://github.com/tj-actions/eslint-changed-files/commit/8e569b8417e7be0a7c8b7dd368cd9c6443dfbea7))  - (jackton1)
+- Upgraded from v25.0.0 -> v25.1.0 ([8e569b8](https://github.com/tj-actions/eslint-changed-files/commit/8e569b8417e7be0a7c8b7dd368cd9c6443dfbea7))  - (jackton1)
 
 # [25.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v25.0.0...v25.1.0) - (2024-04-29)
 
@@ -492,8 +511,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([313eb2c]
 
 ## <!-- 25 -->🎨 Format
 
-- Lint fixes.
- ([42941cd](https://github.com/tj-actions/eslint-changed-files/commit/42941cd24eace345d0183c47a168eb1150527b46))  - (github-actions[bot])
+- Lint fixes. ([42941cd](https://github.com/tj-actions/eslint-changed-files/commit/42941cd24eace345d0183c47a168eb1150527b46))  - (github-actions[bot])
 
 ## <!-- 26 -->🔄 Update
 
@@ -546,8 +564,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([e34a642]
 
 Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
 Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github.com> ([1a901e4](https://github.com/tj-actions/eslint-changed-files/commit/1a901e4e8e3927e3aca741a1865dfbd785f61105))  - (tj-actions[bot])
-- Updated README.md
- ([6ad4939](https://github.com/tj-actions/eslint-changed-files/commit/6ad4939b9de38069c5ed366806ffb57e736d5e22))  - (repo-ranger[bot])
+- Updated README.md ([6ad4939](https://github.com/tj-actions/eslint-changed-files/commit/6ad4939b9de38069c5ed366806ffb57e736d5e22))  - (repo-ranger[bot])
 - Updated README.md ([#1783](https://github.com/tj-actions/eslint-changed-files/issues/1783))
 
 Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([3795e6a](https://github.com/tj-actions/eslint-changed-files/commit/3795e6ac3b025bdfdf7b6908ad67801c271eb2a2))  - (tj-actions[bot])
@@ -623,8 +640,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([3795e6a]
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v23.2.1 -> v24
- ([8d551df](https://github.com/tj-actions/eslint-changed-files/commit/8d551dfb8fdbb98c5dac934630231f8751b511b2))  - (jackton1)
+- Upgraded from v23.2.1 -> v24 ([8d551df](https://github.com/tj-actions/eslint-changed-files/commit/8d551dfb8fdbb98c5dac934630231f8751b511b2))  - (jackton1)
 
 # [24.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.2.1...v24.0.0) - (2024-03-28)
 
@@ -772,8 +788,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([6cfe3b7]
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v23.1.0 -> v23.2.0
- ([b62b23e](https://github.com/tj-actions/eslint-changed-files/commit/b62b23eb248104568d64d9ea122941897c8cf5a8))  - (jackton1)
+- Upgraded from v23.1.0 -> v23.2.0 ([b62b23e](https://github.com/tj-actions/eslint-changed-files/commit/b62b23eb248104568d64d9ea122941897c8cf5a8))  - (jackton1)
 
 # [23.2.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.1.0...v23.2.0) - (2024-02-28)
 
@@ -788,10 +803,8 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([6cfe3b7]
 
 ## <!-- 26 -->🔄 Update
 
-- Updated README.md
- ([c27806e](https://github.com/tj-actions/eslint-changed-files/commit/c27806e963709bbde2aea26fa667dad65513c037))  - (repo-ranger[bot])
-- Updated README.md
- ([082a4fe](https://github.com/tj-actions/eslint-changed-files/commit/082a4fe47dd808cda74703fb6ee37c99a152d2e4))  - (jackton1)
+- Updated README.md ([c27806e](https://github.com/tj-actions/eslint-changed-files/commit/c27806e963709bbde2aea26fa667dad65513c037))  - (repo-ranger[bot])
+- Updated README.md ([082a4fe](https://github.com/tj-actions/eslint-changed-files/commit/082a4fe47dd808cda74703fb6ee37c99a152d2e4))  - (jackton1)
 
 ## <!-- 3 -->📚 Documentation
 
@@ -802,9 +815,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([6cfe3b7]
 - PR [#1653](https://github.com/tj-actions/eslint-changed-files/pull/1653): README.md ([5fdce04](https://github.com/tj-actions/eslint-changed-files/commit/5fdce048b02ade10537a80300a29d1f2b1d25f2e))  - (repo-ranger[bot])
 - PR [#1652](https://github.com/tj-actions/eslint-changed-files/pull/1652): README.md ([3a14c26](https://github.com/tj-actions/eslint-changed-files/commit/3a14c266aef85ac7061099e5f06dbaa5251f5350))  - (repo-ranger[bot])
 - Merge branch 'main' into chore/update-readme ([aedddf0](https://github.com/tj-actions/eslint-changed-files/commit/aedddf0833724185dfabee73a1a50a7012641399))  - (repo-ranger[bot])
-- Exposing and Passing `use_rest_api` to changed-files actions ([#1650](https://github.com/tj-actions/eslint-changed-files/issues/1650))
-
- ([0802186](https://github.com/tj-actions/eslint-changed-files/commit/0802186d034640c068d3813e21a040ba6bc171d5))  - (Aravind)
+- Exposing and Passing `use_rest_api` to changed-files actions ([#1650](https://github.com/tj-actions/eslint-changed-files/issues/1650)) ([0802186](https://github.com/tj-actions/eslint-changed-files/commit/0802186d034640c068d3813e21a040ba6bc171d5))  - (Aravind)
 - PR [#1637](https://github.com/tj-actions/eslint-changed-files/pull/1637): to v23.1.0 ([664a150](https://github.com/tj-actions/eslint-changed-files/commit/664a1508860f6ae7e483cd751449ead66d1ab556))  - (repo-ranger[bot])
 
 ## <!-- 7 -->⚙️ Miscellaneous Tasks
@@ -818,8 +829,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([6cfe3b7]
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v23.0.0 -> v23.1.0
- ([7d21299](https://github.com/tj-actions/eslint-changed-files/commit/7d21299dfe8f8f06ce52226711ade57506bbad1d))  - (jackton1)
+- Upgraded from v23.0.0 -> v23.1.0 ([7d21299](https://github.com/tj-actions/eslint-changed-files/commit/7d21299dfe8f8f06ce52226711ade57506bbad1d))  - (jackton1)
 
 # [23.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v23.0.0...v23.1.0) - (2024-02-18)
 
@@ -856,8 +866,7 @@ Co-authored-by: jackton1 <17484350+jackton1@users.noreply.github.com> ([6cfe3b7]
 
 ## <!-- 26 -->🔄 Update
 
-- Updated README.md
- ([c61f07d](https://github.com/tj-actions/eslint-changed-files/commit/c61f07d4ec12df1f5998427c08a0efe119445f95))  - (jackton1)
+- Updated README.md ([c61f07d](https://github.com/tj-actions/eslint-changed-files/commit/c61f07d4ec12df1f5998427c08a0efe119445f95))  - (jackton1)
 
 ## <!-- 3 -->📚 Documentation
 
@@ -902,11 +911,8 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([f5d9974](https://
 
 ## <!-- 26 -->🔄 Update
 
-- Updated README.md
- ([df814ac](https://github.com/tj-actions/eslint-changed-files/commit/df814ac542c0fd17f79cfdb9ce87943f72d27a09))  - (jackton1)
-- Update README.md ([#1581](https://github.com/tj-actions/eslint-changed-files/issues/1581))
-
- ([7ff01bd](https://github.com/tj-actions/eslint-changed-files/commit/7ff01bd143c08846917d732ac70ecdf94e357729))  - (Tonye Jack)
+- Updated README.md ([df814ac](https://github.com/tj-actions/eslint-changed-files/commit/df814ac542c0fd17f79cfdb9ce87943f72d27a09))  - (jackton1)
+- Update README.md ([#1581](https://github.com/tj-actions/eslint-changed-files/issues/1581)) ([7ff01bd](https://github.com/tj-actions/eslint-changed-files/commit/7ff01bd143c08846917d732ac70ecdf94e357729))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
 
@@ -941,8 +947,7 @@ Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v21.0.1 -> v22
- ([ac64d26](https://github.com/tj-actions/eslint-changed-files/commit/ac64d26d4b928338503393524ad5dfcf94161511))  - (jackton1)
+- Upgraded from v21.0.1 -> v22 ([ac64d26](https://github.com/tj-actions/eslint-changed-files/commit/ac64d26d4b928338503393524ad5dfcf94161511))  - (jackton1)
 
 # [22.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v21.0.1...v22.0.0) - (2024-01-16)
 
@@ -1023,8 +1028,7 @@ Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github
 
 ## <!-- 17 -->➖ Remove
 
-- Removed deprecated stylelint-config-prettier
- ([c8b46d5](https://github.com/tj-actions/eslint-changed-files/commit/c8b46d5a22877e00fa4fae320c4f44382a49d04b))  - (Tonye Jack)
+- Removed deprecated stylelint-config-prettier ([c8b46d5](https://github.com/tj-actions/eslint-changed-files/commit/c8b46d5a22877e00fa4fae320c4f44382a49d04b))  - (Tonye Jack)
 - Deleted .github/workflows/auto-approve.yml ([413f939](https://github.com/tj-actions/eslint-changed-files/commit/413f939ed62e2c214b4ead533bdfac67c98dd76d))  - (Tonye Jack)
 - Deleted .github/workflows/greetings.yml ([fcc7955](https://github.com/tj-actions/eslint-changed-files/commit/fcc7955627f05ed65d1cc5ebaaa78e6ee1cb6f08))  - (Tonye Jack)
 
@@ -1035,8 +1039,7 @@ Co-authored-by: repo-ranger[bot] <39074581+repo-ranger[bot]@users.noreply.github
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://github.com/tj-actions/eslint-changed-files/commit/a6eee2f769d7c173af37466872d7edbc468054f6))  - (tj-actions[bot])
 - Update README.md ([5e85a2f](https://github.com/tj-actions/eslint-changed-files/commit/5e85a2f633a725ea0fbbce55873e1e45ed7ac770))  - (Tonye Jack)
 - Update README.md ([95165ab](https://github.com/tj-actions/eslint-changed-files/commit/95165ab15fa0de0c7df3109376cecfea5468f860))  - (Tonye Jack)
-- Updated README.md
- ([7db7183](https://github.com/tj-actions/eslint-changed-files/commit/7db718349fdd0ed575129b3e2f4d41677d35bb1c))  - (renovate[bot])
+- Updated README.md ([7db7183](https://github.com/tj-actions/eslint-changed-files/commit/7db718349fdd0ed575129b3e2f4d41677d35bb1c))  - (renovate[bot])
 - Update update-readme.yml ([c515034](https://github.com/tj-actions/eslint-changed-files/commit/c5150349b633b27583c1cd3b4b795ec4cb999eed))  - (Tonye Jack)
 - Update test.yml ([6d2bf86](https://github.com/tj-actions/eslint-changed-files/commit/6d2bf86e5c82d6ac16b83602d49326e24a90218e))  - (Tonye Jack)
 - Update action.yml ([d72030e](https://github.com/tj-actions/eslint-changed-files/commit/d72030ec17bb8258196a38a25665209f033e7f2c))  - (Tonye Jack)
@@ -1155,8 +1158,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v21.0.0 -> v21.0.1
- ([f16e1ae](https://github.com/tj-actions/eslint-changed-files/commit/f16e1ae3b70174f6e265d1a2b29e7676881a5ec3))  - (jackton1)
+- Upgraded from v21.0.0 -> v21.0.1 ([f16e1ae](https://github.com/tj-actions/eslint-changed-files/commit/f16e1ae3b70174f6e265d1a2b29e7676881a5ec3))  - (jackton1)
 
 # [21.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v21.0.0...v21.0.1) - (2023-10-04)
 
@@ -1222,8 +1224,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.1.0 -> v21
- ([6d4edcd](https://github.com/tj-actions/eslint-changed-files/commit/6d4edcd984e45f5ebd9175bc046d08b35679b1e5))  - (jackton1)
+- Upgraded from v20.1.0 -> v21 ([6d4edcd](https://github.com/tj-actions/eslint-changed-files/commit/6d4edcd984e45f5ebd9175bc046d08b35679b1e5))  - (jackton1)
 
 # [21.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v20.1.0...v21.0.0) - (2023-09-06)
 
@@ -1261,8 +1262,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.0.5 -> v20.1.0
- ([e5692e8](https://github.com/tj-actions/eslint-changed-files/commit/e5692e8f3014e69225dec6bb67a63942e20c7b58))  - (jackton1)
+- Upgraded from v20.0.5 -> v20.1.0 ([e5692e8](https://github.com/tj-actions/eslint-changed-files/commit/e5692e8f3014e69225dec6bb67a63942e20c7b58))  - (jackton1)
 
 # [20.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.5...v20.1.0) - (2023-08-25)
 
@@ -1280,8 +1280,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 26 -->🔄 Update
 
-- Updated README.md
- ([d908367](https://github.com/tj-actions/eslint-changed-files/commit/d9083675e482047e16958f8ab8f8cbc4554a2e67))  - (repo-ranger[bot])
+- Updated README.md ([d908367](https://github.com/tj-actions/eslint-changed-files/commit/d9083675e482047e16958f8ab8f8cbc4554a2e67))  - (repo-ranger[bot])
 - Updated .github/FUNDING.yml ([642ce55](https://github.com/tj-actions/eslint-changed-files/commit/642ce555db98f989a97f4509d50eb6f99070c94e))  - (Tonye Jack)
 - Updated .github/FUNDING.yml ([181766f](https://github.com/tj-actions/eslint-changed-files/commit/181766f9372f2a89a43e6b673990b5711bb08fab))  - (Tonye Jack)
 
@@ -1306,8 +1305,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.0.4 -> v20.0.5
- ([047b3ae](https://github.com/tj-actions/eslint-changed-files/commit/047b3aee0ab9c4d8ed4f73f381d9f0cd1a1632b5))  - (jackton1)
+- Upgraded from v20.0.4 -> v20.0.5 ([047b3ae](https://github.com/tj-actions/eslint-changed-files/commit/047b3aee0ab9c4d8ed4f73f381d9f0cd1a1632b5))  - (jackton1)
 
 # [20.0.5](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.4...v20.0.5) - (2023-08-18)
 
@@ -1333,8 +1331,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.0.3 -> v20.0.4
- ([b151d67](https://github.com/tj-actions/eslint-changed-files/commit/b151d6737c1d3b6ecae6294c3687d70dd4610745))  - (jackton1)
+- Upgraded from v20.0.3 -> v20.0.4 ([b151d67](https://github.com/tj-actions/eslint-changed-files/commit/b151d6737c1d3b6ecae6294c3687d70dd4610745))  - (jackton1)
 
 # [20.0.4](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.3...v20.0.4) - (2023-08-14)
 
@@ -1364,8 +1361,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.0.2 -> v20.0.3
- ([97bf632](https://github.com/tj-actions/eslint-changed-files/commit/97bf632108295e19bd6702194043ad427cef8d1e))  - (jackton1)
+- Upgraded from v20.0.2 -> v20.0.3 ([97bf632](https://github.com/tj-actions/eslint-changed-files/commit/97bf632108295e19bd6702194043ad427cef8d1e))  - (jackton1)
 
 # [20.0.3](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.2...v20.0.3) - (2023-08-08)
 
@@ -1401,8 +1397,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.0.1 -> v20.0.2
- ([c984ad7](https://github.com/tj-actions/eslint-changed-files/commit/c984ad71a823d716fa7a503b0a31c41728222784))  - (jackton1)
+- Upgraded from v20.0.1 -> v20.0.2 ([c984ad7](https://github.com/tj-actions/eslint-changed-files/commit/c984ad71a823d716fa7a503b0a31c41728222784))  - (jackton1)
 
 # [20.0.2](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.1...v20.0.2) - (2023-07-30)
 
@@ -1473,8 +1468,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v20.0.0 -> v20.0.1
- ([e200337](https://github.com/tj-actions/eslint-changed-files/commit/e2003376bc489d18e986f3cc70f1e9f363713a60))  - (jackton1)
+- Upgraded from v20.0.0 -> v20.0.1 ([e200337](https://github.com/tj-actions/eslint-changed-files/commit/e2003376bc489d18e986f3cc70f1e9f363713a60))  - (jackton1)
 
 # [20.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v20.0.0...v20.0.1) - (2023-07-09)
 
@@ -1489,18 +1483,10 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 11 -->⏪ Reverts
 
-- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1268](https://github.com/tj-actions/eslint-changed-files/issues/1268))
-
- ([179aaf6](https://github.com/tj-actions/eslint-changed-files/commit/179aaf6d8442e5f05cdd195d25249e728eccbf17))  - (Tonye Jack)
-- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1261](https://github.com/tj-actions/eslint-changed-files/issues/1261))
-
- ([c393ecf](https://github.com/tj-actions/eslint-changed-files/commit/c393ecffb75c085bd489970533195b5749bd1b34))  - (Tonye Jack)
-- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1258](https://github.com/tj-actions/eslint-changed-files/issues/1258))
-
- ([b398102](https://github.com/tj-actions/eslint-changed-files/commit/b398102d1cb42d40e6ff1d245df7a8dd43b75660))  - (Tonye Jack)
-- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1254](https://github.com/tj-actions/eslint-changed-files/issues/1254))
-
- ([b191c3a](https://github.com/tj-actions/eslint-changed-files/commit/b191c3a1442f7a1f65fe7af676f57e0f12cf3df4))  - (Tonye Jack)
+- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1268](https://github.com/tj-actions/eslint-changed-files/issues/1268)) ([179aaf6](https://github.com/tj-actions/eslint-changed-files/commit/179aaf6d8442e5f05cdd195d25249e728eccbf17))  - (Tonye Jack)
+- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1261](https://github.com/tj-actions/eslint-changed-files/issues/1261)) ([c393ecf](https://github.com/tj-actions/eslint-changed-files/commit/c393ecffb75c085bd489970533195b5749bd1b34))  - (Tonye Jack)
+- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1258](https://github.com/tj-actions/eslint-changed-files/issues/1258)) ([b398102](https://github.com/tj-actions/eslint-changed-files/commit/b398102d1cb42d40e6ff1d245df7a8dd43b75660))  - (Tonye Jack)
+- Revert "chore(deps): update dependency eslint-config-standard-with-typescript to v36" ([#1254](https://github.com/tj-actions/eslint-changed-files/issues/1254)) ([b191c3a](https://github.com/tj-actions/eslint-changed-files/commit/b191c3a1442f7a1f65fe7af676f57e0f12cf3df4))  - (Tonye Jack)
 
 ## <!-- 17 -->➖ Remove
 
@@ -1508,8 +1494,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 25 -->🎨 Format
 
-- Lint fixes.
- ([3d22851](https://github.com/tj-actions/eslint-changed-files/commit/3d22851f0061810c44315d33fa5a25ae1b3d1bd8))  - (github-actions[bot])
+- Lint fixes. ([3d22851](https://github.com/tj-actions/eslint-changed-files/commit/3d22851f0061810c44315d33fa5a25ae1b3d1bd8))  - (github-actions[bot])
 
 ## <!-- 26 -->🔄 Update
 
@@ -1525,8 +1510,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 - PR [#1273](https://github.com/tj-actions/eslint-changed-files/pull/1273): lock file maintenance ([7d027af](https://github.com/tj-actions/eslint-changed-files/commit/7d027afde6371daf9b75933805bca9baaf206353))  - (repo-ranger[bot])
 - PR [#1269](https://github.com/tj-actions/eslint-changed-files/pull/1269): update dependency eslint-config-standard-with-typescript to v36 ([2dfb496](https://github.com/tj-actions/eslint-changed-files/commit/2dfb496b5512a5f4ffaf1ba0a1fe680bbf3dd305))  - (repo-ranger[bot])
-- Merge b79ecac3c1ac635d94fea490a49f18d45045f5f5 into 2a469d3d052f50307cabe186bc920d65adc0f494
- ([5fd1440](https://github.com/tj-actions/eslint-changed-files/commit/5fd1440ec301c062c0ed3f558530ca5099c474a1))  - (renovate[bot])
+- Merge b79ecac3c1ac635d94fea490a49f18d45045f5f5 into 2a469d3d052f50307cabe186bc920d65adc0f494 ([5fd1440](https://github.com/tj-actions/eslint-changed-files/commit/5fd1440ec301c062c0ed3f558530ca5099c474a1))  - (renovate[bot])
 - PR [#1272](https://github.com/tj-actions/eslint-changed-files/pull/1272): update dependency @types/node to v20.4.1 ([2a469d3](https://github.com/tj-actions/eslint-changed-files/commit/2a469d3d052f50307cabe186bc920d65adc0f494))  - (repo-ranger[bot])
 - PR [#1271](https://github.com/tj-actions/eslint-changed-files/pull/1271): update dependency stylelint to v15.10.1 ([c689835](https://github.com/tj-actions/eslint-changed-files/commit/c6898358986493036861fb9b92e0d5ecb128828e))  - (repo-ranger[bot])
 - PR [#1270](https://github.com/tj-actions/eslint-changed-files/pull/1270): update dependency @types/node to v20.4.0 ([6275382](https://github.com/tj-actions/eslint-changed-files/commit/62753825b2607937a3e3833f8fb01a40feaab4d1))  - (repo-ranger[bot])
@@ -1556,8 +1540,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v19.0.3 -> v20
- ([a1f3266](https://github.com/tj-actions/eslint-changed-files/commit/a1f326620376008f3696f7df8a01edb11f14bbab))  - (jackton1)
+- Upgraded from v19.0.3 -> v20 ([a1f3266](https://github.com/tj-actions/eslint-changed-files/commit/a1f326620376008f3696f7df8a01edb11f14bbab))  - (jackton1)
 
 # [20.0.0](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.3...v20.0.0) - (2023-06-23)
 
@@ -1580,8 +1563,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v19.0.2 -> v19.0.3
- ([b91f87a](https://github.com/tj-actions/eslint-changed-files/commit/b91f87a96f440bcd744af81efb1d9a48a4443e51))  - (jackton1)
+- Upgraded from v19.0.2 -> v19.0.3 ([b91f87a](https://github.com/tj-actions/eslint-changed-files/commit/b91f87a96f440bcd744af81efb1d9a48a4443e51))  - (jackton1)
 
 # [19.0.3](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.2...v19.0.3) - (2023-06-19)
 
@@ -1632,8 +1614,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v19.0.1 -> v19.0.2
- ([017650c](https://github.com/tj-actions/eslint-changed-files/commit/017650c8a30191b631dfe39b77592ebe3665ae29))  - (jackton1)
+- Upgraded from v19.0.1 -> v19.0.2 ([017650c](https://github.com/tj-actions/eslint-changed-files/commit/017650c8a30191b631dfe39b77592ebe3665ae29))  - (jackton1)
 
 # [19.0.2](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.1...v19.0.2) - (2023-06-01)
 
@@ -1657,8 +1638,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v19.0.0 -> v19.0.1
- ([6f72056](https://github.com/tj-actions/eslint-changed-files/commit/6f72056bae6d96f3b8ddf3dd39a91e6ecd43d65f))  - (jackton1)
+- Upgraded from v19.0.0 -> v19.0.1 ([6f72056](https://github.com/tj-actions/eslint-changed-files/commit/6f72056bae6d96f3b8ddf3dd39a91e6ecd43d65f))  - (jackton1)
 
 # [19.0.1](https://github.com/tj-actions/eslint-changed-files/compare/v19.0.0...v19.0.1) - (2023-05-30)
 
@@ -1668,8 +1648,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a6eee2f](https://
 
 ## <!-- 26 -->🔄 Update
 
-- Updated README.md
- ([7de4575](https://github.com/tj-actions/eslint-changed-files/commit/7de45757166b6afc588a012b00dafa721932cc49))  - (jackton1)
+- Updated README.md ([7de4575](https://github.com/tj-actions/eslint-changed-files/commit/7de45757166b6afc588a012b00dafa721932cc49))  - (jackton1)
 - Update README.md ([a17d4c9](https://github.com/tj-actions/eslint-changed-files/commit/a17d4c9bdae33f6f95b7f0407cf67c0d97612545))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
@@ -1713,8 +1692,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([be974c2](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v18.3.1 -> v18.3.2
- ([02f131d](https://github.com/tj-actions/eslint-changed-files/commit/02f131d5475e3fcfd6af561611576bc1ec7e7281))  - (jackton1)
+- Upgraded from v18.3.1 -> v18.3.2 ([02f131d](https://github.com/tj-actions/eslint-changed-files/commit/02f131d5475e3fcfd6af561611576bc1ec7e7281))  - (jackton1)
 
 # [18.3.2](https://github.com/tj-actions/eslint-changed-files/compare/v18.3.1...v18.3.2) - (2023-05-22)
 
@@ -1749,20 +1727,15 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([be974c2](https://
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5e22ec1](https://github.com/tj-actions/eslint-changed-files/commit/5e22ec104cc5f06dd9f5a3073d9c0c2194cfaaeb))  - (Tonye Jack)
 - Update action.yml ([f8bb66a](https://github.com/tj-actions/eslint-changed-files/commit/f8bb66aba0b8a38dcbf464f20001d230fa249c61))  - (Tonye Jack)
-- Updated README.md
- ([ae4fda1](https://github.com/tj-actions/eslint-changed-files/commit/ae4fda1a416a45ee19b4303606eaabe6dc77daa2))  - (jackton1)
+- Updated README.md ([ae4fda1](https://github.com/tj-actions/eslint-changed-files/commit/ae4fda1a416a45ee19b4303606eaabe6dc77daa2))  - (jackton1)
 - Updated README.md ([#1151](https://github.com/tj-actions/eslint-changed-files/issues/1151))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([a3d2cb9](https://github.com/tj-actions/eslint-changed-files/commit/a3d2cb9f7ded9853782b004ee67c0742c24aeb57))  - (Tonye Jack)
-- Update action.yml ([#1150](https://github.com/tj-actions/eslint-changed-files/issues/1150))
-
- ([07fb92d](https://github.com/tj-actions/eslint-changed-files/commit/07fb92d636f7e0737b291206dcd125ace5ce310b))  - (Tonye Jack)
-- Updated README.md
- ([9b8cb58](https://github.com/tj-actions/eslint-changed-files/commit/9b8cb58a362ee374b02d2d34cd151d049bd373ed))  - (jackton1)
+- Update action.yml ([#1150](https://github.com/tj-actions/eslint-changed-files/issues/1150)) ([07fb92d](https://github.com/tj-actions/eslint-changed-files/commit/07fb92d636f7e0737b291206dcd125ace5ce310b))  - (Tonye Jack)
+- Updated README.md ([9b8cb58](https://github.com/tj-actions/eslint-changed-files/commit/9b8cb58a362ee374b02d2d34cd151d049bd373ed))  - (jackton1)
 - Update action.yml ([58c4c7f](https://github.com/tj-actions/eslint-changed-files/commit/58c4c7f515a7b9aefc3d44c66e5a0b4c99810b42))  - (Tonye Jack)
 - Update action.yml ([7ebbc6b](https://github.com/tj-actions/eslint-changed-files/commit/7ebbc6bf558edfdd43ae7851fa657506182effa7))  - (Tonye Jack)
-- Updated README.md
- ([632183f](https://github.com/tj-actions/eslint-changed-files/commit/632183f0d6d4997ecdc59cda7713ada401330ca8))  - (repo-ranger[bot])
+- Updated README.md ([632183f](https://github.com/tj-actions/eslint-changed-files/commit/632183f0d6d4997ecdc59cda7713ada401330ca8))  - (repo-ranger[bot])
 - Updated README.md ([#1146](https://github.com/tj-actions/eslint-changed-files/issues/1146))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([6c19547](https://github.com/tj-actions/eslint-changed-files/commit/6c19547241d951c54c023ab05704719f70bbd2fc))  - (Tonye Jack)
@@ -1772,8 +1745,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([6c19547](https://
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://github.com/tj-actions/eslint-changed-files/commit/5da55c1692642e09fe65ed96f0c780f5cd020d6d))  - (Tonye Jack)
 - Update action.yml ([4209a3c](https://github.com/tj-actions/eslint-changed-files/commit/4209a3c4876200b07a9b3f345c71ebddf08ad5f1))  - (Tonye Jack)
-- Updated README.md
- ([c81679e](https://github.com/tj-actions/eslint-changed-files/commit/c81679e98767a0b705580c09466d074ffacae682))  - (jackton1)
+- Updated README.md ([c81679e](https://github.com/tj-actions/eslint-changed-files/commit/c81679e98767a0b705580c09466d074ffacae682))  - (jackton1)
 
 ## <!-- 30 -->📝 Other
 
@@ -1868,8 +1840,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v18.3.0 -> v18.3.1
- ([297b885](https://github.com/tj-actions/eslint-changed-files/commit/297b88595549e68dd7d468f81f0f977d778f4800))  - (jackton1)
+- Upgraded from v18.3.0 -> v18.3.1 ([297b885](https://github.com/tj-actions/eslint-changed-files/commit/297b88595549e68dd7d468f81f0f977d778f4800))  - (jackton1)
 
 # [18.3.1](https://github.com/tj-actions/eslint-changed-files/compare/v18.3.0...v18.3.1) - (2023-04-08)
 
@@ -1966,8 +1937,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v18.2 -> v18.3.0
- ([4cfb104](https://github.com/tj-actions/eslint-changed-files/commit/4cfb104078791bbc5a51570de1441b96042710bc))  - (jackton1)
+- Upgraded from v18.2 -> v18.3.0 ([4cfb104](https://github.com/tj-actions/eslint-changed-files/commit/4cfb104078791bbc5a51570de1441b96042710bc))  - (jackton1)
 
 # [18.3.0](https://github.com/tj-actions/eslint-changed-files/compare/v18.2...v18.3.0) - (2023-03-13)
 
@@ -2023,8 +1993,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v18.1 -> v18.2
- ([45aa0c2](https://github.com/tj-actions/eslint-changed-files/commit/45aa0c2629ea0e1e93461602616915b65aeb4919))  - (jackton1)
+- Upgraded from v18.1 -> v18.2 ([45aa0c2](https://github.com/tj-actions/eslint-changed-files/commit/45aa0c2629ea0e1e93461602616915b65aeb4919))  - (jackton1)
 
 # [18.2](https://github.com/tj-actions/eslint-changed-files/compare/v18.1...v18.2) - (2023-02-17)
 
@@ -2035,8 +2004,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 - **deps:** Update dependency @types/react to v18.0.28 ([c9eddea](https://github.com/tj-actions/eslint-changed-files/commit/c9eddeae7ed02f18141667dd49bf193177f25def))  - (renovate[bot])
 - **deps:** Update dependency @types/node to v18.13.0 ([ce3f152](https://github.com/tj-actions/eslint-changed-files/commit/ce3f1523f4dfd9bc4e18d5222a33565839dca1a2))  - (renovate[bot])
 - **deps:** Update dependency @types/node to v18.11.19 ([3f9c91f](https://github.com/tj-actions/eslint-changed-files/commit/3f9c91f705b832b7270dcabf29ae29babc374ebc))  - (renovate[bot])
-- Fixed error with failed step
- ([408bf04](https://github.com/tj-actions/eslint-changed-files/commit/408bf0421746cc7ae97d84623ee3e056cc046862))  - (Tonye Jack)
+- Fixed error with failed step ([408bf04](https://github.com/tj-actions/eslint-changed-files/commit/408bf0421746cc7ae97d84623ee3e056cc046862))  - (Tonye Jack)
 - **deps:** Update dependency typescript to v4.9.5 ([c5009fd](https://github.com/tj-actions/eslint-changed-files/commit/c5009fd4cb6df1deceb85b04f547d28b8ee5373e))  - (renovate[bot])
 - **deps:** Update dependency @types/jest to v29.4.0 ([407cff0](https://github.com/tj-actions/eslint-changed-files/commit/407cff02cfccbdd9f8b4c11f03fd6a5cee25d96e))  - (renovate[bot])
 - **deps:** Update dependency @types/react to v18.0.27 ([64c5b15](https://github.com/tj-actions/eslint-changed-files/commit/64c5b15da1e10343d63df17973c10bc32f9d2cfa))  - (renovate[bot])
@@ -2044,13 +2012,11 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 
 ## <!-- 16 -->➕ Add
 
-- Added workflow to fix lint errors.
- ([8cd892b](https://github.com/tj-actions/eslint-changed-files/commit/8cd892b8757ae24633da40789001f88f1dedf4ff))  - (Tonye Jack)
+- Added workflow to fix lint errors. ([8cd892b](https://github.com/tj-actions/eslint-changed-files/commit/8cd892b8757ae24633da40789001f88f1dedf4ff))  - (Tonye Jack)
 
 ## <!-- 25 -->🎨 Format
 
-- Lint fixes.
- ([8135f86](https://github.com/tj-actions/eslint-changed-files/commit/8135f866215f4aba785ddb615966a2d64e89a557))  - (github-actions[bot])
+- Lint fixes. ([8135f86](https://github.com/tj-actions/eslint-changed-files/commit/8135f866215f4aba785ddb615966a2d64e89a557))  - (github-actions[bot])
 
 ## <!-- 26 -->🔄 Update
 
@@ -2075,8 +2041,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 - Merge branch 'main' into chore/test-lint-errors ([3c3ec43](https://github.com/tj-actions/eslint-changed-files/commit/3c3ec431723326af89a3cadb80394413c60d3e0c))  - (Tonye Jack)
 - PR [#991](https://github.com/tj-actions/eslint-changed-files/pull/991): update dependency eslint-config-standard-with-typescript to v34 ([833892e](https://github.com/tj-actions/eslint-changed-files/commit/833892ef717e81933580c8cbf45a0aca2aceeccc))  - (repo-ranger[bot])
 - PR [#985](https://github.com/tj-actions/eslint-changed-files/pull/985): update dependency eslint-config-standard-with-typescript to v33 ([6a1bcff](https://github.com/tj-actions/eslint-changed-files/commit/6a1bcff90ed7c93b9b0b7616697e0ea34cb4d6c7))  - (repo-ranger[bot])
-- Merge 8b2a203f678a6e546d28edc362226cb8ad824015 into c5009fd4cb6df1deceb85b04f547d28b8ee5373e
- ([717bd53](https://github.com/tj-actions/eslint-changed-files/commit/717bd53fe91465d197bba5ee9f5f749899422240))  - (renovate[bot])
+- Merge 8b2a203f678a6e546d28edc362226cb8ad824015 into c5009fd4cb6df1deceb85b04f547d28b8ee5373e ([717bd53](https://github.com/tj-actions/eslint-changed-files/commit/717bd53fe91465d197bba5ee9f5f749899422240))  - (renovate[bot])
 - PR [#970](https://github.com/tj-actions/eslint-changed-files/pull/970): to v18 ([e8276e3](https://github.com/tj-actions/eslint-changed-files/commit/e8276e3f7ef9d3f75ee334b7dd1dd80ae2fa2b61))  - (repo-ranger[bot])
 
 ## <!-- 7 -->⚙️ Miscellaneous Tasks
@@ -2108,8 +2073,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v17.1.1 -> v18
- ([e969a3f](https://github.com/tj-actions/eslint-changed-files/commit/e969a3fdef2a4f9c17759fcccf493c26c8c45ae8))  - (jackton1)
+- Upgraded from v17.1.1 -> v18 ([e969a3f](https://github.com/tj-actions/eslint-changed-files/commit/e969a3fdef2a4f9c17759fcccf493c26c8c45ae8))  - (jackton1)
 
 # [18.1](https://github.com/tj-actions/eslint-changed-files/compare/v17.1.1...v18.1) - (2023-01-13)
 
@@ -2125,8 +2089,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([5da55c1](https://
 
 ## <!-- 26 -->🔄 Update
 
-- Updated README.md
- ([54d6258](https://github.com/tj-actions/eslint-changed-files/commit/54d62583b06ef519e5520ae99f1a8c2d70d391f7))  - (repo-ranger[bot])
+- Updated README.md ([54d6258](https://github.com/tj-actions/eslint-changed-files/commit/54d62583b06ef519e5520ae99f1a8c2d70d391f7))  - (repo-ranger[bot])
 - Update test-app/src/index.tsx
 
 Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> ([bb8e832](https://github.com/tj-actions/eslint-changed-files/commit/bb8e832472fdd9fb23b7fd7bc0c777cfb4c1d3cc))  - (Tonye Jack)
@@ -2136,8 +2099,7 @@ Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.
 - Updated .github/workflows/update-readme.yml ([afbf15c](https://github.com/tj-actions/eslint-changed-files/commit/afbf15cd7a3ef97476f348df0421c587dbc6c92e))  - (Tonye Jack)
 - Updated .github/workflows/update-readme.yml ([af8a787](https://github.com/tj-actions/eslint-changed-files/commit/af8a787f9ff981980c73334afed7d013591ade58))  - (Tonye Jack)
 - Updated .github/workflows/update-readme.yml ([0525f8e](https://github.com/tj-actions/eslint-changed-files/commit/0525f8e3aac581ab5704649161c9732404972d20))  - (Tonye Jack)
-- Updated README.md
- ([75a3861](https://github.com/tj-actions/eslint-changed-files/commit/75a386159d6af2776f2e3cd6c4c077b274486fd7))  - (jackton1)
+- Updated README.md ([75a3861](https://github.com/tj-actions/eslint-changed-files/commit/75a386159d6af2776f2e3cd6c4c077b274486fd7))  - (jackton1)
 - Updated .github/workflows/update-readme.yml ([c2a6978](https://github.com/tj-actions/eslint-changed-files/commit/c2a6978200d45992b59135e5b8072cae20ec4a35))  - (Tonye Jack)
 - Update update-readme.yml ([4a8363b](https://github.com/tj-actions/eslint-changed-files/commit/4a8363b486da7157d3fdf5cf97c0359c19ee6ba3))  - (Tonye Jack)
 - Updated README.md ([#932](https://github.com/tj-actions/eslint-changed-files/issues/932))
@@ -2192,10 +2154,8 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([7351fcb](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v17.1.0 -> v18
- ([38dccd2](https://github.com/tj-actions/eslint-changed-files/commit/38dccd229d4be23d5a154cc9d3d4e0d2fa3a8876))  - (jackton1)
-- Upgraded from v17.1.0 -> v17.1.1
- ([b46ad88](https://github.com/tj-actions/eslint-changed-files/commit/b46ad886fea824332b8e518759cedab872cd062f))  - (jackton1)
+- Upgraded from v17.1.0 -> v18 ([38dccd2](https://github.com/tj-actions/eslint-changed-files/commit/38dccd229d4be23d5a154cc9d3d4e0d2fa3a8876))  - (jackton1)
+- Upgraded from v17.1.0 -> v17.1.1 ([b46ad88](https://github.com/tj-actions/eslint-changed-files/commit/b46ad886fea824332b8e518759cedab872cd062f))  - (jackton1)
 
 # [17.1.1](https://github.com/tj-actions/eslint-changed-files/compare/v17.1.0...v17.1.1) - (2022-12-12)
 
@@ -2225,8 +2185,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([7351fcb](https://
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v17.0.3 -> v17.1.0
- ([fc50b7e](https://github.com/tj-actions/eslint-changed-files/commit/fc50b7eb3cd0a360a18c3ddcea0cf7f36659fc63))  - (jackton1)
+- Upgraded from v17.0.3 -> v17.1.0 ([fc50b7e](https://github.com/tj-actions/eslint-changed-files/commit/fc50b7eb3cd0a360a18c3ddcea0cf7f36659fc63))  - (jackton1)
 
 # [17.1.0](https://github.com/tj-actions/eslint-changed-files/compare/v17.0.3...v17.1.0) - (2022-12-05)
 
@@ -3029,10 +2988,8 @@ Signed-off-by: dependabot[bot] <support@github.com> ([e7ce4ec](https://github.co
 
 - Update test.yml ([07cfaf5](https://github.com/tj-actions/eslint-changed-files/commit/07cfaf5f1648e346a7938c21c7fbf4244853ea59))  - (Tonye Jack)
 - Update README.md ([e5abc63](https://github.com/tj-actions/eslint-changed-files/commit/e5abc63422e950af5a1a1efcb6d641655180705a))  - (Tonye Jack)
-- Update tj-actions/verify-changed-files action to v9
- ([257bbb7](https://github.com/tj-actions/eslint-changed-files/commit/257bbb7dc7b235deb95ac76d58a82ed9cfa58793))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.40
- ([ad4f038](https://github.com/tj-actions/eslint-changed-files/commit/ad4f0384f6dac086c1cb2fbc3cf853c6be57867b))  - (Renovate Bot)
+- Update tj-actions/verify-changed-files action to v9 ([257bbb7](https://github.com/tj-actions/eslint-changed-files/commit/257bbb7dc7b235deb95ac76d58a82ed9cfa58793))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.40 ([ad4f038](https://github.com/tj-actions/eslint-changed-files/commit/ad4f0384f6dac086c1cb2fbc3cf853c6be57867b))  - (Renovate Bot)
 
 ## <!-- 7 -->⚙️ Miscellaneous Tasks
 
@@ -3062,17 +3019,13 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([2465ec7](https://
 
 ## <!-- 26 -->🔄 Update
 
-- Update dependency @testing-library/react to v12.1.4
- ([6c4751f](https://github.com/tj-actions/eslint-changed-files/commit/6c4751fdd527597346e092d3efe7f2c69d1fcfa8))  - (Renovate Bot)
-- Update codacy/codacy-analysis-cli-action action to v4.0.2
- ([bef9c1c](https://github.com/tj-actions/eslint-changed-files/commit/bef9c1c095c5fa6b886b2a7dbef7de6303bdfe77))  - (Renovate Bot)
-- Update tj-actions/changed-files action to v17.3
- ([f7ff026](https://github.com/tj-actions/eslint-changed-files/commit/f7ff026f69319e24c7386ef2154aa52130ddbb4b))  - (Renovate Bot)
+- Update dependency @testing-library/react to v12.1.4 ([6c4751f](https://github.com/tj-actions/eslint-changed-files/commit/6c4751fdd527597346e092d3efe7f2c69d1fcfa8))  - (Renovate Bot)
+- Update codacy/codacy-analysis-cli-action action to v4.0.2 ([bef9c1c](https://github.com/tj-actions/eslint-changed-files/commit/bef9c1c095c5fa6b886b2a7dbef7de6303bdfe77))  - (Renovate Bot)
+- Update tj-actions/changed-files action to v17.3 ([f7ff026](https://github.com/tj-actions/eslint-changed-files/commit/f7ff026f69319e24c7386ef2154aa52130ddbb4b))  - (Renovate Bot)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([3dcb861](https://github.com/tj-actions/eslint-changed-files/commit/3dcb861ab83041dd220c6e82610015d16fe2ad66))  - (Renovate Bot)
+- Lock file maintenance ([3dcb861](https://github.com/tj-actions/eslint-changed-files/commit/3dcb861ab83041dd220c6e82610015d16fe2ad66))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -3213,21 +3166,15 @@ Signed-off-by: dependabot[bot] <support@github.com> ([277a448](https://github.co
 
 ## <!-- 16 -->➕ Add
 
-- Added support for skipping check annnoations ([#487](https://github.com/tj-actions/eslint-changed-files/issues/487))
-
- ([0c2b8bc](https://github.com/tj-actions/eslint-changed-files/commit/0c2b8bc48e086ea2c499cd8d9cdecc0df12122fb))  - (Tonye Jack)
-- Added support for configuring reviewdog to include only changed lines. ([#485](https://github.com/tj-actions/eslint-changed-files/issues/485))
-
- ([1569b21](https://github.com/tj-actions/eslint-changed-files/commit/1569b21038326dd4985e5f6ebfd01e43b3dabcec))  - (Tonye Jack)
+- Added support for skipping check annnoations ([#487](https://github.com/tj-actions/eslint-changed-files/issues/487)) ([0c2b8bc](https://github.com/tj-actions/eslint-changed-files/commit/0c2b8bc48e086ea2c499cd8d9cdecc0df12122fb))  - (Tonye Jack)
+- Added support for configuring reviewdog to include only changed lines. ([#485](https://github.com/tj-actions/eslint-changed-files/issues/485)) ([1569b21](https://github.com/tj-actions/eslint-changed-files/commit/1569b21038326dd4985e5f6ebfd01e43b3dabcec))  - (Tonye Jack)
 
 ## <!-- 26 -->🔄 Update
 
 - Updated README.md ([#490](https://github.com/tj-actions/eslint-changed-files/issues/490))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([b86fca8](https://github.com/tj-actions/eslint-changed-files/commit/b86fca8b19552cac463901aa57c1669d00a57c76))  - (Tonye Jack)
-- Updated descriptions ([#489](https://github.com/tj-actions/eslint-changed-files/issues/489))
-
- ([9bb799b](https://github.com/tj-actions/eslint-changed-files/commit/9bb799bc5704f700d400147c39cca2a4e2512b10))  - (Tonye Jack)
+- Updated descriptions ([#489](https://github.com/tj-actions/eslint-changed-files/issues/489)) ([9bb799b](https://github.com/tj-actions/eslint-changed-files/commit/9bb799bc5704f700d400147c39cca2a4e2512b10))  - (Tonye Jack)
 - Updated README.md ([#488](https://github.com/tj-actions/eslint-changed-files/issues/488))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([1375513](https://github.com/tj-actions/eslint-changed-files/commit/13755136914258442b7094f6031646f981c3123b))  - (Tonye Jack)
@@ -3235,30 +3182,18 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([1375513](https://
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([813a13f](https://github.com/tj-actions/eslint-changed-files/commit/813a13fcbb1744f1a1861cf57c62ad6f8773c2e6))  - (Tonye Jack)
 - Update README.md ([aef10fb](https://github.com/tj-actions/eslint-changed-files/commit/aef10fb188b9218450854603a3a051986f456078))  - (Tonye Jack)
-- Update dependency @types/react-dom to v17.0.13
- ([1b38a07](https://github.com/tj-actions/eslint-changed-files/commit/1b38a07164b9a5842520773613e14997e216774d))  - (Renovate Bot)
-- Update dependency @types/react-dom to v17.0.12
- ([3e5d8c2](https://github.com/tj-actions/eslint-changed-files/commit/3e5d8c25d02b7dba611490a78b4e8f9709da0a3c))  - (Renovate Bot)
-- Update actions/checkout action
- ([115ddc1](https://github.com/tj-actions/eslint-changed-files/commit/115ddc19d0fba52aa3fd8ee6fe108c6532af98e3))  - (Renovate Bot)
-- Update dependency typescript to v4.6.2
- ([610de30](https://github.com/tj-actions/eslint-changed-files/commit/610de3078de521e0bb54a41c3675727d176d87cb))  - (Renovate Bot)
-- Update peter-evans/create-pull-request action to v3.14.0
- ([291541b](https://github.com/tj-actions/eslint-changed-files/commit/291541b9d2aff06ef92c1edbe270886eae96be6a))  - (Renovate Bot)
-- Update peter-evans/create-pull-request action to v3.13.0
- ([b8205d3](https://github.com/tj-actions/eslint-changed-files/commit/b8205d36ca8a6e4033c9aebad2d55bf0e3c68415))  - (Renovate Bot)
-- Update tj-actions/changed-files action to v17.2
- ([b38bb33](https://github.com/tj-actions/eslint-changed-files/commit/b38bb33521c77664ecbbd17ea7fd775b6e36c046))  - (Renovate Bot)
-- Update tj-actions/changed-files action to v17
- ([ec4bc6b](https://github.com/tj-actions/eslint-changed-files/commit/ec4bc6b6b9cee1bbe169ee3e7efc85a52c94da9f))  - (Renovate Bot)
-- Update tj-actions/github-changelog-generator action to v1.12
- ([91c1279](https://github.com/tj-actions/eslint-changed-files/commit/91c1279cc1255f34a1b50094ffdc3137ea3195f7))  - (Renovate Bot)
-- Update dependency stylelint to v14.5.3
- ([c844bf9](https://github.com/tj-actions/eslint-changed-files/commit/c844bf90921d62fd642512b5d204a48e2656af30))  - (Renovate Bot)
-- Update dependency @types/jest to v27.4.1
- ([92688b4](https://github.com/tj-actions/eslint-changed-files/commit/92688b4febba3d1b3924c556ad1b54be06c669e1))  - (Renovate Bot)
-- Update dependency stylelint to v14.5.2
- ([76445bd](https://github.com/tj-actions/eslint-changed-files/commit/76445bd894883a0ac2d93f4a5b075e912b0fa7ff))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.13 ([1b38a07](https://github.com/tj-actions/eslint-changed-files/commit/1b38a07164b9a5842520773613e14997e216774d))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.12 ([3e5d8c2](https://github.com/tj-actions/eslint-changed-files/commit/3e5d8c25d02b7dba611490a78b4e8f9709da0a3c))  - (Renovate Bot)
+- Update actions/checkout action ([115ddc1](https://github.com/tj-actions/eslint-changed-files/commit/115ddc19d0fba52aa3fd8ee6fe108c6532af98e3))  - (Renovate Bot)
+- Update dependency typescript to v4.6.2 ([610de30](https://github.com/tj-actions/eslint-changed-files/commit/610de3078de521e0bb54a41c3675727d176d87cb))  - (Renovate Bot)
+- Update peter-evans/create-pull-request action to v3.14.0 ([291541b](https://github.com/tj-actions/eslint-changed-files/commit/291541b9d2aff06ef92c1edbe270886eae96be6a))  - (Renovate Bot)
+- Update peter-evans/create-pull-request action to v3.13.0 ([b8205d3](https://github.com/tj-actions/eslint-changed-files/commit/b8205d36ca8a6e4033c9aebad2d55bf0e3c68415))  - (Renovate Bot)
+- Update tj-actions/changed-files action to v17.2 ([b38bb33](https://github.com/tj-actions/eslint-changed-files/commit/b38bb33521c77664ecbbd17ea7fd775b6e36c046))  - (Renovate Bot)
+- Update tj-actions/changed-files action to v17 ([ec4bc6b](https://github.com/tj-actions/eslint-changed-files/commit/ec4bc6b6b9cee1bbe169ee3e7efc85a52c94da9f))  - (Renovate Bot)
+- Update tj-actions/github-changelog-generator action to v1.12 ([91c1279](https://github.com/tj-actions/eslint-changed-files/commit/91c1279cc1255f34a1b50094ffdc3137ea3195f7))  - (Renovate Bot)
+- Update dependency stylelint to v14.5.3 ([c844bf9](https://github.com/tj-actions/eslint-changed-files/commit/c844bf90921d62fd642512b5d204a48e2656af30))  - (Renovate Bot)
+- Update dependency @types/jest to v27.4.1 ([92688b4](https://github.com/tj-actions/eslint-changed-files/commit/92688b4febba3d1b3924c556ad1b54be06c669e1))  - (Renovate Bot)
+- Update dependency stylelint to v14.5.2 ([76445bd](https://github.com/tj-actions/eslint-changed-files/commit/76445bd894883a0ac2d93f4a5b075e912b0fa7ff))  - (Renovate Bot)
 - Updated README.md ([#466](https://github.com/tj-actions/eslint-changed-files/issues/466))
 
 * Updated README.md
@@ -3280,48 +3215,37 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([b9fdc24](https://
 Co-authored-by: Renovate Bot <bot@renovateapp.com>
 Co-authored-by: Tonye Jack <jtonye@ymail.com> ([9f5ea88](https://github.com/tj-actions/eslint-changed-files/commit/9f5ea8830c69b57796dba3946f58f7db96970465))  - (renovate[bot])
 - Update entrypoint.sh ([39a203a](https://github.com/tj-actions/eslint-changed-files/commit/39a203a2d93758fecf7b3316156a15c93e9dc006))  - (Tonye Jack)
-- Update dependency stylelint to v14.5.1
- ([98922b7](https://github.com/tj-actions/eslint-changed-files/commit/98922b7c6e9757a3bd41fa8c673fe9f8880a481c))  - (Renovate Bot)
-- Update dependency @testing-library/react to v12.1.3
- ([bef9214](https://github.com/tj-actions/eslint-changed-files/commit/bef92143895ce3ac76bac2d13d20beda4885c474))  - (Renovate Bot)
+- Update dependency stylelint to v14.5.1 ([98922b7](https://github.com/tj-actions/eslint-changed-files/commit/98922b7c6e9757a3bd41fa8c673fe9f8880a481c))  - (Renovate Bot)
+- Update dependency @testing-library/react to v12.1.3 ([bef9214](https://github.com/tj-actions/eslint-changed-files/commit/bef92143895ce3ac76bac2d13d20beda4885c474))  - (Renovate Bot)
 - Update tj-actions/changed-files action to v14.7 ([#460](https://github.com/tj-actions/eslint-changed-files/issues/460))
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com> ([88b6e6d](https://github.com/tj-actions/eslint-changed-files/commit/88b6e6d0fe02a350ed7fc146760d0e5c78897772))  - (renovate[bot])
 - Update tj-actions/sync-release-version action to v11 ([#461](https://github.com/tj-actions/eslint-changed-files/issues/461))
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com> ([78b7c4c](https://github.com/tj-actions/eslint-changed-files/commit/78b7c4c94d5efc8ad01d70c4c4ba977d1f74d776))  - (renovate[bot])
-- Update tj-actions/glob action to v7
- ([1c3d6f0](https://github.com/tj-actions/eslint-changed-files/commit/1c3d6f028e692577433a59aa145fdb6a4e72ec67))  - (Renovate Bot)
-- Update tj-actions/changed-files action to v14.6
- ([859ddd4](https://github.com/tj-actions/eslint-changed-files/commit/859ddd42ac9b5a2772203e4c67055bee71d4f496))  - (Renovate Bot)
+- Update tj-actions/glob action to v7 ([1c3d6f0](https://github.com/tj-actions/eslint-changed-files/commit/1c3d6f028e692577433a59aa145fdb6a4e72ec67))  - (Renovate Bot)
+- Update tj-actions/changed-files action to v14.6 ([859ddd4](https://github.com/tj-actions/eslint-changed-files/commit/859ddd42ac9b5a2772203e4c67055bee71d4f496))  - (Renovate Bot)
 - Updated .github/workflows/greetings.yml ([2dc5907](https://github.com/tj-actions/eslint-changed-files/commit/2dc590770424dc6a88946bbd5a78cebb70dfbf83))  - (Tonye Jack)
 - Updated .github/workflows/greetings.yml ([ca7624f](https://github.com/tj-actions/eslint-changed-files/commit/ca7624fd8349ec9cea2c363ed7dac6df3d4f3dfa))  - (Tonye Jack)
-- Update reviewdog/action-shellcheck action to v1.14
- ([59e06f7](https://github.com/tj-actions/eslint-changed-files/commit/59e06f7b7035f4d458f78bc9eb7e3c55da57089e))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.14 ([59e06f7](https://github.com/tj-actions/eslint-changed-files/commit/59e06f7b7035f4d458f78bc9eb7e3c55da57089e))  - (Renovate Bot)
 - Update README.md ([d2b3efb](https://github.com/tj-actions/eslint-changed-files/commit/d2b3efb1f7ffbd3d4e98ce79b8e827a00d6d258a))  - (Tonye Jack)
 - Update README.md ([40662c2](https://github.com/tj-actions/eslint-changed-files/commit/40662c225395acc94ed7a227f05d5b31135251bd))  - (Tonye Jack)
-- Update tj-actions/changed-files action to v14.5
- ([aca63cc](https://github.com/tj-actions/eslint-changed-files/commit/aca63cc66784e5e37ce2b12a595b770438b32ee6))  - (Renovate Bot)
+- Update tj-actions/changed-files action to v14.5 ([aca63cc](https://github.com/tj-actions/eslint-changed-files/commit/aca63cc66784e5e37ce2b12a595b770438b32ee6))  - (Renovate Bot)
 - Update README.md ([48273f9](https://github.com/tj-actions/eslint-changed-files/commit/48273f91c2113012bea6892bcf343ce35a7603f5))  - (Tonye Jack)
 - Update README.md ([716cefa](https://github.com/tj-actions/eslint-changed-files/commit/716cefafb47273d6eafd2ad513ac718ed48ba6d4))  - (Tonye Jack)
-- Update dependency stylelint-config-standard to v25
- ([3d4518c](https://github.com/tj-actions/eslint-changed-files/commit/3d4518cf79f5874586c8e96d3ba4597713f4c5e2))  - (Renovate Bot)
+- Update dependency stylelint-config-standard to v25 ([3d4518c](https://github.com/tj-actions/eslint-changed-files/commit/3d4518cf79f5874586c8e96d3ba4597713f4c5e2))  - (Renovate Bot)
 - Updated README.md ([#448](https://github.com/tj-actions/eslint-changed-files/issues/448))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([fcec497](https://github.com/tj-actions/eslint-changed-files/commit/fcec4978616cf729e15dd887ab00fb223f0dbec0))  - (Tonye Jack)
-- Update dependency stylelint to v14.4.0
- ([4adcacf](https://github.com/tj-actions/eslint-changed-files/commit/4adcacf61fa2cf71fca819d0487ebc93fc6bc3f6))  - (Renovate Bot)
+- Update dependency stylelint to v14.4.0 ([4adcacf](https://github.com/tj-actions/eslint-changed-files/commit/4adcacf61fa2cf71fca819d0487ebc93fc6bc3f6))  - (Renovate Bot)
 - Update README.md ([3c5a1ce](https://github.com/tj-actions/eslint-changed-files/commit/3c5a1ce42d5d4a65c7a501c1e29a23a7cc6bfddc))  - (Tonye Jack)
 - Update README.md ([e29c82c](https://github.com/tj-actions/eslint-changed-files/commit/e29c82c84deb4dcc8fd88dfdf7f0ac9ec3596acf))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([58f20da](https://github.com/tj-actions/eslint-changed-files/commit/58f20da694ffb3ae98a3cdabd50592d876dbde1c))  - (Renovate Bot)
-- Lock file maintenance
- ([d507f12](https://github.com/tj-actions/eslint-changed-files/commit/d507f1287ec62f1c0463289c9444b908adb7c19a))  - (Renovate Bot)
-- Lock file maintenance
- ([3170deb](https://github.com/tj-actions/eslint-changed-files/commit/3170deb6e013c6a1d11b4d301c4713bbc0e01fd0))  - (Renovate Bot)
+- Lock file maintenance ([58f20da](https://github.com/tj-actions/eslint-changed-files/commit/58f20da694ffb3ae98a3cdabd50592d876dbde1c))  - (Renovate Bot)
+- Lock file maintenance ([d507f12](https://github.com/tj-actions/eslint-changed-files/commit/d507f1287ec62f1c0463289c9444b908adb7c19a))  - (Renovate Bot)
+- Lock file maintenance ([3170deb](https://github.com/tj-actions/eslint-changed-files/commit/3170deb6e013c6a1d11b4d301c4713bbc0e01fd0))  - (Renovate Bot)
 - Lock file maintenance ([#446](https://github.com/tj-actions/eslint-changed-files/issues/446))
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com> ([5a44c0b](https://github.com/tj-actions/eslint-changed-files/commit/5a44c0b24e9edd6cea73fe6ced8175ff1990a721))  - (renovate[bot])
@@ -3443,48 +3367,32 @@ Signed-off-by: dependabot[bot] <support@github.com> ([0ae2204](https://github.co
 - Updated README.md ([#444](https://github.com/tj-actions/eslint-changed-files/issues/444))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([4c90162](https://github.com/tj-actions/eslint-changed-files/commit/4c9016273a252b1274ce6014875c277a3545c214))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.39
- ([47c0cae](https://github.com/tj-actions/eslint-changed-files/commit/47c0cae2b3cd5f59ed70d34e3b57766d4fe51568))  - (Renovate Bot)
-- Update dependency @testing-library/jest-dom to v5.16.2
- ([d45f123](https://github.com/tj-actions/eslint-changed-files/commit/d45f1232ad843cd1192b76dc4f1255d68a48d276))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.39 ([47c0cae](https://github.com/tj-actions/eslint-changed-files/commit/47c0cae2b3cd5f59ed70d34e3b57766d4fe51568))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.16.2 ([d45f123](https://github.com/tj-actions/eslint-changed-files/commit/d45f1232ad843cd1192b76dc4f1255d68a48d276))  - (Renovate Bot)
 - Update README.md ([73f7f53](https://github.com/tj-actions/eslint-changed-files/commit/73f7f53550cefe8eeb617b1b0319921f6efa2f3d))  - (Tonye Jack)
 - Updated README.md ([#436](https://github.com/tj-actions/eslint-changed-files/issues/436))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([db7d561](https://github.com/tj-actions/eslint-changed-files/commit/db7d56169b4ddcfe0d1764187443f66a5a37ee4d))  - (Tonye Jack)
-- Update README.md ([#435](https://github.com/tj-actions/eslint-changed-files/issues/435))
-
- ([2bbc959](https://github.com/tj-actions/eslint-changed-files/commit/2bbc9593a2ab04b049c41adca17d2f8edbe90f0f))  - (Tonye Jack)
+- Update README.md ([#435](https://github.com/tj-actions/eslint-changed-files/issues/435)) ([2bbc959](https://github.com/tj-actions/eslint-changed-files/commit/2bbc9593a2ab04b049c41adca17d2f8edbe90f0f))  - (Tonye Jack)
 - Update test.yml ([250b785](https://github.com/tj-actions/eslint-changed-files/commit/250b78568a0b8e041f2ffb90723711c2a4aa2010))  - (Tonye Jack)
-- Update peter-evans/create-pull-request action to v3.12.1
- ([e16d46b](https://github.com/tj-actions/eslint-changed-files/commit/e16d46b4bcde0d3f2017acf29f75dd7bc61728e9))  - (Renovate Bot)
+- Update peter-evans/create-pull-request action to v3.12.1 ([e16d46b](https://github.com/tj-actions/eslint-changed-files/commit/e16d46b4bcde0d3f2017acf29f75dd7bc61728e9))  - (Renovate Bot)
 - Update README.md ([f768264](https://github.com/tj-actions/eslint-changed-files/commit/f768264368a33c238ab374ca7efd2e0851910679))  - (Tonye Jack)
-- Update dependency stylelint to v14.3.0
- ([d67375f](https://github.com/tj-actions/eslint-changed-files/commit/d67375f3e7d7a33b7486282cc3ac66d9896f358b))  - (Renovate Bot)
-- Update dependency web-vitals to v2.1.4
- ([27c97a5](https://github.com/tj-actions/eslint-changed-files/commit/27c97a59fe793741bd9534d1bacca22968c73c46))  - (Renovate Bot)
-- Update dependency typescript to v4.5.5
- ([648acf5](https://github.com/tj-actions/eslint-changed-files/commit/648acf520784b856b8c244a0cda331c59c0d85e2))  - (Renovate Bot)
+- Update dependency stylelint to v14.3.0 ([d67375f](https://github.com/tj-actions/eslint-changed-files/commit/d67375f3e7d7a33b7486282cc3ac66d9896f358b))  - (Renovate Bot)
+- Update dependency web-vitals to v2.1.4 ([27c97a5](https://github.com/tj-actions/eslint-changed-files/commit/27c97a59fe793741bd9534d1bacca22968c73c46))  - (Renovate Bot)
+- Update dependency typescript to v4.5.5 ([648acf5](https://github.com/tj-actions/eslint-changed-files/commit/648acf520784b856b8c244a0cda331c59c0d85e2))  - (Renovate Bot)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([906ddca](https://github.com/tj-actions/eslint-changed-files/commit/906ddca7685ada27c4fc185682398ffab39f68b9))  - (Renovate Bot)
-- Lock file maintenance
- ([5bbb5ee](https://github.com/tj-actions/eslint-changed-files/commit/5bbb5ee38a42dfd15034dea3dec9f2bf32f0beb1))  - (Renovate Bot)
-- Lock file maintenance
- ([f0506c0](https://github.com/tj-actions/eslint-changed-files/commit/f0506c0e8749b073b356d8aa7323174accf6b35b))  - (Renovate Bot)
-- Lock file maintenance
- ([1be5937](https://github.com/tj-actions/eslint-changed-files/commit/1be593744c1dff9976a3f47bedca16e7d735f557))  - (Renovate Bot)
-- Lock file maintenance
- ([525e1f1](https://github.com/tj-actions/eslint-changed-files/commit/525e1f1da09e1b60b821a263a6d7fbcbfc351498))  - (Renovate Bot)
-- Lock file maintenance
- ([c87a801](https://github.com/tj-actions/eslint-changed-files/commit/c87a80164a18eb6362da468a64b353a675dea55e))  - (Renovate Bot)
+- Lock file maintenance ([906ddca](https://github.com/tj-actions/eslint-changed-files/commit/906ddca7685ada27c4fc185682398ffab39f68b9))  - (Renovate Bot)
+- Lock file maintenance ([5bbb5ee](https://github.com/tj-actions/eslint-changed-files/commit/5bbb5ee38a42dfd15034dea3dec9f2bf32f0beb1))  - (Renovate Bot)
+- Lock file maintenance ([f0506c0](https://github.com/tj-actions/eslint-changed-files/commit/f0506c0e8749b073b356d8aa7323174accf6b35b))  - (Renovate Bot)
+- Lock file maintenance ([1be5937](https://github.com/tj-actions/eslint-changed-files/commit/1be593744c1dff9976a3f47bedca16e7d735f557))  - (Renovate Bot)
+- Lock file maintenance ([525e1f1](https://github.com/tj-actions/eslint-changed-files/commit/525e1f1da09e1b60b821a263a6d7fbcbfc351498))  - (Renovate Bot)
+- Lock file maintenance ([c87a801](https://github.com/tj-actions/eslint-changed-files/commit/c87a80164a18eb6362da468a64b353a675dea55e))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded reviewdog ([#421](https://github.com/tj-actions/eslint-changed-files/issues/421))
-
- ([71b6c4c](https://github.com/tj-actions/eslint-changed-files/commit/71b6c4c120809857cea2c2e0cc632d55027ad21a))  - (Tonye Jack)
+- Upgraded reviewdog ([#421](https://github.com/tj-actions/eslint-changed-files/issues/421)) ([71b6c4c](https://github.com/tj-actions/eslint-changed-files/commit/71b6c4c120809857cea2c2e0cc632d55027ad21a))  - (Tonye Jack)
 - Upgraded from v8.5 -> v8.6 ([#417](https://github.com/tj-actions/eslint-changed-files/issues/417))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([de619da](https://github.com/tj-actions/eslint-changed-files/commit/de619da0e620a2b557989146c6b2a38d9bc05553))  - (Tonye Jack)
@@ -3493,9 +3401,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([de619da](https://
 
 ## <!-- 1 -->🐛 Bug Fixes
 
-- Fixed error using module based packages ([#416](https://github.com/tj-actions/eslint-changed-files/issues/416))
-
- ([cb9a56d](https://github.com/tj-actions/eslint-changed-files/commit/cb9a56da7a99cfc640a1d5611e055db6b74bca73))  - (Tonye Jack)
+- Fixed error using module based packages ([#416](https://github.com/tj-actions/eslint-changed-files/issues/416)) ([cb9a56d](https://github.com/tj-actions/eslint-changed-files/commit/cb9a56da7a99cfc640a1d5611e055db6b74bca73))  - (Tonye Jack)
 
 ## <!-- 26 -->🔄 Update
 
@@ -3503,10 +3409,8 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([de619da](https://
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([27e38fb](https://github.com/tj-actions/eslint-changed-files/commit/27e38fba0c7d0f4f747456ed0be82eadfd940d38))  - (Renovate Bot)
-- Lock file maintenance
- ([493a4bb](https://github.com/tj-actions/eslint-changed-files/commit/493a4bb5af7ecc176ee2755f231129f1d85da12c))  - (Renovate Bot)
+- Lock file maintenance ([27e38fb](https://github.com/tj-actions/eslint-changed-files/commit/27e38fba0c7d0f4f747456ed0be82eadfd940d38))  - (Renovate Bot)
+- Lock file maintenance ([493a4bb](https://github.com/tj-actions/eslint-changed-files/commit/493a4bb5af7ecc176ee2755f231129f1d85da12c))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -3551,22 +3455,17 @@ Signed-off-by: dependabot[bot] <support@github.com> ([bdecc4f](https://github.co
 
 - Update action.yml ([55f3564](https://github.com/tj-actions/eslint-changed-files/commit/55f35640ae2f0bd2f1540cc7bcdd0898ce998086))  - (Tonye Jack)
 - Update README.md ([5c82716](https://github.com/tj-actions/eslint-changed-files/commit/5c82716e436f0b07d4741f9f410dbdaae0b27882))  - (Tonye Jack)
-- Update dependency web-vitals to v2.1.3
- ([282fcac](https://github.com/tj-actions/eslint-changed-files/commit/282fcac1160ce6e5a7a5048549cf274df923e775))  - (Renovate Bot)
-- Update tj-actions/remark action to v2.3
- ([d5d62ec](https://github.com/tj-actions/eslint-changed-files/commit/d5d62eca336ad0165f80fc10bfb075c35276b602))  - (Renovate Bot)
-- Update tj-actions/remark action to v2
- ([b7b2473](https://github.com/tj-actions/eslint-changed-files/commit/b7b24739a4e713b5cc325295fe7e61fad79f341e))  - (Renovate Bot)
-- Update tj-actions/github-changelog-generator action to v1.11
- ([58481c3](https://github.com/tj-actions/eslint-changed-files/commit/58481c301c479db3ebbd506a480c4db42bdb9199))  - (Renovate Bot)
+- Update dependency web-vitals to v2.1.3 ([282fcac](https://github.com/tj-actions/eslint-changed-files/commit/282fcac1160ce6e5a7a5048549cf274df923e775))  - (Renovate Bot)
+- Update tj-actions/remark action to v2.3 ([d5d62ec](https://github.com/tj-actions/eslint-changed-files/commit/d5d62eca336ad0165f80fc10bfb075c35276b602))  - (Renovate Bot)
+- Update tj-actions/remark action to v2 ([b7b2473](https://github.com/tj-actions/eslint-changed-files/commit/b7b24739a4e713b5cc325295fe7e61fad79f341e))  - (Renovate Bot)
+- Update tj-actions/github-changelog-generator action to v1.11 ([58481c3](https://github.com/tj-actions/eslint-changed-files/commit/58481c301c479db3ebbd506a480c4db42bdb9199))  - (Renovate Bot)
 - Updated README.md ([#403](https://github.com/tj-actions/eslint-changed-files/issues/403))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([657d8fd](https://github.com/tj-actions/eslint-changed-files/commit/657d8fd46ebeab29e25fb9a94112a2929edcf185))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([c63ce73](https://github.com/tj-actions/eslint-changed-files/commit/c63ce734bf47fbe1faa7f4cc48866236aabdde89))  - (Renovate Bot)
+- Lock file maintenance ([c63ce73](https://github.com/tj-actions/eslint-changed-files/commit/c63ce734bf47fbe1faa7f4cc48866236aabdde89))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -3632,18 +3531,13 @@ Signed-off-by: dependabot[bot] <support@github.com> ([3d68cab](https://github.co
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([3fdea16](https://github.com/tj-actions/eslint-changed-files/commit/3fdea16d9b38a5ac0390e3a91bad5f20d2647aef))  - (Tonye Jack)
 - Update README.md ([85f3ab2](https://github.com/tj-actions/eslint-changed-files/commit/85f3ab2756fdf95bbe447264e78ca61e14f5e86c))  - (Tonye Jack)
-- Update tj-actions/github-changelog-generator action to v1.10
- ([5dcbf6c](https://github.com/tj-actions/eslint-changed-files/commit/5dcbf6c3191320e18ac18657536abfab6fa91d03))  - (Renovate Bot)
-- Update dependency @types/jest to v27.4.0
- ([c20e255](https://github.com/tj-actions/eslint-changed-files/commit/c20e25598421602e2c0b0039a54f3b04d51d2fb7))  - (Renovate Bot)
-- Update reviewdog/action-shellcheck action to v1.13
- ([e8407de](https://github.com/tj-actions/eslint-changed-files/commit/e8407deb9b84dc55c38fdabd9a9f223b6df28ee7))  - (Renovate Bot)
-- Update actions/setup-node action to v2.5.1
- ([dd0ff64](https://github.com/tj-actions/eslint-changed-files/commit/dd0ff6469a3dc701abe7ae17d2610943bdd17600))  - (Renovate Bot)
+- Update tj-actions/github-changelog-generator action to v1.10 ([5dcbf6c](https://github.com/tj-actions/eslint-changed-files/commit/5dcbf6c3191320e18ac18657536abfab6fa91d03))  - (Renovate Bot)
+- Update dependency @types/jest to v27.4.0 ([c20e255](https://github.com/tj-actions/eslint-changed-files/commit/c20e25598421602e2c0b0039a54f3b04d51d2fb7))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.13 ([e8407de](https://github.com/tj-actions/eslint-changed-files/commit/e8407deb9b84dc55c38fdabd9a9f223b6df28ee7))  - (Renovate Bot)
+- Update actions/setup-node action to v2.5.1 ([dd0ff64](https://github.com/tj-actions/eslint-changed-files/commit/dd0ff6469a3dc701abe7ae17d2610943bdd17600))  - (Renovate Bot)
 - Update README.md ([f7e12fe](https://github.com/tj-actions/eslint-changed-files/commit/f7e12feb561e7f90488bf7b4ac8a2b5398c36567))  - (Tonye Jack)
 - Update README.md ([0bd2253](https://github.com/tj-actions/eslint-changed-files/commit/0bd2253d1fe41280e7ab6e8c8a011363d30de9a7))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.38
- ([4221167](https://github.com/tj-actions/eslint-changed-files/commit/4221167d548424a13f1b403640bfbc1258513c66))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.38 ([4221167](https://github.com/tj-actions/eslint-changed-files/commit/4221167d548424a13f1b403640bfbc1258513c66))  - (Renovate Bot)
 
 ## <!-- 3 -->📚 Documentation
 
@@ -3656,10 +3550,8 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([3fdea16](https://
 We must exit with a non-zero status code to ensure builds fail.
 
 Fixes #397 ([502fded](https://github.com/tj-actions/eslint-changed-files/commit/502fdedd27dc5fad1f185e1ea21b709b917a7923))  - (Clinton Blackburn)
-- Lock file maintenance
- ([3eceb3b](https://github.com/tj-actions/eslint-changed-files/commit/3eceb3bb7c6c9abbcfed5a4cc8a722945bddb75f))  - (Renovate Bot)
-- Lock file maintenance
- ([303fe34](https://github.com/tj-actions/eslint-changed-files/commit/303fe34cb1b6c620564cb677f4627efc333040e5))  - (Renovate Bot)
+- Lock file maintenance ([3eceb3b](https://github.com/tj-actions/eslint-changed-files/commit/3eceb3bb7c6c9abbcfed5a4cc8a722945bddb75f))  - (Renovate Bot)
+- Lock file maintenance ([303fe34](https://github.com/tj-actions/eslint-changed-files/commit/303fe34cb1b6c620564cb677f4627efc333040e5))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -3716,13 +3608,11 @@ Signed-off-by: dependabot[bot] <support@github.com> ([50c6c6a](https://github.co
 
 ## <!-- 26 -->🔄 Update
 
-- Update dependency stylelint to v14.2.0
- ([96cd175](https://github.com/tj-actions/eslint-changed-files/commit/96cd175141d73cdad3036a8433dde22f8b4dd565))  - (Renovate Bot)
+- Update dependency stylelint to v14.2.0 ([96cd175](https://github.com/tj-actions/eslint-changed-files/commit/96cd175141d73cdad3036a8433dde22f8b4dd565))  - (Renovate Bot)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([a4aa700](https://github.com/tj-actions/eslint-changed-files/commit/a4aa7007cb1118ab1643d374cbfb3ced77fd7efb))  - (Renovate Bot)
+- Lock file maintenance ([a4aa700](https://github.com/tj-actions/eslint-changed-files/commit/a4aa7007cb1118ab1643d374cbfb3ced77fd7efb))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -3783,47 +3673,29 @@ Signed-off-by: dependabot[bot] <support@github.com> ([d236dc0](https://github.co
 * Update action.yml
 
 * Update test.yml ([61d273c](https://github.com/tj-actions/eslint-changed-files/commit/61d273c392709b84ed80f8d06436050a1f17d68b))  - (Tonye Jack)
-- Add Codacy badge ([#352](https://github.com/tj-actions/eslint-changed-files/issues/352))
-
- ([b5d71e7](https://github.com/tj-actions/eslint-changed-files/commit/b5d71e7846c3a338576aba79537543c42e7c4fa4))  - (Codacy Badger)
+- Add Codacy badge ([#352](https://github.com/tj-actions/eslint-changed-files/issues/352)) ([b5d71e7](https://github.com/tj-actions/eslint-changed-files/commit/b5d71e7846c3a338576aba79537543c42e7c4fa4))  - (Codacy Badger)
 
 ## <!-- 26 -->🔄 Update
 
-- Update exit code ([#379](https://github.com/tj-actions/eslint-changed-files/issues/379))
-
- ([640220a](https://github.com/tj-actions/eslint-changed-files/commit/640220ae409660491c169e228c973a1437b9e967))  - (Tonye Jack)
-- Update dependency @types/node to v16.11.14
- ([4ce7cfe](https://github.com/tj-actions/eslint-changed-files/commit/4ce7cfe9ca8dd79bb97d05a7683ad33ea23572af))  - (Renovate Bot)
-- Update dependency @types/node to v16.11.13
- ([d70775f](https://github.com/tj-actions/eslint-changed-files/commit/d70775f91d22b827eadc243ce2f667de99df00d4))  - (Renovate Bot)
+- Update exit code ([#379](https://github.com/tj-actions/eslint-changed-files/issues/379)) ([640220a](https://github.com/tj-actions/eslint-changed-files/commit/640220ae409660491c169e228c973a1437b9e967))  - (Tonye Jack)
+- Update dependency @types/node to v16.11.14 ([4ce7cfe](https://github.com/tj-actions/eslint-changed-files/commit/4ce7cfe9ca8dd79bb97d05a7683ad33ea23572af))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.13 ([d70775f](https://github.com/tj-actions/eslint-changed-files/commit/d70775f91d22b827eadc243ce2f667de99df00d4))  - (Renovate Bot)
 - Update README.md ([a9508fb](https://github.com/tj-actions/eslint-changed-files/commit/a9508fb87ea241dee9bb82c8af064600439e04b2))  - (Tonye Jack)
-- Update peter-evans/create-pull-request action to v3.12.0
- ([52a8c1f](https://github.com/tj-actions/eslint-changed-files/commit/52a8c1f37f7236423e2396e9d11a0b28de6d77cc))  - (Renovate Bot)
-- Update dependency typescript to v4.5.4
- ([e3afb9c](https://github.com/tj-actions/eslint-changed-files/commit/e3afb9c0f2452d2c25758ef31e0e018f744ea154))  - (Renovate Bot)
-- Update dependency typescript to v4.5.3
- ([5353c18](https://github.com/tj-actions/eslint-changed-files/commit/5353c1875842da10ae957f83da1c949bbf75d286))  - (Renovate Bot)
-- Update dependency @types/node to v16.11.12
- ([9f2e63f](https://github.com/tj-actions/eslint-changed-files/commit/9f2e63f232cc7415bf16c1ec063848ca2b52242e))  - (Renovate Bot)
-- Update dependency @testing-library/jest-dom to v5.16.1
- ([a4e1cb8](https://github.com/tj-actions/eslint-changed-files/commit/a4e1cb8c99c59a8ac2d50e905f349461b90f241f))  - (Renovate Bot)
+- Update peter-evans/create-pull-request action to v3.12.0 ([52a8c1f](https://github.com/tj-actions/eslint-changed-files/commit/52a8c1f37f7236423e2396e9d11a0b28de6d77cc))  - (Renovate Bot)
+- Update dependency typescript to v4.5.4 ([e3afb9c](https://github.com/tj-actions/eslint-changed-files/commit/e3afb9c0f2452d2c25758ef31e0e018f744ea154))  - (Renovate Bot)
+- Update dependency typescript to v4.5.3 ([5353c18](https://github.com/tj-actions/eslint-changed-files/commit/5353c1875842da10ae957f83da1c949bbf75d286))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.12 ([9f2e63f](https://github.com/tj-actions/eslint-changed-files/commit/9f2e63f232cc7415bf16c1ec063848ca2b52242e))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.16.1 ([a4e1cb8](https://github.com/tj-actions/eslint-changed-files/commit/a4e1cb8c99c59a8ac2d50e905f349461b90f241f))  - (Renovate Bot)
 - Updated README.md ([#369](https://github.com/tj-actions/eslint-changed-files/issues/369))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([8945525](https://github.com/tj-actions/eslint-changed-files/commit/8945525904bc13ecd64f53b3b36f9c2cd0c62150))  - (Tonye Jack)
-- Update README.md ([#368](https://github.com/tj-actions/eslint-changed-files/issues/368))
-
- ([7c0eb3a](https://github.com/tj-actions/eslint-changed-files/commit/7c0eb3a9add0a69fc6227f9f1bb7f59b97932358))  - (Tonye Jack)
+- Update README.md ([#368](https://github.com/tj-actions/eslint-changed-files/issues/368)) ([7c0eb3a](https://github.com/tj-actions/eslint-changed-files/commit/7c0eb3a9add0a69fc6227f9f1bb7f59b97932358))  - (Tonye Jack)
 - Update README.md ([e0a747d](https://github.com/tj-actions/eslint-changed-files/commit/e0a747d2a99b52fd9acb2ccbffc65e9eb78ef060))  - (Tonye Jack)
-- Update dependency @testing-library/jest-dom to v5.16.0
- ([1313639](https://github.com/tj-actions/eslint-changed-files/commit/131363966bad107b63eb0d8c13f0db01a416fb7d))  - (Renovate Bot)
-- Update dependency @types/node to v16.11.11
- ([b04b228](https://github.com/tj-actions/eslint-changed-files/commit/b04b228260391816d6ee4cabc61645ef8f5fd0be))  - (Renovate Bot)
-- Update actions/setup-node action to v2.5.0
- ([5746335](https://github.com/tj-actions/eslint-changed-files/commit/5746335f6c8bbfaa4c58f69485d9d985acc15dac))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.37
- ([f68f978](https://github.com/tj-actions/eslint-changed-files/commit/f68f97815c139fcfa73f5dc331352f24c147f8e4))  - (Renovate Bot)
-- Update alpine Docker tag to v3.15.0
- ([982f0e4](https://github.com/tj-actions/eslint-changed-files/commit/982f0e47eb0f5a292b55fbaea659108b31f34d7c))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.16.0 ([1313639](https://github.com/tj-actions/eslint-changed-files/commit/131363966bad107b63eb0d8c13f0db01a416fb7d))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.11 ([b04b228](https://github.com/tj-actions/eslint-changed-files/commit/b04b228260391816d6ee4cabc61645ef8f5fd0be))  - (Renovate Bot)
+- Update actions/setup-node action to v2.5.0 ([5746335](https://github.com/tj-actions/eslint-changed-files/commit/5746335f6c8bbfaa4c58f69485d9d985acc15dac))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.37 ([f68f978](https://github.com/tj-actions/eslint-changed-files/commit/f68f97815c139fcfa73f5dc331352f24c147f8e4))  - (Renovate Bot)
+- Update alpine Docker tag to v3.15.0 ([982f0e4](https://github.com/tj-actions/eslint-changed-files/commit/982f0e47eb0f5a292b55fbaea659108b31f34d7c))  - (Renovate Bot)
 - Updated README.md ([#353](https://github.com/tj-actions/eslint-changed-files/issues/353))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([d5dbd43](https://github.com/tj-actions/eslint-changed-files/commit/d5dbd435d8fe196b76bf7a913ce2b070fecf79d6))  - (Tonye Jack)
@@ -3831,74 +3703,42 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([d5dbd43](https://
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([3525938](https://github.com/tj-actions/eslint-changed-files/commit/3525938313b181c795c81b7272def51663977033))  - (Tonye Jack)
 - Update README.md ([fd6e8cd](https://github.com/tj-actions/eslint-changed-files/commit/fd6e8cdf541735486cf73be0064eb6fa25c746f2))  - (Tonye Jack)
-- Update dependency @types/node to v16.11.10
- ([0454fba](https://github.com/tj-actions/eslint-changed-files/commit/0454fba133bdd6bd8cbd04f50f6fb89a61a24d3d))  - (Renovate Bot)
-- Update dependency @testing-library/jest-dom to v5.15.1
- ([83d9925](https://github.com/tj-actions/eslint-changed-files/commit/83d99253946ad2321d18b23869703a6f0028f379))  - (Renovate Bot)
-- Update actions/cache action to v2.1.7
- ([ced7164](https://github.com/tj-actions/eslint-changed-files/commit/ced716405db15c5e3f0c2276451d01b41569b13c))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.36
- ([539f151](https://github.com/tj-actions/eslint-changed-files/commit/539f1518b5d64d7259f636a1023e04ed1a5bcef1))  - (Renovate Bot)
-- Update dependency @types/node to v16.11.9
- ([08894a5](https://github.com/tj-actions/eslint-changed-files/commit/08894a58219dd78a3075d090ffb3b5c3165db279))  - (Renovate Bot)
-- Update dependency @types/jest to v27.0.3
- ([2b13465](https://github.com/tj-actions/eslint-changed-files/commit/2b134655d316cb3cfd6c126ce0363335726f126e))  - (Renovate Bot)
-- Update dependency @types/node to v16.11.8
- ([6a37ea5](https://github.com/tj-actions/eslint-changed-files/commit/6a37ea5f724f97442737c77a77f4edb3e4ce8551))  - (Renovate Bot)
-- Update dependency typescript to v4.5.2
- ([b516390](https://github.com/tj-actions/eslint-changed-files/commit/b5163904a3bc5058229b4ed828649112168af477))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.10 ([0454fba](https://github.com/tj-actions/eslint-changed-files/commit/0454fba133bdd6bd8cbd04f50f6fb89a61a24d3d))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.15.1 ([83d9925](https://github.com/tj-actions/eslint-changed-files/commit/83d99253946ad2321d18b23869703a6f0028f379))  - (Renovate Bot)
+- Update actions/cache action to v2.1.7 ([ced7164](https://github.com/tj-actions/eslint-changed-files/commit/ced716405db15c5e3f0c2276451d01b41569b13c))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.36 ([539f151](https://github.com/tj-actions/eslint-changed-files/commit/539f1518b5d64d7259f636a1023e04ed1a5bcef1))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.9 ([08894a5](https://github.com/tj-actions/eslint-changed-files/commit/08894a58219dd78a3075d090ffb3b5c3165db279))  - (Renovate Bot)
+- Update dependency @types/jest to v27.0.3 ([2b13465](https://github.com/tj-actions/eslint-changed-files/commit/2b134655d316cb3cfd6c126ce0363335726f126e))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.8 ([6a37ea5](https://github.com/tj-actions/eslint-changed-files/commit/6a37ea5f724f97442737c77a77f4edb3e4ce8551))  - (Renovate Bot)
+- Update dependency typescript to v4.5.2 ([b516390](https://github.com/tj-actions/eslint-changed-files/commit/b5163904a3bc5058229b4ed828649112168af477))  - (Renovate Bot)
 - Updated .github/workflows/auto-merge.yml ([d74f84f](https://github.com/tj-actions/eslint-changed-files/commit/d74f84f58468c93f88e0ef41e7e01150e7dfd93d))  - (Tonye Jack)
-- Update reviewdog/action-shellcheck action to v1.12
- ([245171e](https://github.com/tj-actions/eslint-changed-files/commit/245171e1f836944940d784593c0da307576d4454))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.35
- ([ecb9cdf](https://github.com/tj-actions/eslint-changed-files/commit/ecb9cdf1f50d39b25498a839b72a499964de94ff))  - (Renovate Bot)
-- Update dependency stylelint-config-standard to v24
- ([9805727](https://github.com/tj-actions/eslint-changed-files/commit/9805727da43471dab18ba036e1f599ba82637732))  - (Renovate Bot)
-- Update dependency stylelint to v14.1.0
- ([2df66a6](https://github.com/tj-actions/eslint-changed-files/commit/2df66a644e39b489f4260eded6475521ffe2d157))  - (Renovate Bot)
-- Update alpine Docker tag to v3.14.3
- ([b7a0016](https://github.com/tj-actions/eslint-changed-files/commit/b7a00165397756c07a975b53d437226dbd44cba5))  - (Renovate Bot)
-- Update reviewdog/action-shellcheck action to v1.11
- ([d606175](https://github.com/tj-actions/eslint-changed-files/commit/d6061753ade98c67d5621c588f13a4e7d706b2f7))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.12 ([245171e](https://github.com/tj-actions/eslint-changed-files/commit/245171e1f836944940d784593c0da307576d4454))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.35 ([ecb9cdf](https://github.com/tj-actions/eslint-changed-files/commit/ecb9cdf1f50d39b25498a839b72a499964de94ff))  - (Renovate Bot)
+- Update dependency stylelint-config-standard to v24 ([9805727](https://github.com/tj-actions/eslint-changed-files/commit/9805727da43471dab18ba036e1f599ba82637732))  - (Renovate Bot)
+- Update dependency stylelint to v14.1.0 ([2df66a6](https://github.com/tj-actions/eslint-changed-files/commit/2df66a644e39b489f4260eded6475521ffe2d157))  - (Renovate Bot)
+- Update alpine Docker tag to v3.14.3 ([b7a0016](https://github.com/tj-actions/eslint-changed-files/commit/b7a00165397756c07a975b53d437226dbd44cba5))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.11 ([d606175](https://github.com/tj-actions/eslint-changed-files/commit/d6061753ade98c67d5621c588f13a4e7d706b2f7))  - (Renovate Bot)
 - Update dependabot.yml ([2a8b896](https://github.com/tj-actions/eslint-changed-files/commit/2a8b896aa5e09115ccf974b6a2041e8fb258ac63))  - (Tonye Jack)
-- Update dependency @types/node to v16.11.7
- ([0a72d62](https://github.com/tj-actions/eslint-changed-files/commit/0a72d6228c7b547a41ab5814e52a30c86cdec58a))  - (Renovate Bot)
-- Update reviewdog/action-shellcheck action to v1.10
- ([0009991](https://github.com/tj-actions/eslint-changed-files/commit/00099917b637cf595fa0af81a6b6377afd089b44))  - (Renovate Bot)
-- Update peter-evans/create-pull-request action to v3.11.0
- ([b9e798c](https://github.com/tj-actions/eslint-changed-files/commit/b9e798c46e6c7736ce324adb63a7b4670ace735e))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.34
- ([d4b1add](https://github.com/tj-actions/eslint-changed-files/commit/d4b1addfdb4ffc0271ca925175955c8e562bc42b))  - (Renovate Bot)
-- Update dependency @types/react-dom to v17.0.11
- ([dc34808](https://github.com/tj-actions/eslint-changed-files/commit/dc348081b5af5dbd200cded07fa7d6b04f195f63))  - (Renovate Bot)
-- Update actions/checkout action to v2.4.0
- ([2780dbc](https://github.com/tj-actions/eslint-changed-files/commit/2780dbce3a849e9fb89b25cbedd3af09b34e0231))  - (Renovate Bot)
-- Update dependency @testing-library/jest-dom to v5.15.0
- ([05c62f5](https://github.com/tj-actions/eslint-changed-files/commit/05c62f5c0deed2c51795b6871e8df1d571e3105b))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.7 ([0a72d62](https://github.com/tj-actions/eslint-changed-files/commit/0a72d6228c7b547a41ab5814e52a30c86cdec58a))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.10 ([0009991](https://github.com/tj-actions/eslint-changed-files/commit/00099917b637cf595fa0af81a6b6377afd089b44))  - (Renovate Bot)
+- Update peter-evans/create-pull-request action to v3.11.0 ([b9e798c](https://github.com/tj-actions/eslint-changed-files/commit/b9e798c46e6c7736ce324adb63a7b4670ace735e))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.34 ([d4b1add](https://github.com/tj-actions/eslint-changed-files/commit/d4b1addfdb4ffc0271ca925175955c8e562bc42b))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.11 ([dc34808](https://github.com/tj-actions/eslint-changed-files/commit/dc348081b5af5dbd200cded07fa7d6b04f195f63))  - (Renovate Bot)
+- Update actions/checkout action to v2.4.0 ([2780dbc](https://github.com/tj-actions/eslint-changed-files/commit/2780dbce3a849e9fb89b25cbedd3af09b34e0231))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.15.0 ([05c62f5](https://github.com/tj-actions/eslint-changed-files/commit/05c62f5c0deed2c51795b6871e8df1d571e3105b))  - (Renovate Bot)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([25a76f5](https://github.com/tj-actions/eslint-changed-files/commit/25a76f5dea7e79b68bd6edb2dd01ee7dd6a2cd72))  - (Renovate Bot)
-- Lock file maintenance
- ([54ecbcd](https://github.com/tj-actions/eslint-changed-files/commit/54ecbcdb72484621a557e069c6db82bca159cff7))  - (Renovate Bot)
-- Prevent persisting remote credentials ([#361](https://github.com/tj-actions/eslint-changed-files/issues/361))
-
- ([049db00](https://github.com/tj-actions/eslint-changed-files/commit/049db00b2210c4e60154df10a292c1fea433338e))  - (Tonye Jack)
-- Lock file maintenance
- ([74bdb75](https://github.com/tj-actions/eslint-changed-files/commit/74bdb75e7cf5cd143dfef37cb34eaeefea377bb6))  - (Renovate Bot)
-- Lock file maintenance
- ([9038639](https://github.com/tj-actions/eslint-changed-files/commit/9038639d6f9d055e45879687858d93a5c47601c3))  - (Renovate Bot)
-- Lock file maintenance
- ([064bd92](https://github.com/tj-actions/eslint-changed-files/commit/064bd928e77143439354aee6c4204d50e28f5427))  - (Renovate Bot)
-- Lock file maintenance
- ([788723c](https://github.com/tj-actions/eslint-changed-files/commit/788723c11da0a315b4a8884511938112c1cfb18d))  - (Renovate Bot)
-- Lock file maintenance
- ([5ba8fd4](https://github.com/tj-actions/eslint-changed-files/commit/5ba8fd4760a355745d688a74ac43e17eeb0654e8))  - (Renovate Bot)
-- Lock file maintenance
- ([7f19f32](https://github.com/tj-actions/eslint-changed-files/commit/7f19f3213186c798352589b3f54d0d7c80214ff3))  - (Renovate Bot)
-- Lock file maintenance
- ([4f34554](https://github.com/tj-actions/eslint-changed-files/commit/4f34554c6c7f4a0b2900778fb8e416d0c36a58e4))  - (Renovate Bot)
+- Lock file maintenance ([25a76f5](https://github.com/tj-actions/eslint-changed-files/commit/25a76f5dea7e79b68bd6edb2dd01ee7dd6a2cd72))  - (Renovate Bot)
+- Lock file maintenance ([54ecbcd](https://github.com/tj-actions/eslint-changed-files/commit/54ecbcdb72484621a557e069c6db82bca159cff7))  - (Renovate Bot)
+- Prevent persisting remote credentials ([#361](https://github.com/tj-actions/eslint-changed-files/issues/361)) ([049db00](https://github.com/tj-actions/eslint-changed-files/commit/049db00b2210c4e60154df10a292c1fea433338e))  - (Tonye Jack)
+- Lock file maintenance ([74bdb75](https://github.com/tj-actions/eslint-changed-files/commit/74bdb75e7cf5cd143dfef37cb34eaeefea377bb6))  - (Renovate Bot)
+- Lock file maintenance ([9038639](https://github.com/tj-actions/eslint-changed-files/commit/9038639d6f9d055e45879687858d93a5c47601c3))  - (Renovate Bot)
+- Lock file maintenance ([064bd92](https://github.com/tj-actions/eslint-changed-files/commit/064bd928e77143439354aee6c4204d50e28f5427))  - (Renovate Bot)
+- Lock file maintenance ([788723c](https://github.com/tj-actions/eslint-changed-files/commit/788723c11da0a315b4a8884511938112c1cfb18d))  - (Renovate Bot)
+- Lock file maintenance ([5ba8fd4](https://github.com/tj-actions/eslint-changed-files/commit/5ba8fd4760a355745d688a74ac43e17eeb0654e8))  - (Renovate Bot)
+- Lock file maintenance ([7f19f32](https://github.com/tj-actions/eslint-changed-files/commit/7f19f3213186c798352589b3f54d0d7c80214ff3))  - (Renovate Bot)
+- Lock file maintenance ([4f34554](https://github.com/tj-actions/eslint-changed-files/commit/4f34554c6c7f4a0b2900778fb8e416d0c36a58e4))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -4232,24 +4072,16 @@ Signed-off-by: dependabot[bot] <support@github.com> ([093ec08](https://github.co
 ## <!-- 26 -->🔄 Update
 
 - Update entrypoint.sh ([38e157f](https://github.com/tj-actions/eslint-changed-files/commit/38e157fba5bca3224f1c14ed32b9d8fe678137de))  - (Tonye Jack)
-- Update dependency stylelint to v14.0.1
- ([5e8bd75](https://github.com/tj-actions/eslint-changed-files/commit/5e8bd75bfd8d247a48247aeaa8960258150d85bf))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.33
- ([5655217](https://github.com/tj-actions/eslint-changed-files/commit/5655217ff1ab492eb1fa4bfeb29b3767dda4c355))  - (Renovate Bot)
-- Update dependency @types/node to v16.11.6
- ([d7a259e](https://github.com/tj-actions/eslint-changed-files/commit/d7a259efc7ffcc0059ff3174d3ee58e6ef41cb46))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.32
- ([5598bad](https://github.com/tj-actions/eslint-changed-files/commit/5598bad3a7ddff309372b6a69fef0b47869768b3))  - (Renovate Bot)
+- Update dependency stylelint to v14.0.1 ([5e8bd75](https://github.com/tj-actions/eslint-changed-files/commit/5e8bd75bfd8d247a48247aeaa8960258150d85bf))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.33 ([5655217](https://github.com/tj-actions/eslint-changed-files/commit/5655217ff1ab492eb1fa4bfeb29b3767dda4c355))  - (Renovate Bot)
+- Update dependency @types/node to v16.11.6 ([d7a259e](https://github.com/tj-actions/eslint-changed-files/commit/d7a259efc7ffcc0059ff3174d3ee58e6ef41cb46))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.32 ([5598bad](https://github.com/tj-actions/eslint-changed-files/commit/5598bad3a7ddff309372b6a69fef0b47869768b3))  - (Renovate Bot)
 - Updated .github/ISSUE_TEMPLATE/feature_request.yaml ([b5b8cc3](https://github.com/tj-actions/eslint-changed-files/commit/b5b8cc3df4cd3c221315d12c9d35a042dbfc37d5))  - (Tonye Jack)
 - Updated .github/ISSUE_TEMPLATE/bug_report.yaml ([b7498ea](https://github.com/tj-actions/eslint-changed-files/commit/b7498ea1b46780396045919ea14fd5747432b826))  - (Tonye Jack)
-- Update dependency stylelint-config-standard to v23
- ([81db757](https://github.com/tj-actions/eslint-changed-files/commit/81db757af5bcb11d2b13c759301257d1de52bf79))  - (Renovate Bot)
-- Update dependency stylelint to v14
- ([7c855f6](https://github.com/tj-actions/eslint-changed-files/commit/7c855f6cc86b0b0e9c5d3e12332c641cfe4f1665))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.31
- ([9433144](https://github.com/tj-actions/eslint-changed-files/commit/9433144f5c990cba8b8ce438acea76f33d820435))  - (Renovate Bot)
-- Update dependency @types/react-dom to v17.0.10
- ([b55b58c](https://github.com/tj-actions/eslint-changed-files/commit/b55b58c13c91933e02176b79a53e343c6e710127))  - (Renovate Bot)
+- Update dependency stylelint-config-standard to v23 ([81db757](https://github.com/tj-actions/eslint-changed-files/commit/81db757af5bcb11d2b13c759301257d1de52bf79))  - (Renovate Bot)
+- Update dependency stylelint to v14 ([7c855f6](https://github.com/tj-actions/eslint-changed-files/commit/7c855f6cc86b0b0e9c5d3e12332c641cfe4f1665))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.31 ([9433144](https://github.com/tj-actions/eslint-changed-files/commit/9433144f5c990cba8b8ce438acea76f33d820435))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.10 ([b55b58c](https://github.com/tj-actions/eslint-changed-files/commit/b55b58c13c91933e02176b79a53e343c6e710127))  - (Renovate Bot)
 - Update README.md ([df116fa](https://github.com/tj-actions/eslint-changed-files/commit/df116fad1a2f6e3bf04ef188dced8d791f1e4191))  - (Tonye Jack)
 - Updated README.md ([#301](https://github.com/tj-actions/eslint-changed-files/issues/301))
 
@@ -4257,48 +4089,30 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([b4cdacb](https://
 - Update README.md ([ef7a2de](https://github.com/tj-actions/eslint-changed-files/commit/ef7a2de319cf8e7c6502f75a4d04b41df0bf3848))  - (Tonye Jack)
 - Update README.md ([b9aa3d7](https://github.com/tj-actions/eslint-changed-files/commit/b9aa3d7ba448490d284c37c5563acfcced09ea2d))  - (Tonye Jack)
 - Update README.md ([67545eb](https://github.com/tj-actions/eslint-changed-files/commit/67545eb2b365cf4876706d88c357eb2fc3ba4dd7))  - (Tonye Jack)
-- Update dependency @testing-library/user-event to v13.5.0
- ([f29e344](https://github.com/tj-actions/eslint-changed-files/commit/f29e344f1bff9e58ab77ea53c8cddcacbb207e27))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.5.0 ([f29e344](https://github.com/tj-actions/eslint-changed-files/commit/f29e344f1bff9e58ab77ea53c8cddcacbb207e27))  - (Renovate Bot)
 - Update README.md ([f9afba2](https://github.com/tj-actions/eslint-changed-files/commit/f9afba2b4a53dc67a3b1c1402113cdd329933145))  - (Tonye Jack)
 - Updated renovate.json ([7d77a0e](https://github.com/tj-actions/eslint-changed-files/commit/7d77a0e2c48a5b79462e0761ea06ac80431ed502))  - (Tonye Jack)
 - Updated renovate.json ([133f3da](https://github.com/tj-actions/eslint-changed-files/commit/133f3da771e1faf97fd68106716b0ca45181645d))  - (Tonye Jack)
-- Update actions/checkout action to v2.3.5
- ([5d62149](https://github.com/tj-actions/eslint-changed-files/commit/5d62149cb5dd57af0a4dab9d4658ff4297aac682))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.4.1
- ([d74ad09](https://github.com/tj-actions/eslint-changed-files/commit/d74ad09414059d20eb15604d11028f6591db1f24))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.30
- ([51ad43d](https://github.com/tj-actions/eslint-changed-files/commit/51ad43de5ef5723eeef25eb0754ad090de2f3f98))  - (Renovate Bot)
-- Update dependency typescript to v4.4.4
- ([5342546](https://github.com/tj-actions/eslint-changed-files/commit/53425462a343ba9389d2b02618a977d89d3958f8))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.29
- ([c0758f7](https://github.com/tj-actions/eslint-changed-files/commit/c0758f733d4db89e7e81a5e0cae97009e8a7fa07))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.28
- ([7c6468a](https://github.com/tj-actions/eslint-changed-files/commit/7c6468a9585b9c49fa3981a64682cf71a2b5bf1a))  - (Renovate Bot)
-- Update dependency web-vitals to v2.1.2
- ([feeb8c0](https://github.com/tj-actions/eslint-changed-files/commit/feeb8c02d79584a0c21cfcca8a81777a6445f0f3))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.3.0
- ([839801a](https://github.com/tj-actions/eslint-changed-files/commit/839801a2fbe03e3efa90b2e918834bfab18788dd))  - (Renovate Bot)
-- Update dependency web-vitals to v2.1.1
- ([db77db3](https://github.com/tj-actions/eslint-changed-files/commit/db77db3bbbdeca6fbd64e930a9eef5a1e4488c19))  - (Renovate Bot)
-- Update tj-actions/verify-changed-files action to v8
- ([97f8f92](https://github.com/tj-actions/eslint-changed-files/commit/97f8f92880eaf3b06f649991d26013187f024e97))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.27
- ([72a7021](https://github.com/tj-actions/eslint-changed-files/commit/72a7021b1b2e651cd5c2b87cae7537fa3689718c))  - (Renovate Bot)
-- Update dependency @testing-library/react to v12.1.2
- ([f8c1afb](https://github.com/tj-actions/eslint-changed-files/commit/f8c1afb0313916805ec4966f3d4d638cd02b58d9))  - (Renovate Bot)
+- Update actions/checkout action to v2.3.5 ([5d62149](https://github.com/tj-actions/eslint-changed-files/commit/5d62149cb5dd57af0a4dab9d4658ff4297aac682))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.4.1 ([d74ad09](https://github.com/tj-actions/eslint-changed-files/commit/d74ad09414059d20eb15604d11028f6591db1f24))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.30 ([51ad43d](https://github.com/tj-actions/eslint-changed-files/commit/51ad43de5ef5723eeef25eb0754ad090de2f3f98))  - (Renovate Bot)
+- Update dependency typescript to v4.4.4 ([5342546](https://github.com/tj-actions/eslint-changed-files/commit/53425462a343ba9389d2b02618a977d89d3958f8))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.29 ([c0758f7](https://github.com/tj-actions/eslint-changed-files/commit/c0758f733d4db89e7e81a5e0cae97009e8a7fa07))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.28 ([7c6468a](https://github.com/tj-actions/eslint-changed-files/commit/7c6468a9585b9c49fa3981a64682cf71a2b5bf1a))  - (Renovate Bot)
+- Update dependency web-vitals to v2.1.2 ([feeb8c0](https://github.com/tj-actions/eslint-changed-files/commit/feeb8c02d79584a0c21cfcca8a81777a6445f0f3))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.3.0 ([839801a](https://github.com/tj-actions/eslint-changed-files/commit/839801a2fbe03e3efa90b2e918834bfab18788dd))  - (Renovate Bot)
+- Update dependency web-vitals to v2.1.1 ([db77db3](https://github.com/tj-actions/eslint-changed-files/commit/db77db3bbbdeca6fbd64e930a9eef5a1e4488c19))  - (Renovate Bot)
+- Update tj-actions/verify-changed-files action to v8 ([97f8f92](https://github.com/tj-actions/eslint-changed-files/commit/97f8f92880eaf3b06f649991d26013187f024e97))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.27 ([72a7021](https://github.com/tj-actions/eslint-changed-files/commit/72a7021b1b2e651cd5c2b87cae7537fa3689718c))  - (Renovate Bot)
+- Update dependency @testing-library/react to v12.1.2 ([f8c1afb](https://github.com/tj-actions/eslint-changed-files/commit/f8c1afb0313916805ec4966f3d4d638cd02b58d9))  - (Renovate Bot)
 - Updated README.md ([#275](https://github.com/tj-actions/eslint-changed-files/issues/275))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([089d2ab](https://github.com/tj-actions/eslint-changed-files/commit/089d2ab8780659b1116e6a20dfc4cbd81f82e066))  - (Tonye Jack)
 - Update README.md ([25de45f](https://github.com/tj-actions/eslint-changed-files/commit/25de45f917c218369bbf8369e06faa0fc2961e6b))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.26
- ([f7e78ff](https://github.com/tj-actions/eslint-changed-files/commit/f7e78ff5663f9a0d11d0ceee0ebce1c2ea49ca8f))  - (Renovate Bot)
-- Update README.md ([#271](https://github.com/tj-actions/eslint-changed-files/issues/271))
-
- ([9358d27](https://github.com/tj-actions/eslint-changed-files/commit/9358d27989520432881dbbd0ed29bbe66073cbb5))  - (Tonye Jack)
-- Update dependency @testing-library/react to v12.1.1
- ([c9d26fa](https://github.com/tj-actions/eslint-changed-files/commit/c9d26fae1043663c3b3021b344d64e322bbd1b02))  - (Renovate Bot)
-- Update actions/setup-node action to v2.4.1
- ([6c1c8b8](https://github.com/tj-actions/eslint-changed-files/commit/6c1c8b80d1949cab7028550144e3962bd7fa95fc))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.26 ([f7e78ff](https://github.com/tj-actions/eslint-changed-files/commit/f7e78ff5663f9a0d11d0ceee0ebce1c2ea49ca8f))  - (Renovate Bot)
+- Update README.md ([#271](https://github.com/tj-actions/eslint-changed-files/issues/271)) ([9358d27](https://github.com/tj-actions/eslint-changed-files/commit/9358d27989520432881dbbd0ed29bbe66073cbb5))  - (Tonye Jack)
+- Update dependency @testing-library/react to v12.1.1 ([c9d26fa](https://github.com/tj-actions/eslint-changed-files/commit/c9d26fae1043663c3b3021b344d64e322bbd1b02))  - (Renovate Bot)
+- Update actions/setup-node action to v2.4.1 ([6c1c8b8](https://github.com/tj-actions/eslint-changed-files/commit/6c1c8b80d1949cab7028550144e3962bd7fa95fc))  - (Renovate Bot)
 - Updated the remote origin URL to support GitHub enterprise server ([#265](https://github.com/tj-actions/eslint-changed-files/issues/265))
 
 * Updated the remote origin URL to support GitHub enterprise server
@@ -4306,20 +4120,15 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([089d2ab](https://
 * Update entrypoint.sh
 
 * Update entrypoint.sh ([5178068](https://github.com/tj-actions/eslint-changed-files/commit/5178068743fd75cd835de14524a301fbc3d91f32))  - (Tonye Jack)
-- Update reviewdog/action-shellcheck action to v1.9
- ([ecf4765](https://github.com/tj-actions/eslint-changed-files/commit/ecf4765b8274b61fbe7bf8f3d01fa31d0f79700d))  - (Renovate Bot)
-- Update reviewdog/action-shellcheck action to v1.8
- ([1cc811d](https://github.com/tj-actions/eslint-changed-files/commit/1cc811d6e90b1b84b327ce000c3dc4513b313704))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.24
- ([0d1a33c](https://github.com/tj-actions/eslint-changed-files/commit/0d1a33c54c5bdfa68f3c27f18a4482b03c2c1d7d))  - (Renovate Bot)
-- Update dependency @types/jest to v27.0.2
- ([6ab8dbf](https://github.com/tj-actions/eslint-changed-files/commit/6ab8dbf1d9af380873a486ec48074a5d4ebde7de))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.9 ([ecf4765](https://github.com/tj-actions/eslint-changed-files/commit/ecf4765b8274b61fbe7bf8f3d01fa31d0f79700d))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.8 ([1cc811d](https://github.com/tj-actions/eslint-changed-files/commit/1cc811d6e90b1b84b327ce000c3dc4513b313704))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.24 ([0d1a33c](https://github.com/tj-actions/eslint-changed-files/commit/0d1a33c54c5bdfa68f3c27f18a4482b03c2c1d7d))  - (Renovate Bot)
+- Update dependency @types/jest to v27.0.2 ([6ab8dbf](https://github.com/tj-actions/eslint-changed-files/commit/6ab8dbf1d9af380873a486ec48074a5d4ebde7de))  - (Renovate Bot)
 - Updated README.md ([#258](https://github.com/tj-actions/eslint-changed-files/issues/258))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([08a3c88](https://github.com/tj-actions/eslint-changed-files/commit/08a3c882545bd0078f0a5a19bd3571edb78de568))  - (Tonye Jack)
 - Update README.md ([c4ad9c3](https://github.com/tj-actions/eslint-changed-files/commit/c4ad9c384cc435eb64f20c9825665540773f8d3d))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.22
- ([3c5a97d](https://github.com/tj-actions/eslint-changed-files/commit/3c5a97dc2c102c2d67429d3b954ff40dada5b85d))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.22 ([3c5a97d](https://github.com/tj-actions/eslint-changed-files/commit/3c5a97dc2c102c2d67429d3b954ff40dada5b85d))  - (Renovate Bot)
 - Updated README.md ([#251](https://github.com/tj-actions/eslint-changed-files/issues/251))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([910fcec](https://github.com/tj-actions/eslint-changed-files/commit/910fcec508f529559dbbd6a5e5228379df65607b))  - (Tonye Jack)
@@ -4336,12 +4145,9 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([694b4bf](https://
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([cb170ee](https://github.com/tj-actions/eslint-changed-files/commit/cb170ee3119dc5a6e02eb1e2b49182deb903e284))  - (Tonye Jack)
 - Update README.md ([655f1e5](https://github.com/tj-actions/eslint-changed-files/commit/655f1e5fe0fee77c172e8e989295c9b29cc33c63))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.21
- ([53b534b](https://github.com/tj-actions/eslint-changed-files/commit/53b534b00284fe07388f5bd30f51d82ab49fdc00))  - (Renovate Bot)
-- Update dependency @testing-library/react to v12.1.0
- ([cb3d127](https://github.com/tj-actions/eslint-changed-files/commit/cb3d12797823e626e330035782395fa96f43cb0e))  - (Renovate Bot)
-- Update dependency typescript to v4.4.3
- ([06d2bdb](https://github.com/tj-actions/eslint-changed-files/commit/06d2bdbef2376c779ee991645bb82bf092eaf35f))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.21 ([53b534b](https://github.com/tj-actions/eslint-changed-files/commit/53b534b00284fe07388f5bd30f51d82ab49fdc00))  - (Renovate Bot)
+- Update dependency @testing-library/react to v12.1.0 ([cb3d127](https://github.com/tj-actions/eslint-changed-files/commit/cb3d12797823e626e330035782395fa96f43cb0e))  - (Renovate Bot)
+- Update dependency typescript to v4.4.3 ([06d2bdb](https://github.com/tj-actions/eslint-changed-files/commit/06d2bdbef2376c779ee991645bb82bf092eaf35f))  - (Renovate Bot)
 - Updated README.md ([#238](https://github.com/tj-actions/eslint-changed-files/issues/238))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([406c738](https://github.com/tj-actions/eslint-changed-files/commit/406c738e9e24758b61a35e6cddc2256eb90c6b8c))  - (Tonye Jack)
@@ -4349,27 +4155,18 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([406c738](https://
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([7be76eb](https://github.com/tj-actions/eslint-changed-files/commit/7be76eb11613f8197ec559a0771ef98023d40977))  - (Renovate Bot)
-- Roll back dependency @types/react to 17.0.28
- ([bbb5afb](https://github.com/tj-actions/eslint-changed-files/commit/bbb5afb19bcd87c87bf237b9e615922813de9757))  - (Renovate Bot)
-- Lock file maintenance
- ([77586b6](https://github.com/tj-actions/eslint-changed-files/commit/77586b60ee16ee8e17287675a25edf72960f2ae0))  - (Renovate Bot)
-- Lock file maintenance
- ([0b824e5](https://github.com/tj-actions/eslint-changed-files/commit/0b824e5f6c7ce5b4da27f148db3a7e9584d7f15e))  - (Renovate Bot)
-- Lock file maintenance
- ([3249bdf](https://github.com/tj-actions/eslint-changed-files/commit/3249bdf2139807844afd09b7a598241d707ec935))  - (Renovate Bot)
-- Lock file maintenance
- ([e4cfde6](https://github.com/tj-actions/eslint-changed-files/commit/e4cfde6541f4ebf89c670666ce733025e01bb316))  - (Renovate Bot)
-- Lock file maintenance
- ([1bf17c5](https://github.com/tj-actions/eslint-changed-files/commit/1bf17c509aea7f7e606b8475415f776405a84603))  - (Renovate Bot)
-- Lock file maintenance
- ([e764109](https://github.com/tj-actions/eslint-changed-files/commit/e764109273d86ccca231c107f9b32ff0a64ccc3e))  - (Renovate Bot)
+- Lock file maintenance ([7be76eb](https://github.com/tj-actions/eslint-changed-files/commit/7be76eb11613f8197ec559a0771ef98023d40977))  - (Renovate Bot)
+- Roll back dependency @types/react to 17.0.28 ([bbb5afb](https://github.com/tj-actions/eslint-changed-files/commit/bbb5afb19bcd87c87bf237b9e615922813de9757))  - (Renovate Bot)
+- Lock file maintenance ([77586b6](https://github.com/tj-actions/eslint-changed-files/commit/77586b60ee16ee8e17287675a25edf72960f2ae0))  - (Renovate Bot)
+- Lock file maintenance ([0b824e5](https://github.com/tj-actions/eslint-changed-files/commit/0b824e5f6c7ce5b4da27f148db3a7e9584d7f15e))  - (Renovate Bot)
+- Lock file maintenance ([3249bdf](https://github.com/tj-actions/eslint-changed-files/commit/3249bdf2139807844afd09b7a598241d707ec935))  - (Renovate Bot)
+- Lock file maintenance ([e4cfde6](https://github.com/tj-actions/eslint-changed-files/commit/e4cfde6541f4ebf89c670666ce733025e01bb316))  - (Renovate Bot)
+- Lock file maintenance ([1bf17c5](https://github.com/tj-actions/eslint-changed-files/commit/1bf17c509aea7f7e606b8475415f776405a84603))  - (Renovate Bot)
+- Lock file maintenance ([e764109](https://github.com/tj-actions/eslint-changed-files/commit/e764109273d86ccca231c107f9b32ff0a64ccc3e))  - (Renovate Bot)
 - Lock file maintenance ([#245](https://github.com/tj-actions/eslint-changed-files/issues/245))
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com> ([1f614b0](https://github.com/tj-actions/eslint-changed-files/commit/1f614b0f60f286a38c5244b63b0dd405b43dc0be))  - (renovate[bot])
-- Lock file maintenance
- ([ad56d2f](https://github.com/tj-actions/eslint-changed-files/commit/ad56d2f1dabeb1310c0346c38f0d7d519f4206ec))  - (Renovate Bot)
+- Lock file maintenance ([ad56d2f](https://github.com/tj-actions/eslint-changed-files/commit/ad56d2f1dabeb1310c0346c38f0d7d519f4206ec))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -4867,67 +4664,42 @@ Signed-off-by: dependabot[bot] <support@github.com> ([f40b662](https://github.co
 ## <!-- 26 -->🔄 Update
 
 - Update README.md ([1ac951d](https://github.com/tj-actions/eslint-changed-files/commit/1ac951dc674c1dd3e37d1ebbfa10b0141ec12be5))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.20
- ([d5cc322](https://github.com/tj-actions/eslint-changed-files/commit/d5cc32283aa5f1fe10723b24c6b0899d5d617982))  - (Renovate Bot)
-- Update pascalgn/automerge-action action to v0.14.3
- ([3c1b84f](https://github.com/tj-actions/eslint-changed-files/commit/3c1b84fa78edf3f1cfca6dbed92dcab2f0ffabe1))  - (Renovate Bot)
-- Update alpine Docker tag to v3.14.2
- ([9c4b257](https://github.com/tj-actions/eslint-changed-files/commit/9c4b2579628bf8bd6b07dffc6de6adf2379fdab1))  - (Renovate Bot)
-- Update dependency typescript to v4.4.2
- ([4d0a310](https://github.com/tj-actions/eslint-changed-files/commit/4d0a3109f6805aec5bca90ae809786d931592db9))  - (Renovate Bot)
-- Update peter-evans/create-pull-request action to v3.10.1
- ([938d7e5](https://github.com/tj-actions/eslint-changed-files/commit/938d7e53f50dbc61f0255ff04e1faddc5462bd72))  - (Renovate Bot)
-- Update tj-actions/remark action to v1.7
- ([0aa74a9](https://github.com/tj-actions/eslint-changed-files/commit/0aa74a99f7dc243ac2249bb4f6a484a53fde6fca))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.19
- ([84d27b8](https://github.com/tj-actions/eslint-changed-files/commit/84d27b8c32cd39142bc225b6a0b436f6d8585f72))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.18
- ([7835f53](https://github.com/tj-actions/eslint-changed-files/commit/7835f5349b5f248e685fb50c1fdcececdd5e0690))  - (Renovate Bot)
-- Update dependency @types/jest to v27.0.1
- ([76d98b2](https://github.com/tj-actions/eslint-changed-files/commit/76d98b25eabde61c811345a1ee4be7e415f16ca6))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.17
- ([eb2650d](https://github.com/tj-actions/eslint-changed-files/commit/eb2650dee4b58f037eb0e74a99893e7460de8bea))  - (Renovate Bot)
-- Update dependency @types/jest to v27
- ([a2d0978](https://github.com/tj-actions/eslint-changed-files/commit/a2d0978c903e6dcb13a703786e5f1f3944e41e53))  - (Renovate Bot)
-- Update alpine Docker tag to v3.14.1
- ([aa0a484](https://github.com/tj-actions/eslint-changed-files/commit/aa0a484f4438ab53a7b974aef9eed28169796904))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.16
- ([a429130](https://github.com/tj-actions/eslint-changed-files/commit/a429130b0302187c8929799f635eea8f1fdc53b0))  - (Renovate Bot)
-- Update actions/setup-node action to v2.3.2
- ([2336adf](https://github.com/tj-actions/eslint-changed-files/commit/2336adfbe972fb85cdfe73d564281efd7473ed6c))  - (Renovate Bot)
-- Update actions/setup-node action to v2.3.1
- ([68469d6](https://github.com/tj-actions/eslint-changed-files/commit/68469d68e4c36543facaded461ef1e67d42772af))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.20 ([d5cc322](https://github.com/tj-actions/eslint-changed-files/commit/d5cc32283aa5f1fe10723b24c6b0899d5d617982))  - (Renovate Bot)
+- Update pascalgn/automerge-action action to v0.14.3 ([3c1b84f](https://github.com/tj-actions/eslint-changed-files/commit/3c1b84fa78edf3f1cfca6dbed92dcab2f0ffabe1))  - (Renovate Bot)
+- Update alpine Docker tag to v3.14.2 ([9c4b257](https://github.com/tj-actions/eslint-changed-files/commit/9c4b2579628bf8bd6b07dffc6de6adf2379fdab1))  - (Renovate Bot)
+- Update dependency typescript to v4.4.2 ([4d0a310](https://github.com/tj-actions/eslint-changed-files/commit/4d0a3109f6805aec5bca90ae809786d931592db9))  - (Renovate Bot)
+- Update peter-evans/create-pull-request action to v3.10.1 ([938d7e5](https://github.com/tj-actions/eslint-changed-files/commit/938d7e53f50dbc61f0255ff04e1faddc5462bd72))  - (Renovate Bot)
+- Update tj-actions/remark action to v1.7 ([0aa74a9](https://github.com/tj-actions/eslint-changed-files/commit/0aa74a99f7dc243ac2249bb4f6a484a53fde6fca))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.19 ([84d27b8](https://github.com/tj-actions/eslint-changed-files/commit/84d27b8c32cd39142bc225b6a0b436f6d8585f72))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.18 ([7835f53](https://github.com/tj-actions/eslint-changed-files/commit/7835f5349b5f248e685fb50c1fdcececdd5e0690))  - (Renovate Bot)
+- Update dependency @types/jest to v27.0.1 ([76d98b2](https://github.com/tj-actions/eslint-changed-files/commit/76d98b25eabde61c811345a1ee4be7e415f16ca6))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.17 ([eb2650d](https://github.com/tj-actions/eslint-changed-files/commit/eb2650dee4b58f037eb0e74a99893e7460de8bea))  - (Renovate Bot)
+- Update dependency @types/jest to v27 ([a2d0978](https://github.com/tj-actions/eslint-changed-files/commit/a2d0978c903e6dcb13a703786e5f1f3944e41e53))  - (Renovate Bot)
+- Update alpine Docker tag to v3.14.1 ([aa0a484](https://github.com/tj-actions/eslint-changed-files/commit/aa0a484f4438ab53a7b974aef9eed28169796904))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.16 ([a429130](https://github.com/tj-actions/eslint-changed-files/commit/a429130b0302187c8929799f635eea8f1fdc53b0))  - (Renovate Bot)
+- Update actions/setup-node action to v2.3.2 ([2336adf](https://github.com/tj-actions/eslint-changed-files/commit/2336adfbe972fb85cdfe73d564281efd7473ed6c))  - (Renovate Bot)
+- Update actions/setup-node action to v2.3.1 ([68469d6](https://github.com/tj-actions/eslint-changed-files/commit/68469d68e4c36543facaded461ef1e67d42772af))  - (Renovate Bot)
 - Updated .github/ISSUE_TEMPLATE/bug_report.yaml ([8791347](https://github.com/tj-actions/eslint-changed-files/commit/87913479f87c14faf75562607dee183dd515f9db))  - (Tonye Jack)
 - Updated README.md ([#188](https://github.com/tj-actions/eslint-changed-files/issues/188))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([74e079d](https://github.com/tj-actions/eslint-changed-files/commit/74e079df71e6364d1d04fd4431e91d76aab44745))  - (Tonye Jack)
 - Update README.md ([df56b93](https://github.com/tj-actions/eslint-changed-files/commit/df56b93f14589a93276f329309b55bdfb2e4f55e))  - (Tonye Jack)
-- Update reviewdog/action-shellcheck action to v1.7
- ([41635ba](https://github.com/tj-actions/eslint-changed-files/commit/41635ba6201003bf6811b999d2cbe031802d7153))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.2.1
- ([b81a53e](https://github.com/tj-actions/eslint-changed-files/commit/b81a53e8b3b53023c1dfbb6cc50cfacb7a01828c))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.15
- ([96f218f](https://github.com/tj-actions/eslint-changed-files/commit/96f218f888658fdef6b0494841b4d567a61b093a))  - (Renovate Bot)
-- Update codacy/codacy-analysis-cli-action action to v4
- ([45f630d](https://github.com/tj-actions/eslint-changed-files/commit/45f630d9781640aca02ed6e87bdbc145c448010d))  - (Renovate Bot)
-- Update actions/setup-node action to v2.3.0
- ([5370cbb](https://github.com/tj-actions/eslint-changed-files/commit/5370cbbce7bdaabb5d5e783a03f195be5be14053))  - (Renovate Bot)
-- Update codacy/codacy-analysis-cli-action action to v3
- ([0840c4e](https://github.com/tj-actions/eslint-changed-files/commit/0840c4e18b12a1e438a3f8dc51304441acabdff4))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.7 ([41635ba](https://github.com/tj-actions/eslint-changed-files/commit/41635ba6201003bf6811b999d2cbe031802d7153))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.2.1 ([b81a53e](https://github.com/tj-actions/eslint-changed-files/commit/b81a53e8b3b53023c1dfbb6cc50cfacb7a01828c))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.15 ([96f218f](https://github.com/tj-actions/eslint-changed-files/commit/96f218f888658fdef6b0494841b4d567a61b093a))  - (Renovate Bot)
+- Update codacy/codacy-analysis-cli-action action to v4 ([45f630d](https://github.com/tj-actions/eslint-changed-files/commit/45f630d9781640aca02ed6e87bdbc145c448010d))  - (Renovate Bot)
+- Update actions/setup-node action to v2.3.0 ([5370cbb](https://github.com/tj-actions/eslint-changed-files/commit/5370cbbce7bdaabb5d5e783a03f195be5be14053))  - (Renovate Bot)
+- Update codacy/codacy-analysis-cli-action action to v3 ([0840c4e](https://github.com/tj-actions/eslint-changed-files/commit/0840c4e18b12a1e438a3f8dc51304441acabdff4))  - (Renovate Bot)
 - Updated .github/workflows/codacy-analysis.yml ([e79eca6](https://github.com/tj-actions/eslint-changed-files/commit/e79eca694ffd3a08859d0189580446b224019672))  - (Tonye Jack)
-- Update dependency @testing-library/user-event to v13.2.0
- ([a4ef0ad](https://github.com/tj-actions/eslint-changed-files/commit/a4ef0addaaad89cb8417d586b4a3fa4955f4d2e7))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.2.0 ([a4ef0ad](https://github.com/tj-actions/eslint-changed-files/commit/a4ef0addaaad89cb8417d586b4a3fa4955f4d2e7))  - (Renovate Bot)
 - Update README.md ([0cba37a](https://github.com/tj-actions/eslint-changed-files/commit/0cba37a0b2f4d5c6a16d951bb90f5d797a8eab24))  - (Tonye Jack)
-- Update dependency @types/react-dom to v17.0.9
- ([62eb08d](https://github.com/tj-actions/eslint-changed-files/commit/62eb08d5a4744a7ae59e2f5a63a96d1af8db42e6))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.14
- ([1fa6e84](https://github.com/tj-actions/eslint-changed-files/commit/1fa6e84f8c7b456557d06edcbc60671e7688b399))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.9 ([62eb08d](https://github.com/tj-actions/eslint-changed-files/commit/62eb08d5a4744a7ae59e2f5a63a96d1af8db42e6))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.14 ([1fa6e84](https://github.com/tj-actions/eslint-changed-files/commit/1fa6e84f8c7b456557d06edcbc60671e7688b399))  - (Renovate Bot)
 - Updated README.md ([#166](https://github.com/tj-actions/eslint-changed-files/issues/166))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([1a98213](https://github.com/tj-actions/eslint-changed-files/commit/1a982133b74a280f5af591dbd4a655a9201fe767))  - (Tonye Jack)
 - Update README.md ([64178bb](https://github.com/tj-actions/eslint-changed-files/commit/64178bbab4047d2cf53166c55d3ea920b4c51903))  - (Tonye Jack)
-- Update dependency @types/jest to v26.0.24
- ([02cf46c](https://github.com/tj-actions/eslint-changed-files/commit/02cf46c0d2e4e00c737519cd882970b5587366b9))  - (Renovate Bot)
+- Update dependency @types/jest to v26.0.24 ([02cf46c](https://github.com/tj-actions/eslint-changed-files/commit/02cf46c0d2e4e00c737519cd882970b5587366b9))  - (Renovate Bot)
 - Update entrypoint.sh ([308ed4e](https://github.com/tj-actions/eslint-changed-files/commit/308ed4e6b55eb340008ac13998c3538c716c367f))  - (Tonye Jack)
 - Updated README.md ([#164](https://github.com/tj-actions/eslint-changed-files/issues/164))
 
@@ -4936,64 +4708,37 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([4baa93b](https://
 - Updated .github/ISSUE_TEMPLATE/bug_report.yaml ([361a3b6](https://github.com/tj-actions/eslint-changed-files/commit/361a3b606093b2d447fe113de99c2ea5254d55a4))  - (Tonye Jack)
 - Updated .github/ISSUE_TEMPLATE/bug_report.yaml ([5accaea](https://github.com/tj-actions/eslint-changed-files/commit/5accaeae79085f045dc4c683c53a91ab6cf13ae4))  - (Tonye Jack)
 - Update README.md ([af1cd92](https://github.com/tj-actions/eslint-changed-files/commit/af1cd92fb589930e6292e26c98aa5db6aaf96f06))  - (Tonye Jack)
-- Update dependency web-vitals to v2.1.0
- ([6b6cca8](https://github.com/tj-actions/eslint-changed-files/commit/6b6cca82d417642e617eeb6827bdcf6463312ab6))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.13
- ([336e617](https://github.com/tj-actions/eslint-changed-files/commit/336e617b3b7419ace4413cf0b1e1d4b9bd29afec))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.12
- ([7c83a2d](https://github.com/tj-actions/eslint-changed-files/commit/7c83a2d97afaf8914d7cd1fc2b4f4a4a35d2d519))  - (Renovate Bot)
-- Update dependency typescript to v4.3.5
- ([e0a20fb](https://github.com/tj-actions/eslint-changed-files/commit/e0a20fb94206cfaa983392f01920fae630271ff2))  - (Renovate Bot)
-- Update actions/setup-node action to v2.2.0
- ([20287f5](https://github.com/tj-actions/eslint-changed-files/commit/20287f5b253197b3709f5abf1a78cfd038fff0ae))  - (Renovate Bot)
-- Update reviewdog/action-shellcheck action to v1.6
- ([8566318](https://github.com/tj-actions/eslint-changed-files/commit/856631890c41dab919c30092208bdc6fec3ae3d4))  - (Renovate Bot)
-- Update arrow direction ([#145](https://github.com/tj-actions/eslint-changed-files/issues/145))
-
- ([4b9be1e](https://github.com/tj-actions/eslint-changed-files/commit/4b9be1e1cb913d723e6e42106a1189ee1f225c56))  - (Tonye Jack)
-- Update dependency @testing-library/react to v12
- ([939f369](https://github.com/tj-actions/eslint-changed-files/commit/939f3690689cea2c6deaba422e5edcbf6cd5b566))  - (Renovate Bot)
-- Update tj-actions/verify-changed-files action to v7
- ([409fe4d](https://github.com/tj-actions/eslint-changed-files/commit/409fe4dc4e5d44ce6aa946c9683e4ec40d95a9a6))  - (Renovate Bot)
-- Update dependency @types/react-dom to v17.0.8
- ([b10e650](https://github.com/tj-actions/eslint-changed-files/commit/b10e650158d7cfb52b95f4a82a0d5ee6e8a08246))  - (Renovate Bot)
-- Update dependency typescript to v4.3.4
- ([bb74c64](https://github.com/tj-actions/eslint-changed-files/commit/bb74c64a18ec51d7013559aae57228fcb6cc762b))  - (Renovate Bot)
+- Update dependency web-vitals to v2.1.0 ([6b6cca8](https://github.com/tj-actions/eslint-changed-files/commit/6b6cca82d417642e617eeb6827bdcf6463312ab6))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.13 ([336e617](https://github.com/tj-actions/eslint-changed-files/commit/336e617b3b7419ace4413cf0b1e1d4b9bd29afec))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.12 ([7c83a2d](https://github.com/tj-actions/eslint-changed-files/commit/7c83a2d97afaf8914d7cd1fc2b4f4a4a35d2d519))  - (Renovate Bot)
+- Update dependency typescript to v4.3.5 ([e0a20fb](https://github.com/tj-actions/eslint-changed-files/commit/e0a20fb94206cfaa983392f01920fae630271ff2))  - (Renovate Bot)
+- Update actions/setup-node action to v2.2.0 ([20287f5](https://github.com/tj-actions/eslint-changed-files/commit/20287f5b253197b3709f5abf1a78cfd038fff0ae))  - (Renovate Bot)
+- Update reviewdog/action-shellcheck action to v1.6 ([8566318](https://github.com/tj-actions/eslint-changed-files/commit/856631890c41dab919c30092208bdc6fec3ae3d4))  - (Renovate Bot)
+- Update arrow direction ([#145](https://github.com/tj-actions/eslint-changed-files/issues/145)) ([4b9be1e](https://github.com/tj-actions/eslint-changed-files/commit/4b9be1e1cb913d723e6e42106a1189ee1f225c56))  - (Tonye Jack)
+- Update dependency @testing-library/react to v12 ([939f369](https://github.com/tj-actions/eslint-changed-files/commit/939f3690689cea2c6deaba422e5edcbf6cd5b566))  - (Renovate Bot)
+- Update tj-actions/verify-changed-files action to v7 ([409fe4d](https://github.com/tj-actions/eslint-changed-files/commit/409fe4dc4e5d44ce6aa946c9683e4ec40d95a9a6))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.8 ([b10e650](https://github.com/tj-actions/eslint-changed-files/commit/b10e650158d7cfb52b95f4a82a0d5ee6e8a08246))  - (Renovate Bot)
+- Update dependency typescript to v4.3.4 ([bb74c64](https://github.com/tj-actions/eslint-changed-files/commit/bb74c64a18ec51d7013559aae57228fcb6cc762b))  - (Renovate Bot)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([5c68e0c](https://github.com/tj-actions/eslint-changed-files/commit/5c68e0c28c122fef9db4e776d9e3ff3b3e7563af))  - (Renovate Bot)
-- Lock file maintenance
- ([edad732](https://github.com/tj-actions/eslint-changed-files/commit/edad732a5a6bda808d6a42a53151f73cda4b1500))  - (Renovate Bot)
-- Lock file maintenance
- ([7438204](https://github.com/tj-actions/eslint-changed-files/commit/74382047d710894be0dd441522c5ebf9892543e8))  - (Renovate Bot)
-- Lock file maintenance
- ([fc78380](https://github.com/tj-actions/eslint-changed-files/commit/fc78380add3064da604d108944347508965877a6))  - (Renovate Bot)
-- Lock file maintenance
- ([331b7d7](https://github.com/tj-actions/eslint-changed-files/commit/331b7d7fabf26440e9e694388c0fe077e393cde2))  - (Renovate Bot)
-- Lock file maintenance
- ([6777a00](https://github.com/tj-actions/eslint-changed-files/commit/6777a00b01806eee4758b12be6b82854192a95e5))  - (Renovate Bot)
-- Lock file maintenance
- ([abae6ce](https://github.com/tj-actions/eslint-changed-files/commit/abae6ce898922b5f9e94da77da7db52ccaf5fb27))  - (Renovate Bot)
-- Lock file maintenance
- ([c16696c](https://github.com/tj-actions/eslint-changed-files/commit/c16696cde759dccd512092a26886f6a4e199dd68))  - (Renovate Bot)
-- Lock file maintenance
- ([24b3b05](https://github.com/tj-actions/eslint-changed-files/commit/24b3b053334bba7c9971319c7c6005538c6f610d))  - (Renovate Bot)
-- Lock file maintenance
- ([a6b01bc](https://github.com/tj-actions/eslint-changed-files/commit/a6b01bc37e775ee4dfb3d69792d24212d7971a95))  - (Renovate Bot)
-- Lock file maintenance
- ([0e17859](https://github.com/tj-actions/eslint-changed-files/commit/0e178590a697386f58cf1c7bb40773a7e1e9dc72))  - (Renovate Bot)
-- Lock file maintenance
- ([fefbc74](https://github.com/tj-actions/eslint-changed-files/commit/fefbc7465bc24673507987e9fd09aabcfeb5ba55))  - (Renovate Bot)
-- Lock file maintenance
- ([5dadd85](https://github.com/tj-actions/eslint-changed-files/commit/5dadd85970bcee15800b4df7c78718978a350fec))  - (Renovate Bot)
+- Lock file maintenance ([5c68e0c](https://github.com/tj-actions/eslint-changed-files/commit/5c68e0c28c122fef9db4e776d9e3ff3b3e7563af))  - (Renovate Bot)
+- Lock file maintenance ([edad732](https://github.com/tj-actions/eslint-changed-files/commit/edad732a5a6bda808d6a42a53151f73cda4b1500))  - (Renovate Bot)
+- Lock file maintenance ([7438204](https://github.com/tj-actions/eslint-changed-files/commit/74382047d710894be0dd441522c5ebf9892543e8))  - (Renovate Bot)
+- Lock file maintenance ([fc78380](https://github.com/tj-actions/eslint-changed-files/commit/fc78380add3064da604d108944347508965877a6))  - (Renovate Bot)
+- Lock file maintenance ([331b7d7](https://github.com/tj-actions/eslint-changed-files/commit/331b7d7fabf26440e9e694388c0fe077e393cde2))  - (Renovate Bot)
+- Lock file maintenance ([6777a00](https://github.com/tj-actions/eslint-changed-files/commit/6777a00b01806eee4758b12be6b82854192a95e5))  - (Renovate Bot)
+- Lock file maintenance ([abae6ce](https://github.com/tj-actions/eslint-changed-files/commit/abae6ce898922b5f9e94da77da7db52ccaf5fb27))  - (Renovate Bot)
+- Lock file maintenance ([c16696c](https://github.com/tj-actions/eslint-changed-files/commit/c16696cde759dccd512092a26886f6a4e199dd68))  - (Renovate Bot)
+- Lock file maintenance ([24b3b05](https://github.com/tj-actions/eslint-changed-files/commit/24b3b053334bba7c9971319c7c6005538c6f610d))  - (Renovate Bot)
+- Lock file maintenance ([a6b01bc](https://github.com/tj-actions/eslint-changed-files/commit/a6b01bc37e775ee4dfb3d69792d24212d7971a95))  - (Renovate Bot)
+- Lock file maintenance ([0e17859](https://github.com/tj-actions/eslint-changed-files/commit/0e178590a697386f58cf1c7bb40773a7e1e9dc72))  - (Renovate Bot)
+- Lock file maintenance ([fefbc74](https://github.com/tj-actions/eslint-changed-files/commit/fefbc7465bc24673507987e9fd09aabcfeb5ba55))  - (Renovate Bot)
+- Lock file maintenance ([5dadd85](https://github.com/tj-actions/eslint-changed-files/commit/5dadd85970bcee15800b4df7c78718978a350fec))  - (Renovate Bot)
 
 ## <!-- 6 -->🧪 Testing
 
-- Test lint error ([#167](https://github.com/tj-actions/eslint-changed-files/issues/167))
-
- ([999d767](https://github.com/tj-actions/eslint-changed-files/commit/999d7678caa8a984b8e0acdc5e4689d8e927adad))  - (Tonye Jack)
+- Test lint error ([#167](https://github.com/tj-actions/eslint-changed-files/issues/167)) ([999d767](https://github.com/tj-actions/eslint-changed-files/commit/999d7678caa8a984b8e0acdc5e4689d8e927adad))  - (Tonye Jack)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -5094,57 +4839,39 @@ Signed-off-by: dependabot[bot] <support@github.com> ([9693f3d](https://github.co
 
 ## <!-- 26 -->🔄 Update
 
-- Updated to include a message of the sha used ([#136](https://github.com/tj-actions/eslint-changed-files/issues/136))
-
- ([fbe32d3](https://github.com/tj-actions/eslint-changed-files/commit/fbe32d3de7441d7705f126e8646b0d29cefe5005))  - (Tonye Jack)
-- Update dependency typescript to v4.3.3
- ([9811d66](https://github.com/tj-actions/eslint-changed-files/commit/9811d66f55eaac088d73ce16b98da1dcb50d2dfd))  - (Renovate Bot)
-- Update dependency @testing-library/jest-dom to v5.14.1
- ([f2b8d2a](https://github.com/tj-actions/eslint-changed-files/commit/f2b8d2a06340bb93cfdb4ecbd210f0c2976c8c8d))  - (Renovate Bot)
-- Update dependency @testing-library/jest-dom to v5.14.0
- ([609f057](https://github.com/tj-actions/eslint-changed-files/commit/609f0572713312ab4ca5e0c27bdf42b01e28f28a))  - (Renovate Bot)
+- Updated to include a message of the sha used ([#136](https://github.com/tj-actions/eslint-changed-files/issues/136)) ([fbe32d3](https://github.com/tj-actions/eslint-changed-files/commit/fbe32d3de7441d7705f126e8646b0d29cefe5005))  - (Tonye Jack)
+- Update dependency typescript to v4.3.3 ([9811d66](https://github.com/tj-actions/eslint-changed-files/commit/9811d66f55eaac088d73ce16b98da1dcb50d2dfd))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.14.1 ([f2b8d2a](https://github.com/tj-actions/eslint-changed-files/commit/f2b8d2a06340bb93cfdb4ecbd210f0c2976c8c8d))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.14.0 ([609f057](https://github.com/tj-actions/eslint-changed-files/commit/609f0572713312ab4ca5e0c27bdf42b01e28f28a))  - (Renovate Bot)
 - Update README.md ([3ecfa6a](https://github.com/tj-actions/eslint-changed-files/commit/3ecfa6a6967e51f6830700dfd0ff560bdf19ff60))  - (Tonye Jack)
 - Updated README.md ([#129](https://github.com/tj-actions/eslint-changed-files/issues/129))
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([c4aa114](https://github.com/tj-actions/eslint-changed-files/commit/c4aa114244204ecf7cdeb8d747083de3be32b6fe))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.11
- ([d8718a5](https://github.com/tj-actions/eslint-changed-files/commit/d8718a5114d7e4c22324b9f6af476c536496a6fd))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.10
- ([29a8e6e](https://github.com/tj-actions/eslint-changed-files/commit/29a8e6e5a71d66414d377d5fd570bd8da88ad390))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.11 ([d8718a5](https://github.com/tj-actions/eslint-changed-files/commit/d8718a5114d7e4c22324b9f6af476c536496a6fd))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.10 ([29a8e6e](https://github.com/tj-actions/eslint-changed-files/commit/29a8e6e5a71d66414d377d5fd570bd8da88ad390))  - (Renovate Bot)
 - Update README.md ([6e7ef7b](https://github.com/tj-actions/eslint-changed-files/commit/6e7ef7b95e26a6a9ca38c30e580419ebb057c4b3))  - (Tonye Jack)
 - Update README.md ([4e30ea4](https://github.com/tj-actions/eslint-changed-files/commit/4e30ea45cfd7cbbbd63ce49d45e4218560db7a4d))  - (Tonye Jack)
 - Update README.md ([fe4eefb](https://github.com/tj-actions/eslint-changed-files/commit/fe4eefb86c394ad8a2afb57ffa8c8f32ea7d069a))  - (Tonye Jack)
 - Update README.md ([81b1dee](https://github.com/tj-actions/eslint-changed-files/commit/81b1dee9af786a0e9e80906dd0f211631b12b8ad))  - (Tonye Jack)
 - Update README.md ([2bb5609](https://github.com/tj-actions/eslint-changed-files/commit/2bb5609d2f88d880c772dea74669dfb144def8cb))  - (Tonye Jack)
-- Update dependency @testing-library/jest-dom to v5.13.0
- ([7ca15c1](https://github.com/tj-actions/eslint-changed-files/commit/7ca15c1b9a5a02a235d28cdfe13d3b82ffa828d4))  - (Renovate Bot)
-- Update dependency web-vitals to v2.0.1
- ([b53b7b9](https://github.com/tj-actions/eslint-changed-files/commit/b53b7b944f7db1fcdfe0168e5e1b288e16f6f6f5))  - (Renovate Bot)
-- Update dependency @types/react-dom to v17.0.6
- ([1bf6a42](https://github.com/tj-actions/eslint-changed-files/commit/1bf6a427a58654b43f89bd7de05a66c10ed762e1))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.9
- ([6c64729](https://github.com/tj-actions/eslint-changed-files/commit/6c647296340bcddcaa5b3714fa68ec858d00a731))  - (Renovate Bot)
-- Update dependency web-vitals to v2
- ([4567081](https://github.com/tj-actions/eslint-changed-files/commit/4567081e2b6ce42cda72224d3b66c056e622537f))  - (Renovate Bot)
-- Update tj-actions/sync-release-version action to v8.7
- ([865b02d](https://github.com/tj-actions/eslint-changed-files/commit/865b02d44ce1fdb863dc21e47690dd5b8f404f85))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.13.0 ([7ca15c1](https://github.com/tj-actions/eslint-changed-files/commit/7ca15c1b9a5a02a235d28cdfe13d3b82ffa828d4))  - (Renovate Bot)
+- Update dependency web-vitals to v2.0.1 ([b53b7b9](https://github.com/tj-actions/eslint-changed-files/commit/b53b7b944f7db1fcdfe0168e5e1b288e16f6f6f5))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.6 ([1bf6a42](https://github.com/tj-actions/eslint-changed-files/commit/1bf6a427a58654b43f89bd7de05a66c10ed762e1))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.9 ([6c64729](https://github.com/tj-actions/eslint-changed-files/commit/6c647296340bcddcaa5b3714fa68ec858d00a731))  - (Renovate Bot)
+- Update dependency web-vitals to v2 ([4567081](https://github.com/tj-actions/eslint-changed-files/commit/4567081e2b6ce42cda72224d3b66c056e622537f))  - (Renovate Bot)
+- Update tj-actions/sync-release-version action to v8.7 ([865b02d](https://github.com/tj-actions/eslint-changed-files/commit/865b02d44ce1fdb863dc21e47690dd5b8f404f85))  - (Renovate Bot)
 - Updated .github/workflows/auto-merge.yml ([08053c0](https://github.com/tj-actions/eslint-changed-files/commit/08053c058a016d6f12a14e4e4db99302cf48fa84))  - (Tonye Jack)
 - Updated .github/workflows/auto-merge.yml ([3c1f86a](https://github.com/tj-actions/eslint-changed-files/commit/3c1f86a0d671385e976c86c1db44b700b112489f))  - (Tonye Jack)
-- Update actions/cache action to v2.1.6
- ([2fdb82a](https://github.com/tj-actions/eslint-changed-files/commit/2fdb82adfb82fd3b38656f82e393dbab84afbae2))  - (Renovate Bot)
+- Update actions/cache action to v2.1.6 ([2fdb82a](https://github.com/tj-actions/eslint-changed-files/commit/2fdb82adfb82fd3b38656f82e393dbab84afbae2))  - (Renovate Bot)
 - Updated .github/workflows/auto-approve.yml ([06f4f62](https://github.com/tj-actions/eslint-changed-files/commit/06f4f626fa43edb12b46982de79c10d4fc9f7015))  - (Tonye Jack)
 - Updated .github/workflows/auto-merge.yml ([a4a2c11](https://github.com/tj-actions/eslint-changed-files/commit/a4a2c11317d2a288b9e7dbf920bffe90ed27c941))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([83a33a2](https://github.com/tj-actions/eslint-changed-files/commit/83a33a238625e29a69182c4300f95297670faf63))  - (Renovate Bot)
-- Lock file maintenance
- ([061d550](https://github.com/tj-actions/eslint-changed-files/commit/061d55066fc0bb77b9b2dd241891fbe432e50e20))  - (Renovate Bot)
-- Lock file maintenance
- ([bc7b703](https://github.com/tj-actions/eslint-changed-files/commit/bc7b703381bc487dd893d136e230e043fca9f226))  - (Renovate Bot)
-- Lock file maintenance
- ([b2304b2](https://github.com/tj-actions/eslint-changed-files/commit/b2304b2fbd9a5727bedb7494ba25d44d893ebf20))  - (Renovate Bot)
+- Lock file maintenance ([83a33a2](https://github.com/tj-actions/eslint-changed-files/commit/83a33a238625e29a69182c4300f95297670faf63))  - (Renovate Bot)
+- Lock file maintenance ([061d550](https://github.com/tj-actions/eslint-changed-files/commit/061d55066fc0bb77b9b2dd241891fbe432e50e20))  - (Renovate Bot)
+- Lock file maintenance ([bc7b703](https://github.com/tj-actions/eslint-changed-files/commit/bc7b703381bc487dd893d136e230e043fca9f226))  - (Renovate Bot)
+- Lock file maintenance ([b2304b2](https://github.com/tj-actions/eslint-changed-files/commit/b2304b2fbd9a5727bedb7494ba25d44d893ebf20))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -5156,9 +4883,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([c2be1ea](https://
 
 ## <!-- 1 -->🐛 Bug Fixes
 
-- Fixed bug matching excluded files ([#105](https://github.com/tj-actions/eslint-changed-files/issues/105))
-
- ([cb60408](https://github.com/tj-actions/eslint-changed-files/commit/cb604081b52397cd839e4c4d8418f74b60b6e386))  - (Tonye Jack)
+- Fixed bug matching excluded files ([#105](https://github.com/tj-actions/eslint-changed-files/issues/105)) ([cb60408](https://github.com/tj-actions/eslint-changed-files/commit/cb604081b52397cd839e4c4d8418f74b60b6e386))  - (Tonye Jack)
 
 ## <!-- 13 -->📦 Bumps
 
@@ -5179,34 +4904,26 @@ Signed-off-by: dependabot[bot] <support@github.com> ([3c3276e](https://github.co
 
 ## <!-- 26 -->🔄 Update
 
-- Update pascalgn/automerge-action action to v0.14.2
- ([9c7c111](https://github.com/tj-actions/eslint-changed-files/commit/9c7c111244401061c1c76d98034808a41f3060d3))  - (Renovate Bot)
-- Update dependency typescript to v4.3.2
- ([45480e6](https://github.com/tj-actions/eslint-changed-files/commit/45480e60fc2023ace7a755921e3afe87edc8b09f))  - (Renovate Bot)
-- Update entrypoint.sh ([#104](https://github.com/tj-actions/eslint-changed-files/issues/104))
-
- ([20d36c8](https://github.com/tj-actions/eslint-changed-files/commit/20d36c84835d41e383de66421b10b2e46f741c08))  - (Tonye Jack)
+- Update pascalgn/automerge-action action to v0.14.2 ([9c7c111](https://github.com/tj-actions/eslint-changed-files/commit/9c7c111244401061c1c76d98034808a41f3060d3))  - (Renovate Bot)
+- Update dependency typescript to v4.3.2 ([45480e6](https://github.com/tj-actions/eslint-changed-files/commit/45480e60fc2023ace7a755921e3afe87edc8b09f))  - (Renovate Bot)
+- Update entrypoint.sh ([#104](https://github.com/tj-actions/eslint-changed-files/issues/104)) ([20d36c8](https://github.com/tj-actions/eslint-changed-files/commit/20d36c84835d41e383de66421b10b2e46f741c08))  - (Tonye Jack)
 - Update dependency @types/react to v17.0.8 ([#103](https://github.com/tj-actions/eslint-changed-files/issues/103))
 
 Co-authored-by: Renovate Bot <bot@renovateapp.com>
 Co-authored-by: Tonye Jack <jtonye@ymail.com> ([e7431b2](https://github.com/tj-actions/eslint-changed-files/commit/e7431b271123caffbd9cd856b4c9c6aa774ad850))  - (renovate[bot])
 - Update entrypoint.sh ([3847e02](https://github.com/tj-actions/eslint-changed-files/commit/3847e02e3549e100987b87cd4e2b4e8c5543d0fe))  - (Tonye Jack)
-- Update dependency @types/react to v17.0.7
- ([93adfd4](https://github.com/tj-actions/eslint-changed-files/commit/93adfd4d1d3e4f7c85e29dfd73c793332a586036))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.7 ([93adfd4](https://github.com/tj-actions/eslint-changed-files/commit/93adfd4d1d3e4f7c85e29dfd73c793332a586036))  - (Renovate Bot)
 - Updated renovate.json ([37d57b4](https://github.com/tj-actions/eslint-changed-files/commit/37d57b45b643683f2f193f9d7ca0c58a8cc80e35))  - (Tonye Jack)
 - Updated .github/workflows/auto-approve.yml ([4757c6b](https://github.com/tj-actions/eslint-changed-files/commit/4757c6befe9aa832bef75fa30d2ce00bef6329ad))  - (Tonye Jack)
 - Update Dockerfile ([0a19824](https://github.com/tj-actions/eslint-changed-files/commit/0a198241b7b5d88dceb1c918125b042a6022dec5))  - (Tonye Jack)
 - Update README.md ([717442e](https://github.com/tj-actions/eslint-changed-files/commit/717442ef9c50dfc6feac196166fd3b3826835717))  - (Tonye Jack)
-- Update dependency @types/node to v15.3.1
- ([e0fa7b3](https://github.com/tj-actions/eslint-changed-files/commit/e0fa7b3dfa6e66841907792ca8ef5952baa9a999))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.6
- ([3b07823](https://github.com/tj-actions/eslint-changed-files/commit/3b07823270eee96a03f82c54d0fe7840ae589ad1))  - (Renovate Bot)
+- Update dependency @types/node to v15.3.1 ([e0fa7b3](https://github.com/tj-actions/eslint-changed-files/commit/e0fa7b3dfa6e66841907792ca8ef5952baa9a999))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.6 ([3b07823](https://github.com/tj-actions/eslint-changed-files/commit/3b07823270eee96a03f82c54d0fe7840ae589ad1))  - (Renovate Bot)
 - Update README.md ([3a118c3](https://github.com/tj-actions/eslint-changed-files/commit/3a118c32b9b3cfd5a022470258230c3c5df6f9fd))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([7320b12](https://github.com/tj-actions/eslint-changed-files/commit/7320b129dab4042459f01af6adad49e720d69178))  - (Renovate Bot)
+- Lock file maintenance ([7320b12](https://github.com/tj-actions/eslint-changed-files/commit/7320b129dab4042459f01af6adad49e720d69178))  - (Renovate Bot)
 
 ## <!-- 9 -->⬆️ Upgrades
 
@@ -5229,9 +4946,7 @@ Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([25efcd3](https://
 
 ## <!-- 1 -->🐛 Bug Fixes
 
-- Fixed bug with excluded files. ([#91](https://github.com/tj-actions/eslint-changed-files/issues/91))
-
- ([9987550](https://github.com/tj-actions/eslint-changed-files/commit/9987550d8d85735daf2cc170c3d327884ad01209))  - (Tonye Jack)
+- Fixed bug with excluded files. ([#91](https://github.com/tj-actions/eslint-changed-files/issues/91)) ([9987550](https://github.com/tj-actions/eslint-changed-files/commit/9987550d8d85735daf2cc170c3d327884ad01209))  - (Tonye Jack)
 
 ## <!-- 13 -->📦 Bumps
 
@@ -5293,20 +5008,13 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([2a2bc6e](https
 
 ## <!-- 26 -->🔄 Update
 
-- Update cirrus-actions/rebase action to v1.5
- ([ac99be9](https://github.com/tj-actions/eslint-changed-files/commit/ac99be984d05aacf809e7021f6ac30511e09c7af))  - (Renovate Bot)
-- Update dependency @types/node to v15.3.0
- ([9433543](https://github.com/tj-actions/eslint-changed-files/commit/9433543ebfa2f1bf0121fb338d13c166737b416a))  - (Renovate Bot)
-- Update README.md ([#84](https://github.com/tj-actions/eslint-changed-files/issues/84))
-
- ([75604a9](https://github.com/tj-actions/eslint-changed-files/commit/75604a99daabc15f406709e7e54ebc1dc0bdefd0))  - (Tonye Jack)
-- Update to list all excluded files on a new line ([#86](https://github.com/tj-actions/eslint-changed-files/issues/86))
-
- ([8b1d291](https://github.com/tj-actions/eslint-changed-files/commit/8b1d291a42af367259d311f626a0f91d798c1e2c))  - (Tonye Jack)
+- Update cirrus-actions/rebase action to v1.5 ([ac99be9](https://github.com/tj-actions/eslint-changed-files/commit/ac99be984d05aacf809e7021f6ac30511e09c7af))  - (Renovate Bot)
+- Update dependency @types/node to v15.3.0 ([9433543](https://github.com/tj-actions/eslint-changed-files/commit/9433543ebfa2f1bf0121fb338d13c166737b416a))  - (Renovate Bot)
+- Update README.md ([#84](https://github.com/tj-actions/eslint-changed-files/issues/84)) ([75604a9](https://github.com/tj-actions/eslint-changed-files/commit/75604a99daabc15f406709e7e54ebc1dc0bdefd0))  - (Tonye Jack)
+- Update to list all excluded files on a new line ([#86](https://github.com/tj-actions/eslint-changed-files/issues/86)) ([8b1d291](https://github.com/tj-actions/eslint-changed-files/commit/8b1d291a42af367259d311f626a0f91d798c1e2c))  - (Tonye Jack)
 - Update README.md ([7102fe0](https://github.com/tj-actions/eslint-changed-files/commit/7102fe0b131f710488855d3bab7d4e0a3571f304))  - (Tonye Jack)
 - Update README.md ([d0b2e69](https://github.com/tj-actions/eslint-changed-files/commit/d0b2e694c94bba89d59535721d0eb71d765d9c3b))  - (Tonye Jack)
-- Update dependency @testing-library/react to v11.2.7
- ([0d65f8b](https://github.com/tj-actions/eslint-changed-files/commit/0d65f8b58138a0f687ce562ff3a053bb448a682a))  - (Renovate Bot)
+- Update dependency @testing-library/react to v11.2.7 ([0d65f8b](https://github.com/tj-actions/eslint-changed-files/commit/0d65f8b58138a0f687ce562ff3a053bb448a682a))  - (Renovate Bot)
 - Update entrypoint.sh ([36af497](https://github.com/tj-actions/eslint-changed-files/commit/36af49781cd4e418ec4ed89f9c535336eada32e4))  - (Tonye Jack)
 - Update entrypoint.sh ([ee611d5](https://github.com/tj-actions/eslint-changed-files/commit/ee611d5f55a15365317ec571ecb2e50da18ed969))  - (Tonye Jack)
 - Update entrypoint.sh ([7cad7d5](https://github.com/tj-actions/eslint-changed-files/commit/7cad7d5527702ddcb07fe2bc76841b18bb08d322))  - (Tonye Jack)
@@ -5344,79 +5052,54 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([2a2bc6e](https
 - Update test.yml ([33637cf](https://github.com/tj-actions/eslint-changed-files/commit/33637cf9cec4f4158a5dad598e363105c6d1582f))  - (Tonye Jack)
 - Update test.yml ([10e6f40](https://github.com/tj-actions/eslint-changed-files/commit/10e6f40baaf51139db38ca544bed38c373d2ced6))  - (Tonye Jack)
 - Update entrypoint.sh ([8c441f4](https://github.com/tj-actions/eslint-changed-files/commit/8c441f49ee7e6af6033becd9df459492f139c3d5))  - (Tonye Jack)
-- Update dependency @types/react-dom to v17.0.5
- ([86d4074](https://github.com/tj-actions/eslint-changed-files/commit/86d4074391d2107775e2813d247baa3c73576165))  - (Renovate Bot)
-- Update dependency @types/node to v15.0.3
- ([76fcb59](https://github.com/tj-actions/eslint-changed-files/commit/76fcb5956ee3ea97f9797fea9a7946ee573835bf))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.1.9
- ([26ef990](https://github.com/tj-actions/eslint-changed-files/commit/26ef990a3e2e07986aa95bbc3957546ad5668900))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.5 ([86d4074](https://github.com/tj-actions/eslint-changed-files/commit/86d4074391d2107775e2813d247baa3c73576165))  - (Renovate Bot)
+- Update dependency @types/node to v15.0.3 ([76fcb59](https://github.com/tj-actions/eslint-changed-files/commit/76fcb5956ee3ea97f9797fea9a7946ee573835bf))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.9 ([26ef990](https://github.com/tj-actions/eslint-changed-files/commit/26ef990a3e2e07986aa95bbc3957546ad5668900))  - (Renovate Bot)
 - Updated .github/workflows/auto-merge.yml ([5392470](https://github.com/tj-actions/eslint-changed-files/commit/539247039eb3c358f73cbe4f1d485924de8b1fdb))  - (Tonye Jack)
 - Updated .github/workflows/auto-merge.yml ([37436f8](https://github.com/tj-actions/eslint-changed-files/commit/37436f8e8d89b035605c22f383982cb697b2e0cd))  - (Tonye Jack)
 - Updated .github/workflows/auto-merge.yml ([d542ecb](https://github.com/tj-actions/eslint-changed-files/commit/d542ecb867161dbf1ad21194b5bcae160db9cf56))  - (Tonye Jack)
 - Updated .github/workflows/auto-merge.yml ([8504cfb](https://github.com/tj-actions/eslint-changed-files/commit/8504cfb983e213855fbe5f9e23d928e9c0584a24))  - (Tonye Jack)
-- Update dependency @types/react-dom to v17.0.4
- ([9077ab6](https://github.com/tj-actions/eslint-changed-files/commit/9077ab64412eaa1477d56a4d1d00bd917495bfd8))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.4 ([9077ab6](https://github.com/tj-actions/eslint-changed-files/commit/9077ab64412eaa1477d56a4d1d00bd917495bfd8))  - (Renovate Bot)
 - Update entrypoint.sh ([e9d05de](https://github.com/tj-actions/eslint-changed-files/commit/e9d05de50f17bc9c97032e1543504f8a349da393))  - (Tonye Jack)
-- Update tj-actions/sync-release-version action to v8.6
- ([239623e](https://github.com/tj-actions/eslint-changed-files/commit/239623e6dc4a4e870f0ebc7485e3542fa51733fa))  - (Renovate Bot)
-- Update dependency web-vitals to v1.1.2
- ([9ffd870](https://github.com/tj-actions/eslint-changed-files/commit/9ffd8706ec8b51a43aa7dfe554e6430673f11d90))  - (Renovate Bot)
-- Update dependency @types/node to v15.0.2
- ([2369871](https://github.com/tj-actions/eslint-changed-files/commit/23698714baa95b0199d6ee82b27ba1fb907bef6c))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.5
- ([e303b27](https://github.com/tj-actions/eslint-changed-files/commit/e303b278fa310a7c1e55c17eef9cda7282d0ccbf))  - (Renovate Bot)
-- Update tj-actions/github-changelog-generator action to v1.8
- ([2be1066](https://github.com/tj-actions/eslint-changed-files/commit/2be10664582e9edb971794f2cf07b9537ab078ef))  - (Renovate Bot)
+- Update tj-actions/sync-release-version action to v8.6 ([239623e](https://github.com/tj-actions/eslint-changed-files/commit/239623e6dc4a4e870f0ebc7485e3542fa51733fa))  - (Renovate Bot)
+- Update dependency web-vitals to v1.1.2 ([9ffd870](https://github.com/tj-actions/eslint-changed-files/commit/9ffd8706ec8b51a43aa7dfe554e6430673f11d90))  - (Renovate Bot)
+- Update dependency @types/node to v15.0.2 ([2369871](https://github.com/tj-actions/eslint-changed-files/commit/23698714baa95b0199d6ee82b27ba1fb907bef6c))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.5 ([e303b27](https://github.com/tj-actions/eslint-changed-files/commit/e303b278fa310a7c1e55c17eef9cda7282d0ccbf))  - (Renovate Bot)
+- Update tj-actions/github-changelog-generator action to v1.8 ([2be1066](https://github.com/tj-actions/eslint-changed-files/commit/2be10664582e9edb971794f2cf07b9537ab078ef))  - (Renovate Bot)
 - Update README.md ([60f1bc1](https://github.com/tj-actions/eslint-changed-files/commit/60f1bc1345779547d1b47f3f1e9fadb4c4140aa8))  - (Tonye Jack)
-- Update dependency stylelint to v13.13.1
- ([3423f5e](https://github.com/tj-actions/eslint-changed-files/commit/3423f5e9ec07dc659553a99060f2412d16b380d2))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.1.8
- ([b838c0c](https://github.com/tj-actions/eslint-changed-files/commit/b838c0cd60e2aa27da8ea9341a8bb78f85ada0fa))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.1.6
- ([00104a4](https://github.com/tj-actions/eslint-changed-files/commit/00104a4f60a39b431b465a5ec13ede644b591149))  - (Renovate Bot)
+- Update dependency stylelint to v13.13.1 ([3423f5e](https://github.com/tj-actions/eslint-changed-files/commit/3423f5e9ec07dc659553a99060f2412d16b380d2))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.8 ([b838c0c](https://github.com/tj-actions/eslint-changed-files/commit/b838c0cd60e2aa27da8ea9341a8bb78f85ada0fa))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.6 ([00104a4](https://github.com/tj-actions/eslint-changed-files/commit/00104a4f60a39b431b465a5ec13ede644b591149))  - (Renovate Bot)
 - Updated .github/workflows/auto-approve.yml ([e58787a](https://github.com/tj-actions/eslint-changed-files/commit/e58787a656651b47f0b681bc6786a1237fe2bac9))  - (Tonye Jack)
-- Update dependency @types/node to v14.14.43
- ([798c8f7](https://github.com/tj-actions/eslint-changed-files/commit/798c8f787a76fc1c13f3cd73f64b1a5862dfaa69))  - (Renovate Bot)
-- Update dependency @types/node to v14.14.42
- ([44961f7](https://github.com/tj-actions/eslint-changed-files/commit/44961f729566ca24684b5e055618516f7ce7cc6b))  - (Renovate Bot)
-- Update dependency @types/react to v17.0.4
- ([17baf2a](https://github.com/tj-actions/eslint-changed-files/commit/17baf2a6fece187aa5b2cef319fb0d690b1a522e))  - (Renovate Bot)
-- Update dependency @types/jest to v26.0.23
- ([d815e66](https://github.com/tj-actions/eslint-changed-files/commit/d815e66f222892609bb9515345a77a23e77d09bf))  - (Renovate Bot)
+- Update dependency @types/node to v14.14.43 ([798c8f7](https://github.com/tj-actions/eslint-changed-files/commit/798c8f787a76fc1c13f3cd73f64b1a5862dfaa69))  - (Renovate Bot)
+- Update dependency @types/node to v14.14.42 ([44961f7](https://github.com/tj-actions/eslint-changed-files/commit/44961f729566ca24684b5e055618516f7ce7cc6b))  - (Renovate Bot)
+- Update dependency @types/react to v17.0.4 ([17baf2a](https://github.com/tj-actions/eslint-changed-files/commit/17baf2a6fece187aa5b2cef319fb0d690b1a522e))  - (Renovate Bot)
+- Update dependency @types/jest to v26.0.23 ([d815e66](https://github.com/tj-actions/eslint-changed-files/commit/d815e66f222892609bb9515345a77a23e77d09bf))  - (Renovate Bot)
 - Updated renovate.json ([e13fd1f](https://github.com/tj-actions/eslint-changed-files/commit/e13fd1fc99a29f463f37fbf0435fbacccc6a9e6f))  - (Tonye Jack)
-- Update tj-actions/github-changelog-generator action to v1.6
- ([7a8ae82](https://github.com/tj-actions/eslint-changed-files/commit/7a8ae82cb87923823b9cc46880803f022122710b))  - (Renovate Bot)
-- Update dependency stylelint-config-standard to v22
- ([094c8ef](https://github.com/tj-actions/eslint-changed-files/commit/094c8ef9a64dceda34ed055ff8c7c1eb14bb2592))  - (Renovate Bot)
-- Update dependency stylelint to v13.13.0
- ([745783d](https://github.com/tj-actions/eslint-changed-files/commit/745783db11ea86f7d2771028b119fe2cb92f3624))  - (Renovate Bot)
+- Update tj-actions/github-changelog-generator action to v1.6 ([7a8ae82](https://github.com/tj-actions/eslint-changed-files/commit/7a8ae82cb87923823b9cc46880803f022122710b))  - (Renovate Bot)
+- Update dependency stylelint-config-standard to v22 ([094c8ef](https://github.com/tj-actions/eslint-changed-files/commit/094c8ef9a64dceda34ed055ff8c7c1eb14bb2592))  - (Renovate Bot)
+- Update dependency stylelint to v13.13.0 ([745783d](https://github.com/tj-actions/eslint-changed-files/commit/745783db11ea86f7d2771028b119fe2cb92f3624))  - (Renovate Bot)
 
 ## <!-- 30 -->📝 Other
 
-- Lock file maintenance
- ([42463f0](https://github.com/tj-actions/eslint-changed-files/commit/42463f0c36c0495014c03ffd8a3fb45570269885))  - (Renovate Bot)
-- Lock file maintenance
- ([ebed757](https://github.com/tj-actions/eslint-changed-files/commit/ebed7574279cf42e5b4a91b265c84333ba66ad47))  - (Renovate Bot)
+- Lock file maintenance ([42463f0](https://github.com/tj-actions/eslint-changed-files/commit/42463f0c36c0495014c03ffd8a3fb45570269885))  - (Renovate Bot)
+- Lock file maintenance ([ebed757](https://github.com/tj-actions/eslint-changed-files/commit/ebed7574279cf42e5b4a91b265c84333ba66ad47))  - (Renovate Bot)
 - PR [#82](https://github.com/tj-actions/eslint-changed-files/pull/82): dependency @testing-library/react to v11.2.7 ([309cf05](https://github.com/tj-actions/eslint-changed-files/commit/309cf05d5229651ce1e28591fde09ee7c5f559cf))  - (Tonye Jack)
 - PR [#83](https://github.com/tj-actions/eslint-changed-files/pull/83): ([b4b72c4](https://github.com/tj-actions/eslint-changed-files/commit/b4b72c43e3d1f2bdc3851d2ab57a34967fb7d3e2))  - (Tonye Jack)
 - PR [#79](https://github.com/tj-actions/eslint-changed-files/pull/79): ([6bdd8cc](https://github.com/tj-actions/eslint-changed-files/commit/6bdd8cc3ed215cf1a48d6892fba0fcb6683da193))  - (Tonye Jack)
 - Merge branch 'main' into feature/fix-bug-with-filtering ([f3ad23e](https://github.com/tj-actions/eslint-changed-files/commit/f3ad23e8c000b172a04a3172520ff951addf8da4))  - (Tonye Jack)
 - PR [#81](https://github.com/tj-actions/eslint-changed-files/pull/81): ([c922294](https://github.com/tj-actions/eslint-changed-files/commit/c92229466c8217d71e40c2554625abae8fa1e94e))  - (Tonye Jack)
 - Switch from positional arguments to INPUT_* ([874458b](https://github.com/tj-actions/eslint-changed-files/commit/874458b6132b08f8cf95a1b17c3c0261956c6023))  - (Tonye Jack)
-- Lock file maintenance
- ([6366cbc](https://github.com/tj-actions/eslint-changed-files/commit/6366cbce27d088b63f27ca2cd5b86e3c2becb0ee))  - (Renovate Bot)
+- Lock file maintenance ([6366cbc](https://github.com/tj-actions/eslint-changed-files/commit/6366cbce27d088b63f27ca2cd5b86e3c2becb0ee))  - (Renovate Bot)
 - PR [#64](https://github.com/tj-actions/eslint-changed-files/pull/64): ([372ac87](https://github.com/tj-actions/eslint-changed-files/commit/372ac8709e907c8a55ddb94bc8ca06551a4db5ff))  - (Tonye Jack)
-- Lock file maintenance
- ([8a204e3](https://github.com/tj-actions/eslint-changed-files/commit/8a204e3984b9a6626e6448e310f890ad993b1900))  - (Renovate Bot)
+- Lock file maintenance ([8a204e3](https://github.com/tj-actions/eslint-changed-files/commit/8a204e3984b9a6626e6448e310f890ad993b1900))  - (Renovate Bot)
 - PR [#61](https://github.com/tj-actions/eslint-changed-files/pull/61): tj-actions/sync-release-version from v8 to v8.5 ([e79c7bb](https://github.com/tj-actions/eslint-changed-files/commit/e79c7bbde5df34bece0c662eeb726f9361b48fc3))  - (Tonye Jack)
 - PR [#60](https://github.com/tj-actions/eslint-changed-files/pull/60): ([8ead47b](https://github.com/tj-actions/eslint-changed-files/commit/8ead47b6bfcf4e8a5087cab2071fa1845ec3faf5))  - (Tonye Jack)
 - PR [#57](https://github.com/tj-actions/eslint-changed-files/pull/57): ([f50199e](https://github.com/tj-actions/eslint-changed-files/commit/f50199e2f22ab7a5aa66c75c76aba2a26330e6bc))  - (dependabot-preview[bot])
-- Lock file maintenance
- ([b2609e2](https://github.com/tj-actions/eslint-changed-files/commit/b2609e28cbe415845af7952590383fad036ba064))  - (Renovate Bot)
+- Lock file maintenance ([b2609e2](https://github.com/tj-actions/eslint-changed-files/commit/b2609e28cbe415845af7952590383fad036ba064))  - (Renovate Bot)
 - PR [#49](https://github.com/tj-actions/eslint-changed-files/pull/49): dependency stylelint-config-standard to v22 ([49222bb](https://github.com/tj-actions/eslint-changed-files/commit/49222bbc91d3137a1a0d9664117a6664060dbfb2))  - (Tonye Jack)
 - PR [#47](https://github.com/tj-actions/eslint-changed-files/pull/47): ([599a8df](https://github.com/tj-actions/eslint-changed-files/commit/599a8df131399d48c9c4adb09449f015b23149de))  - (Tonye Jack)
-- Lock file maintenance
- ([ebb0b7d](https://github.com/tj-actions/eslint-changed-files/commit/ebb0b7d8f6a439e06bc6242d689bc7a501c0e518))  - (Renovate Bot)
+- Lock file maintenance ([ebb0b7d](https://github.com/tj-actions/eslint-changed-files/commit/ebb0b7d8f6a439e06bc6242d689bc7a501c0e518))  - (Renovate Bot)
 - PR [#46](https://github.com/tj-actions/eslint-changed-files/pull/46): to v5.2 ([84c07bf](https://github.com/tj-actions/eslint-changed-files/commit/84c07bfabed84a445dbc7c8a76b5b70256458608))  - (Tonye Jack)
 
 ## <!-- 9 -->⬆️ Upgrades
@@ -5425,8 +5108,7 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([2a2bc6e](https
 
 Co-authored-by: jackton1 <jackton1@users.noreply.github.com> ([d1577a9](https://github.com/tj-actions/eslint-changed-files/commit/d1577a927aec84154dd4530534ddf84419f23ffe))  - (Tonye Jack)
 - Upgrade to GitHub-native Dependabot ([d35b79a](https://github.com/tj-actions/eslint-changed-files/commit/d35b79a44fd6dd06bd4d5f52c7a4324542377815))  - (dependabot-preview[bot])
-- Upgraded from v5.1 -> v5.2
- ([9c772b4](https://github.com/tj-actions/eslint-changed-files/commit/9c772b42d97e92ce8c2ae60fd5ec2f2229605207))  - (jackton1)
+- Upgraded from v5.1 -> v5.2 ([9c772b4](https://github.com/tj-actions/eslint-changed-files/commit/9c772b42d97e92ce8c2ae60fd5ec2f2229605207))  - (jackton1)
 
 # [5.2](https://github.com/tj-actions/eslint-changed-files/compare/v5.1...v5.2) - (2021-04-23)
 
@@ -5460,62 +5142,42 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([0033e96](https
 
 ## <!-- 26 -->🔄 Update
 
-- Update dependency @testing-library/jest-dom to v5.12.0
- ([3d25ad4](https://github.com/tj-actions/eslint-changed-files/commit/3d25ad40c050eb06eaf9257ca9a894b9187358ba))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.1.5
- ([50136ab](https://github.com/tj-actions/eslint-changed-files/commit/50136abf9cef9355220dba5aa0ed0352d842d601))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.1.4
- ([b7556cf](https://github.com/tj-actions/eslint-changed-files/commit/b7556cfc28c8021b677d4060c866195a2c88f998))  - (Renovate Bot)
-- Update dependency @types/node to v12.20.10
- ([6d7ded4](https://github.com/tj-actions/eslint-changed-files/commit/6d7ded449eaed7081ba7962809d3bca8a10a3518))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13.1.3
- ([9da4850](https://github.com/tj-actions/eslint-changed-files/commit/9da48506500a417b6f7c57bb053664e2bb5ea029))  - (Renovate Bot)
-- Update alpine Docker tag to v3.13.5
- ([40b678b](https://github.com/tj-actions/eslint-changed-files/commit/40b678b2695e4652c11177fe44b7703fea33d319))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.12.0 ([3d25ad4](https://github.com/tj-actions/eslint-changed-files/commit/3d25ad40c050eb06eaf9257ca9a894b9187358ba))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.5 ([50136ab](https://github.com/tj-actions/eslint-changed-files/commit/50136abf9cef9355220dba5aa0ed0352d842d601))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.4 ([b7556cf](https://github.com/tj-actions/eslint-changed-files/commit/b7556cfc28c8021b677d4060c866195a2c88f998))  - (Renovate Bot)
+- Update dependency @types/node to v12.20.10 ([6d7ded4](https://github.com/tj-actions/eslint-changed-files/commit/6d7ded449eaed7081ba7962809d3bca8a10a3518))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.3 ([9da4850](https://github.com/tj-actions/eslint-changed-files/commit/9da48506500a417b6f7c57bb053664e2bb5ea029))  - (Renovate Bot)
+- Update alpine Docker tag to v3.13.5 ([40b678b](https://github.com/tj-actions/eslint-changed-files/commit/40b678b2695e4652c11177fe44b7703fea33d319))  - (Renovate Bot)
 - Updated renovate.json ([3e49df1](https://github.com/tj-actions/eslint-changed-files/commit/3e49df1970a4fd8a207fdeeca446e857d50f21b0))  - (Tonye Jack)
 - Update renovate.json ([4d57f63](https://github.com/tj-actions/eslint-changed-files/commit/4d57f63342a33ce6db9cbb5a84e7a0cdaca8f416))  - (Tonye Jack)
-- Update dependency @testing-library/user-event to v13.1.2
- ([9aab07b](https://github.com/tj-actions/eslint-changed-files/commit/9aab07b84705d4094d727f3f21a0e4e211d39847))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.2 ([9aab07b](https://github.com/tj-actions/eslint-changed-files/commit/9aab07b84705d4094d727f3f21a0e4e211d39847))  - (Renovate Bot)
 - Update README.md ([c6f0547](https://github.com/tj-actions/eslint-changed-files/commit/c6f0547d5aa673f7a7b97257ac4830a14932380d))  - (Tonye Jack)
-- Update dependency @testing-library/user-event to v13.1.1
- ([09edf2b](https://github.com/tj-actions/eslint-changed-files/commit/09edf2bf38a50b4a257d05cfd2cf92d10a208e0a))  - (Renovate Bot)
-- Update dependency @testing-library/react to v11.2.6
- ([f42a558](https://github.com/tj-actions/eslint-changed-files/commit/f42a558353acebf412e52bc18c51275fedf2696e))  - (Renovate Bot)
-- Update dependency @types/node to v12.20.7
- ([1c2e719](https://github.com/tj-actions/eslint-changed-files/commit/1c2e719592e573f698db83156b0b40b99730f2c4))  - (Renovate Bot)
-- Update dependency @types/react-dom to v17.0.3
- ([5567dcc](https://github.com/tj-actions/eslint-changed-files/commit/5567dcc673a542fda8bf3f2eddd8ad494f566e83))  - (Renovate Bot)
-- Update dependency typescript to v4.2.4
- ([f345557](https://github.com/tj-actions/eslint-changed-files/commit/f345557414426d5bee5b79cb26cf430fea239a02))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13.1.1 ([09edf2b](https://github.com/tj-actions/eslint-changed-files/commit/09edf2bf38a50b4a257d05cfd2cf92d10a208e0a))  - (Renovate Bot)
+- Update dependency @testing-library/react to v11.2.6 ([f42a558](https://github.com/tj-actions/eslint-changed-files/commit/f42a558353acebf412e52bc18c51275fedf2696e))  - (Renovate Bot)
+- Update dependency @types/node to v12.20.7 ([1c2e719](https://github.com/tj-actions/eslint-changed-files/commit/1c2e719592e573f698db83156b0b40b99730f2c4))  - (Renovate Bot)
+- Update dependency @types/react-dom to v17.0.3 ([5567dcc](https://github.com/tj-actions/eslint-changed-files/commit/5567dcc673a542fda8bf3f2eddd8ad494f566e83))  - (Renovate Bot)
+- Update dependency typescript to v4.2.4 ([f345557](https://github.com/tj-actions/eslint-changed-files/commit/f345557414426d5bee5b79cb26cf430fea239a02))  - (Renovate Bot)
 - Update README.md ([7f589cc](https://github.com/tj-actions/eslint-changed-files/commit/7f589cca580a55c6ba552eed56ee7aafdee0c51c))  - (Tonye Jack)
 - Update README.md ([f776cc3](https://github.com/tj-actions/eslint-changed-files/commit/f776cc32bc153af82e212ee86e660f885a100eea))  - (Tonye Jack)
 - Update README.md ([6fa189c](https://github.com/tj-actions/eslint-changed-files/commit/6fa189cab5146b1a42fd1f797f6a806cd78352a7))  - (Tonye Jack)
-- Update dependency @types/jest to v26.0.22
- ([4690adb](https://github.com/tj-actions/eslint-changed-files/commit/4690adb06dc99b3fc101ae1895fc35eb529ef39c))  - (Renovate Bot)
+- Update dependency @types/jest to v26.0.22 ([4690adb](https://github.com/tj-actions/eslint-changed-files/commit/4690adb06dc99b3fc101ae1895fc35eb529ef39c))  - (Renovate Bot)
 - Updated .github/workflows/sync-release-version.yml ([68ff3f0](https://github.com/tj-actions/eslint-changed-files/commit/68ff3f0083c05b539b6c29a58b0f6838fd086e54))  - (Tonye Jack)
-- Update dependency @testing-library/jest-dom to v5.11.10
- ([de08ef9](https://github.com/tj-actions/eslint-changed-files/commit/de08ef980e0e2cec619fc4c99291132c24f593b5))  - (Renovate Bot)
+- Update dependency @testing-library/jest-dom to v5.11.10 ([de08ef9](https://github.com/tj-actions/eslint-changed-files/commit/de08ef980e0e2cec619fc4c99291132c24f593b5))  - (Renovate Bot)
 - Update test.yml ([0e964eb](https://github.com/tj-actions/eslint-changed-files/commit/0e964ebffc5075387025a2221516d624d74531dc))  - (Tonye Jack)
-- Update react monorepo to v17.0.2
- ([5cee7a6](https://github.com/tj-actions/eslint-changed-files/commit/5cee7a6eb02488008c3380f14a4e42250e6a7de3))  - (Renovate Bot)
+- Update react monorepo to v17.0.2 ([5cee7a6](https://github.com/tj-actions/eslint-changed-files/commit/5cee7a6eb02488008c3380f14a4e42250e6a7de3))  - (Renovate Bot)
 - Updated .github/workflows/sync-release-version.yml ([eececb5](https://github.com/tj-actions/eslint-changed-files/commit/eececb5ef243c39d69b7c4fee69fd87b9e30a71d))  - (Tonye Jack)
-- Update dependency web-vitals to v1.1.1
- ([019c222](https://github.com/tj-actions/eslint-changed-files/commit/019c222f219aa88eb24ecddec5efa370854c5df0))  - (Renovate Bot)
+- Update dependency web-vitals to v1.1.1 ([019c222](https://github.com/tj-actions/eslint-changed-files/commit/019c222f219aa88eb24ecddec5efa370854c5df0))  - (Renovate Bot)
 - Updated .github/workflows/auto-approve.yml ([262c180](https://github.com/tj-actions/eslint-changed-files/commit/262c180d44705e1b9c43368bb50188f33956e378))  - (Tonye Jack)
 - Updated .github/FUNDING.yml ([00fe760](https://github.com/tj-actions/eslint-changed-files/commit/00fe76089f23e1d55fd2c009a7e889ed18578e94))  - (Tonye Jack)
 - Update auto-approve.yml ([35db7d5](https://github.com/tj-actions/eslint-changed-files/commit/35db7d5eba94ee1b05c831a96d45b97f1fe7f766))  - (Tonye Jack)
 - Update auto-approve.yml ([0fa3d04](https://github.com/tj-actions/eslint-changed-files/commit/0fa3d0467a4dda43b80069f6687dc1aacd8bb33f))  - (Tonye Jack)
-- Update dependency @types/node to v12.20.6
- ([51b57f7](https://github.com/tj-actions/eslint-changed-files/commit/51b57f7fb6e538ffc7e636b76818c31bf862eda0))  - (Renovate Bot)
-- Update dependency @testing-library/user-event to v13
- ([bfd18d5](https://github.com/tj-actions/eslint-changed-files/commit/bfd18d578d6c614365012c13a52696b63abfe9cd))  - (Renovate Bot)
-- Update alpine Docker tag to v3.13.3
- ([26c28ea](https://github.com/tj-actions/eslint-changed-files/commit/26c28eaf361419948b0bfe17b19bf3deb5eac75e))  - (Renovate Bot)
+- Update dependency @types/node to v12.20.6 ([51b57f7](https://github.com/tj-actions/eslint-changed-files/commit/51b57f7fb6e538ffc7e636b76818c31bf862eda0))  - (Renovate Bot)
+- Update dependency @testing-library/user-event to v13 ([bfd18d5](https://github.com/tj-actions/eslint-changed-files/commit/bfd18d578d6c614365012c13a52696b63abfe9cd))  - (Renovate Bot)
+- Update alpine Docker tag to v3.13.3 ([26c28ea](https://github.com/tj-actions/eslint-changed-files/commit/26c28eaf361419948b0bfe17b19bf3deb5eac75e))  - (Renovate Bot)
 
 ## <!-- 27 -->📌 Pin
 
-- Pin dependencies
- ([d349244](https://github.com/tj-actions/eslint-changed-files/commit/d3492441e4263a85a50e23968ba21dcc73a333e8))  - (Renovate Bot)
+- Pin dependencies ([d349244](https://github.com/tj-actions/eslint-changed-files/commit/d3492441e4263a85a50e23968ba21dcc73a333e8))  - (Renovate Bot)
 
 ## <!-- 29 -->👷 CI/CD
 
@@ -5525,8 +5187,7 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([0033e96](https
 ## <!-- 30 -->📝 Other
 
 - PR [#44](https://github.com/tj-actions/eslint-changed-files/pull/44): ([0a5bcc3](https://github.com/tj-actions/eslint-changed-files/commit/0a5bcc38d3da5cf272c790773315bd31f17318b4))  - (dependabot-preview[bot])
-- Lock file maintenance
- ([e801cf7](https://github.com/tj-actions/eslint-changed-files/commit/e801cf79a8991ae59f2d9c09dcd0aa07dcb60e4e))  - (Renovate Bot)
+- Lock file maintenance ([e801cf7](https://github.com/tj-actions/eslint-changed-files/commit/e801cf79a8991ae59f2d9c09dcd0aa07dcb60e4e))  - (Renovate Bot)
 - PR [#35](https://github.com/tj-actions/eslint-changed-files/pull/35): dependency @testing-library/user-event to v13.1.2 ([8b39a61](https://github.com/tj-actions/eslint-changed-files/commit/8b39a6151acdbb72b1a7cb52deedd0fa16ac6878))  - (Tonye Jack)
 - PR [#31](https://github.com/tj-actions/eslint-changed-files/pull/31): ([83022b8](https://github.com/tj-actions/eslint-changed-files/commit/83022b839b044b697448d705ea83ab0dd66851f2))  - (Tonye Jack)
 - PR [#30](https://github.com/tj-actions/eslint-changed-files/pull/30): dependency @testing-library/react to v11.2.6 ([d9bf0ea](https://github.com/tj-actions/eslint-changed-files/commit/d9bf0eabbf9b442c7b7437d4b0008d3309f35421))  - (Tonye Jack)
@@ -5545,8 +5206,7 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([0033e96](https
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v5 -> v5.1
- ([4fb4879](https://github.com/tj-actions/eslint-changed-files/commit/4fb487985a74449a7e237170405b13baecb964de))  - (jackton1)
+- Upgraded from v5 -> v5.1 ([4fb4879](https://github.com/tj-actions/eslint-changed-files/commit/4fb487985a74449a7e237170405b13baecb964de))  - (jackton1)
 
 # [5.1](https://github.com/tj-actions/eslint-changed-files/compare/v5...v5.1) - (2021-03-11)
 
@@ -5567,27 +5227,19 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([0033e96](https
 
 ## <!-- 9 -->⬆️ Upgrades
 
-- Upgraded from v4 -> v5
- ([08c13cc](https://github.com/tj-actions/eslint-changed-files/commit/08c13cc0c870bad187971ea9ba68e3e9bf531be5))  - (jackton1)
+- Upgraded from v4 -> v5 ([08c13cc](https://github.com/tj-actions/eslint-changed-files/commit/08c13cc0c870bad187971ea9ba68e3e9bf531be5))  - (jackton1)
 
 # [5](https://github.com/tj-actions/eslint-changed-files/compare/v4...v5) - (2021-03-08)
 
 ## <!-- 1 -->🐛 Bug Fixes
 
-- Fixed app and updated test config.
- ([4413e4a](https://github.com/tj-actions/eslint-changed-files/commit/4413e4ac8ca4d88be8f825dd0dd34c5e0f61b859))  - (Tonye Jack)
-- Fixed script.
- ([5a4ba94](https://github.com/tj-actions/eslint-changed-files/commit/5a4ba947811d3dca060685e7795ef88eae027c6c))  - (Tonye Jack)
-- Fixed script.
- ([8ac4c96](https://github.com/tj-actions/eslint-changed-files/commit/8ac4c9623a98ae14236fcb9d0d87d0e2b1ea1d28))  - (Tonye Jack)
-- Fixed script.
- ([817e45f](https://github.com/tj-actions/eslint-changed-files/commit/817e45feac8014c8ead83693e5eb32f6f95f5bb9))  - (Tonye Jack)
-- Fixed lint error.
- ([594965d](https://github.com/tj-actions/eslint-changed-files/commit/594965d7f1824fb5769d35244cb5b85c25763734))  - (Tonye Jack)
-- Fixed script.
- ([8dd8ffe](https://github.com/tj-actions/eslint-changed-files/commit/8dd8ffec488873d93d846f992feae36478600465))  - (Tonye Jack)
-- Fixed script.
- ([a356933](https://github.com/tj-actions/eslint-changed-files/commit/a356933898992437afbaf42cda5d4be192c924ec))  - (Tonye Jack)
+- Fixed app and updated test config. ([4413e4a](https://github.com/tj-actions/eslint-changed-files/commit/4413e4ac8ca4d88be8f825dd0dd34c5e0f61b859))  - (Tonye Jack)
+- Fixed script. ([5a4ba94](https://github.com/tj-actions/eslint-changed-files/commit/5a4ba947811d3dca060685e7795ef88eae027c6c))  - (Tonye Jack)
+- Fixed script. ([8ac4c96](https://github.com/tj-actions/eslint-changed-files/commit/8ac4c9623a98ae14236fcb9d0d87d0e2b1ea1d28))  - (Tonye Jack)
+- Fixed script. ([817e45f](https://github.com/tj-actions/eslint-changed-files/commit/817e45feac8014c8ead83693e5eb32f6f95f5bb9))  - (Tonye Jack)
+- Fixed lint error. ([594965d](https://github.com/tj-actions/eslint-changed-files/commit/594965d7f1824fb5769d35244cb5b85c25763734))  - (Tonye Jack)
+- Fixed script. ([8dd8ffe](https://github.com/tj-actions/eslint-changed-files/commit/8dd8ffec488873d93d846f992feae36478600465))  - (Tonye Jack)
+- Fixed script. ([a356933](https://github.com/tj-actions/eslint-changed-files/commit/a356933898992437afbaf42cda5d4be192c924ec))  - (Tonye Jack)
 
 ## <!-- 13 -->📦 Bumps
 
@@ -5609,8 +5261,7 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 
 ## <!-- 16 -->➕ Add
 
-- Added test-app.
- ([4daebd6](https://github.com/tj-actions/eslint-changed-files/commit/4daebd6f7f758ca5aaf9d14bc21b5f810ba8a8c0))  - (Tonye Jack)
+- Added test-app. ([4daebd6](https://github.com/tj-actions/eslint-changed-files/commit/4daebd6f7f758ca5aaf9d14bc21b5f810ba8a8c0))  - (Tonye Jack)
 - Create rebase.yml ([038c311](https://github.com/tj-actions/eslint-changed-files/commit/038c311e41efc10ade0ec8dcbb04ce0237ec3aef))  - (Tonye Jack)
 - Create sync-release-version.yml ([1422362](https://github.com/tj-actions/eslint-changed-files/commit/14223621746b576bb6b90246e2126846a21e6550))  - (Tonye Jack)
 - Create yamlint.yml ([388e716](https://github.com/tj-actions/eslint-changed-files/commit/388e71620e0cba7fd54ed6e7e5c50dff3be7ca7e))  - (Tonye Jack)
@@ -5632,12 +5283,9 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 - Update index.tsx ([eb5ec92](https://github.com/tj-actions/eslint-changed-files/commit/eb5ec920c6111359a8b6ddf29123238cd8bf2fb4))  - (Tonye Jack)
 - Update index.tsx ([eeb06f7](https://github.com/tj-actions/eslint-changed-files/commit/eeb06f7f4eb6b7c43a81c8564ba393ce767bf159))  - (Tonye Jack)
 - Update index.tsx ([b3d1563](https://github.com/tj-actions/eslint-changed-files/commit/b3d15630994fcdce2859d89a09274286547068b7))  - (Tonye Jack)
-- Updated formatting.
- ([fb64f51](https://github.com/tj-actions/eslint-changed-files/commit/fb64f5172d7c525736f2973d4ad707cf7dcc0821))  - (Tonye Jack)
-- Updated test.
- ([fc0609f](https://github.com/tj-actions/eslint-changed-files/commit/fc0609fd757ab3639ca52713712af8b8dcf85f8a))  - (Tonye Jack)
-- Updated script.
- ([af7d15e](https://github.com/tj-actions/eslint-changed-files/commit/af7d15e3b4bba95d6cbf89013152a8a121912167))  - (Tonye Jack)
+- Updated formatting. ([fb64f51](https://github.com/tj-actions/eslint-changed-files/commit/fb64f5172d7c525736f2973d4ad707cf7dcc0821))  - (Tonye Jack)
+- Updated test. ([fc0609f](https://github.com/tj-actions/eslint-changed-files/commit/fc0609fd757ab3639ca52713712af8b8dcf85f8a))  - (Tonye Jack)
+- Updated script. ([af7d15e](https://github.com/tj-actions/eslint-changed-files/commit/af7d15e3b4bba95d6cbf89013152a8a121912167))  - (Tonye Jack)
 - Update test.yml ([996d8a5](https://github.com/tj-actions/eslint-changed-files/commit/996d8a519d80b73f42d341faff384a965297bc96))  - (Tonye Jack)
 - Update test.yml ([43cd252](https://github.com/tj-actions/eslint-changed-files/commit/43cd2523882a48650df44ed428321c35b51e82d6))  - (Tonye Jack)
 - Update test.yml ([61b48b6](https://github.com/tj-actions/eslint-changed-files/commit/61b48b699e67aded0eef30ac57a01a2b9271ff5c))  - (Tonye Jack)
@@ -5646,8 +5294,7 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 - Update README.md ([1800fa1](https://github.com/tj-actions/eslint-changed-files/commit/1800fa1d3574fac483ded3b3b855de4bf9f868d4))  - (Tonye Jack)
 - Update README.md ([1c9f661](https://github.com/tj-actions/eslint-changed-files/commit/1c9f66127bf5610135e6ad51f93a1119eb70c486))  - (Tonye Jack)
 - Update test.yml ([0e92b97](https://github.com/tj-actions/eslint-changed-files/commit/0e92b97a5fa67230c0b0c6be52c49a6f29d62c6c))  - (Tonye Jack)
-- Updated test.
- ([c9c11c8](https://github.com/tj-actions/eslint-changed-files/commit/c9c11c84dac53d309091888409149c4a7c8fee4d))  - (Tonye Jack)
+- Updated test. ([c9c11c8](https://github.com/tj-actions/eslint-changed-files/commit/c9c11c84dac53d309091888409149c4a7c8fee4d))  - (Tonye Jack)
 - Update action.yml ([dc0f815](https://github.com/tj-actions/eslint-changed-files/commit/dc0f815b26051ede13ba0b3af1171d93360a0a4e))  - (Tonye Jack)
 - Update README.md ([c298c50](https://github.com/tj-actions/eslint-changed-files/commit/c298c50207273667ec9b94493f1912a902f67b05))  - (Tonye Jack)
 - Update README.md ([9c5f7fd](https://github.com/tj-actions/eslint-changed-files/commit/9c5f7fdc99157e40bdae743bc05fab9574b19c2a))  - (Tonye Jack)
@@ -5660,17 +5307,14 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 - Update README.md ([914cbbe](https://github.com/tj-actions/eslint-changed-files/commit/914cbbe695b3800fee8420badaf55edab3c096a0))  - (Tonye Jack)
 - Update README.md ([612c350](https://github.com/tj-actions/eslint-changed-files/commit/612c35095fa8c185cc67654b9c39d7c8ca6ecb5a))  - (Tonye Jack)
 - Update README.md ([e23c85d](https://github.com/tj-actions/eslint-changed-files/commit/e23c85d9b44b2edfeed8336b6c1204baf10db7a0))  - (Tonye Jack)
-- Update alpine Docker tag to v3.12
- ([1a60f44](https://github.com/tj-actions/eslint-changed-files/commit/1a60f441b463e8b3ce2cbac794ed88d1a92f1876))  - (Renovate Bot)
+- Update alpine Docker tag to v3.12 ([1a60f44](https://github.com/tj-actions/eslint-changed-files/commit/1a60f441b463e8b3ce2cbac794ed88d1a92f1876))  - (Renovate Bot)
 - Update README.md ([5e9c141](https://github.com/tj-actions/eslint-changed-files/commit/5e9c14190194b9a878a0de5cfe1b49f4f02d8272))  - (Tonye Jack)
 
 ## <!-- 30 -->📝 Other
 
 - PR [#16](https://github.com/tj-actions/eslint-changed-files/pull/16): ([0966fd7](https://github.com/tj-actions/eslint-changed-files/commit/0966fd7a29b96ae23220d414fed9e2ae3656a841))  - (Tonye Jack)
-- Merge branch 'test' of https://github.com/tj-actions/eslint-changed-files into test
- ([9bae371](https://github.com/tj-actions/eslint-changed-files/commit/9bae371afe7fbef73acb1754e565a10034a11594))  - (Tonye Jack)
-- Merge branch 'test' of https://github.com/tj-actions/eslint-changed-files into test
- ([e7e6f42](https://github.com/tj-actions/eslint-changed-files/commit/e7e6f427976660ade728cc47beb08895649e1b97))  - (Tonye Jack)
+- Merge branch 'test' of https://github.com/tj-actions/eslint-changed-files into test ([9bae371](https://github.com/tj-actions/eslint-changed-files/commit/9bae371afe7fbef73acb1754e565a10034a11594))  - (Tonye Jack)
+- Merge branch 'test' of https://github.com/tj-actions/eslint-changed-files into test ([e7e6f42](https://github.com/tj-actions/eslint-changed-files/commit/e7e6f427976660ade728cc47beb08895649e1b97))  - (Tonye Jack)
 - Merge branch 'master' into test ([cb9173b](https://github.com/tj-actions/eslint-changed-files/commit/cb9173b76e663142be43db39ac40671256b5d83c))  - (Tonye Jack)
 - PR [#15](https://github.com/tj-actions/eslint-changed-files/pull/15): ([5adc202](https://github.com/tj-actions/eslint-changed-files/commit/5adc202142046727f3d8d13684789267c691984b))  - (Tonye Jack)
 - PR [#12](https://github.com/tj-actions/eslint-changed-files/pull/12): ([2a9d503](https://github.com/tj-actions/eslint-changed-files/commit/2a9d50372b5fd60b9c416a0103ffcaa6df81261a))  - (Tonye Jack)
@@ -5704,10 +5348,8 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 
 ## <!-- 1 -->🐛 Bug Fixes
 
-- Fixed inputs.
- ([703597c](https://github.com/tj-actions/eslint-changed-files/commit/703597c63d9cd276f72c598bffc3f4e00d8279ca))  - (Tonye Jack)
-- Fixed permission.
- ([497e6a0](https://github.com/tj-actions/eslint-changed-files/commit/497e6a0c83c2425b46ac1fd40e1decb061602229))  - (Tonye Jack)
+- Fixed inputs. ([703597c](https://github.com/tj-actions/eslint-changed-files/commit/703597c63d9cd276f72c598bffc3f4e00d8279ca))  - (Tonye Jack)
+- Fixed permission. ([497e6a0](https://github.com/tj-actions/eslint-changed-files/commit/497e6a0c83c2425b46ac1fd40e1decb061602229))  - (Tonye Jack)
 
 ## <!-- 14 -->🎉 Initial Commit
 
@@ -5715,38 +5357,28 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 
 ## <!-- 16 -->➕ Add
 
-- Add renovate.json
- ([b44ab74](https://github.com/tj-actions/eslint-changed-files/commit/b44ab747434ad68ac4fc2540a87256dfc0c39033))  - (Renovate Bot)
+- Add renovate.json ([b44ab74](https://github.com/tj-actions/eslint-changed-files/commit/b44ab747434ad68ac4fc2540a87256dfc0c39033))  - (Renovate Bot)
 - Create entrypoint.sh ([40140be](https://github.com/tj-actions/eslint-changed-files/commit/40140bedc1a24550eab2b72c54a0ccf0705a4fe6))  - (Tonye Jack)
 - Create action.yml ([d605fe6](https://github.com/tj-actions/eslint-changed-files/commit/d605fe6af9082f8de0fcb91860075744c824513b))  - (Tonye Jack)
 - Create Dockerfile ([bfe00fb](https://github.com/tj-actions/eslint-changed-files/commit/bfe00fb38c8b45964bd99f8bbf9e19c963aa7683))  - (Tonye Jack)
 
 ## <!-- 17 -->➖ Remove
 
-- Remove debug lines.
- ([9605d3c](https://github.com/tj-actions/eslint-changed-files/commit/9605d3c544bf6e42e2085aab22f77e8cb060616d))  - (Tonye Jack)
+- Remove debug lines. ([9605d3c](https://github.com/tj-actions/eslint-changed-files/commit/9605d3c544bf6e42e2085aab22f77e8cb060616d))  - (Tonye Jack)
 
 ## <!-- 26 -->🔄 Update
 
 - Update Dockerfile ([db492e8](https://github.com/tj-actions/eslint-changed-files/commit/db492e8ba6383df50e7f9652ef11f1bd9ed7f074))  - (Tonye Jack)
-- Updated command.
- ([074870c](https://github.com/tj-actions/eslint-changed-files/commit/074870cc6a88d48bc02527714bc34671ba5d8009))  - (Tonye Jack)
-- Updated command.
- ([483def2](https://github.com/tj-actions/eslint-changed-files/commit/483def27c54969c76db086ddd9dc1537d2b98607))  - (Tonye Jack)
-- Updated command.
- ([b99df31](https://github.com/tj-actions/eslint-changed-files/commit/b99df31c48217b2c4e6968fcdfb0c8dbf385fb8d))  - (Tonye Jack)
-- Updated command.
- ([58ec151](https://github.com/tj-actions/eslint-changed-files/commit/58ec151684432eba3fb592feb40dde670ce1c820))  - (Tonye Jack)
-- Updated command.
- ([1b042ce](https://github.com/tj-actions/eslint-changed-files/commit/1b042cedd4e37559c4ddde83e4e27a2deb6b829d))  - (Tonye Jack)
-- Updated command.
- ([e9f0d0d](https://github.com/tj-actions/eslint-changed-files/commit/e9f0d0d6e1b6c4fe3741f5628048d6c5e3fb2f11))  - (Tonye Jack)
-- Updated command.
- ([0fd968a](https://github.com/tj-actions/eslint-changed-files/commit/0fd968a7f0f1c11c99bc7b6d433489fafa96c2ca))  - (Tonye Jack)
+- Updated command. ([074870c](https://github.com/tj-actions/eslint-changed-files/commit/074870cc6a88d48bc02527714bc34671ba5d8009))  - (Tonye Jack)
+- Updated command. ([483def2](https://github.com/tj-actions/eslint-changed-files/commit/483def27c54969c76db086ddd9dc1537d2b98607))  - (Tonye Jack)
+- Updated command. ([b99df31](https://github.com/tj-actions/eslint-changed-files/commit/b99df31c48217b2c4e6968fcdfb0c8dbf385fb8d))  - (Tonye Jack)
+- Updated command. ([58ec151](https://github.com/tj-actions/eslint-changed-files/commit/58ec151684432eba3fb592feb40dde670ce1c820))  - (Tonye Jack)
+- Updated command. ([1b042ce](https://github.com/tj-actions/eslint-changed-files/commit/1b042cedd4e37559c4ddde83e4e27a2deb6b829d))  - (Tonye Jack)
+- Updated command. ([e9f0d0d](https://github.com/tj-actions/eslint-changed-files/commit/e9f0d0d6e1b6c4fe3741f5628048d6c5e3fb2f11))  - (Tonye Jack)
+- Updated command. ([0fd968a](https://github.com/tj-actions/eslint-changed-files/commit/0fd968a7f0f1c11c99bc7b6d433489fafa96c2ca))  - (Tonye Jack)
 - Update action.yml ([b260adc](https://github.com/tj-actions/eslint-changed-files/commit/b260adca500ae287cf4c6760bc0239a7db6a484e))  - (Tonye Jack)
 - Update action.yml ([fba4c96](https://github.com/tj-actions/eslint-changed-files/commit/fba4c968e483ed5607f5101dd622991d96c56d7d))  - (Tonye Jack)
-- Updated entrypoint.sh
- ([450ac40](https://github.com/tj-actions/eslint-changed-files/commit/450ac40547c948d0249e6fac3cf6400db8a07cc5))  - (Tonye Jack)
+- Updated entrypoint.sh ([450ac40](https://github.com/tj-actions/eslint-changed-files/commit/450ac40547c948d0249e6fac3cf6400db8a07cc5))  - (Tonye Jack)
 - Update entrypoint.sh ([f463ef0](https://github.com/tj-actions/eslint-changed-files/commit/f463ef01a6f141afa583e2b0d842031f5804e4ea))  - (Tonye Jack)
 - Update entrypoint.sh ([ba1b73b](https://github.com/tj-actions/eslint-changed-files/commit/ba1b73bcf056418995d864061181e4f77938b3bb))  - (Tonye Jack)
 - Update entrypoint.sh ([8ff8626](https://github.com/tj-actions/eslint-changed-files/commit/8ff86267d6994e78453570c3028572e1dc9f6196))  - (Tonye Jack)
@@ -5755,37 +5387,27 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 - Update entrypoint.sh ([0db27b3](https://github.com/tj-actions/eslint-changed-files/commit/0db27b3bd1eb74141625ea051c47c298ca9c0396))  - (Tonye Jack)
 - Update entrypoint.sh ([9ec69e7](https://github.com/tj-actions/eslint-changed-files/commit/9ec69e7a261d38c8443555654eb4c0b399a73575))  - (Tonye Jack)
 - Update README.md ([31846f7](https://github.com/tj-actions/eslint-changed-files/commit/31846f77845117aa88a0245b6d60a53df15956c1))  - (Tonye Jack)
-- Updated README.md
- ([d2a1bd6](https://github.com/tj-actions/eslint-changed-files/commit/d2a1bd69711cd2a776e46d09e2ec8b59b7123de7))  - (Tonye Jack)
-- Updated the README.md.
- ([71e02d7](https://github.com/tj-actions/eslint-changed-files/commit/71e02d7a97261a4865214de9ca3953d30d2175f0))  - (Tonye Jack)
+- Updated README.md ([d2a1bd6](https://github.com/tj-actions/eslint-changed-files/commit/d2a1bd69711cd2a776e46d09e2ec8b59b7123de7))  - (Tonye Jack)
+- Updated the README.md. ([71e02d7](https://github.com/tj-actions/eslint-changed-files/commit/71e02d7a97261a4865214de9ca3953d30d2175f0))  - (Tonye Jack)
 - Update entrypoint.sh ([bc22b45](https://github.com/tj-actions/eslint-changed-files/commit/bc22b45a126ab5481cd8b7af60e46645ade8c07c))  - (Tonye Jack)
-- Updated README.md.
- ([8cbdd60](https://github.com/tj-actions/eslint-changed-files/commit/8cbdd60ccad0805af0216d9c6038467e0bca79d0))  - (Tonye Jack)
+- Updated README.md. ([8cbdd60](https://github.com/tj-actions/eslint-changed-files/commit/8cbdd60ccad0805af0216d9c6038467e0bca79d0))  - (Tonye Jack)
 - Update entrypoint.sh ([b7a64fe](https://github.com/tj-actions/eslint-changed-files/commit/b7a64fe8d5f248753166d952c9b0acda09bfa738))  - (Tonye Jack)
 - Update action.yml ([12d2128](https://github.com/tj-actions/eslint-changed-files/commit/12d21287655db752cf9f3ef0829bacc2c411a73b))  - (Tonye Jack)
 - Update action.yml ([bcb4097](https://github.com/tj-actions/eslint-changed-files/commit/bcb409752e10198ea16f8f8fd15df7bc7d4a4a2d))  - (Tonye Jack)
 - Update README.md ([bb1a6c4](https://github.com/tj-actions/eslint-changed-files/commit/bb1a6c4c0c7b71f6614ad6b97720a3a3c45118bf))  - (Tonye Jack)
 - Update action.yml ([6a93717](https://github.com/tj-actions/eslint-changed-files/commit/6a9371738e0cfd381a1e00a30b09494854694795))  - (Tonye Jack)
-- Updated to use printf.
- ([31a8243](https://github.com/tj-actions/eslint-changed-files/commit/31a8243db0bbb6e50cbd6c8e566369c648ccf820))  - (Tonye Jack)
+- Updated to use printf. ([31a8243](https://github.com/tj-actions/eslint-changed-files/commit/31a8243db0bbb6e50cbd6c8e566369c648ccf820))  - (Tonye Jack)
 - Update Dockerfile ([7a84546](https://github.com/tj-actions/eslint-changed-files/commit/7a84546e6506a7911c6d8b2a46db89e54777d488))  - (Tonye Jack)
 - Update Dockerfile ([bd3c26e](https://github.com/tj-actions/eslint-changed-files/commit/bd3c26e94b202349f0c29bee97e29c4432aa3179))  - (Tonye Jack)
 - Update Dockerfile ([0fafff2](https://github.com/tj-actions/eslint-changed-files/commit/0fafff2399e0246087a0c514d3698b068ea3fb1b))  - (Tonye Jack)
-- Updated command.
- ([2ea446f](https://github.com/tj-actions/eslint-changed-files/commit/2ea446f7f15997da15f6715cebc32e9879e14c2c))  - (Tonye Jack)
-- Updated grep
- ([7805c10](https://github.com/tj-actions/eslint-changed-files/commit/7805c10473853ce18da6a7c9d66be1df999f58e5))  - (Tonye Jack)
-- Updated grep
- ([baca772](https://github.com/tj-actions/eslint-changed-files/commit/baca7727eed1faccfe4e383ceeeeba196eacdb65))  - (Tonye Jack)
-- Updated filter.
- ([a8ab7ed](https://github.com/tj-actions/eslint-changed-files/commit/a8ab7ed86c62863703e25381c00a8d94cd83268e))  - (Tonye Jack)
-- Updated env vars.
- ([d0f9681](https://github.com/tj-actions/eslint-changed-files/commit/d0f9681740acf7af60faba8dbb8297b9467066d3))  - (Tonye Jack)
+- Updated command. ([2ea446f](https://github.com/tj-actions/eslint-changed-files/commit/2ea446f7f15997da15f6715cebc32e9879e14c2c))  - (Tonye Jack)
+- Updated grep ([7805c10](https://github.com/tj-actions/eslint-changed-files/commit/7805c10473853ce18da6a7c9d66be1df999f58e5))  - (Tonye Jack)
+- Updated grep ([baca772](https://github.com/tj-actions/eslint-changed-files/commit/baca7727eed1faccfe4e383ceeeeba196eacdb65))  - (Tonye Jack)
+- Updated filter. ([a8ab7ed](https://github.com/tj-actions/eslint-changed-files/commit/a8ab7ed86c62863703e25381c00a8d94cd83268e))  - (Tonye Jack)
+- Updated env vars. ([d0f9681](https://github.com/tj-actions/eslint-changed-files/commit/d0f9681740acf7af60faba8dbb8297b9467066d3))  - (Tonye Jack)
 - Update entrypoint.sh ([c995043](https://github.com/tj-actions/eslint-changed-files/commit/c99504349f935714ad8d4ba2e5977da1a85792dd))  - (Tonye Jack)
 - Update entrypoint.sh ([8a80000](https://github.com/tj-actions/eslint-changed-files/commit/8a8000017ef513d241442ab3e1ac63fef13e42db))  - (Tonye Jack)
-- Updated entrypoint.sh
- ([6135799](https://github.com/tj-actions/eslint-changed-files/commit/61357990d2a7ca9428a47c6968ff46fc738a01e8))  - (Tonye Jack)
+- Updated entrypoint.sh ([6135799](https://github.com/tj-actions/eslint-changed-files/commit/61357990d2a7ca9428a47c6968ff46fc738a01e8))  - (Tonye Jack)
 - Update entrypoint.sh ([3ff540a](https://github.com/tj-actions/eslint-changed-files/commit/3ff540adb548ef49c36dd19d309aaa0859e58c50))  - (Tonye Jack)
 - Update entrypoint.sh ([692f1e8](https://github.com/tj-actions/eslint-changed-files/commit/692f1e800fec14fdd910e19161c87b044ce70c9d))  - (Tonye Jack)
 - Update entrypoint.sh ([eff6b8a](https://github.com/tj-actions/eslint-changed-files/commit/eff6b8a15c4610f8d6b1759cd4fa566403d242d6))  - (Tonye Jack)
@@ -5793,8 +5415,7 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 - Update entrypoint.sh ([a02490c](https://github.com/tj-actions/eslint-changed-files/commit/a02490cb5212433c25d9447b5c12ca3d62da9f7f))  - (Tonye Jack)
 - Update entrypoint.sh ([e086d34](https://github.com/tj-actions/eslint-changed-files/commit/e086d344acf08799737801965057ab8a3268c1e2))  - (Tonye Jack)
 - Update README.md ([c9fcf8e](https://github.com/tj-actions/eslint-changed-files/commit/c9fcf8e5ced3e6ce68efb8a22d5d90b47117d770))  - (Tonye Jack)
-- Update alpine Docker tag to v3.11
- ([c8dec5c](https://github.com/tj-actions/eslint-changed-files/commit/c8dec5c279e5051a52e85bb638dd29598ea41137))  - (Renovate Bot)
+- Update alpine Docker tag to v3.11 ([c8dec5c](https://github.com/tj-actions/eslint-changed-files/commit/c8dec5c279e5051a52e85bb638dd29598ea41137))  - (Renovate Bot)
 - Update entrypoint.sh ([617e5f8](https://github.com/tj-actions/eslint-changed-files/commit/617e5f8b1e5e9b5dd6234a62f3d41f1f9cb3c6c8))  - (Tonye Jack)
 - Update entrypoint.sh ([9779ea3](https://github.com/tj-actions/eslint-changed-files/commit/9779ea3966bc750801de9a5dfdacf703250e7a1d))  - (Tonye Jack)
 - Update entrypoint.sh ([f8ffb2f](https://github.com/tj-actions/eslint-changed-files/commit/f8ffb2fc933ab68719aa861b7f4f29ecaf53e0fd))  - (Tonye Jack)
@@ -5822,11 +5443,9 @@ Signed-off-by: dependabot-preview[bot] <support@dependabot.com> ([76a504f](https
 
 ## <!-- 30 -->📝 Other
 
-- Merge branch 'master' of https://github.com/jackton1/eslint-changed-files
- ([4ea35de](https://github.com/tj-actions/eslint-changed-files/commit/4ea35de0a92ff4864ee5902f627e8f76be9b0791))  - (Tonye Jack)
+- Merge branch 'master' of https://github.com/jackton1/eslint-changed-files ([4ea35de](https://github.com/tj-actions/eslint-changed-files/commit/4ea35de0a92ff4864ee5902f627e8f76be9b0791))  - (Tonye Jack)
 - PR [#3](https://github.com/tj-actions/eslint-changed-files/pull/3): alpine Docker tag to v3.11 ([5ffa915](https://github.com/tj-actions/eslint-changed-files/commit/5ffa9156eb850f173ca196f6408793a3a0faf2fa))  - (Tonye Jack)
-- Merge branch 'master' of https://github.com/jackton1/eslint-changed-files
- ([325ae0d](https://github.com/tj-actions/eslint-changed-files/commit/325ae0d730cfd6838ba9dddd60356177bc62e9c2))  - (Tonye Jack)
+- Merge branch 'master' of https://github.com/jackton1/eslint-changed-files ([325ae0d](https://github.com/tj-actions/eslint-changed-files/commit/325ae0d730cfd6838ba9dddd60356177bc62e9c2))  - (Tonye Jack)
 - PR [#1](https://github.com/tj-actions/eslint-changed-files/pull/1): Renovate ([28967ac](https://github.com/tj-actions/eslint-changed-files/commit/28967ac2c2164fa2a1954f6ec9f2b4df17dc2382))  - (Tonye Jack)
 
 <!-- generated by git-cliff -->
