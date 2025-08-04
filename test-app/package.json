@@ -64,7 +64,7 @@
     "@types/node": "22.13.11",
     "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5",
-    "stylelint-config-recommended": "^14.0.0"
+    "stylelint-config-recommended": "^16.0.0"
   },
   "main": "index.js",
   "license": "MIT"
