@@ -28,6 +28,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
           fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
 
       - name: Setup Node.js 20.x
         uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
